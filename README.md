@@ -1,6 +1,6 @@
-# Halcyon Pain Management Center — website
+# Halcyon Pain Management Centre — website
 
-Static prototype for Halcyon Pain Management Center, Kukatpally, Hyderabad. Six linked
+Static prototype for Halcyon Pain Management Centre, Kukatpally, Hyderabad. Six linked
 pages, each a single self-contained HTML file: fonts, images and scripts are inlined, so
 any page opens on its own with no build step, no dependencies and no network calls.
 
