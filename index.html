@@ -624,6 +624,11 @@ html.is-split .nav__cta{margin-left:auto}
           mask-image:linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);
 }
 .arc__track{position:absolute; inset:0; transform-style:preserve-3d; opacity:0}
+/* the finger drives the arc horizontally; the page keeps the vertical axis,
+   so a swipe down the page still scrolls when it starts on a card */
+.arc__stage{touch-action:pan-y; cursor:grab; -webkit-tap-highlight-color:transparent}
+.arc__stage.is-dragging{cursor:grabbing}
+.arc__stage.is-dragging .arc__card{will-change:transform}
 
 .arc__card{
   position:absolute; left:50%; top:50%; margin:0;
@@ -2720,13 +2725,148 @@ html.is-split .nav__cta{margin-left:auto}
     }
 
     arcTrack.addEventListener('mouseenter', function () { paused = true; });
-    arcTrack.addEventListener('mouseleave', function () { paused = false; });
+    arcTrack.addEventListener('mouseleave', function () { if (!drag) paused = false; });
 
+    /* ------------------------------------------------------------------
+       Swiping the arc.
+
+       The conveyor is driven by a single continuous `offset`, so a drag is
+       just that number following the finger: one card per stepPx() of
+       travel. Release snaps to the nearest whole card, carrying a little
+       of the flick's speed so a fast swipe skips ahead.
+    ------------------------------------------------------------------ */
+    var stage = document.getElementById('arcStage');
+    var drag = null, snapRAF = 0, snapFail = 0, swiped = false;
+
+    /* The arc's geometry is a fixed 980px radius, which would ask for a
+       320px drag per card — most of a phone screen. The swipe is scaled to
+       the viewport instead, so it feels the same on any width. */
+    function stepPx() {
+      return Math.max(90, Math.min(300, window.innerWidth * 0.55));
+    }
+
+    /* iOS exposes no vibration API to the web. A checkbox carrying the
+       `switch` attribute is the one control Safari plays a haptic tick for,
+       so it stands in as a tap emitter there; everywhere else
+       navigator.vibrate does the job. Both are best-effort — a missing
+       haptic must never be a broken swipe. */
+    var haptic = (function () {
+      if (reduced) return function () {};
+      if (navigator.vibrate) {
+        return function () { try { navigator.vibrate(6); } catch (e) {} };
+      }
+      var sw = document.createElement('input');
+      sw.type = 'checkbox';
+      sw.setAttribute('switch', '');
+      sw.setAttribute('aria-hidden', 'true');
+      sw.tabIndex = -1;
+      sw.style.cssText = 'position:fixed;left:-9999px;width:1px;height:1px;' +
+                         'opacity:0;pointer-events:none';
+      document.body.appendChild(sw);
+      /* Safari only reflects the attribute when it understands it */
+      var ok = sw.matches('[switch]');
+      return function () { if (ok) { try { sw.click(); } catch (e) {} } };
+    })();
+
+    function tweenTo(target) {
+      cancelAnimationFrame(snapRAF);
+      clearTimeout(snapFail);
+      var from = offset, delta = target - from;
+      if (!delta) { paused = false; return; }
+      var dur = reduced ? 1 : Math.min(520, 240 + Math.abs(delta) * 130);
+      var t0 = -1, mark = Math.round(from);
+      paused = true;
+
+      function land() {
+        cancelAnimationFrame(snapRAF);
+        clearTimeout(snapFail);
+        offset = target;
+        layout();
+        paused = false;
+      }
+
+      /* requestAnimationFrame stops in a backgrounded tab. Without this the
+         arc would freeze mid-way between two cards and stay there until the
+         tab came back; the timer lands it on a whole card regardless. */
+      snapFail = setTimeout(land, dur + 120);
+
+      snapRAF = requestAnimationFrame(function step(now) {
+        if (t0 < 0) t0 = now;
+        var p = Math.min(1, (now - t0) / dur);
+        offset = from + delta * (1 - Math.pow(1 - p, 3));
+        layout();
+        var m = Math.round(offset);
+        if (m !== mark) { mark = m; haptic(); }
+        if (p < 1) snapRAF = requestAnimationFrame(step);
+        else land();
+      });
+    }
+
+    if (stage && window.PointerEvent) {
+      stage.addEventListener('pointerdown', function (e) {
+        if (e.pointerType === 'mouse' && e.button !== 0) return;
+        cancelAnimationFrame(snapRAF);
+        swiped = false;
+        drag = { id: e.pointerId, x0: e.clientX, y0: e.clientY, off0: offset,
+                 axis: null, moved: 0, lx: e.clientX, lt: e.timeStamp, v: 0,
+                 mark: Math.round(offset) };
+        paused = true;
+      });
+
+      /* not passive: a horizontal drag has to stop the browser treating it
+         as a scroll once we have committed to the axis */
+      stage.addEventListener('pointermove', function (e) {
+        if (!drag || e.pointerId !== drag.id) return;
+        var dx = e.clientX - drag.x0, dy = e.clientY - drag.y0;
+
+        if (!drag.axis) {
+          if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
+          drag.axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+          if (drag.axis === 'y') {          /* it was a page scroll all along */
+            drag = null; paused = false; return;
+          }
+          stage.classList.add('is-dragging');
+          try { stage.setPointerCapture(e.pointerId); } catch (err) {}
+        }
+
+        e.preventDefault();
+        drag.moved = Math.max(drag.moved, Math.abs(dx));
+        var dt = e.timeStamp - drag.lt;
+        if (dt > 0) drag.v = (e.clientX - drag.lx) / dt;
+        drag.lx = e.clientX; drag.lt = e.timeStamp;
+
+        offset = drag.off0 - dx / stepPx();
+        layout();
+
+        var m = Math.round(offset);
+        if (m !== drag.mark) { drag.mark = m; haptic(); }
+      }, { passive: false });
+
+      function release(e) {
+        if (!drag || (e && e.pointerId !== drag.id)) return;
+        var d = drag; drag = null;
+        stage.classList.remove('is-dragging');
+        if (d.axis !== 'x') { paused = false; return; }
+        /* the click lands a frame or two after pointerup; clear the guard
+           after that so a swipe that never produced one cannot go on to
+           swallow an unrelated tap later */
+        swiped = d.moved > 8;
+        if (swiped) setTimeout(function () { swiped = false; }, 350);
+        /* a flick throws at most two cards past where the finger let go */
+        var carry = Math.max(-2, Math.min(2, -d.v * 260 / stepPx()));
+        tweenTo(Math.round(offset + carry));
+      }
+      stage.addEventListener('pointerup', release);
+      stage.addEventListener('pointercancel', release);
+    }
+
+    /* tapping a card still brings it to the front — unless that tap was
+       the end of a swipe */
     cards.forEach(function (c, i) {
       c.addEventListener('click', function () {
+        if (swiped) { swiped = false; return; }   /* that tap ended a swipe */
         var half = N / 2;
-        var d = ((i - offset + half) % N + N) % N - half;
-        offset += d;
+        tweenTo(offset + (((i - offset + half) % N + N) % N - half));
       });
     });
 
