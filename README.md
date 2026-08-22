@@ -8,7 +8,7 @@ any page opens on its own with no build step, no dependencies and no network cal
 
 | File | What it is |
 | --- | --- |
-| `Halcyon-Prototype.html` | Home. Hero, the four treatment pathways, the conditions conveyor, the interactive body map, the visit timeline, patient stories, and the assistant. |
+| `index.html` | Home. Hero, the four treatment pathways, the conditions conveyor, the interactive body map, the visit timeline, patient stories, and the assistant. |
 | `Halcyon-Treatments.html` | The four interventional pathways in full, the named procedures they are delivered as, and what none of them involve. |
 | `Halcyon-Conditions.html` | All twelve pain conditions, filterable by part of the body, with the usual procedure for each. |
 | `Halcyon-Consultants.html` | Dr. Pallavi Dasyam and Dr. PSS Kiran — qualifications, background and what they treat. |
@@ -23,9 +23,8 @@ footer's condition and treatment lists resolve to those anchors.
 
 - `Halcyon-YourVisit-demo.html` — an earlier standalone demo of the visit timeline, kept
   for reference. Superseded by the `#jr` section on the home page and linked from nowhere.
-- `index.html` — an older, separate shoulder-pain landing page in a different design. Not
-  part of the six-page site and not linked from it. Note that GitHub Pages would serve
-  **this** file as the site root; the home page is `Halcyon-Prototype.html`.
+- `shoulder-pain.html` — an older, separate shoulder-pain landing page in a different
+  design. Not part of the six-page site and not linked from it.
 
 ## Before this goes live
 
