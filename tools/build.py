@@ -328,9 +328,7 @@ def treatment_node(slug):
             'procedureType': 'https://schema.org/%sProcedure' % sc.get('procedure_type', 'Percutaneous'),
             'bodyLocation': ', '.join(sc.get('body_locations', [])),
             'howPerformed': sc.get('how_performed'), 'preparation': sc.get('preparation'),
-            'followup': sc.get('followup'),
-            'indication': [{'@type': 'MedicalIndication', 'name': CONDITIONS[c]['name']}
-                           for c in d.get('conditions', []) if c in CONDITIONS]}
+            'followup': sc.get('followup')}
 
 def condition_node(slug):
     d = CONDITIONS[slug]; sc = d['schema']
@@ -412,6 +410,8 @@ def graph(p):
         s = p['data']['slug']
         page['about'] = {'@id': treat_id(s)}; page['mainEntity'] = {'@id': treat_id(s)}
         page['audience'] = {'@type': 'MedicalAudience', 'audienceType': 'Patient'}
+        # the conditions link back through MedicalCondition.possibleTreatment on their own pages
+        page['mentions'] = [{'@id': cond_id(c)} for c in p['data'].get('conditions', []) if c in CONDITIONS]
         nodes.append(treatment_node(s))
     elif k == 'doctor':
         s = p['data']['slug']
