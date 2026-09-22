@@ -11,7 +11,7 @@ any page opens on its own with no build step, no dependencies and no network cal
 | `index.html` | Home. Hero, the four treatment pathways, the conditions conveyor, the interactive body map, the visit timeline, patient stories, and the assistant. |
 | `Halcyon-Treatments.html` | The four interventional pathways in full, the named procedures they are delivered as, and what none of them involve. |
 | `Halcyon-Conditions.html` | All twelve pain conditions, filterable by part of the body, with the usual procedure for each. |
-| `Halcyon-Consultants.html` | Dr. Pallavi Dasyam and Dr. PSS Kiran — qualifications, background and what they treat. |
+| `Halcyon-Consultants.html` | Dr. Dasyam Pallavi and Dr. PSS Kiran — qualifications, background and what they treat. |
 | `Halcyon-About.html` | The clinic: how it works, the numbers, the people, and where it is. |
 | `Halcyon-Privacy.html` | Privacy policy. **Draft — see below.** |
 
