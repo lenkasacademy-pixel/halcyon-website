@@ -1,0 +1,29 @@
+{
+  "name": "Halcyon Pain Management Centre",
+  "short_name": "Halcyon",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF8F9",
+  "theme_color": "#2C0A1B",
+  "lang": "en-IN",
+  "description": "Halcyon Pain Management Centre in Kukatpally, Hyderabad treats knee, back, neck, shoulder, nerve and sports pain without surgery. The consultant who examines you scans you with diagnostic ultrasound and, when a procedure is right, performs it in the same appointment — image-guided, under local anaesthetic, as day care.",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

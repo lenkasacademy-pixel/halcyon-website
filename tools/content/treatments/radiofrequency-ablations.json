@@ -1,0 +1,158 @@
+{
+  "slug": "radiofrequency-ablations",
+  "name": "Radiofrequency Ablation",
+  "title": "Radiofrequency Ablation in Hyderabad | Halcyon",
+  "meta_description": "Radiofrequency ablation at Halcyon, Kukatpally: COOLIEF cooled RF for knee pain, block-first RF for neck and back. Non-surgical day care, local anaesthetic.",
+  "h1": "Radiofrequency ablation in Hyderabad, after the block confirms the source",
+  "summary": "Radiofrequency ablation uses a precise, controlled current to interrupt the nerve that carries a pain signal. At Halcyon it is used for knee, neck, low back and trigeminal nerve pain, with the US FDA-cleared COOLIEF cooled RF system for the knee, and only after a diagnostic block has confirmed the source. It is done under local anaesthetic as day care, and you go home the same day.",
+  "quick_facts": [
+    {
+      "label": "Usual first step",
+      "value": "Diagnostic block to confirm the nerve"
+    },
+    {
+      "label": "Knee system",
+      "value": "US FDA-cleared COOLIEF cooled RF"
+    },
+    {
+      "label": "Guidance",
+      "value": "Image-guided"
+    },
+    {
+      "label": "Anaesthesia",
+      "value": "Local anaesthetic; you stay awake"
+    },
+    {
+      "label": "Hospital stay",
+      "value": "Day care, home the same day"
+    }
+  ],
+  "sections": [
+    {
+      "h2": "What is radiofrequency ablation?",
+      "paragraphs": [
+        "Radiofrequency ablation (RFA) is a non-surgical procedure in which a fine probe, placed through a needle under image guidance, delivers a controlled current to a small sensory nerve so that it stops carrying the pain signal. It treats the nerve that reports the pain, not the joint itself.",
+        "At Halcyon in Kukatpally, Hyderabad, radiofrequency is never the first thing done. A diagnostic block must first show that the nerve in question is the one carrying your pain."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "How radiofrequency ablation works",
+      "paragraphs": [
+        "Radiofrequency ablation works by creating a small, controlled area of heat around the tip of the probe, which interrupts the sensory nerve’s ability to send pain signals to the brain. The nerves treated are small sensory branches, chosen so that the muscles you use to move are not affected.",
+        "For knee pain, Halcyon uses the US FDA-cleared COOLIEF cooled RF system. Its water-cooled probe treats a larger volume of tissue than standard radiofrequency, so the genicular nerves around the knee, whose paths vary from person to person, can be reached more completely. For the neck and low back, radiofrequency is applied to the medial branch nerves that supply the facet joints."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "Which conditions radiofrequency ablation helps",
+      "paragraphs": [
+        "At Halcyon, radiofrequency ablation is most often used for five conditions, each after a block has confirmed the source."
+      ],
+      "bullets": [
+        "Knee pain, including osteoarthritis — COOLIEF cooled RF of the genicular nerves",
+        "Neck pain from the facet joints — cervical facet radiofrequency after a medial branch block",
+        "Cervical spondylosis, when a block proves the worn facet joints are what hurts",
+        "Low back pain from the facet joints, once a diagnostic block has identified them",
+        "Trigeminal neuralgia, when medication no longer controls the pain — radiofrequency of the affected branch"
+      ]
+    },
+    {
+      "h2": "Who it suits, and who it does not",
+      "paragraphs": [
+        "Radiofrequency ablation usually suits people with long-standing joint or nerve pain whose diagnostic block gave clear relief, and who want to avoid or put off surgery. For the knee, it is often considered when pain continues despite medicines and physiotherapy.",
+        "It is not suitable when the block does not settle the pain, because that means the nerve tested is not the source and the plan changes. It will not correct a deformed joint: in advanced grade 4 knee arthritis with deformity, a replacement may still be the right answer, and you will be told so plainly. An active infection, some bleeding problems or uncontrolled medical conditions may also mean it is delayed or not advised."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "The procedure, step by step",
+      "paragraphs": [
+        "The consultation, scan and diagnostic block come first. Radiofrequency follows only when the block confirms the source, and the consultant will tell you when it is scheduled."
+      ],
+      "bullets": [
+        "The consultant takes your history, examines you and scans the area with diagnostic ultrasound.",
+        "A diagnostic block is placed on the suspected nerve to see whether the pain settles.",
+        "If it does, the radiofrequency procedure is planned for that nerve.",
+        "On the day, the skin is cleaned and numbed with local anaesthetic; you stay awake.",
+        "Under image guidance, the probe is positioned beside the target nerve and its position is checked.",
+        "A controlled current is applied, one nerve at a time.",
+        "You rest briefly, receive aftercare instructions and a review date, and go home the same day."
+      ]
+    },
+    {
+      "h2": "Recovery and aftercare",
+      "paragraphs": [
+        "Most people walk out after radiofrequency ablation and can manage light activity the same day. Soreness at the needle sites, or a temporary flare of the usual pain, is common for a few days before the benefit becomes clear.",
+        "You will be told what to do and what to avoid before you leave. How long relief lasts varies with the condition and how worn the joint is. The treated nerve can regrow over time, and if the pain returns, the procedure can often be repeated; the consultant will give you a realistic answer for your case."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "Safety and side effects",
+      "paragraphs": [
+        "Radiofrequency ablation is generally well tolerated. Common, usually short-lived effects include soreness, bruising and a patch of numbness or altered sensation over the treated area. Less often there can be temporary nerve irritation, and, rarely, infection or bleeding.",
+        "Image guidance and careful positioning of the probe keep the treatment to the intended sensory nerve. Tell the team about blood thinners when you book, and do not stop them on your own. Seek urgent care for fever, spreading redness, new weakness or pain that is rapidly getting worse."
+      ],
+      "bullets": []
+    }
+  ],
+  "conditions": [
+    "knee-pain-treatment",
+    "neck-pain-treatment",
+    "cervical-spondylosis-treatment",
+    "low-back-pain-treatment",
+    "trigeminal-neuralgia-treatment"
+  ],
+  "related": [
+    "non-surgical-nerve-hydrodissection-nerve-blocks",
+    "regenerative-medicine",
+    "prolotherapy"
+  ],
+  "faqs": [
+    {
+      "q": "What is COOLIEF cooled radiofrequency?",
+      "a": "COOLIEF is a US FDA-cleared cooled radiofrequency system, and it is what Halcyon uses for knee pain. A water-cooled probe allows the treatment to cover a larger volume of tissue than standard radiofrequency, so the genicular nerves that carry pain from the knee can be reached more completely. It is done under local anaesthetic as day care."
+    },
+    {
+      "q": "Why is a diagnostic block done before radiofrequency?",
+      "a": "A diagnostic block is a small injection of local anaesthetic on the suspected nerve. If your pain settles afterwards, that nerve is carrying the pain and radiofrequency is likely to help. If it does not, the source lies elsewhere and the plan changes. At Halcyon, radiofrequency is never the first step; in the neck and low back this means a medial branch block first."
+    },
+    {
+      "q": "Is radiofrequency ablation painful?",
+      "a": "The skin and deeper tissues are numbed with local anaesthetic, and you stay awake and able to talk to the consultant throughout. Most people feel pressure and some warmth or aching during the treatment rather than sharp pain. Soreness at the needle sites for a few days afterwards is common, and you will be told how to manage it."
+    },
+    {
+      "q": "How long does relief from radiofrequency ablation last?",
+      "a": "It varies with the condition, how worn the joint is and what is causing the pain, which is why the diagnostic scan and block come first. The treated nerve can gradually regrow, and if the pain returns, the procedure can often be repeated. The consultant will give you a realistic answer for your case rather than a number that fits everyone."
+    },
+    {
+      "q": "Can radiofrequency ablation help me avoid knee replacement?",
+      "a": "For many people with knee osteoarthritis pain, cooled radiofrequency is a way to reduce pain without surgery or to put surgery off. It treats the nerves that report pain rather than rebuilding the joint, so it does not correct deformity. In advanced grade 4 arthritis with joint deformity, a replacement may still be the right answer, and you will be told that plainly."
+    },
+    {
+      "q": "Will radiofrequency ablation weaken my muscles?",
+      "a": "The procedure targets small sensory nerves that carry pain signals, chosen so that the nerves controlling the muscles you use to move are not treated. You may notice a patch of numbness or altered sensation over the treated area for a while. Report any new weakness to the team straight away."
+    }
+  ],
+  "schema": {
+    "alternate_names": [
+      "Radiofrequency ablation (RFA)",
+      "Cooled radiofrequency ablation (COOLIEF)",
+      "Genicular nerve radiofrequency",
+      "Facet joint radiofrequency denervation",
+      "Radiofrequency neurotomy"
+    ],
+    "procedure_type": "Percutaneous",
+    "body_locations": [
+      "Knee",
+      "Neck",
+      "Cervical spine",
+      "Lower back",
+      "Face"
+    ],
+    "how_performed": "Under image guidance and local anaesthetic, a probe placed through a needle delivers a controlled radiofrequency current to the sensory nerve confirmed by a diagnostic block, interrupting its pain signal.",
+    "preparation": "A diagnostic block must first confirm the source; bring recent scan reports and a medicine list, and tell the team about blood thinners without stopping them on your own.",
+    "followup": "You go home the same day with aftercare instructions and a review date to assess the effect once any post-procedure soreness has settled."
+  }
+}

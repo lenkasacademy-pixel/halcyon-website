@@ -1,0 +1,104 @@
+{
+  "slug": "dr-pss-kiran-profile",
+  "name": "Dr. PSS Kiran",
+  "title": "Dr. PSS Kiran, Pain Specialist in Hyderabad | Halcyon",
+  "meta_description": "Dr. PSS Kiran (MBBS, MD Radiodiagnosis, Fellowship in Pain Management), Director of Halcyon, Kukatpally: sports injury and regenerative treatment.",
+  "h1": "Dr. PSS Kiran",
+  "role": "Director, Halcyon Pain Management Centre",
+  "credentials_line": "MBBS, MD (Radiodiagnosis), Fellowship in Pain Management",
+  "summary": "Dr. PSS Kiran is a pain management consultant and Director of Halcyon Pain Management Centre in Kukatpally, Hyderabad. He holds an MD in Radiodiagnosis and a Fellowship in Pain Management, with a special interest in musculoskeletal intervention, sports injury and regenerative medicine. He reads your scan himself and, when a procedure is right, performs it in the same appointment.",
+  "sections": [
+    {
+      "h2": "Background and approach",
+      "paragraphs": [
+        "Dr. Kiran’s background is in radiology: his MD is in Radiodiagnosis, the specialty of reading and interpreting medical images. He went on to a Fellowship in Pain Management, so the person interpreting your scan is also the person who treats what it shows.",
+        "That is why a consultation with him includes a diagnostic ultrasound rather than a referral for one. Nothing is lost between the report and the needle, and nothing is injected on a hunch. If the scan rules out the structure the examination suspected, you leave with a different plan rather than a procedure you did not need."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "Qualifications and registration",
+      "paragraphs": [
+        "Dr. Kiran holds the following qualifications and is registered with the Telangana State Medical Council."
+      ],
+      "bullets": [
+        "MBBS",
+        "MD (Radiodiagnosis)",
+        "Fellowship in Pain Management",
+        "Regd. No. 62201, Telangana State Medical Council"
+      ]
+    },
+    {
+      "h2": "Special interests",
+      "paragraphs": [
+        "Dr. Kiran’s special interest is musculoskeletal intervention, sports injury and regenerative medicine. This centres on tendon, ligament and overuse problems, where the aim is to get a structure healing again rather than simply to numb it.",
+        "In practice this includes regenerative treatment with growth factor concentrate from your own blood, prolotherapy for slack ligaments and tendons, and ultrasound-guided treatment of sports injuries, knee and shoulder problems, tennis elbow, plantar fasciitis and Achilles pain. When an injury is treated, return-to-sport timing is planned with you."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "How a consultation with Dr. Kiran works",
+      "paragraphs": [
+        "A consultation follows the same steps as every appointment at Halcyon’s Kukatpally centre. You register, Dr. Kiran takes your history and examines you, and the painful area is scanned with diagnostic ultrasound in the same room. The findings decide the treatment, and if a procedure is right, it is usually done there and then under local anaesthetic as day care. Most people are home within about two hours of arriving.",
+        "Bring any recent X-ray, MRI, CT or ultrasound reports, a list of your medicines and notes from earlier treatment. Tell the team if you take blood thinners, and do not stop any medicine on your own. Costs are given at the consultation, before anything is booked."
+      ],
+      "bullets": []
+    }
+  ],
+  "credentials": [
+    {
+      "name": "MBBS",
+      "issuer": ""
+    },
+    {
+      "name": "MD (Radiodiagnosis)",
+      "issuer": ""
+    },
+    {
+      "name": "Fellowship in Pain Management",
+      "issuer": ""
+    }
+  ],
+  "registration": {
+    "number": "62201",
+    "council": "Telangana State Medical Council"
+  },
+  "conditions": [
+    "sports-injuries-treatment",
+    "knee-pain-treatment",
+    "shoulder-pain",
+    "advanced-elbow-hand-and-wrist-pain-treatment",
+    "foot-ankle-pain-treatment",
+    "the-best-hip-pain-treatment-in-hyderabad",
+    "low-back-pain-treatment",
+    "neck-pain-treatment",
+    "cervical-spondylosis-treatment",
+    "sciatica",
+    "slipped-disc-treatment",
+    "trigeminal-neuralgia-treatment"
+  ],
+  "treatments": [
+    "regenerative-medicine",
+    "prolotherapy",
+    "non-surgical-nerve-hydrodissection-nerve-blocks",
+    "radiofrequency-ablations"
+  ],
+  "faqs": [
+    {
+      "q": "What does Dr. PSS Kiran specialise in?",
+      "a": "Dr. PSS Kiran specialises in interventional pain management, with a special interest in musculoskeletal intervention, sports injury and regenerative medicine. He treats tendon, ligament, joint and overuse problems without surgery, using ultrasound-guided procedures such as growth factor concentrate injections and prolotherapy, and he also performs nerve blocks, hydrodissection and radiofrequency ablation."
+    },
+    {
+      "q": "Why does a radiologist treat pain?",
+      "a": "Dr. Kiran’s MD is in Radiodiagnosis, the specialty of interpreting medical images, and he has a Fellowship in Pain Management. Because most procedures at Halcyon are guided by ultrasound, that background means the doctor reading your scan is the same doctor placing the needle, with no gap between the report and the treatment."
+    },
+    {
+      "q": "Can Dr. Kiran treat my sports injury without surgery?",
+      "a": "Many tendon, ligament and overuse injuries can be treated without surgery. The injury is scanned to grade the damage, then treated with regenerative therapy or prolotherapy so the tissue heals rather than just quietens down. If the scan shows an injury that needs a surgical opinion, Dr. Kiran will tell you plainly, and return-to-sport timing is planned with you."
+    },
+    {
+      "q": "How do I book an appointment with Dr. Kiran?",
+      "a": "Call +91 77880 91092 and ask for Dr. Kiran by name. Appointments are Monday to Saturday, 9 am to 6 pm, at 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, above the Max showroom. Bring any recent X-ray, MRI or scan reports and a list of your medicines."
+    }
+  ]
+}
