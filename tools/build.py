@@ -124,8 +124,8 @@ IMG_ALT = {
     'radiofrequency-ablations': 'Diagram of genicular nerve radiofrequency ablation at the knee',
     'prolotherapy': 'A prolotherapy injection being placed at the knee',
     'non-surgical-nerve-hydrodissection-nerve-blocks': 'A hand held to show the path of an entrapped nerve',
-    'dr-d-pallavi-profile': 'Dr. Dasyam Pallavi, Director and pain specialist at Halcyon, Hyderabad',
-    'dr-pss-kiran-profile': 'Dr. PSS Kiran, Director and pain specialist at Halcyon, Hyderabad',
+    'dr-d-pallavi-profile': 'Dr. Dasyam Pallavi, consultant in pain management at Halcyon, Hyderabad',
+    'dr-pss-kiran-profile': 'Dr. PSS Kiran, consultant radiologist in musculoskeletal imaging at Halcyon, Hyderabad',
 }
 
 HOME_FAQ = [  # the assistant's approved answers, shown on the page so they can be read and cited
@@ -148,7 +148,7 @@ HOME_FAQ = [  # the assistant's approved answers, shown on the page so they can 
     ('What should I bring to my first appointment?',
      'Bring any recent X-ray, MRI, CT or ultrasound reports, a list of the medicines you take, and notes from any earlier treatment for the same pain. Tell the team when you book if you take blood thinners — they need planning before an injection.'),
     ('Who are the doctors at Halcyon?',
-     'Dr. Dasyam Pallavi (MBBS, DA, CIPS, FIAPM — Certified Interventional Pain Sonologist, World Institute of Pain; Fellow, Indian Academy of Pain Medicine) and Dr. PSS Kiran (MBBS, MD Radiodiagnosis, Fellowship in Pain Management), both Directors of the centre. The same consultant scans you, plans the procedure and performs it.'),
+     'Dr. Dasyam Pallavi, Consultant – Pain Management (MBBS, DA, FIAPM, CIPS — Fellow of the Indian Academy of Pain Medicine; Certified Interventional Pain Sonologist, World Institute of Pain, USA), assesses you and performs the ultrasound-guided procedures. Dr. PSS Kiran, Consultant Radiologist – Musculoskeletal Imaging & Image Guidance (MBBS, MD Radiodiagnosis, Fellowship in Pain Management), provides musculoskeletal ultrasound evaluation, imaging correlation and image guidance, working with her.'),
 ]
 
 CONTACT_FAQ = [
@@ -219,7 +219,7 @@ def reg():
         crumbs=[('Pain Conditions', 'pain-conditions/')])
     add(path='our-doctors/', file='our-doctors/index.html', kind='hub-doctors', priority='0.8',
         title='Pain Specialists in Hyderabad — Our Doctors | Halcyon',
-        desc='Meet Dr. Dasyam Pallavi and Dr. PSS Kiran, the pain management specialists and Directors of Halcyon in Kukatpally, Hyderabad, who scan, plan and treat in one visit.',
+        desc='Meet Dr. Dasyam Pallavi, consultant in pain management, and Dr. PSS Kiran, consultant radiologist for musculoskeletal imaging, at Halcyon, Kukatpally, Hyderabad.',
         crumbs=[('Our Doctors', 'our-doctors/')])
     add(path='about-us/', file='about-us/index.html', kind='about', priority='0.7',
         title='About Halcyon Pain Management Centre, Kukatpally',
@@ -303,10 +303,9 @@ def website_node():
 def doctor_node(slug, full=False):
     d = DOCTORS[slug]
     n = {'@type': 'Person', '@id': doctor_id(slug), 'name': d['name'], 'honorificPrefix': 'Dr.',
-         'jobTitle': d['role'].split(',')[0], 'worksFor': {'@id': ORG}, 'url': U + slug + '/',
+         'jobTitle': d['role'], 'worksFor': {'@id': ORG}, 'url': U + slug + '/',
          'image': U + 'assets/img/' + IMG[slug], 'description': d['summary'],
-         'knowsAbout': [CONDITIONS[c]['name'] for c in d['conditions'] if c in CONDITIONS] +
-                       [TREATMENTS[t]['name'] for t in d['treatments'] if t in TREATMENTS],
+         'knowsAbout': d.get('knows_about', []) + [CONDITIONS[c]['name'] for c in d['conditions'] if c in CONDITIONS],
          'hasCredential': [
              dict({'@type': 'EducationalOccupationalCredential', 'name': c['name'],
                    'credentialCategory': 'certification' if re.search(r'Certif|Fellow', c['name']) else 'degree'},
@@ -661,7 +660,7 @@ def doctors_card(pre, skip=None):
         if s == skip:
             continue
         d = DOCTORS[s]
-        items.append(f'<a href="{pre}{s}/"><img src="{pre}assets/img/{IMG[s]}" alt="" width="52" height="52" loading="lazy" decoding="async"><span><b>{esc(d["name"])}</b><span>{esc(d["credentials_line"])}</span></span></a>')
+        items.append(f'<a href="{pre}{s}/"><img src="{pre}assets/img/{IMG[s]}" alt="" width="52" height="52" loading="lazy" decoding="async"><span><b>{esc(d["name"])}</b><span>{esc(d.get("short_role", d["credentials_line"]))}</span></span></a>')
     head = 'Also at Halcyon' if skip else 'Who will see you'
     return f'<section class="card"><h2>{head}</h2><div class="docs">{"".join(items)}</div></section>'
 
@@ -839,9 +838,9 @@ def render_doctor(p):
     main = f'''<article class="pg__main">
   <p class="pg__lead">{esc(d['summary'])}</p>
   {sections_html(d['sections'])}
-  <section class="pg__block" id="conditions"><h2>Conditions treated</h2>
+  <section class="pg__block" id="conditions"><h2>{esc(d.get('conditions_heading', 'Conditions treated'))}</h2>
     <ul class="chips">{conds}</ul></section>
-  <section class="pg__block" id="treatments"><h2>Treatments performed</h2>
+  <section class="pg__block" id="treatments"><h2>{esc(d.get('treatments_heading', 'Treatments performed'))}</h2>
     <ul class="chips">{treats}</ul></section>
   {faq_html([(f['q'], f['a']) for f in d['faqs']])}
 </article>'''
@@ -849,12 +848,11 @@ def render_doctor(p):
   {figure(pre, s, IMG_ALT[s], portrait=True, eager=True)}
   {facts_card(creds).replace('At a glance', 'Credentials')}
   {doctors_card(pre, skip=s)}
-  {book_card(pre, 'Book with ' + d['name'].replace('Dr. Dasyam ', 'Dr. ').replace('Dr. PSS ', 'Dr. '))}
+  {book_card(pre, 'Book an appointment')}
 </aside>'''
-    body = (hero(p, d['role'], d['h1'],
-                 d['credentials_line'] + '. Examines, scans and treats in the same appointment at Halcyon, Kukatpally.')
+    body = (hero(p, 'Our Doctors', d['h1'], d['role'] + '. ' + d['hero_sub'])
             + f'\n<div class="pg"><div class="pg__grid">{main}{aside}</div></div>\n'
-            + cta(pre, 'One consultant, from scan to treatment.',
+            + cta(pre, 'The examination and the imaging, read together.',
                   'Book a consultation and the diagnostic ultrasound happens in the same appointment. Bring any recent X-ray, MRI or scan reports you already have.'))
     return shell(p, 'doctor', body)
 
@@ -970,8 +968,8 @@ def upgrade_home(s):
                        ('Prolotherapy', 'A prolotherapy injection being placed at the knee'),
                        ('Nerve Hydrodissection', 'A hand held to show the path of an entrapped nerve')]:
         s = re.sub(r'(data-label="%s">\s*<img[^>]*?)alt=""' % re.escape(label), lambda m: m.group(1) + 'alt="%s"' % alt, s, count=1)
-    s = s.replace('alt="Dr. Dasyam Pallavi" loading="lazy">', 'alt="Dr. Dasyam Pallavi, Director and pain specialist at Halcyon, Hyderabad" loading="lazy">')
-    s = s.replace('alt="Dr. PSS Kiran" loading="lazy">', 'alt="Dr. PSS Kiran, Director and pain specialist at Halcyon, Hyderabad" loading="lazy">')
+    s = re.sub(r'alt="Dr\. Dasyam Pallavi[^"]*"( loading="lazy">)', lambda m: 'alt="%s"%s' % (IMG_ALT['dr-d-pallavi-profile'], m.group(1)), s)
+    s = re.sub(r'alt="Dr\. PSS Kiran[^"]*"( loading="lazy">)', lambda m: 'alt="%s"%s' % (IMG_ALT['dr-pss-kiran-profile'], m.group(1)), s)
     # doctor cards -> profile pages
     for name, slug in [('Dr. Dasyam Pallavi', 'dr-d-pallavi-profile'), ('Dr. PSS Kiran', 'dr-pss-kiran-profile')]:
         pat = r'(<h3 class="dr__name">%s</h3>(?:(?!</article>).)*?)(\s*</div>\s*</article>)' % re.escape(name)
@@ -1083,7 +1081,7 @@ Sitemap: {U}sitemap.xml
             f'- Email: {SITE["email"]}',
             f'- Hours: {SITE["hours_text"]}',
             f'- Map: {SITE["map"]}',
-            '- Doctors: Dr. Dasyam Pallavi (Director; MBBS, DA, CIPS, FIAPM) and Dr. PSS Kiran (Director; MBBS, MD Radiodiagnosis, Fellowship in Pain Management)',
+            '- Doctors: Dr. Dasyam Pallavi — Consultant, Pain Management; MBBS, DA, FIAPM (Fellow, Indian Academy of Pain Medicine), CIPS (Certified Interventional Pain Sonologist, World Institute of Pain, USA); TSMC Reg. No. 61959; performs the ultrasound-guided procedures. Dr. PSS Kiran — Consultant Radiologist, Musculoskeletal Imaging & Image Guidance; MBBS, MD (Radiodiagnosis), Fellowship in Pain Management, additional training in musculoskeletal ultrasound; TSMC Reg. No. 62201; imaging evaluation and image guidance, in collaboration with Dr. Pallavi.',
             '- How it works: the consultant who examines you scans you with diagnostic ultrasound and, if a procedure is right, performs it in the same appointment. Procedures are image-guided, under local anaesthetic, as day care — no general anaesthesia and no admission; most people are home within about two hours.',
             '- Non-surgical: the one case where a replacement is still advised is advanced grade 4 knee arthritis with deformity.',
             '- Costs are given at consultation, before anything is booked.', '',

@@ -2,48 +2,63 @@
   "slug": "dr-d-pallavi-profile",
   "name": "Dr. Dasyam Pallavi",
   "title": "Dr. Dasyam Pallavi, Pain Specialist in Hyderabad | Halcyon",
-  "meta_description": "Dr. Dasyam Pallavi (MBBS, DA, CIPS, FIAPM), Director of Halcyon, Kukatpally: ultrasound-guided pain procedures and cooled RF, without surgery.",
+  "meta_description": "Dr. Dasyam Pallavi (MBBS, DA, FIAPM, CIPS) is a consultant in pain management at Halcyon, Kukatpally, certified in ultrasound-guided pain interventions.",
   "h1": "Dr. Dasyam Pallavi",
-  "role": "Director, Halcyon Pain Management Centre",
-  "credentials_line": "MBBS, DA, CIPS, FIAPM",
-  "summary": "Dr. Dasyam Pallavi is a pain management consultant and Director of Halcyon Pain Management Centre in Kukatpally, Hyderabad. She is a Certified Interventional Pain Sonologist (World Institute of Pain) and a Fellow of the Indian Academy of Pain Medicine, with a special interest in musculoskeletal ultrasound-guided procedures and cooled radiofrequency ablation. She examines you, scans you and, when a procedure is right, performs it in the same appointment.",
+  "role": "Consultant – Pain Management",
+  "credentials_line": "MBBS, DA, FIAPM, CIPS",
+  "hero_sub": "MBBS, DA, FIAPM, CIPS. Certified Interventional Pain Sonologist, World Institute of Pain (WIP), USA — consulting at Halcyon, Kukatpally.",
+  "summary": "Dr. Dasyam Pallavi is a consultant in pain management at Halcyon Pain Management Centre in Kukatpally, Hyderabad. She holds the Certified Interventional Pain Sonologist (CIPS) credential awarded by the World Institute of Pain (WIP), USA, and is a Fellow of the Indian Academy of Pain Medicine (FIAPM). Her clinical work centres on ultrasound-guided pain interventions for musculoskeletal and nerve pain.",
   "sections": [
     {
-      "h2": "Background and approach",
+      "h2": "International certification in ultrasound-guided pain interventions",
       "paragraphs": [
-        "Dr. Pallavi’s background is in anaesthesia, reflected in her DA qualification, which is the route many interventional pain physicians take into pain medicine. The skills overlap closely: the same local anaesthetic medicines and fine needles, aimed at one painful structure rather than the whole body.",
-        "Her approach is to find the source of the pain before treating it. She runs the consultation and the diagnostic ultrasound herself, in the same room. Where the scan confirms what the examination suggested, the procedure follows under local anaesthetic, so you stay awake and can tell her what you feel while she works. If the scan points elsewhere, you leave with a different plan rather than a procedure you did not need."
+        "Dr. Dasyam Pallavi holds the Certified Interventional Pain Sonologist (CIPS) credential awarded by the World Institute of Pain (WIP), USA.",
+        "CIPS is an international certification focused specifically on ultrasound-guided interventional pain procedures. It is not simply a course-completion certificate: the credential is awarded after successfully completing the World Institute of Pain’s structured examination process, which includes written, oral and practical, cadaver-based assessment.",
+        "The certification assesses a physician’s knowledge of the relevant anatomy and sonoanatomy, together with the practical application of ultrasound in interventional pain procedures. It is a specialised international credential held by a comparatively limited group of physicians who have completed the World Institute of Pain’s certification process."
       ],
       "bullets": []
+    },
+    {
+      "h2": "What CIPS means for patients",
+      "paragraphs": [
+        "Many modern pain procedures can be performed under real-time ultrasound guidance, which lets the physician see the relevant nerves, muscles, tendons, joints and surrounding structures while performing the intervention.",
+        "A CIPS-certified physician has undergone a dedicated international assessment in the use of ultrasound for interventional pain procedures. This is particularly relevant to procedures involving peripheral nerves, joints and musculoskeletal structures."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "Fellowship in Pain Medicine",
+      "paragraphs": [
+        "Dr. Pallavi is also a Fellow of the Indian Academy of Pain Medicine (FIAPM), reflecting dedicated training and professional development in the assessment and management of patients with acute and chronic pain conditions."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "Clinical areas of interest",
+      "paragraphs": [
+        "Dr. Pallavi’s clinical work at Halcyon in Hyderabad includes:"
+      ],
+      "bullets": [
+        "Ultrasound-guided pain interventions",
+        "Musculoskeletal ultrasound",
+        "Peripheral nerve interventions",
+        "Radiofrequency procedures",
+        "Joint and periarticular interventions",
+        "Management of chronic musculoskeletal pain"
+      ]
     },
     {
       "h2": "Qualifications and registration",
       "paragraphs": [
-        "Dr. Pallavi holds the following qualifications and is registered with the Telangana State Medical Council."
+        "Treatment is individualised after clinical assessment and a review of the relevant investigations."
       ],
       "bullets": [
         "MBBS",
-        "DA (Anaesthesiology)",
-        "CIPS — Certified Interventional Pain Sonologist, World Institute of Pain",
-        "FIAPM — Fellow, Indian Academy of Pain Medicine",
-        "Regd. No. 61959, Telangana State Medical Council"
+        "DA",
+        "FIAPM – Fellow of the Indian Academy of Pain Medicine",
+        "CIPS – Certified Interventional Pain Sonologist, World Institute of Pain (WIP), USA",
+        "Telangana State Medical Council Registration No. 61959"
       ]
-    },
-    {
-      "h2": "Special interests",
-      "paragraphs": [
-        "Dr. Pallavi’s special interest is musculoskeletal ultrasound-guided procedures and cooled radiofrequency ablation. The CIPS certification she holds from the World Institute of Pain relates to exactly this work: placing a needle where the ultrasound image shows it needs to go.",
-        "In practice this covers knee pain treated with the US FDA-cleared COOLIEF cooled radiofrequency system, neck and low back pain where a medial branch block confirms the source before radiofrequency, and ultrasound-guided treatment of joints, tendons and nerves in the shoulder, hip, elbow, wrist, foot and ankle."
-      ],
-      "bullets": []
-    },
-    {
-      "h2": "How a consultation with Dr. Pallavi works",
-      "paragraphs": [
-        "A consultation follows the same steps as every appointment at Halcyon’s Kukatpally centre. You register, Dr. Pallavi takes your history and examines you, and the painful joint or nerve is scanned with diagnostic ultrasound in the same room. The findings decide the treatment, and if a procedure is right, it is usually done there and then as day care. Most people are home within about two hours of arriving.",
-        "Bring any recent X-ray, MRI, CT or ultrasound reports, a list of your medicines and notes from earlier treatment. Tell the team if you take blood thinners, and do not stop any medicine on your own. Costs are given at the consultation, before anything is booked."
-      ],
-      "bullets": []
     }
   ],
   "credentials": [
@@ -52,36 +67,46 @@
       "issuer": ""
     },
     {
-      "name": "Diploma in Anaesthesiology (DA)",
+      "name": "DA",
       "issuer": ""
     },
     {
-      "name": "Certified Interventional Pain Sonologist (CIPS)",
-      "issuer": "World Institute of Pain"
+      "name": "Fellow of the Indian Academy of Pain Medicine (FIAPM)",
+      "issuer": "Indian Academy of Pain Medicine"
     },
     {
-      "name": "Fellow, Indian Academy of Pain Medicine (FIAPM)",
-      "issuer": "Indian Academy of Pain Medicine"
+      "name": "Certified Interventional Pain Sonologist (CIPS)",
+      "issuer": "World Institute of Pain (WIP), USA"
     }
   ],
   "registration": {
     "number": "61959",
     "council": "Telangana State Medical Council"
   },
+  "knows_about": [
+    "Ultrasound-guided pain interventions",
+    "Musculoskeletal ultrasound",
+    "Peripheral nerve interventions",
+    "Radiofrequency procedures",
+    "Joint and periarticular interventions",
+    "Chronic musculoskeletal pain"
+  ],
+  "conditions_heading": "Conditions she treats",
   "conditions": [
     "knee-pain-treatment",
-    "neck-pain-treatment",
-    "cervical-spondylosis-treatment",
-    "low-back-pain-treatment",
     "shoulder-pain",
     "the-best-hip-pain-treatment-in-hyderabad",
+    "low-back-pain-treatment",
+    "neck-pain-treatment",
+    "cervical-spondylosis-treatment",
+    "sciatica",
+    "slipped-disc-treatment",
     "advanced-elbow-hand-and-wrist-pain-treatment",
     "foot-ankle-pain-treatment",
     "sports-injuries-treatment",
-    "sciatica",
-    "slipped-disc-treatment",
     "trigeminal-neuralgia-treatment"
   ],
+  "treatments_heading": "Procedures she performs",
   "treatments": [
     "radiofrequency-ablations",
     "non-surgical-nerve-hydrodissection-nerve-blocks",
@@ -90,20 +115,25 @@
   ],
   "faqs": [
     {
-      "q": "What does Dr. Pallavi specialise in?",
-      "a": "Dr. Dasyam Pallavi specialises in interventional pain management, with a special interest in musculoskeletal ultrasound-guided procedures and cooled radiofrequency ablation. She is a Certified Interventional Pain Sonologist (World Institute of Pain) and a Fellow of the Indian Academy of Pain Medicine, and she treats knee, spine, joint and nerve pain without surgery."
+      "q": "What is a Certified Interventional Pain Sonologist (CIPS)?",
+      "a": "CIPS is an international credential from the World Institute of Pain (WIP), USA, focused on ultrasound-guided interventional pain procedures. It is awarded after a structured examination with written, oral and practical, cadaver-based assessment of anatomy, sonoanatomy and the use of ultrasound during procedures."
     },
     {
-      "q": "What do CIPS and FIAPM mean?",
-      "a": "CIPS stands for Certified Interventional Pain Sonologist, a certification from the World Institute of Pain in ultrasound-guided interventional pain procedures. FIAPM means Fellow of the Indian Academy of Pain Medicine. Dr. Pallavi also holds an MBBS and a DA (Anaesthesiology), and is registered with the Telangana State Medical Council, Regd. No. 61959."
+      "q": "What does Dr. Dasyam Pallavi specialise in?",
+      "a": "Ultrasound-guided pain interventions: musculoskeletal ultrasound, peripheral nerve interventions, radiofrequency procedures, joint and periarticular interventions, and the management of chronic musculoskeletal pain. Treatment is individualised after clinical assessment and a review of your investigations."
     },
     {
-      "q": "Will Dr. Pallavi perform the procedure herself?",
-      "a": "Yes. At Halcyon the consultant who examines you also performs the diagnostic ultrasound and, if a procedure is indicated, carries it out in the same appointment. Nothing is handed to a second team. Procedures are image-guided and done under local anaesthetic as day care, so you stay awake and go home the same day."
+      "q": "What is FIAPM?",
+      "a": "FIAPM means Fellow of the Indian Academy of Pain Medicine. It reflects dedicated training and professional development in assessing and managing patients with acute and chronic pain conditions."
+    },
+    {
+      "q": "Is Dr. Pallavi a registered medical practitioner?",
+      "a": "Yes. Dr. Dasyam Pallavi is registered with the Telangana State Medical Council, registration number 61959."
     },
     {
       "q": "How do I book an appointment with Dr. Pallavi?",
-      "a": "Call +91 77880 91092 and ask for Dr. Pallavi by name. Appointments are Monday to Saturday, 9 am to 6 pm, at 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, above the Max showroom. Bring any recent X-ray, MRI or scan reports and a list of your medicines."
+      "a": "Call +91 77880 91092. The clinic is open Monday to Saturday, 9 am to 6 pm, at the 3rd floor of the KKR Commercial Complex, Kukatpally Y Junction, Hyderabad. Bring any recent X-ray, MRI or ultrasound reports and a list of your medicines."
     }
-  ]
+  ],
+  "short_role": "Consultant – Pain Management"
 }

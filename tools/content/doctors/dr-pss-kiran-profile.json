@@ -1,48 +1,61 @@
 {
   "slug": "dr-pss-kiran-profile",
   "name": "Dr. PSS Kiran",
-  "title": "Dr. PSS Kiran, Pain Specialist in Hyderabad | Halcyon",
-  "meta_description": "Dr. PSS Kiran (MBBS, MD Radiodiagnosis, Fellowship in Pain Management), Director of Halcyon, Kukatpally: sports injury and regenerative treatment.",
+  "title": "Dr. PSS Kiran, MSK Radiologist in Hyderabad | Halcyon",
+  "meta_description": "Dr. PSS Kiran (MBBS, MD Radiodiagnosis, Fellowship in Pain Management) is Halcyon’s consultant radiologist for musculoskeletal imaging and image guidance.",
   "h1": "Dr. PSS Kiran",
-  "role": "Director, Halcyon Pain Management Centre",
+  "role": "Consultant Radiologist – Musculoskeletal Imaging & Image Guidance",
   "credentials_line": "MBBS, MD (Radiodiagnosis), Fellowship in Pain Management",
-  "summary": "Dr. PSS Kiran is a pain management consultant and Director of Halcyon Pain Management Centre in Kukatpally, Hyderabad. He holds an MD in Radiodiagnosis and a Fellowship in Pain Management, with a special interest in musculoskeletal intervention, sports injury and regenerative medicine. He reads your scan himself and, when a procedure is right, performs it in the same appointment.",
+  "hero_sub": "MBBS, MD (Radiodiagnosis), Fellowship in Pain Management — musculoskeletal imaging, ultrasound and image guidance at Halcyon, Kukatpally.",
+  "summary": "Dr. PSS Kiran is the consultant radiologist for musculoskeletal imaging and image guidance at Halcyon Pain Management Centre in Kukatpally, Hyderabad. An MD Radiodiagnosis physician with additional fellowship training in pain management and musculoskeletal ultrasound, he focuses on the radiological evaluation of musculoskeletal and pain conditions — reading X-rays, MRI and ultrasound alongside the clinical picture.",
   "sections": [
     {
-      "h2": "Background and approach",
+      "h2": "Musculoskeletal imaging in pain management",
       "paragraphs": [
-        "Dr. Kiran’s background is in radiology: his MD is in Radiodiagnosis, the specialty of reading and interpreting medical images. He went on to a Fellowship in Pain Management, so the person interpreting your scan is also the person who treats what it shows.",
-        "That is why a consultation with him includes a diagnostic ultrasound rather than a referral for one. Nothing is lost between the report and the needle, and nothing is injected on a hunch. If the scan rules out the structure the examination suspected, you leave with a different plan rather than a procedure you did not need."
+        "Dr. PSS Kiran is an MD Radiodiagnosis physician with additional fellowship training in Pain Management and Musculoskeletal Ultrasound. His clinical interests include musculoskeletal imaging, musculoskeletal ultrasound and the imaging evaluation of pain-related conditions.",
+        "His role at Halcyon focuses on the radiological evaluation of musculoskeletal and pain conditions, combining clinical information with relevant imaging such as X-rays, MRI and ultrasound."
       ],
       "bullets": []
     },
     {
-      "h2": "Qualifications and registration",
+      "h2": "Why imaging matters in pain management",
       "paragraphs": [
-        "Dr. Kiran holds the following qualifications and is registered with the Telangana State Medical Council."
+        "An abnormality seen on an MRI or X-ray does not always mean it is the actual source of a patient’s pain. Imaging findings need to be understood in the context of the patient’s symptoms and clinical examination.",
+        "Musculoskeletal ultrasound gives a real-time view of muscles, tendons, ligaments, joints and peripheral nerves, which helps assess many musculoskeletal conditions dynamically, as they move."
       ],
+      "bullets": []
+    },
+    {
+      "h2": "An integrated clinical and imaging approach",
+      "paragraphs": [
+        "At Halcyon, clinical assessment and musculoskeletal imaging are brought together to help identify the likely source of pain and to assist in appropriate treatment planning.",
+        "Dr. Kiran’s background in Radiodiagnosis, together with his additional training in Pain Management and Musculoskeletal Ultrasound, allows him to provide focused musculoskeletal ultrasound evaluation, imaging correlation and radiological assistance for image-guided pain procedures in collaboration with Dr. Dasyam Pallavi. His expertise complements her interventional pain practice, so the clinical and imaging information are considered together as part of an individualised approach to each patient."
+      ],
+      "bullets": []
+    },
+    {
+      "h2": "Areas of clinical interest",
+      "paragraphs": [],
+      "bullets": [
+        "Musculoskeletal ultrasound",
+        "Musculoskeletal imaging",
+        "Ultrasound evaluation of peripheral nerves",
+        "Ultrasound assessment of muscles, tendons, ligaments and joints",
+        "Correlation of MRI, X-ray and ultrasound findings in musculoskeletal pain",
+        "Imaging evaluation of spinal and musculoskeletal pain conditions",
+        "Radiological planning and image guidance for pain procedures"
+      ]
+    },
+    {
+      "h2": "Qualifications and registration",
+      "paragraphs": [],
       "bullets": [
         "MBBS",
         "MD (Radiodiagnosis)",
         "Fellowship in Pain Management",
-        "Regd. No. 62201, Telangana State Medical Council"
+        "Additional fellowship training in Musculoskeletal Ultrasound",
+        "Telangana State Medical Council Registration No. 62201"
       ]
-    },
-    {
-      "h2": "Special interests",
-      "paragraphs": [
-        "Dr. Kiran’s special interest is musculoskeletal intervention, sports injury and regenerative medicine. This centres on tendon, ligament and overuse problems, where the aim is to get a structure healing again rather than simply to numb it.",
-        "In practice this includes regenerative treatment with growth factor concentrate from your own blood, prolotherapy for slack ligaments and tendons, and ultrasound-guided treatment of sports injuries, knee and shoulder problems, tennis elbow, plantar fasciitis and Achilles pain. When an injury is treated, return-to-sport timing is planned with you."
-      ],
-      "bullets": []
-    },
-    {
-      "h2": "How a consultation with Dr. Kiran works",
-      "paragraphs": [
-        "A consultation follows the same steps as every appointment at Halcyon’s Kukatpally centre. You register, Dr. Kiran takes your history and examines you, and the painful area is scanned with diagnostic ultrasound in the same room. The findings decide the treatment, and if a procedure is right, it is usually done there and then under local anaesthetic as day care. Most people are home within about two hours of arriving.",
-        "Bring any recent X-ray, MRI, CT or ultrasound reports, a list of your medicines and notes from earlier treatment. Tell the team if you take blood thinners, and do not stop any medicine on your own. Costs are given at the consultation, before anything is booked."
-      ],
-      "bullets": []
     }
   ],
   "credentials": [
@@ -57,48 +70,66 @@
     {
       "name": "Fellowship in Pain Management",
       "issuer": ""
+    },
+    {
+      "name": "Fellowship training in Musculoskeletal Ultrasound",
+      "issuer": ""
     }
   ],
   "registration": {
     "number": "62201",
     "council": "Telangana State Medical Council"
   },
+  "knows_about": [
+    "Musculoskeletal ultrasound",
+    "Musculoskeletal imaging",
+    "Peripheral nerve ultrasound",
+    "MRI, X-ray and ultrasound correlation in musculoskeletal pain",
+    "Imaging of spinal and musculoskeletal pain conditions",
+    "Image guidance for pain procedures"
+  ],
+  "conditions_heading": "Conditions he evaluates",
   "conditions": [
-    "sports-injuries-treatment",
     "knee-pain-treatment",
     "shoulder-pain",
-    "advanced-elbow-hand-and-wrist-pain-treatment",
-    "foot-ankle-pain-treatment",
-    "the-best-hip-pain-treatment-in-hyderabad",
+    "sports-injuries-treatment",
     "low-back-pain-treatment",
     "neck-pain-treatment",
     "cervical-spondylosis-treatment",
     "sciatica",
     "slipped-disc-treatment",
-    "trigeminal-neuralgia-treatment"
+    "the-best-hip-pain-treatment-in-hyderabad",
+    "advanced-elbow-hand-and-wrist-pain-treatment",
+    "foot-ankle-pain-treatment"
   ],
+  "treatments_heading": "Image-guided procedures he assists with",
   "treatments": [
-    "regenerative-medicine",
-    "prolotherapy",
     "non-surgical-nerve-hydrodissection-nerve-blocks",
-    "radiofrequency-ablations"
+    "radiofrequency-ablations",
+    "regenerative-medicine",
+    "prolotherapy"
   ],
   "faqs": [
     {
-      "q": "What does Dr. PSS Kiran specialise in?",
-      "a": "Dr. PSS Kiran specialises in interventional pain management, with a special interest in musculoskeletal intervention, sports injury and regenerative medicine. He treats tendon, ligament, joint and overuse problems without surgery, using ultrasound-guided procedures such as growth factor concentrate injections and prolotherapy, and he also performs nerve blocks, hydrodissection and radiofrequency ablation."
+      "q": "What does a musculoskeletal radiologist do at a pain centre?",
+      "a": "At Halcyon, Dr. PSS Kiran evaluates musculoskeletal and pain conditions radiologically — combining your X-rays, MRI and ultrasound with the clinical findings — and provides image guidance and radiological assistance for image-guided pain procedures, working with Dr. Dasyam Pallavi."
     },
     {
-      "q": "Why does a radiologist treat pain?",
-      "a": "Dr. Kiran’s MD is in Radiodiagnosis, the specialty of interpreting medical images, and he has a Fellowship in Pain Management. Because most procedures at Halcyon are guided by ultrasound, that background means the doctor reading your scan is the same doctor placing the needle, with no gap between the report and the treatment."
+      "q": "Does something on my MRI or X-ray mean that is what is causing my pain?",
+      "a": "Not always. An abnormality seen on an MRI or X-ray is not necessarily the source of the pain. Imaging findings need to be read in the context of your symptoms and the clinical examination, which is why the two are considered together at Halcyon."
     },
     {
-      "q": "Can Dr. Kiran treat my sports injury without surgery?",
-      "a": "Many tendon, ligament and overuse injuries can be treated without surgery. The injury is scanned to grade the damage, then treated with regenerative therapy or prolotherapy so the tissue heals rather than just quietens down. If the scan shows an injury that needs a surgical opinion, Dr. Kiran will tell you plainly, and return-to-sport timing is planned with you."
+      "q": "What is musculoskeletal ultrasound?",
+      "a": "It is an ultrasound scan of muscles, tendons, ligaments, joints and peripheral nerves. Because it is real-time, it can assess many musculoskeletal conditions dynamically, while the structure moves, and it is also used to guide needles during image-guided pain procedures."
     },
     {
-      "q": "How do I book an appointment with Dr. Kiran?",
-      "a": "Call +91 77880 91092 and ask for Dr. Kiran by name. Appointments are Monday to Saturday, 9 am to 6 pm, at 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, above the Max showroom. Bring any recent X-ray, MRI or scan reports and a list of your medicines."
+      "q": "Should I bring my previous scans?",
+      "a": "Yes. Bring any recent X-ray, MRI, CT or ultrasound reports, and the images if you have them. Correlating earlier imaging with the examination and a fresh ultrasound is a central part of the assessment."
+    },
+    {
+      "q": "How do I book an appointment at Halcyon?",
+      "a": "Call +91 77880 91092. The clinic is open Monday to Saturday, 9 am to 6 pm, on the 3rd floor of the KKR Commercial Complex at Kukatpally Y Junction, Hyderabad."
     }
-  ]
+  ],
+  "short_role": "Consultant Radiologist – MSK Imaging"
 }
