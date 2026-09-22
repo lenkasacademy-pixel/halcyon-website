@@ -1,0 +1,225 @@
+/* Halcyon assistant — shared by every page. Lifted from the home page; additions at the end. */
+/* ==========================================================================
+   ASSISTANT — expanded pill  ⇄  collapsed circle
+   ========================================================================== */
+.ai{
+  --w:min(1080px, calc(var(--contentW) - (var(--gut) * 2)));
+  --dx:0px;
+  --padL:26px;
+
+  position:fixed; z-index:60;
+  bottom:clamp(20px,3.4vh,38px); left:calc(var(--contentW) / 2);
+  width:var(--w);
+  transform:translateX(-50%) translateX(var(--dx));
+
+  display:flex; align-items:center; gap:18px;
+  height:76px; padding:0 10px 0 var(--padL);
+  border:0; border-radius:999px; cursor:pointer;
+  background:var(--cream);
+  box-shadow:0 18px 44px -18px rgba(24,4,14,.55), 0 2px 10px -4px rgba(24,4,14,.3);
+  overflow:hidden; white-space:nowrap;
+  will-change:width,transform;
+  transition:
+    width .78s var(--ease-morph), transform .78s var(--ease-morph),
+    padding .78s var(--ease-morph), height .78s var(--ease-morph),
+    box-shadow .5s var(--ease), background .5s var(--ease);
+}
+.ai:hover{box-shadow:0 22px 52px -18px rgba(24,4,14,.6), 0 2px 10px -4px rgba(24,4,14,.34)}
+
+.ai__icon{
+  flex:none; width:26px; height:26px; display:grid; place-items:center;
+  color:var(--rose-500);
+  transition:transform .78s var(--ease-morph), color .4s var(--ease);
+}
+.ai__icon svg{width:26px;height:26px}
+
+.ai__text{
+  flex:1 1 auto; min-width:0; text-align:left;
+  font-size:16.5px; color:#8E8288;
+  opacity:1; transition:opacity .34s var(--ease) .16s;
+}
+.ai__send{
+  flex:none; display:inline-flex; align-items:center; gap:8px;
+  padding:15px 26px; border-radius:999px;
+  background:var(--rose-500); color:#fff;
+  font-size:15px; font-weight:600;
+  opacity:1; transition:opacity .3s var(--ease) .16s, background .3s var(--ease);
+}
+.ai__send svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;
+              stroke-linecap:round;stroke-linejoin:round}
+
+.ai.is-collapsed{
+  --w:64px;
+  --dx:calc((var(--contentW) / 2) - 32px - var(--gut));
+  --padL:19px;
+  height:64px;
+  padding:0 0 0 var(--padL);
+  background:var(--rose-500);
+  box-shadow:0 14px 34px -14px rgba(24,4,14,.6);
+  transition-delay:0s;
+}
+.ai.is-collapsed .ai__icon{color:var(--cream); transform:translateX(0)}
+.ai.is-collapsed .ai__text,
+.ai.is-collapsed .ai__send{opacity:0; transition-delay:0s; transition-duration:.2s}
+.ai.is-collapsed:hover{transform:translateX(-50%) translateX(var(--dx)) scale(1.06)}
+.ai.is-hidden{opacity:0; pointer-events:none; transform:translateX(-50%) translateX(var(--dx)) scale(.9)}
+
+/* ==========================================================================
+   ASSISTANT PANEL
+   ========================================================================== */
+.chat-scrim{display:none}
+
+.chat{
+  position:fixed; z-index:80; top:0; right:0; bottom:0; left:auto;
+  width:var(--panelW); min-width:0;
+  display:flex; flex-direction:column; overflow:hidden;
+  background:var(--cream);
+  border-left:1px solid var(--stone);
+  box-shadow:-24px 0 60px -30px rgba(24,4,14,.4);
+  transform:translateX(100%);
+  transition:transform .58s var(--ease-morph);
+}
+.chat.is-on{transform:none}
+
+.chat__top{
+  display:flex; align-items:center; gap:13px; flex:none;
+  padding:18px 18px 18px 20px; border-bottom:1px solid var(--stone);
+  background:var(--rose-900); color:var(--cream);
+}
+.chat__avatar{
+  width:40px;height:40px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:rgba(92,198,208,.14); border:1px solid rgba(92,198,208,.32);
+}
+.chat__avatar svg{width:24px;height:auto}
+.chat__id{display:flex;flex-direction:column;line-height:1.3;margin-right:auto}
+.chat__id strong{font-size:15.5px;font-weight:600}
+.chat__id small{font-size:12.5px;color:var(--aqua)}
+.chat__close{
+  width:34px;height:34px;border:0;border-radius:50%;background:rgba(255,255,255,.08);
+  color:var(--cream); cursor:pointer; display:grid;place-items:center;
+  transition:background .3s var(--ease), transform .3s var(--ease);
+}
+.chat__close:hover{background:rgba(255,255,255,.18); transform:rotate(90deg)}
+.chat__close svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+
+.chat__log{
+  flex:1 1 auto; overflow-y:auto; padding:22px 20px 6px;
+  display:flex; flex-direction:column; gap:12px; scrollbar-width:thin;
+}
+.msg{
+  max-width:82%; padding:13px 17px; border-radius:18px;
+  font-size:15.5px; line-height:1.55;
+  animation:msgIn .42s var(--ease) both;
+}
+@keyframes msgIn{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+.msg--bot{align-self:flex-start; background:var(--rose-50); color:var(--ink); border-bottom-left-radius:6px}
+.msg--me {align-self:flex-end;  background:var(--rose-700); color:var(--cream); border-bottom-right-radius:6px}
+.msg--typing{display:flex;gap:5px;align-items:center;padding:16px 18px}
+.msg--typing i{width:7px;height:7px;border-radius:50%;background:var(--rose-400);display:block;
+               animation:dot 1.15s infinite ease-in-out}
+.msg--typing i:nth-child(2){animation-delay:.16s}
+.msg--typing i:nth-child(3){animation-delay:.32s}
+@keyframes dot{0%,60%,100%{opacity:.28;transform:translateY(0)}30%{opacity:1;transform:translateY(-4px)}}
+
+/* --- handing over to a human --- */
+.handoff{
+  align-self:stretch; margin:4px 0 2px; padding:16px 18px; border-radius:16px;
+  background:var(--rose-50); border:1px solid rgba(191,56,114,.18);
+  animation:msgIn .42s var(--ease) both;
+}
+.handoff p{margin:0 0 13px; font-size:14.5px; line-height:1.5; color:var(--charcoal)}
+.handoff__row{display:flex; gap:9px; flex-wrap:wrap}
+.handoff small{display:block; margin-top:12px; font-size:12px; line-height:1.5; color:var(--muted)}
+.handoff a{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:11px 17px; border-radius:999px; font-size:14px; font-weight:600;
+  transition:transform .25s var(--ease), background-color .25s var(--ease);
+}
+.handoff a:hover{transform:translateY(-1px)}
+.handoff a svg{width:16px; height:16px; fill:currentColor; flex:none}
+.handoff__call{background:var(--rose-500); color:#fff}
+.handoff__call:hover{background:var(--rose-400)}
+.handoff__wa{background:#25D366; color:#0B3D21}
+.handoff__wa:hover{background:#3BE07C}
+
+.chat__suggest{flex:none; display:flex; flex-wrap:wrap; gap:8px; padding:12px 20px 4px}
+.chip{
+  padding:9px 15px; border-radius:999px; cursor:pointer;
+  border:1px solid rgba(163,44,96,.3); background:transparent;
+  font-size:13.5px; font-weight:500; color:var(--rose-700);
+  transition:background .28s var(--ease), border-color .28s var(--ease), transform .28s var(--ease);
+}
+.chip:hover{background:rgba(163,44,96,.09); border-color:var(--rose-600); transform:translateY(-1px)}
+
+.chat__form{flex:none; display:flex; gap:10px; padding:14px 16px 16px; border-top:1px solid var(--stone)}
+.chat__input{
+  flex:1 1 auto; min-width:0; padding:14px 18px; border-radius:999px;
+  border:1px solid var(--stone); background:#fff; font:inherit; font-size:15.5px; color:var(--ink);
+  transition:border-color .3s var(--ease), box-shadow .3s var(--ease);
+}
+.chat__input::placeholder{color:#A0949A}
+.chat__input:focus{outline:0; border-color:var(--rose-400); box-shadow:0 0 0 3px rgba(221,101,158,.18)}
+.chat__send{
+  flex:none; width:50px;height:50px;border:0;border-radius:50%;cursor:pointer;
+  background:var(--rose-500); color:#fff; display:grid;place-items:center;
+  transition:background .3s var(--ease), transform .3s var(--ease);
+}
+.chat__send:hover{background:var(--rose-600); transform:translateX(2px)}
+.chat__send svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;
+                stroke-linecap:round;stroke-linejoin:round}
+
+@media (max-width:900px){ .chat{width:100%; border-left:0} }
+
+
+/* --- the page makes room for the panel; nav links go rather than squeeze --- */
+html.is-split .nav__links{display:none}
+html.is-split .nav__cta{margin-left:auto}
+
+@media (max-width:720px){
+  .ai{height:64px;--padL:20px;gap:12px}
+  .ai__text{font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ai__send{padding:12px 18px;font-size:14px}
+  .ai__send svg{display:none}
+  .ai.is-collapsed{height:58px;--w:58px;--dx:calc((var(--contentW) / 2) - 29px - var(--gut))}
+}
+
+/* ==========================================================================
+   ASSISTANT — additions for answers with links, leads and consent
+   ========================================================================== */
+.msg a.msg__link{display:inline-flex; align-items:center; gap:6px; margin-top:9px; font-weight:600;
+  color:var(--rose-700); border-bottom:1px solid var(--rose-200); padding-bottom:1px}
+.msg a.msg__link:hover{color:var(--rose-500); border-color:var(--rose-400)}
+.msg a.msg__link::after{content:"→"; font-weight:400}
+.msg__alt{display:block; margin-top:8px; font-size:13px; color:var(--muted)}
+.msg--sys{align-self:center; max-width:92%; padding:6px 12px; background:none; font-size:12.5px; color:var(--muted); text-align:center}
+
+.lead{align-self:stretch; padding:18px; border-radius:16px; background:#fff; border:1px solid var(--stone);
+  box-shadow:0 12px 30px -22px rgba(76,20,48,.45); animation:msgIn .42s var(--ease) both}
+.lead h4{margin:0 0 10px; font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--muted)}
+.lead dl{margin:0; display:grid; grid-template-columns:auto 1fr; gap:6px 14px; font-size:14.5px; line-height:1.45}
+.lead dt{color:var(--muted)}
+.lead dd{margin:0; color:var(--ink); font-weight:500; word-break:break-word}
+.lead__row{margin-top:16px; display:flex; flex-wrap:wrap; align-items:center; gap:9px}
+.lead__send{display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border:0; border-radius:999px; cursor:pointer;
+  background:var(--rose-500); color:#fff; font:inherit; font-size:14.5px; font-weight:600;
+  transition:background .25s var(--ease), transform .25s var(--ease)}
+.lead__send:hover{background:var(--rose-600); transform:translateY(-1px)}
+.lead__send, .lead__ghost{white-space:nowrap; line-height:1.2}
+.lead__send svg{width:16px; height:16px; flex:none; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.lead__send[disabled]{opacity:.6; cursor:progress; transform:none}
+.lead__ghost{display:inline-flex; align-items:center; text-decoration:none; padding:12px 16px; border:1px solid var(--stone); border-radius:999px; background:none; cursor:pointer;
+  font:inherit; font-size:14px; color:var(--charcoal)}
+.lead__ghost:hover{border-color:var(--rose-300)}
+.lead__edit{margin-left:auto; align-self:center; border:0; background:none; cursor:pointer; font:inherit; font-size:13px;
+  color:var(--rose-600); text-decoration:underline; text-underline-offset:3px}
+.lead small{display:block; margin-top:12px; font-size:12px; line-height:1.5; color:var(--muted)}
+.lead small a{color:var(--rose-600); text-decoration:underline}
+.lead__state{margin-top:12px; font-size:14px; font-weight:600}
+.lead__state.is-ok{color:#1F7A4D}
+.lead__state.is-wait{color:var(--rose-600)}
+.lead__state.is-err{color:#9A3412}
+.hp{position:absolute!important; left:-9999px!important; width:1px; height:1px; overflow:hidden}
+.chat__input:disabled{background:var(--sand)}
+.chat__restart{border:0; background:none; cursor:pointer; color:rgba(251,248,249,.7); font:inherit; font-size:12.5px;
+  text-decoration:underline; text-underline-offset:3px; margin-right:6px}
+.chat__restart:hover{color:var(--cream)}

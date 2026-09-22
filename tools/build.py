@@ -52,6 +52,9 @@ SITE = {
         'https://www.youtube.com/channel/UCixQIloKFhlLDODkwtKoccg',
         'https://twitter.com/HalcyonPain',
     ],
+    # The clinic's Google Apps Script web-app URL (tools/lead-collector.gs). Empty until it is
+    # deployed: the assistant then offers WhatsApp instead of sending the lead itself.
+    'lead_endpoint': '',
     'area_served': ['Hyderabad', 'Kukatpally', 'KPHB Colony', 'Moosapet', 'Balanagar', 'Miyapur',
                     'Nizampet', 'Bachupally', 'Kondapur', 'Madhapur', 'HITEC City', 'Secunderabad'],
 }
@@ -471,6 +474,10 @@ def seo_head(p, extra_css=''):
         '<link rel="preload" href="%sassets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>' % pre,
         '<link rel="preload" href="%sassets/fonts/playfair-display-italic.woff2" as="font" type="font/woff2" crossorigin>' % pre,
     ]
+    if p['kind'] != 'noindex':
+        out += ['<link rel="stylesheet" href="%sassets/css/assistant.css?v=%s">' % (pre, ASSET_V),
+                '<script src="%sassets/js/assistant.js?v=%s" data-root="%s" data-v="%s" defer></script>'
+                % (pre, ASSET_V, home_href(p['path']), KB_V)]
     if ld:
         out.append('<script type="application/ld+json">%s</script>' % ld.replace('</', '<\\/'))
     if extra_css:
@@ -650,7 +657,7 @@ def book_card(pre, heading='Book a consultation'):
   <h2 id="book-h">{heading}</h2>
   <p>The examination and the diagnostic ultrasound happen in the same appointment.</p>
   <a class="btn btn--fill" href="tel:{SITE['tel']}">Call {SITE['tel_display']}</a>
-  <p class="alt"><a href="https://wa.me/{SITE['wa']}" target="_blank" rel="noopener">WhatsApp us</a><a href="tel:{SITE['tel2']}">{SITE['tel2_display']}</a></p>
+  <p class="alt"><a href="https://wa.me/{SITE['wa']}" target="_blank" rel="noopener">WhatsApp {SITE['tel_display'].replace('+91 ', '')}</a><a href="tel:{SITE['tel2']}">or call {SITE['tel2_display'].replace('+91 ', '')}</a><a href="#" data-assistant="">Ask the assistant</a></p>
   <address>{SITE['street']}, {SITE['city']} {SITE['postal']}<br>{SITE['hours_text']}</address>
 </section>'''
 
@@ -1212,8 +1219,72 @@ def og_images():
         d.text((72, H - 56), 'Call ' + SITE['tel_display'], font=f_s, fill=(251, 248, 249))
         im.save(p['image'], 'JPEG', quality=84, optimize=True, progressive=True)
 
+# ============================================================================ assistant knowledge base
+KB_V = ASSET_V = ''
+
+def build_assistant_kb():
+    """assets/js/assistant-kb.js: the hand-written entries in tools/content/assistant.json,
+    plus every FAQ on the topic pages (so the assistant and the pages never disagree),
+    plus the contact facts and the lead endpoint from SITE."""
+    import hashlib
+    global KB_V, ASSET_V
+    core = json.load(open('tools/content/assistant.json')) if os.path.exists('tools/content/assistant.json') else {'entries': [], 'synonyms': {}}
+    entries = [dict(e) for e in core.get('entries', [])]
+    have = {e['id'] for e in entries}
+    topic_for = {}                        # page -> the hand-written entry that routes to it
+    for e in entries:
+        if e.get('link') and e.get('link') not in topic_for:
+            topic_for[e['link']] = e['id']
+    for kind, data, order in (('condition', CONDITIONS, COND_ORDER), ('treatment', TREATMENTS, TREAT_ORDER), ('doctor', DOCTORS, DOC_ORDER)):
+        for slug in order:
+            d = data[slug]; link = slug + '/'
+            if link not in topic_for:     # every page is reachable even if the core file misses it
+                eid = 'page-' + slug
+                entries.append({'id': eid, 'q': [d['name'], d['name'] + ' treatment', 'tell me about ' + d['name']],
+                                'k': [d['name'].lower()], 'a': d['summary'], 'link': link, 'next': [], 'human': False,
+                                'kind': 'condition' if kind == 'condition' else None,
+                                **({'area': d['name']} if kind == 'condition' else {})})
+                topic_for[link] = eid
+            # a page's FAQs share its topic words, so "how long does prolotherapy take to work"
+            # lands on the prolotherapy FAQ rather than on a generic "how long" answer
+            topic = [d['name'].lower()] + [n.lower() for n in d.get('schema', {}).get('alternate_names', [])]
+            if kind == 'doctor':
+                short = d['name'].split()[-1].lower()
+                topic += [short, 'dr ' + short, 'doctor ' + short]
+            topic = [t for t in dict.fromkeys(topic) if len(t) > 3]
+            for i, f in enumerate(d.get('faqs', [])):
+                eid = '%s-faq-%d' % (slug, i + 1)
+                if eid in have:
+                    continue
+                entries.append({'id': eid, 'q': [f['q']], 'k': [], 'kt': topic, 'a': f['a'], 'link': link,
+                                'next': [topic_for[link]] if topic_for.get(link) else [], 'human': False, 'kind': None})
+    pages = {p['path']: (p['data']['name'] if p.get('data') else p['title'].split(' | ')[0].split(' — ')[0])
+             for p in PAGES if p['kind'] != 'noindex'}
+    pages[''] = 'Halcyon home'
+    page_areas = {}
+    for e in entries:
+        if e.get('kind') == 'condition' and e.get('link') and e.get('area') and e['link'] not in page_areas:
+            page_areas[e['link']] = e['area']
+    kb = {
+        'v': 1, 'endpoint': SITE.get('lead_endpoint', ''),
+        'contact': {'call': SITE['tel_display'], 'tel': SITE['tel'], 'alt': SITE['tel2_display'], 'telAlt': SITE['tel2'],
+                    'wa': SITE['wa'], 'email': SITE['email'], 'hours': 'Monday to Saturday, 9 am to 6 pm'},
+        'starters': [i for i in ('visit', 'cost', 'surgery', 'where', 'doctors') if i in {e['id'] for e in entries}][:4],
+        'pages': pages, 'pageAreas': page_areas,
+        'entries': [{k: v for k, v in e.items() if v not in (None, [], '') or k in ('a', 'id')} for e in entries],
+        'synonyms': core.get('synonyms', {}),
+    }
+    js = ('/* generated by tools/build.py from tools/content/assistant.json and the topic pages — do not edit */\n'
+          'window.HALCYON_KB = ' + json.dumps(kb, ensure_ascii=False, separators=(',', ':')) + ';\n')
+    write('assets/js/assistant-kb.js', js)
+    KB_V = hashlib.sha1(js.encode()).hexdigest()[:8]
+    engine = read('assets/js/assistant.js') + read('assets/css/assistant.css')
+    ASSET_V = hashlib.sha1(engine.encode()).hexdigest()[:8]
+    return len(kb['entries']), len(kb['synonyms'])
+
 # ============================================================================ main
 def main():
+    n_kb = build_assistant_kb()
     og_images()
     texts = {}
     for p in PAGES:
@@ -1230,7 +1301,8 @@ def main():
         write(p['file'], s)
         texts[p['path']] = page_text(s)
     write_site_files(texts)
-    print('built %d pages; sitemap has %d URLs' % (len(PAGES), sum(1 for p in PAGES if p['kind'] != 'noindex')))
+    print('built %d pages; sitemap has %d URLs; assistant knows %d entries, %d synonyms'
+          % (len(PAGES), sum(1 for p in PAGES if p['kind'] != 'noindex'), n_kb[0], n_kb[1]))
 
 if __name__ == '__main__':
     main()

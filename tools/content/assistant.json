@@ -1,0 +1,5745 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "book",
+      "chip": "How do I book?",
+      "q": [
+        "how do i book an appointment",
+        "i want to book",
+        "book a slot",
+        "appointment kaise milega",
+        "appoinment kavali",
+        "can i get an appointment tomorrow",
+        "how to consult the doctor",
+        "register for consultation",
+        "book appointment with doctor"
+      ],
+      "k": [
+        "book",
+        "booking",
+        "appointment",
+        "slot",
+        "consult",
+        "consultation",
+        "register",
+        "see the doctor",
+        "opd",
+        "book appointment",
+        "get an appointment"
+      ],
+      "a": "Call +91 77880 91092 or +91 95536 04226 and the team will find you a slot, Monday to Saturday, 9 am to 6 pm. Bring any recent X-ray, MRI or ultrasound reports, as they often save a second visit. You can also send them on WhatsApp before you come in.",
+      "link": "contact/",
+      "next": [
+        "bring",
+        "visit",
+        "cost"
+      ],
+      "human": false,
+      "kind": "lead"
+    },
+    {
+      "id": "callback",
+      "chip": "Ask for a callback",
+      "q": [
+        "can someone call me back",
+        "please call me",
+        "call me",
+        "request a callback",
+        "i want a call back",
+        "mujhe call karo",
+        "call cheyandi",
+        "ring me",
+        "can you phone me"
+      ],
+      "k": [
+        "callback",
+        "call back",
+        "call me",
+        "phone me",
+        "ring me",
+        "call karo",
+        "call cheyandi",
+        "contact me",
+        "reach me"
+      ],
+      "a": "Of course. Leave your name, a mobile number and a line about where it hurts, and once you agree, the details are sent to the clinic team so they can call you back. You can send them on WhatsApp instead, or call +91 77880 91092 directly, Monday to Saturday, 9 am to 6 pm.",
+      "link": "contact/",
+      "next": [
+        "book",
+        "timings"
+      ],
+      "human": true,
+      "kind": "lead"
+    },
+    {
+      "id": "human",
+      "chip": "Talk to a person",
+      "q": [
+        "i want to talk to a person",
+        "speak to someone",
+        "talk to a human",
+        "connect me to staff",
+        "can i talk to the doctor",
+        "real person please",
+        "reception number",
+        "insaan se baat karni hai"
+      ],
+      "k": [
+        "talk to a person",
+        "talk to someone",
+        "speak to someone",
+        "human",
+        "real person",
+        "staff",
+        "reception",
+        "receptionist",
+        "talk to doctor",
+        "speak to doctor",
+        "agent"
+      ],
+      "a": "The team at the clinic can answer anything I cannot. Call +91 77880 91092 or +91 95536 04226, Monday to Saturday, 9 am to 6 pm, or WhatsApp +91 77880 91092. If you like, leave your name and number here and they can call you back.",
+      "link": "contact/",
+      "next": [
+        "callback",
+        "whatsapp"
+      ],
+      "human": true,
+      "kind": "lead"
+    },
+    {
+      "id": "where",
+      "chip": "Where are you?",
+      "q": [
+        "where is the clinic",
+        "what is your address",
+        "clinic location",
+        "where are you located",
+        "clinic ekkada undi",
+        "clinic kahan hai",
+        "address please",
+        "which building",
+        "location send"
+      ],
+      "k": [
+        "where",
+        "address",
+        "location",
+        "located",
+        "kukatpally",
+        "moosapet",
+        "y junction",
+        "kkr",
+        "ekkada",
+        "kahan",
+        "building"
+      ],
+      "a": "Halcyon is on the 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072, above the Max showroom. It is a few minutes from the KPHB Colony and Moosapet metro stations on the Red Line.",
+      "link": "contact/",
+      "next": [
+        "directions",
+        "timings",
+        "parking"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "directions",
+      "q": [
+        "how do i reach you",
+        "directions to the clinic",
+        "google maps link",
+        "how to come from miyapur",
+        "route to halcyon",
+        "nearest landmark",
+        "i am coming from secunderabad",
+        "which floor"
+      ],
+      "k": [
+        "directions",
+        "reach",
+        "route",
+        "map",
+        "maps",
+        "google maps",
+        "landmark",
+        "max showroom",
+        "how to come",
+        "which floor",
+        "floor"
+      ],
+      "a": "Head for Kukatpally Y Junction on Moosapet Road. The clinic is on the 3rd floor of the KKR Commercial Complex, above the Max showroom. The contact page has a Google Maps link, and if you get lost, call the team and they will guide you in.",
+      "link": "contact/",
+      "next": [
+        "metro",
+        "parking",
+        "where"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "metro",
+      "q": [
+        "nearest metro station",
+        "can i come by metro",
+        "which metro stop",
+        "metro se kaise aaye",
+        "kphb metro",
+        "moosapet metro distance",
+        "red line station"
+      ],
+      "k": [
+        "metro",
+        "metro station",
+        "kphb",
+        "kphb colony",
+        "moosapet station",
+        "red line",
+        "train"
+      ],
+      "a": "The nearest stations are KPHB Colony and Moosapet on the Red Line, each a few minutes from Kukatpally Y Junction. From there, the clinic is on the 3rd floor of the KKR Commercial Complex, above the Max showroom on Moosapet Road.",
+      "link": "contact/",
+      "next": [
+        "directions",
+        "timings"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "parking",
+      "q": [
+        "is there parking",
+        "where can i park",
+        "car parking available",
+        "parking facility",
+        "can i bring my car",
+        "bike parking",
+        "drop off point"
+      ],
+      "k": [
+        "parking",
+        "park",
+        "car parking",
+        "bike parking",
+        "two wheeler",
+        "drop off",
+        "vehicle"
+      ],
+      "a": "The clinic is in the KKR Commercial Complex at Kukatpally Y Junction. Call the team before you set out and they will tell you where it is easiest to park or be dropped off.",
+      "link": "contact/",
+      "next": [
+        "directions",
+        "metro"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "timings",
+      "chip": "What are your timings?",
+      "q": [
+        "what are your timings",
+        "clinic hours",
+        "when are you open",
+        "what time do you open",
+        "opening time",
+        "closing time",
+        "timings enti",
+        "clinic kab khulta hai",
+        "open on saturday"
+      ],
+      "k": [
+        "timing",
+        "timings",
+        "hours",
+        "open",
+        "opening",
+        "closing",
+        "close",
+        "what time",
+        "saturday",
+        "working hours"
+      ],
+      "a": "Monday to Saturday, 9 am to 6 pm. The clinic is closed on Sunday. Appointments are spaced through the day so the wait is short. Call +91 77880 91092 for today's slots.",
+      "link": "contact/",
+      "next": [
+        "book",
+        "where",
+        "sunday"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "sunday",
+      "q": [
+        "are you open on sunday",
+        "sunday open",
+        "can i come on sunday",
+        "sunday appointment",
+        "aadivaram open",
+        "ravivar ko khula hai",
+        "weekend timings"
+      ],
+      "k": [
+        "sunday",
+        "weekend",
+        "aadivaram",
+        "ravivar",
+        "sunday open"
+      ],
+      "a": "The clinic is closed on Sunday. It is open Monday to Saturday, 9 am to 6 pm. If Saturday is easiest for you, call +91 77880 91092 early in the week to find a slot.",
+      "link": "contact/",
+      "next": [
+        "timings",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "today-open",
+      "q": [
+        "are you open today",
+        "open now",
+        "can i come today",
+        "is the clinic open right now",
+        "eeroju open aa",
+        "aaj khula hai",
+        "appointment today"
+      ],
+      "k": [
+        "today",
+        "open now",
+        "right now",
+        "come today",
+        "appointment today"
+      ],
+      "a": "The clinic is open Monday to Saturday, 9 am to 6 pm, and closed on Sunday. To come in today, call +91 77880 91092 first so the team can check the slots and tell you roughly how long the visit will take.",
+      "link": "contact/",
+      "next": [
+        "walk-in",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "holidays",
+      "q": [
+        "are you open on festival days",
+        "open on diwali",
+        "holiday timings",
+        "sankranti open",
+        "public holiday closed"
+      ],
+      "k": [
+        "holiday",
+        "holidays",
+        "festival",
+        "diwali",
+        "sankranti",
+        "dussehra",
+        "public holiday"
+      ],
+      "a": "The usual hours are Monday to Saturday, 9 am to 6 pm. For festivals and public holidays, please call +91 77880 91092 before you set out, and the team will confirm whether the clinic is open that day.",
+      "link": "contact/",
+      "next": [
+        "timings",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "walk-in",
+      "q": [
+        "can i walk in",
+        "do i need an appointment",
+        "walk in without booking",
+        "can i just come",
+        "direct ga raavacha",
+        "seedha aa sakta hoon"
+      ],
+      "k": [
+        "walk in",
+        "walk-in",
+        "without appointment",
+        "without booking",
+        "just come",
+        "directly come"
+      ],
+      "a": "It is best to call ahead on +91 77880 91092 so the team can give you a slot and tell you roughly how long the visit will take. Appointments are spaced so the wait is short, and calling first means the consultant has time for the scan.",
+      "link": "contact/",
+      "next": [
+        "book",
+        "timings"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "cost",
+      "chip": "What will it cost?",
+      "q": [
+        "how much does it cost",
+        "what are your charges",
+        "fees kitna hai",
+        "treatment price",
+        "kharchu entha",
+        "how much for knee injection",
+        "price of treatment",
+        "is it expensive",
+        "total cost"
+      ],
+      "k": [
+        "cost",
+        "price",
+        "charges",
+        "charge",
+        "fees",
+        "how much",
+        "expensive",
+        "affordable",
+        "kitna",
+        "kharchu",
+        "package",
+        "rates"
+      ],
+      "a": "It depends on the procedure and how many sittings are needed, so the team gives you a clear figure at the consultation, before anything is booked. Call +91 77880 91092 and they can give you a range once they know what you are being treated for.",
+      "link": null,
+      "next": [
+        "insurance",
+        "consult-fee",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "consult-fee",
+      "q": [
+        "consultation fee",
+        "doctor fee",
+        "how much is the first visit",
+        "op fee",
+        "consultation charges",
+        "doctor fees kitni hai",
+        "first consultation cost"
+      ],
+      "k": [
+        "consultation fee",
+        "consultation fees",
+        "consultation charges",
+        "doctor fee",
+        "doctor fees",
+        "op fee",
+        "first visit fee",
+        "registration fee",
+        "visit charges"
+      ],
+      "a": "The team can tell you the consultation fee when you call +91 77880 91092. Procedure costs depend on what the scan shows and how many sittings are needed, and are explained at the consultation, before anything is booked.",
+      "link": null,
+      "next": [
+        "cost",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "insurance",
+      "chip": "Do you take insurance?",
+      "q": [
+        "do you take insurance",
+        "is it covered by insurance",
+        "mediclaim accepted",
+        "can i claim insurance",
+        "reimbursement possible",
+        "health insurance",
+        "insurance undi aa"
+      ],
+      "k": [
+        "insurance",
+        "mediclaim",
+        "claim",
+        "reimburse",
+        "reimbursement",
+        "policy",
+        "covered",
+        "health insurance"
+      ],
+      "a": "That depends on your policy and the procedure. The team can tell you what applies to your case and what paperwork you would need. Ask them when you call +91 77880 91092, and have your policy details handy.",
+      "link": null,
+      "next": [
+        "cashless",
+        "cost",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "cashless",
+      "q": [
+        "is cashless available",
+        "are you empanelled with my tpa",
+        "cashless treatment",
+        "star health accepted",
+        "cghs",
+        "company insurance cashless"
+      ],
+      "k": [
+        "cashless",
+        "tpa",
+        "empanelled",
+        "empanelment",
+        "network hospital",
+        "cghs",
+        "echs",
+        "star health",
+        "corporate insurance"
+      ],
+      "a": "Whether cashless or a particular insurer or TPA applies is something the team has to check for you, as it depends on the policy and the procedure. Call +91 77880 91092 with your policy details and they will tell you what is possible.",
+      "link": null,
+      "next": [
+        "insurance",
+        "cost"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "payment",
+      "q": [
+        "do you accept card",
+        "can i pay by upi",
+        "emi available",
+        "payment options",
+        "gpay accepted",
+        "can i pay in instalments"
+      ],
+      "k": [
+        "emi",
+        "upi",
+        "gpay",
+        "phonepe",
+        "by card",
+        "credit card",
+        "debit card",
+        "payment",
+        "pay by",
+        "instalment",
+        "installment",
+        "pay cash"
+      ],
+      "a": "The team can tell you which payment methods are accepted, and whether any instalment option is available, when you call +91 77880 91092. The cost itself is explained at the consultation, before anything is booked.",
+      "link": null,
+      "next": [
+        "cost",
+        "insurance"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "bring",
+      "q": [
+        "what should i bring",
+        "which reports to carry",
+        "do i bring my mri",
+        "documents needed",
+        "what to carry for appointment",
+        "old reports theesukuravala",
+        "kya leke aana hai"
+      ],
+      "k": [
+        "bring",
+        "carry",
+        "documents",
+        "papers",
+        "reports",
+        "old reports",
+        "previous reports",
+        "prescription",
+        "files"
+      ],
+      "a": "Bring any recent X-ray, MRI, CT or ultrasound reports, and the images if you have them, a list of the medicines you take, and notes from any earlier treatment for the same pain. If you would rather send reports ahead, WhatsApp them and the team will look before your slot.",
+      "link": null,
+      "next": [
+        "reports-online",
+        "book",
+        "visit"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "reports-online",
+      "q": [
+        "can i send my reports first",
+        "whatsapp my mri",
+        "send reports before appointment",
+        "can you look at my scan",
+        "share my x ray",
+        "email my reports",
+        "reports pampocha"
+      ],
+      "k": [
+        "send reports",
+        "send my reports",
+        "send scan",
+        "send my mri",
+        "share reports",
+        "whatsapp reports",
+        "reports before",
+        "look at my reports",
+        "review my mri"
+      ],
+      "a": "Yes. Send recent X-ray, MRI or ultrasound reports on WhatsApp to +91 77880 91092 and the team will look at them before your slot. A proper opinion still needs the examination and scan in person, but it helps the consultant prepare.",
+      "link": "contact/",
+      "next": [
+        "whatsapp",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "referral",
+      "q": [
+        "do i need a referral",
+        "do i need a letter from my doctor",
+        "can i come without a doctor's referral",
+        "referral required",
+        "can i come directly"
+      ],
+      "k": [
+        "referral",
+        "refer",
+        "referred",
+        "referral letter",
+        "without referral"
+      ],
+      "a": "No referral is needed. Call to book, and bring any reports and prescriptions you already have for the same pain. If another doctor is treating you, a note from them is useful but not required.",
+      "link": null,
+      "next": [
+        "book",
+        "bring"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "visit",
+      "chip": "What happens on the day?",
+      "q": [
+        "what happens on the day",
+        "what is the process",
+        "how does the appointment work",
+        "steps of the visit",
+        "what will happen when i come",
+        "procedure day kaisa hota hai"
+      ],
+      "k": [
+        "what happens",
+        "process",
+        "steps",
+        "pathway",
+        "procedure day",
+        "on the day",
+        "how it works"
+      ],
+      "a": "Five steps in one appointment: you arrive and register, the consultant examines you, the painful joint or nerve is scanned by ultrasound in the same room, the findings decide the treatment, and if a procedure is right it is done there and then. Most people are home inside two hours.",
+      "link": "about-us/",
+      "next": [
+        "howlong-visit",
+        "anaesthesia",
+        "bring"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "first-visit",
+      "q": [
+        "first time visiting",
+        "i am a new patient",
+        "first consultation what happens",
+        "first appointment",
+        "is the first visit only consultation"
+      ],
+      "k": [
+        "first visit",
+        "first time",
+        "new patient",
+        "first appointment",
+        "first consultation",
+        "initial consultation"
+      ],
+      "a": "The first visit starts with your history and an examination, then a diagnostic ultrasound of the painful area in the same room. If a procedure is right, it can often be done in that same appointment; if a diagnostic block is needed first, the consultant explains the next step. Bring your reports.",
+      "link": "about-us/",
+      "next": [
+        "bring",
+        "same-day",
+        "howlong-visit"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "howlong-visit",
+      "q": [
+        "how long will the appointment take",
+        "how much time should i keep",
+        "how long is the visit",
+        "how many hours at the clinic",
+        "entha time padutundi",
+        "kitna time lagega"
+      ],
+      "k": [
+        "how long",
+        "how much time",
+        "hours at clinic",
+        "duration",
+        "time taken",
+        "whole day",
+        "kitna time",
+        "entha time"
+      ],
+      "a": "Most people are home within about two hours of arriving. Roughly: registration, then about 20 minutes with the consultant, the ultrasound, and the procedure if one is right. The team can tell you roughly how long your visit will take when you book.",
+      "link": null,
+      "next": [
+        "visit",
+        "procedure-time"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "procedure-time",
+      "q": [
+        "how long does the procedure take",
+        "injection takes how long",
+        "how many minutes for rfa",
+        "procedure duration",
+        "how long on the table"
+      ],
+      "k": [
+        "procedure take",
+        "procedure time",
+        "how many minutes",
+        "procedure duration",
+        "on the table",
+        "injection time"
+      ],
+      "a": "It varies with the procedure. A simple injection or block is short; radiofrequency takes longer because each nerve is treated in turn. Including the consultation and scan, most people are home within about two hours. The consultant tells you what to expect before starting.",
+      "link": null,
+      "next": [
+        "howlong-visit",
+        "anaesthesia"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "same-day",
+      "q": [
+        "is the procedure done the same day",
+        "will they treat me on the first visit",
+        "can i get the injection the same day",
+        "same day treatment",
+        "do i have to come again for the procedure"
+      ],
+      "k": [
+        "same day",
+        "same appointment",
+        "first visit treatment",
+        "treatment on same day",
+        "come again",
+        "second visit"
+      ],
+      "a": "Often, yes. If the scan shows a procedure is right, it is usually done in the same appointment. Radiofrequency is the exception: a diagnostic block comes first, and the radiofrequency is planned once the block has confirmed the source.",
+      "link": null,
+      "next": [
+        "diagnostic-block",
+        "visit"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "wait-time",
+      "q": [
+        "how long is the waiting time",
+        "will i have to wait long",
+        "is there a queue",
+        "waiting kitna hoga"
+      ],
+      "k": [
+        "wait",
+        "waiting",
+        "queue",
+        "waiting time",
+        "rush",
+        "crowded"
+      ],
+      "a": "Appointments are spaced through the day so the wait is short. Calling ahead on +91 77880 91092 for a slot is the best way to keep it that way.",
+      "link": null,
+      "next": [
+        "book",
+        "timings"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "fasting",
+      "q": [
+        "should i come empty stomach",
+        "do i need to fast before the procedure",
+        "can i eat before injection",
+        "khali pet aana hai",
+        "breakfast before procedure"
+      ],
+      "k": [
+        "fasting",
+        "fast",
+        "empty stomach",
+        "eat before",
+        "food before",
+        "breakfast",
+        "khali pet",
+        "nil by mouth"
+      ],
+      "a": "The team will tell you if there is anything to do before a procedure, including about eating and your usual medicines. Most procedures are done under local anaesthetic rather than general, but please check with them on +91 77880 91092 when you book rather than fasting on your own.",
+      "link": null,
+      "next": [
+        "meds",
+        "anaesthesia"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "companion",
+      "q": [
+        "should someone come with me",
+        "can i come alone",
+        "do i need an attendant",
+        "can my family come",
+        "should i bring someone"
+      ],
+      "k": [
+        "companion",
+        "someone with me",
+        "come alone",
+        "attendant",
+        "family member",
+        "bring someone",
+        "escort",
+        "alone"
+      ],
+      "a": "You can come alone for a consultation. If you may have a procedure, bringing someone is sensible: after some nerve blocks the limb can stay numb or weak for a few hours, and it is safer to have someone drive you home. The team can advise when you book.",
+      "link": null,
+      "next": [
+        "drive",
+        "visit"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "wear",
+      "q": [
+        "what should i wear",
+        "what clothes to wear",
+        "dress for appointment",
+        "shorts for knee scan"
+      ],
+      "k": [
+        "wear",
+        "clothes",
+        "clothing",
+        "dress",
+        "shorts",
+        "outfit"
+      ],
+      "a": "Loose, comfortable clothing that lets the painful area be uncovered easily is sensible, for example loose trousers or shorts for a knee, or a top that makes the shoulder easy to reach. The team can tell you if anything else is needed.",
+      "link": null,
+      "next": [
+        "bring",
+        "visit"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "review",
+      "q": [
+        "follow up visit",
+        "when is my review",
+        "do i need to come back",
+        "review appointment",
+        "follow-up after injection"
+      ],
+      "k": [
+        "follow up",
+        "follow-up",
+        "review",
+        "review date",
+        "come back",
+        "check up after"
+      ],
+      "a": "Yes, you leave with aftercare instructions and a review date, so the consultant can see how the treatment has worked and plan any next step. To change a review, call +91 77880 91092.",
+      "link": null,
+      "next": [
+        "recovery",
+        "reschedule"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "reschedule",
+      "q": [
+        "i want to cancel my appointment",
+        "change my appointment",
+        "reschedule",
+        "postpone my slot",
+        "i am running late"
+      ],
+      "k": [
+        "cancel",
+        "reschedule",
+        "postpone",
+        "change appointment",
+        "change my slot",
+        "running late",
+        "i am late"
+      ],
+      "a": "Please call or WhatsApp the team on +91 77880 91092 and they will move or cancel your slot. If you are running late, a quick call lets them rearrange the day for you.",
+      "link": null,
+      "next": [
+        "book",
+        "timings"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "whatsapp",
+      "chip": "Can I message on WhatsApp?",
+      "q": [
+        "can i message on whatsapp",
+        "whatsapp number",
+        "do you have whatsapp",
+        "whatsapp cheyocha",
+        "text you"
+      ],
+      "k": [
+        "whatsapp",
+        "whats app",
+        "message",
+        "chat on whatsapp",
+        "msg",
+        "text you"
+      ],
+      "a": "Yes. WhatsApp +91 77880 91092. It is the easiest way to send scans and reports before you come in, and the team will tell you whether you need an appointment.",
+      "link": "contact/",
+      "next": [
+        "reports-online",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "email",
+      "q": [
+        "what is your email",
+        "email address",
+        "can i email you",
+        "mail id"
+      ],
+      "k": [
+        "email",
+        "mail",
+        "e-mail",
+        "email id",
+        "mail id",
+        "gmail"
+      ],
+      "a": "You can email the clinic at info@halcyonpainfree.com. For appointments or quick questions, a call or WhatsApp on +91 77880 91092 is usually quicker, Monday to Saturday, 9 am to 6 pm.",
+      "link": "contact/",
+      "next": [
+        "whatsapp",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "phone",
+      "q": [
+        "what is your phone number",
+        "contact number",
+        "mobile number",
+        "clinic number",
+        "number ivvandi",
+        "phone number do"
+      ],
+      "k": [
+        "phone",
+        "phone number",
+        "contact number",
+        "mobile number",
+        "number",
+        "telephone"
+      ],
+      "a": "Call +91 77880 91092 or +91 95536 04226, Monday to Saturday, 9 am to 6 pm. You can also WhatsApp +91 77880 91092, or email info@halcyonpainfree.com.",
+      "link": "contact/",
+      "next": [
+        "whatsapp",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "branches",
+      "q": [
+        "do you have other branches",
+        "any branch in secunderabad",
+        "another clinic near me",
+        "is there a centre in gachibowli",
+        "how many centres"
+      ],
+      "k": [
+        "branch",
+        "branches",
+        "other centre",
+        "another clinic",
+        "centres",
+        "near me",
+        "other location"
+      ],
+      "a": "Halcyon is one centre, at Kukatpally Y Junction in Hyderabad. Consultation, diagnostic ultrasound and the procedure all happen in that one place, so there is no second address to travel to.",
+      "link": "contact/",
+      "next": [
+        "where",
+        "directions"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "outstation",
+      "q": [
+        "i live outside hyderabad",
+        "coming from another city",
+        "i am from vijayawada",
+        "travelling from out of town",
+        "can i come from bangalore"
+      ],
+      "k": [
+        "outstation",
+        "another city",
+        "out of town",
+        "outside hyderabad",
+        "travel",
+        "travelling",
+        "from vijayawada",
+        "from warangal",
+        "village"
+      ],
+      "a": "If you are travelling in, send your reports on WhatsApp to +91 77880 91092 first and call the team. They can tell you whether an assessment makes sense and roughly how long to allow, since the scan and any procedure can often be done in one visit.",
+      "link": null,
+      "next": [
+        "reports-online",
+        "same-day",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "online-consult",
+      "q": [
+        "do you do online consultation",
+        "video call with doctor",
+        "teleconsultation",
+        "consult on phone",
+        "can the doctor see me on video"
+      ],
+      "k": [
+        "online",
+        "video",
+        "video call",
+        "teleconsultation",
+        "tele consultation",
+        "virtual",
+        "zoom",
+        "phone consultation"
+      ],
+      "a": "The assessment at Halcyon depends on examining you and scanning the painful area with ultrasound, which needs you in the room. Whether anything can be done remotely is a question for the team: call +91 77880 91092, and you can send reports on WhatsApp.",
+      "link": null,
+      "next": [
+        "reports-online",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "home-visit",
+      "q": [
+        "do you do home visits",
+        "can the doctor come home",
+        "home treatment",
+        "doctor ghar aa sakte hain"
+      ],
+      "k": [
+        "home visit",
+        "come home",
+        "home treatment",
+        "at home",
+        "house call",
+        "ghar"
+      ],
+      "a": "Treatment at Halcyon is built around the scan and procedure in the clinic. Whether a home visit is ever possible is something the team would need to answer, so please call +91 77880 91092.",
+      "link": null,
+      "next": [
+        "elderly",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "elderly",
+      "q": [
+        "my mother is 75 can she come",
+        "treatment for elderly",
+        "old age knee pain",
+        "is it safe for senior citizens",
+        "my father can't walk much",
+        "wheelchair access"
+      ],
+      "k": [
+        "elderly",
+        "old age",
+        "senior",
+        "senior citizen",
+        "aged",
+        "mother",
+        "father",
+        "grandmother",
+        "grandfather",
+        "wheelchair",
+        "75 years",
+        "80 years"
+      ],
+      "a": "Many people seen at Halcyon are older, and the procedures are done under local anaesthetic as day care, with no general anaesthetic or admission. Tell the team about any heart, sugar or blood pressure problems and all medicines when you book. For access or wheelchair questions, call +91 77880 91092.",
+      "link": null,
+      "next": [
+        "safety",
+        "meds",
+        "companion"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "children",
+      "q": [
+        "do you treat children",
+        "my son is 12",
+        "pediatric pain",
+        "child knee pain",
+        "kids",
+        "teenager back pain"
+      ],
+      "k": [
+        "children",
+        "child",
+        "kid",
+        "kids",
+        "my son",
+        "daughter",
+        "paediatric",
+        "pediatric",
+        "teenager",
+        "baby"
+      ],
+      "a": "Children are not one of the groups described on the site, so please call the team on +91 77880 91092 first. They can tell you whether an assessment at Halcyon makes sense for your child or whether another specialist would be better.",
+      "link": null,
+      "next": [
+        "human",
+        "book"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "lady-doctor",
+      "q": [
+        "is there a lady doctor",
+        "female doctor available",
+        "can i see a woman doctor",
+        "lady doctor hai kya"
+      ],
+      "k": [
+        "lady doctor",
+        "female doctor",
+        "woman doctor",
+        "women doctor",
+        "female"
+      ],
+      "a": "Dr. Dasyam Pallavi, Consultant – Pain Management, is a woman consultant. She assesses patients and performs the ultrasound-guided procedures. You can ask for her by name when you book.",
+      "link": "dr-d-pallavi-profile/",
+      "next": [
+        "dr-pallavi",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "ask-doctor-name",
+      "q": [
+        "can i book with a specific doctor",
+        "i want to see dr pallavi",
+        "appointment with dr kiran",
+        "choose my doctor"
+      ],
+      "k": [
+        "specific doctor",
+        "book with",
+        "appointment with dr",
+        "appointment with doctor",
+        "choose doctor",
+        "by name",
+        "particular doctor"
+      ],
+      "a": "Yes, you can ask for either consultant by name when you call +91 77880 91092. The appointment runs the same way either way: examination, scan and your reports considered together before anything is done.",
+      "link": "our-doctors/",
+      "next": [
+        "doctors",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "privacy",
+      "q": [
+        "is my data safe",
+        "do you store what i type",
+        "privacy policy",
+        "is this chat private",
+        "who sees my messages"
+      ],
+      "k": [
+        "privacy",
+        "private",
+        "data",
+        "confidential",
+        "store",
+        "stored",
+        "personal information",
+        "who sees"
+      ],
+      "a": "Your questions are answered inside this page from a fixed list of answers. Nothing reaches the clinic unless you choose: if you ask for a callback and agree to send it, your details and the questions you asked go to the team so they can call you. The privacy policy has more.",
+      "link": "privacy-policy/",
+      "next": [
+        "whatsapp",
+        "records"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "records",
+      "q": [
+        "can i get my records",
+        "copy of my reports",
+        "delete my data",
+        "correct my details",
+        "medical records"
+      ],
+      "k": [
+        "records",
+        "medical records",
+        "my data",
+        "delete my data",
+        "copy of report",
+        "certificate",
+        "discharge summary"
+      ],
+      "a": "To ask what the clinic holds, correct something or ask for an enquiry to be deleted, contact the team on +91 77880 91092 or info@halcyonpainfree.com. The privacy policy explains your rights.",
+      "link": "privacy-policy/",
+      "next": [
+        "privacy",
+        "email"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "reviews",
+      "q": [
+        "are you good",
+        "reviews",
+        "google rating",
+        "what do patients say",
+        "is this clinic genuine",
+        "testimonials"
+      ],
+      "k": [
+        "reviews",
+        "review",
+        "rating",
+        "ratings",
+        "genuine",
+        "testimonials",
+        "feedback",
+        "reputation",
+        "good clinic",
+        "best clinic"
+      ],
+      "a": "You can read what patients say on the clinic's Google profile. The best judge is the appointment itself: you are examined and scanned, told plainly what the scan shows, and nothing is injected on a hunch.",
+      "link": "about-us/",
+      "next": [
+        "doctors",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "about",
+      "q": [
+        "tell me about halcyon",
+        "what is halcyon",
+        "about the clinic",
+        "what kind of clinic is this",
+        "is this a hospital"
+      ],
+      "k": [
+        "about",
+        "halcyon",
+        "about clinic",
+        "what is halcyon",
+        "hospital",
+        "centre",
+        "center",
+        "pain clinic"
+      ],
+      "a": "Halcyon Pain Management Centre in Kukatpally, Hyderabad treats long-standing pain without surgery. Every appointment begins with an examination and a diagnostic ultrasound, and the treatment follows from what they show. Procedures are image-guided, under local anaesthetic, as day care.",
+      "link": "about-us/",
+      "next": [
+        "conditions",
+        "treatments",
+        "doctors"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "second-opinion",
+      "q": [
+        "i want a second opinion",
+        "another doctor said",
+        "can you review my case",
+        "second opinion on my mri",
+        "my doctor suggested injection is it needed"
+      ],
+      "k": [
+        "second opinion",
+        "another opinion",
+        "other doctor said",
+        "review my case",
+        "opinion"
+      ],
+      "a": "Yes. Bring your reports and any earlier prescriptions, or WhatsApp them to +91 77880 91092 first. The consultant examines you and scans the painful area, and tells you plainly what they think is causing the pain and what options make sense.",
+      "link": null,
+      "next": [
+        "reports-online",
+        "surgery-advised",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "surgery-advised",
+      "q": [
+        "doctor told me to get surgery",
+        "surgery advised elsewhere",
+        "ortho said operation",
+        "they said i need spine surgery",
+        "operation cheyali annaru",
+        "surgery bola hai doctor ne"
+      ],
+      "k": [
+        "surgery advised",
+        "told surgery",
+        "said surgery",
+        "advised operation",
+        "recommended surgery",
+        "operation bola"
+      ],
+      "a": "Bring your reports and an assessment will show whether a non-surgical option is reasonable for you. Sometimes it is; sometimes surgery really is the right answer, for example advanced grade 4 knee arthritis with deformity or worsening nerve weakness, and you will be told that plainly.",
+      "link": null,
+      "next": [
+        "surgery",
+        "second-opinion",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "knee-replacement-advised",
+      "q": [
+        "doctor said knee replacement",
+        "tkr advised",
+        "can i avoid knee replacement",
+        "replacement cheyali antunnaru",
+        "knee operation advised",
+        "is replacement needed"
+      ],
+      "k": [
+        "knee replacement",
+        "replacement",
+        "tkr",
+        "total knee",
+        "joint replacement",
+        "avoid replacement"
+      ],
+      "a": "For many people with knee osteoarthritis, non-surgical options such as COOLIEF cooled radiofrequency can reduce pain or put surgery off. They do not rebuild the joint, so in advanced grade 4 arthritis with deformity a replacement may still be right, and you will be told that plainly.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "coolief",
+        "knee-oa",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "surgery",
+      "chip": "Will I need surgery?",
+      "q": [
+        "will i need surgery",
+        "do you operate",
+        "is there any cutting",
+        "can this be done without operation",
+        "operation lekunda",
+        "bina operation ke"
+      ],
+      "k": [
+        "surgery",
+        "surgical",
+        "operation",
+        "operate",
+        "knife",
+        "cut",
+        "cutting",
+        "scalpel",
+        "without surgery",
+        "non surgical"
+      ],
+      "a": "Halcyon is a non-surgical centre: every procedure is image-guided through a needle and done as day care. The one case where a replacement is still the right answer is advanced grade 4 knee arthritis with joint deformity, and you will be told that plainly rather than treated anyway.",
+      "link": "services/",
+      "next": [
+        "surgery-advised",
+        "cost",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "admission",
+      "q": [
+        "will i be admitted",
+        "do i need to stay overnight",
+        "hospital stay",
+        "how many days admission",
+        "is it day care"
+      ],
+      "k": [
+        "admission",
+        "admitted",
+        "admit",
+        "overnight",
+        "stay in hospital",
+        "hospital stay",
+        "day care",
+        "daycare",
+        "discharge"
+      ],
+      "a": "No admission. Procedures are day care under local anaesthetic, with no general anaesthetic and no overnight stay. Most people are home within about two hours of arriving, with aftercare instructions and a review date.",
+      "link": null,
+      "next": [
+        "recovery",
+        "anaesthesia"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "anaesthesia",
+      "chip": "Will it hurt?",
+      "q": [
+        "will it hurt",
+        "will i be put to sleep",
+        "general anaesthesia or local",
+        "does the injection hurt",
+        "will i be awake",
+        "sedation"
+      ],
+      "k": [
+        "hurt",
+        "painful",
+        "anaesthesia",
+        "anaesthetic",
+        "anesthesia",
+        "sedation",
+        "asleep",
+        "awake",
+        "put to sleep",
+        "general anaesthesia",
+        "local anaesthetic",
+        "numb"
+      ],
+      "a": "Procedures are done under local anaesthetic with ultrasound guidance, so you stay awake and talking throughout. Most people feel pressure or a brief ache rather than sharp pain. There is no general anaesthetic and no hospital admission.",
+      "link": null,
+      "next": [
+        "needle-fear",
+        "pain-after",
+        "recovery"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "needle-fear",
+      "q": [
+        "i am scared of needles",
+        "afraid of injections",
+        "needle phobia",
+        "injection ante bhayam",
+        "injection se darr lagta hai"
+      ],
+      "k": [
+        "scared",
+        "afraid",
+        "fear",
+        "phobia",
+        "nervous",
+        "anxious",
+        "bhayam",
+        "darr",
+        "needle",
+        "needles"
+      ],
+      "a": "That is common, and worth saying at the start. The skin is numbed with local anaesthetic first, the needle is fine, and you stay awake so you can tell the consultant how you feel at every step. You can ask anything before you decide.",
+      "link": null,
+      "next": [
+        "anaesthesia",
+        "safety"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "pain-after",
+      "q": [
+        "will it hurt after the injection",
+        "soreness after procedure",
+        "pain after injection normal",
+        "flare after rfa"
+      ],
+      "k": [
+        "after injection",
+        "soreness",
+        "sore",
+        "pain after",
+        "flare",
+        "swelling after",
+        "after procedure"
+      ],
+      "a": "Some soreness is normal: a day or two after prolotherapy, a few days after a regenerative injection, and sometimes a short flare after radiofrequency before the benefit shows. Contact the team if it is getting worse rather than better, and seek urgent care for fever or spreading redness.",
+      "link": null,
+      "next": [
+        "side-effects",
+        "painkiller-after",
+        "recovery"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "recovery",
+      "q": [
+        "how long is recovery",
+        "rest after procedure",
+        "aftercare",
+        "bed rest needed",
+        "downtime",
+        "when can i walk"
+      ],
+      "k": [
+        "recovery",
+        "recover",
+        "aftercare",
+        "rest",
+        "bed rest",
+        "downtime",
+        "after the procedure",
+        "walk after"
+      ],
+      "a": "Most people walk out and go about a normal or light day, with aftercare instructions and a review date. How much rest you need depends on the procedure and the joint, and the consultant tells you exactly what to do and avoid before you leave.",
+      "link": null,
+      "next": [
+        "drive",
+        "work",
+        "pain-after"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "drive",
+      "q": [
+        "can i drive after",
+        "can i drive home",
+        "ride bike after injection",
+        "should someone drive me"
+      ],
+      "k": [
+        "drive",
+        "driving",
+        "drive home",
+        "ride",
+        "bike",
+        "scooter",
+        "car after"
+      ],
+      "a": "It depends on the procedure. After some nerve blocks the arm or leg can stay numb or weak for a few hours, so it is safer to have someone drive you home. Ask the team when you book, and follow the advice you are given on the day.",
+      "link": null,
+      "next": [
+        "companion",
+        "work"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "work",
+      "q": [
+        "can i work next day",
+        "office after injection",
+        "how many days leave",
+        "when can i go back to work",
+        "rest days needed"
+      ],
+      "k": [
+        "work",
+        "office",
+        "job",
+        "leave",
+        "back to work",
+        "next day",
+        "days off",
+        "return to work"
+      ],
+      "a": "Most people go about a normal or light day soon after, though it depends on the procedure and your work. Heavy or physical jobs may need a short easing off. The consultant tells you what applies to you before you leave.",
+      "link": null,
+      "next": [
+        "recovery",
+        "drive"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "howlong-relief",
+      "q": [
+        "how long will the relief last",
+        "will the pain come back",
+        "how long does the effect stay",
+        "relief lasts how long"
+      ],
+      "k": [
+        "how long does it last",
+        "relief last",
+        "lasting",
+        "come back",
+        "recur",
+        "wear off",
+        "effect last"
+      ],
+      "a": "That varies with the condition, how worn the joint is and what is causing the pain, which is why the diagnostic scan comes first. The consultant gives you a realistic answer for your case rather than a number that fits everyone.",
+      "link": null,
+      "next": [
+        "permanent",
+        "sessions",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "permanent",
+      "q": [
+        "is it permanent",
+        "will it cure me",
+        "permanent solution",
+        "complete cure",
+        "pain will go forever",
+        "shaswatha parishkaram"
+      ],
+      "k": [
+        "permanent",
+        "cure",
+        "cured",
+        "forever",
+        "permanent solution",
+        "complete cure",
+        "guarantee",
+        "guaranteed"
+      ],
+      "a": "No honest clinic can promise a cure for everyone. The aim is to find what is actually causing the pain and treat that, which gives the best chance of lasting relief. Some treated nerves regrow over time and the procedure can often be repeated; the consultant explains what to expect for you.",
+      "link": null,
+      "next": [
+        "howlong-relief",
+        "success-rate"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "success-rate",
+      "q": [
+        "what is the success rate",
+        "does it really work",
+        "how effective is it",
+        "will it work for me",
+        "chances of success"
+      ],
+      "k": [
+        "success rate",
+        "success",
+        "effective",
+        "does it work",
+        "will it work",
+        "results",
+        "chances",
+        "percentage"
+      ],
+      "a": "It varies with the condition, the person and how worn the tissue is, so a single figure would mislead you. That is why the scan, and where needed a diagnostic block, come first: treatment follows proof of the source. The consultant gives you a realistic answer for your case.",
+      "link": null,
+      "next": [
+        "diagnostic-block",
+        "howlong-relief"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "sessions",
+      "q": [
+        "how many sessions",
+        "how many injections will i need",
+        "will i need more than one session",
+        "one time or multiple",
+        "entha sessions",
+        "kitne injection lagenge"
+      ],
+      "k": [
+        "sessions",
+        "sittings",
+        "how many injections",
+        "more than one",
+        "repeat",
+        "one time",
+        "multiple",
+        "course"
+      ],
+      "a": "It depends on the treatment and your case. Prolotherapy is a short course of small injections; some people need more than one regenerative injection; a radiofrequency procedure can often be repeated if pain returns. The consultant tells you what is likely, and how far apart, before you start.",
+      "link": null,
+      "next": [
+        "cost",
+        "howlong-relief"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "side-effects",
+      "q": [
+        "what are the side effects",
+        "any risks",
+        "complications",
+        "is there any damage",
+        "side effects enti"
+      ],
+      "k": [
+        "side effect",
+        "side effects",
+        "infection risk",
+        "cause infection",
+        "infection",
+        "risk",
+        "risks",
+        "complication",
+        "complications",
+        "damage",
+        "danger"
+      ],
+      "a": "The usual effects are those of any injection: soreness, swelling or bruising at the site, and sometimes temporary numbness or a short flare. Infection, bleeding or nerve injury are uncommon, and ultrasound lets the consultant see the needle throughout. Seek urgent care for fever, spreading redness or new weakness.",
+      "link": null,
+      "next": [
+        "safety",
+        "steroids",
+        "pain-after"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "safety",
+      "chip": "Is it safe?",
+      "q": [
+        "is it safe",
+        "is this treatment safe",
+        "safe for me",
+        "any harm",
+        "is it risky"
+      ],
+      "k": [
+        "safe",
+        "safety",
+        "harm",
+        "harmful",
+        "risky"
+      ],
+      "a": "These procedures are generally well tolerated. They are done through a fine needle under live ultrasound, so the consultant can see the target and avoid nearby nerves and vessels. Tell the team about your health and all your medicines when you book, as some conditions change what is used.",
+      "link": null,
+      "next": [
+        "side-effects",
+        "meds"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "steroids",
+      "q": [
+        "is it a steroid injection",
+        "do you use steroids",
+        "steroids harmful",
+        "cortisone shot",
+        "steroid injection side effects"
+      ],
+      "k": [
+        "steroid",
+        "steroids",
+        "cortisone",
+        "kenacort",
+        "depo"
+      ],
+      "a": "Not always. A nerve block is usually a local anaesthetic, sometimes with a steroid. Regenerative medicine uses a concentrate from your own blood, and prolotherapy most commonly uses dextrose. If a steroid is used, people with diabetes may see a temporary rise in sugar. The consultant explains what is used and why.",
+      "link": null,
+      "next": [
+        "diabetes",
+        "nerve-block",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "is-injection",
+      "q": [
+        "is it an injection",
+        "is it just an injection",
+        "what is the treatment actually",
+        "injection or tablets"
+      ],
+      "k": [
+        "injection",
+        "injections",
+        "shot",
+        "needle procedure",
+        "is it injection"
+      ],
+      "a": "Yes. Every procedure at Halcyon is done through a fine needle under image guidance, not a cut. What goes through the needle differs: a local anaesthetic block, fluid to free a nerve, your own growth factor concentrate, a prolotherapy solution, or a radiofrequency probe.",
+      "link": "services/",
+      "next": [
+        "treatments",
+        "anaesthesia"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "radiation",
+      "q": [
+        "is there radiation",
+        "does the scan have x ray radiation",
+        "radiation exposure",
+        "is ultrasound safe"
+      ],
+      "k": [
+        "radiation",
+        "x-ray radiation",
+        "rays",
+        "radiation exposure"
+      ],
+      "a": "Ultrasound uses sound waves, not radiation, which is one reason it suits being used in the consulting room and to guide the needle. If any other imaging is ever needed for your procedure, the consultant will explain it to you beforehand.",
+      "link": null,
+      "next": [
+        "ultrasound",
+        "safety"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "ultrasound",
+      "q": [
+        "why ultrasound",
+        "what is the scan for",
+        "diagnostic ultrasound",
+        "usg done there",
+        "do you do sonography"
+      ],
+      "k": [
+        "ultrasound",
+        "usg",
+        "sonography",
+        "sonograph",
+        "guided",
+        "guidance",
+        "image guided",
+        "diagnostic ultrasound"
+      ],
+      "a": "Ultrasound is used twice: first to find which structure is actually generating the pain, then to guide the needle exactly where it needs to go. It is done in the consulting room, so diagnosis and treatment happen in one sitting.",
+      "link": null,
+      "next": [
+        "ultrasound-vs-mri",
+        "visit",
+        "dr-kiran"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "ultrasound-vs-mri",
+      "q": [
+        "is ultrasound better than mri",
+        "why not mri",
+        "mri or ultrasound",
+        "difference between mri and ultrasound"
+      ],
+      "k": [
+        "better than mri",
+        "mri or ultrasound",
+        "ultrasound vs mri",
+        "versus mri",
+        "mri vs"
+      ],
+      "a": "They show different things. MRI gives detailed pictures and reports are useful, so bring them. Ultrasound is real time, so tendons, nerves and joints can be seen as they move and the needle can be guided live. At Halcyon both are read alongside your examination.",
+      "link": null,
+      "next": [
+        "mri-first",
+        "why-radiologist"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "mri-first",
+      "q": [
+        "do i need an mri before coming",
+        "should i get mri done first",
+        "no scans done yet",
+        "without mri can i come",
+        "mri teeyinchala",
+        "x ray required"
+      ],
+      "k": [
+        "do i need mri",
+        "need mri",
+        "need an mri",
+        "need a mri",
+        "mri needed",
+        "mri necessary",
+        "mri first",
+        "mri before",
+        "get mri",
+        "no scan",
+        "no mri",
+        "without mri",
+        "x-ray required",
+        "scan first"
+      ],
+      "a": "Not necessarily. Many problems can be assessed with the diagnostic ultrasound at the consultation. If you already have X-ray, MRI or CT reports, bring them. The consultant tells you if further imaging is needed.",
+      "link": null,
+      "next": [
+        "bring",
+        "ultrasound"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "mri-findings",
+      "q": [
+        "my mri shows many problems",
+        "mri says degeneration",
+        "report says disc bulge at three levels",
+        "x ray shows arthritis is that my pain"
+      ],
+      "k": [
+        "mri shows",
+        "report says",
+        "degeneration",
+        "degenerative",
+        "x-ray shows",
+        "findings",
+        "multiple levels"
+      ],
+      "a": "Not everything on an MRI or X-ray is causing pain; wear and disc bulges show on many scans, including in people without pain. That is why the scan is read alongside your examination, and why a diagnostic block is sometimes used to prove the source.",
+      "link": "dr-pss-kiran-profile/",
+      "next": [
+        "diagnostic-block",
+        "why-radiologist"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "physio",
+      "q": [
+        "should i continue physiotherapy",
+        "physio along with injection",
+        "exercises after treatment",
+        "do i still need physio"
+      ],
+      "k": [
+        "physiotherapy",
+        "physio",
+        "exercise",
+        "exercises",
+        "stretching",
+        "rehab",
+        "rehabilitation",
+        "yoga"
+      ],
+      "a": "Usually yes. Physiotherapy or a graded exercise programme is often part of the plan alongside a procedure, so the range or strength gained is kept. The consultant tells you what to do and when, and whether anything should wait for a few days.",
+      "link": null,
+      "next": [
+        "recovery",
+        "treatments"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "painkiller-after",
+      "q": [
+        "which painkiller after injection",
+        "can i take ibuprofen after",
+        "pain tablet after prp",
+        "combiflam after injection"
+      ],
+      "k": [
+        "ibuprofen",
+        "diclofenac",
+        "combiflam",
+        "anti-inflammatory",
+        "painkiller after",
+        "tablet after"
+      ],
+      "a": "Ask the team which pain relief to use rather than choosing your own. After regenerative injections and prolotherapy, some anti-inflammatory painkillers may dampen the healing response, so the consultant will tell you what is suitable.",
+      "link": null,
+      "next": [
+        "pain-after",
+        "meds"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "painkillers",
+      "q": [
+        "i am tired of painkillers",
+        "will i have to take tablets forever",
+        "can i stop painkillers after",
+        "tablets not working",
+        "painkillers addiction"
+      ],
+      "k": [
+        "painkillers",
+        "pain killers",
+        "tablets",
+        "pills",
+        "medicine forever",
+        "addiction",
+        "dependence",
+        "tablets not working"
+      ],
+      "a": "Many people come to Halcyon because tablets are no longer enough. The aim is to treat the source so you may need less, but do not stop or change any medicine on your own; any reduction is planned with your doctor once the effect of treatment is clear.",
+      "link": null,
+      "next": [
+        "meds",
+        "treatments",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "meds",
+      "q": [
+        "should i stop my tablets",
+        "can i take my medicines before",
+        "i take bp tablets",
+        "medicine list",
+        "should i stop my medicine"
+      ],
+      "k": [
+        "medication",
+        "medicine",
+        "medicines",
+        "tablets",
+        "stop medicine",
+        "my medicines",
+        "bp tablets",
+        "thyroid"
+      ],
+      "a": "Do not stop or start anything on your own. Tell the team every medicine you take when you book, as some change what can be used or need planning before an injection. If you are unsure, call +91 77880 91092 and ask.",
+      "link": null,
+      "next": [
+        "blood-thinners",
+        "diabetes"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "blood-thinners",
+      "q": [
+        "i take blood thinners",
+        "i am on aspirin",
+        "warfarin patient",
+        "clopidogrel",
+        "ecosprin can i take injection"
+      ],
+      "k": [
+        "blood thinner",
+        "blood thinners",
+        "thinner",
+        "aspirin",
+        "ecosprin",
+        "warfarin",
+        "clopidogrel",
+        "apixaban",
+        "rivaroxaban",
+        "anticoagulant"
+      ],
+      "a": "Tell the team when you book: blood thinners need planning before an injection. Do not stop them on your own, as they are usually prescribed for an important reason. Call +91 77880 91092; the consultant will plan with you and, where needed, the doctor who prescribed them.",
+      "link": null,
+      "next": [
+        "meds",
+        "safety"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "diabetes",
+      "q": [
+        "i have diabetes",
+        "sugar patient can take injection",
+        "diabetic knee pain treatment",
+        "high sugar injection safe"
+      ],
+      "k": [
+        "diabetes",
+        "diabetic",
+        "sugar",
+        "blood sugar",
+        "insulin",
+        "metformin"
+      ],
+      "a": "Tell the team when you book. Poorly controlled diabetes may mean a procedure is delayed or changed, and if a steroid is used your sugar may rise for a short while. Do not change your diabetes medicines on your own. Frozen shoulder is also more common in people with diabetes.",
+      "link": null,
+      "next": [
+        "meds",
+        "steroids"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "bp-heart",
+      "q": [
+        "i have bp",
+        "heart patient can i get treatment",
+        "high blood pressure",
+        "i had stent",
+        "cardiac patient"
+      ],
+      "k": [
+        "bp",
+        "blood pressure",
+        "hypertension",
+        "heart",
+        "cardiac",
+        "stent",
+        "bypass",
+        "pacemaker"
+      ],
+      "a": "Tell the team about any heart or blood pressure problems, and every medicine you take, when you book. These can change what is used, and blood thinners in particular need planning before an injection. Do not stop anything on your own.",
+      "link": null,
+      "next": [
+        "blood-thinners",
+        "meds"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "pregnancy",
+      "q": [
+        "i am pregnant",
+        "can i get injection during pregnancy",
+        "pregnancy back pain",
+        "breastfeeding injection safe",
+        "garbhavati",
+        "trying to conceive"
+      ],
+      "k": [
+        "pregnant",
+        "pregnancy",
+        "breastfeeding",
+        "lactating",
+        "conceive",
+        "garbhavati",
+        "expecting"
+      ],
+      "a": "Please tell the team if you are pregnant, might be, or are breastfeeding before anything is planned, because it changes what can be used. Call +91 77880 91092 first and they can say whether an assessment makes sense now. Do not start or stop medicines without your doctor.",
+      "link": null,
+      "next": [
+        "meds",
+        "sciatica"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "allergy",
+      "q": [
+        "i am allergic to medicines",
+        "allergy to anaesthesia",
+        "drug allergy",
+        "i react to injections"
+      ],
+      "k": [
+        "allergy",
+        "allergic",
+        "reaction",
+        "drug allergy"
+      ],
+      "a": "Tell the team about any allergy when you book and again on the day. An allergy to a solution used would rule that option out, and the consultant checks your medicines first. With regenerative medicine the concentrate comes from your own blood, so an allergy to it is not expected.",
+      "link": null,
+      "next": [
+        "safety",
+        "meds"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "what-is-ipm",
+      "q": [
+        "what is interventional pain management",
+        "interventional pain medicine meaning",
+        "what do you mean by interventional",
+        "how is this different from tablets"
+      ],
+      "k": [
+        "interventional",
+        "interventional pain",
+        "pain management",
+        "pain medicine",
+        "intervention"
+      ],
+      "a": "Interventional pain management means finding the structure causing the pain and treating it directly with a precise, image-guided procedure through a needle, such as a nerve block, radiofrequency or a regenerative injection, rather than with surgery or tablets alone.",
+      "link": "services/",
+      "next": [
+        "treatments",
+        "pain-specialist"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "pain-specialist",
+      "q": [
+        "what is a pain specialist",
+        "what does a pain doctor do",
+        "pain management doctor",
+        "why see a pain specialist"
+      ],
+      "k": [
+        "pain specialist",
+        "pain doctor",
+        "pain physician",
+        "algologist"
+      ],
+      "a": "A pain specialist assesses long-standing pain to find where it is coming from, and treats it with medicines, image-guided procedures and rehabilitation. At Halcyon, Dr. Dasyam Pallavi, Consultant – Pain Management, assesses you and performs the ultrasound-guided procedures.",
+      "link": "our-doctors/",
+      "next": [
+        "dr-pallavi",
+        "what-is-ipm"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "why-radiologist",
+      "q": [
+        "why is there a radiologist",
+        "what does the radiologist do",
+        "why two doctors",
+        "radiologist role"
+      ],
+      "k": [
+        "radiologist",
+        "radiology",
+        "radiodiagnosis",
+        "why two doctors",
+        "imaging specialist"
+      ],
+      "a": "An abnormality on an MRI or X-ray is not always the source of pain. Dr. PSS Kiran, Consultant Radiologist, reads your X-ray, MRI and ultrasound alongside the examination and provides image guidance for procedures in collaboration with Dr. Pallavi, so both pictures are weighed together.",
+      "link": "dr-pss-kiran-profile/",
+      "next": [
+        "dr-kiran",
+        "mri-findings"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "ortho-vs-pain",
+      "q": [
+        "orthopaedic or pain specialist",
+        "difference between ortho and pain doctor",
+        "should i see ortho",
+        "why not orthopedic surgeon",
+        "bone doctor or pain doctor"
+      ],
+      "k": [
+        "orthopaedic",
+        "orthopedic",
+        "ortho",
+        "bone doctor",
+        "orthopaedician",
+        "surgeon"
+      ],
+      "a": "Both have a place. An orthopaedic surgeon is the right person when an operation may be needed. A pain specialist focuses on finding the source of long-standing pain and treating it without surgery, using image-guided procedures. Many people see both, and Halcyon will tell you plainly if surgery should be considered.",
+      "link": null,
+      "next": [
+        "pain-specialist",
+        "surgery"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "treatments",
+      "chip": "What treatments do you do?",
+      "q": [
+        "what treatments do you offer",
+        "which procedures do you do",
+        "services",
+        "list of treatments",
+        "treatment options"
+      ],
+      "k": [
+        "treatments",
+        "treatment",
+        "procedures",
+        "services",
+        "options",
+        "therapies",
+        "what do you offer"
+      ],
+      "a": "Four pathways, all image-guided and day care: regenerative medicine (growth factor concentrate from your own blood), radiofrequency ablation including COOLIEF cooled RF for the knee, prolotherapy, and nerve hydrodissection with nerve blocks. The scan decides which one suits you.",
+      "link": "services/",
+      "next": [
+        "regenerative",
+        "rfa",
+        "prolotherapy"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "conditions",
+      "chip": "What do you treat?",
+      "q": [
+        "what conditions do you treat",
+        "which problems do you treat",
+        "diseases treated",
+        "what pains do you handle"
+      ],
+      "k": [
+        "conditions",
+        "condition",
+        "problems",
+        "diseases",
+        "what do you treat",
+        "which pain"
+      ],
+      "a": "Twelve: knee, low back, neck and shoulder pain, sciatica, slipped disc, hip pain, sports injuries, trigeminal neuralgia, elbow, hand and wrist pain, foot and ankle pain, and cervical spondylosis. Tell me where it hurts and I can say more.",
+      "link": "pain-conditions/",
+      "next": [
+        "knee",
+        "low-back",
+        "shoulder"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "diagnostic-block",
+      "q": [
+        "what is a diagnostic block",
+        "test injection",
+        "why block first",
+        "block before rf"
+      ],
+      "k": [
+        "diagnostic block",
+        "test block",
+        "test injection",
+        "block first",
+        "prove the source"
+      ],
+      "a": "A small injection of local anaesthetic on one suspected structure. If your usual pain settles, that structure is the source and treatment follows from it; if it does not, the plan changes. In the low back and neck especially, it is what stands between a diagnosis and a guess.",
+      "link": "services/",
+      "next": [
+        "medial-branch-block",
+        "rfa"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "medial-branch-block",
+      "q": [
+        "what is medial branch block",
+        "mbb",
+        "facet block",
+        "block for back pain"
+      ],
+      "k": [
+        "medial branch block",
+        "medial branch",
+        "mbb",
+        "facet block",
+        "facet joint block"
+      ],
+      "a": "A medial branch block numbs, for a while, the tiny nerves supplying a suspected facet joint in the neck or low back, under image guidance. If your usual pain settles, that joint is confirmed as the source and facet radiofrequency may follow. If not, the plan changes.",
+      "link": "low-back-pain-treatment/",
+      "next": [
+        "facet-rf",
+        "diagnostic-block"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "epidural",
+      "q": [
+        "what is an epidural injection",
+        "epidural for back pain",
+        "epidural steroid injection",
+        "caudal epidural"
+      ],
+      "k": [
+        "epidural",
+        "epidural injection",
+        "esi",
+        "caudal",
+        "spinal injection"
+      ],
+      "a": "An epidural injection is placed under imaging into the epidural space at the level the scan and examination have identified. At Halcyon it is the usual treatment for a slipped disc pressing on a nerve root, and one option for sciatica. It is day care under local anaesthetic.",
+      "link": "slipped-disc-treatment/",
+      "next": [
+        "transforaminal",
+        "slipped-disc"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "transforaminal",
+      "q": [
+        "transforaminal injection",
+        "tfesi",
+        "root block",
+        "nerve root injection",
+        "selective nerve root block"
+      ],
+      "k": [
+        "transforaminal",
+        "tfesi",
+        "root block",
+        "nerve root block",
+        "snrb",
+        "selective nerve root"
+      ],
+      "a": "A transforaminal injection is placed under imaging at the opening where the irritated nerve root leaves the spine. It aims at the root that is actually irritated rather than the whole area, and is a usual treatment for sciatica and a slipped disc.",
+      "link": "sciatica/",
+      "next": [
+        "epidural",
+        "sciatica"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "nerve-block",
+      "q": [
+        "what is a nerve block",
+        "nerve block injection",
+        "how does a nerve block work",
+        "block therapy"
+      ],
+      "k": [
+        "nerve block",
+        "nerve blocks",
+        "block",
+        "nerve injection"
+      ],
+      "a": "A nerve block places medicine, usually a local anaesthetic and sometimes a steroid, on or beside a specific nerve under image guidance. It is used to calm a nerve that is firing so rehabilitation can proceed, or to prove where the pain is coming from before anything else is done.",
+      "link": "non-surgical-nerve-hydrodissection-nerve-blocks/",
+      "next": [
+        "diagnostic-block",
+        "hydrodissection"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "hydrodissection",
+      "q": [
+        "what is hydrodissection",
+        "nerve hydro dissection",
+        "trapped nerve treatment",
+        "nerve release without surgery"
+      ],
+      "k": [
+        "hydrodissection",
+        "hydro dissection",
+        "trapped nerve",
+        "entrapment",
+        "entrapped",
+        "nerve release",
+        "free the nerve"
+      ],
+      "a": "Fluid, usually saline and sometimes with local anaesthetic or dextrose, is placed under ultrasound around a trapped nerve to separate it from the tissue pressing on it. The nerve is left intact and nothing is cut; relief often begins on the table. It is often used for carpal tunnel.",
+      "link": "non-surgical-nerve-hydrodissection-nerve-blocks/",
+      "next": [
+        "carpal-tunnel",
+        "nerve-block"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "suprascapular",
+      "q": [
+        "suprascapular nerve block",
+        "ssnb",
+        "block for shoulder pain",
+        "shoulder nerve injection"
+      ],
+      "k": [
+        "suprascapular",
+        "ssnb",
+        "suprascapular block",
+        "shoulder block"
+      ],
+      "a": "A suprascapular nerve block quietens the main nerve supplying the shoulder joint, easing pain so you can move it. At Halcyon it is used for frozen shoulder and rotator cuff pain, often with hydrodilatation, and alongside a movement programme.",
+      "link": "shoulder-pain/",
+      "next": [
+        "hydrodilatation",
+        "frozen-shoulder"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "hydrodilatation",
+      "q": [
+        "what is hydrodilatation",
+        "hydrodilation for frozen shoulder",
+        "capsule distension",
+        "joint stretching injection"
+      ],
+      "k": [
+        "hydrodilatation",
+        "hydrodilation",
+        "hydro dilatation",
+        "distension",
+        "capsular distension"
+      ],
+      "a": "Hydrodilatation places fluid into the shoulder joint under guidance to stretch a capsule that has tightened, as in frozen shoulder. It is usually paired with a suprascapular block and a movement programme, so the range freed up is kept.",
+      "link": "shoulder-pain/",
+      "next": [
+        "suprascapular",
+        "frozen-shoulder"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "rfa",
+      "chip": "What is radiofrequency?",
+      "q": [
+        "what is radiofrequency ablation",
+        "rfa treatment",
+        "nerve burning",
+        "radio frequency for back pain",
+        "rf ablation"
+      ],
+      "k": [
+        "radiofrequency",
+        "radiofrequency ablation",
+        "ablation",
+        "rfa",
+        "nerve burning",
+        "burn the nerve",
+        "rf"
+      ],
+      "a": "Radiofrequency ablation uses a precise, controlled current through a fine probe to stop a small sensory nerve carrying the pain signal. At Halcyon it is used for knee, neck, low back and trigeminal nerve pain, and only after a diagnostic block has confirmed the source.",
+      "link": "radiofrequency-ablations/",
+      "next": [
+        "coolief",
+        "diagnostic-block",
+        "cost"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "coolief",
+      "chip": "What is COOLIEF?",
+      "q": [
+        "what is coolief",
+        "cooled radiofrequency",
+        "coolief knee",
+        "is coolief fda approved",
+        "cooled rf"
+      ],
+      "k": [
+        "coolief",
+        "cooled radiofrequency",
+        "cooled rf",
+        "cooled",
+        "water cooled",
+        "fda"
+      ],
+      "a": "COOLIEF is the US FDA-cleared cooled radiofrequency system Halcyon uses for knee pain. Its water-cooled probe treats a larger volume of tissue than standard radiofrequency, so the genicular nerves around the knee can be reached more completely. A diagnostic block confirms them first.",
+      "link": "radiofrequency-ablations/",
+      "next": [
+        "genicular",
+        "knee-oa",
+        "cost"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "genicular",
+      "q": [
+        "genicular nerve block",
+        "genicular nerve ablation",
+        "knee nerve treatment",
+        "gnb"
+      ],
+      "k": [
+        "genicular",
+        "genicular nerve",
+        "genicular block",
+        "knee nerves",
+        "gnb"
+      ],
+      "a": "The genicular nerves carry pain signals from the knee. A genicular nerve block first confirms they are carrying your pain; if it does, COOLIEF cooled radiofrequency of those nerves can interrupt the signal. It treats the nerves, not the joint, so it does not correct deformity.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "coolief",
+        "knee"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "facet-rf",
+      "q": [
+        "facet joint radiofrequency",
+        "lumbar rf",
+        "cervical facet rf",
+        "rf for neck"
+      ],
+      "k": [
+        "facet radiofrequency",
+        "facet rf",
+        "lumbar rf",
+        "cervical rf",
+        "medial branch radiofrequency",
+        "facet ablation"
+      ],
+      "a": "Facet radiofrequency interrupts the small medial branch nerves carrying pain from a worn facet joint in the neck or low back. It is done only after a medial branch block has confirmed that joint as the source, under local anaesthetic as day care.",
+      "link": "radiofrequency-ablations/",
+      "next": [
+        "medial-branch-block",
+        "neck"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "pulsed-rf",
+      "q": [
+        "do you do pulsed rf",
+        "pulsed radiofrequency",
+        "prf treatment",
+        "pulsed rf for nerve pain"
+      ],
+      "k": [
+        "pulsed",
+        "pulsed rf",
+        "pulsed radiofrequency",
+        "prf"
+      ],
+      "a": "Pulsed radiofrequency is not described on the site. Halcyon's radiofrequency page covers ablation for the knee, neck, low back and trigeminal nerve, after a diagnostic block. Whether a different form suits your case is a question for the consultant; call +91 77880 91092.",
+      "link": "radiofrequency-ablations/",
+      "next": [
+        "rfa",
+        "book"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "regenerative",
+      "chip": "What is regenerative medicine?",
+      "q": [
+        "what is regenerative medicine",
+        "growth factor injection",
+        "gfc treatment",
+        "own blood injection",
+        "regenerative therapy for knee"
+      ],
+      "k": [
+        "regenerative",
+        "regenerative medicine",
+        "regenerative therapy",
+        "growth factor",
+        "growth factor concentrate",
+        "gfc",
+        "own blood",
+        "platelet"
+      ],
+      "a": "A small sample of your own blood is drawn, its growth factors concentrated, and placed under ultrasound exactly where a tendon, ligament or joint has worn or torn. It aims to prompt repair rather than mask pain, so improvement is usually gradual over weeks.",
+      "link": "regenerative-medicine/",
+      "next": [
+        "prp",
+        "sessions",
+        "cost"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "prp",
+      "q": [
+        "do you do prp",
+        "prp injection",
+        "platelet rich plasma",
+        "prp for knee",
+        "prp for hair"
+      ],
+      "k": [
+        "prp",
+        "platelet rich plasma",
+        "plasma",
+        "platelets"
+      ],
+      "a": "Halcyon uses a growth factor concentrate made from your own blood, which is closely related to PRP: both rely on growth factors carried by platelets. It is placed under ultrasound for worn or torn tendons, ligaments and joints. The consultant explains the preparation used in your case.",
+      "link": "regenerative-medicine/",
+      "next": [
+        "regenerative",
+        "cost"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "stem-cell",
+      "q": [
+        "do you do stem cell therapy",
+        "stem cell for knee",
+        "cartilage regrowth injection",
+        "bone marrow injection"
+      ],
+      "k": [
+        "stem cell",
+        "stem cells",
+        "bone marrow",
+        "cartilage regrowth",
+        "regrow cartilage",
+        "ozone",
+        "hyaluronic",
+        "gel injection"
+      ],
+      "a": "The site describes regenerative medicine at Halcyon as growth factor concentrate from your own blood. Other injections are not listed there, so please ask the team on +91 77880 91092 rather than rely on me. The consultant explains what suits the tissue the scan shows.",
+      "link": "regenerative-medicine/",
+      "next": [
+        "regenerative",
+        "treatments"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "prolotherapy",
+      "chip": "What is prolotherapy?",
+      "q": [
+        "what is prolotherapy",
+        "prolo injection",
+        "dextrose injection",
+        "sugar injection for ligament",
+        "prolotherapy for knee"
+      ],
+      "k": [
+        "prolotherapy",
+        "prolo",
+        "dextrose",
+        "sugar injection",
+        "irritant",
+        "ligament injection"
+      ],
+      "a": "Prolotherapy injects a natural irritant, most commonly a concentrated dextrose solution, into a slack or weakened ligament or tendon to restart the body's repair response. It is a short course of small injections under ultrasound, with minimal downtime; soreness for a day or two is normal.",
+      "link": "prolotherapy/",
+      "next": [
+        "sessions",
+        "plantar-fasciitis",
+        "cost"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "doctors",
+      "chip": "Who will see me?",
+      "q": [
+        "who are the doctors",
+        "who will see me",
+        "doctor details",
+        "which doctor is there",
+        "specialist name"
+      ],
+      "k": [
+        "doctor",
+        "doctors",
+        "consultant",
+        "consultants",
+        "specialist",
+        "who will see",
+        "who treats"
+      ],
+      "a": "Dr. Dasyam Pallavi, Consultant – Pain Management (MBBS, DA, FIAPM, CIPS), assesses you and performs the ultrasound-guided procedures. Dr. PSS Kiran, Consultant Radiologist – Musculoskeletal Imaging and Image Guidance (MBBS, MD Radiodiagnosis, Fellowship in Pain Management), reads your imaging alongside the examination and provides image guidance, working with her.",
+      "link": "our-doctors/",
+      "next": [
+        "dr-pallavi",
+        "dr-kiran",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "dr-pallavi",
+      "q": [
+        "who is dr pallavi",
+        "dr dasyam pallavi",
+        "pallavi madam qualifications",
+        "tell me about dr pallavi"
+      ],
+      "k": [
+        "pallavi",
+        "dasyam",
+        "dr pallavi",
+        "madam",
+        "pain management consultant"
+      ],
+      "a": "Dr. Dasyam Pallavi is Consultant – Pain Management at Halcyon: MBBS, DA, FIAPM (Fellow, Indian Academy of Pain Medicine) and CIPS (Certified Interventional Pain Sonologist, World Institute of Pain, USA), TSMC Reg. No. 61959. She assesses patients and performs the ultrasound-guided procedures.",
+      "link": "dr-d-pallavi-profile/",
+      "next": [
+        "cips",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "dr-kiran",
+      "q": [
+        "who is dr kiran",
+        "dr pss kiran",
+        "kiran sir qualifications",
+        "tell me about the radiologist"
+      ],
+      "k": [
+        "kiran",
+        "pss kiran",
+        "dr kiran",
+        "kiran sir"
+      ],
+      "a": "Dr. PSS Kiran is Consultant Radiologist – Musculoskeletal Imaging and Image Guidance: MBBS, MD (Radiodiagnosis), Fellowship in Pain Management, with additional training in musculoskeletal ultrasound, TSMC Reg. No. 62201. He correlates X-ray, MRI and ultrasound with your symptoms and provides image guidance for procedures with Dr. Pallavi.",
+      "link": "dr-pss-kiran-profile/",
+      "next": [
+        "why-radiologist",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "who-does-procedure",
+      "q": [
+        "who does the procedure",
+        "who will give the injection",
+        "does the radiologist inject",
+        "who performs rfa"
+      ],
+      "k": [
+        "who does",
+        "who performs",
+        "who will do",
+        "who gives the injection",
+        "who injects"
+      ],
+      "a": "Dr. Dasyam Pallavi performs the ultrasound-guided procedures. Dr. PSS Kiran provides musculoskeletal imaging evaluation and radiological assistance with image guidance, in collaboration with her, so the imaging is read alongside the procedure.",
+      "link": "our-doctors/",
+      "next": [
+        "dr-pallavi",
+        "dr-kiran"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "cips",
+      "q": [
+        "what is cips",
+        "certified interventional pain sonologist",
+        "world institute of pain",
+        "wip certification"
+      ],
+      "k": [
+        "cips",
+        "sonologist",
+        "world institute of pain",
+        "wip",
+        "certified",
+        "certification"
+      ],
+      "a": "CIPS, Certified Interventional Pain Sonologist, is an international credential from the World Institute of Pain, USA, in ultrasound-guided pain procedures. It is awarded after a structured examination with written, oral and practical cadaver-based assessment. Dr. Dasyam Pallavi holds it.",
+      "link": "dr-d-pallavi-profile/",
+      "next": [
+        "dr-pallavi",
+        "ultrasound"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "fiapm",
+      "q": [
+        "what is fiapm",
+        "indian academy of pain medicine",
+        "fellowship in pain",
+        "what does fiapm mean"
+      ],
+      "k": [
+        "fiapm",
+        "indian academy of pain medicine",
+        "iapm",
+        "fellowship",
+        "fellow"
+      ],
+      "a": "FIAPM means Fellow of the Indian Academy of Pain Medicine, reflecting dedicated training in assessing and managing acute and chronic pain. Dr. Dasyam Pallavi is FIAPM. Dr. PSS Kiran also has a Fellowship in Pain Management, alongside his MD in Radiodiagnosis.",
+      "link": "our-doctors/",
+      "next": [
+        "dr-pallavi",
+        "cips"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "registration",
+      "q": [
+        "are the doctors registered",
+        "medical council registration number",
+        "is the doctor genuine",
+        "tsmc number"
+      ],
+      "k": [
+        "registration",
+        "registered",
+        "reg no",
+        "tsmc",
+        "medical council",
+        "license",
+        "licence"
+      ],
+      "a": "Both consultants are registered with the Telangana State Medical Council: Dr. Dasyam Pallavi, Reg. No. 61959, and Dr. PSS Kiran, Reg. No. 62201. Their qualifications are listed on their profile pages.",
+      "link": "our-doctors/",
+      "next": [
+        "doctors"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "experience",
+      "q": [
+        "how many years of experience",
+        "how experienced is the doctor",
+        "how many procedures done",
+        "doctor experience"
+      ],
+      "k": [
+        "experience",
+        "experienced",
+        "years",
+        "how many patients",
+        "how many procedures",
+        "expert"
+      ],
+      "a": "The consultants' qualifications, training and registration are on their profile pages, including Dr. Pallavi's CIPS certification from the World Institute of Pain, USA. For anything more specific about experience with your condition, ask the team on +91 77880 91092.",
+      "link": "our-doctors/",
+      "next": [
+        "dr-pallavi",
+        "dr-kiran"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "knee",
+      "chip": "I have knee pain",
+      "q": [
+        "i have knee pain",
+        "knee pain treatment",
+        "mokalu noppi",
+        "ghutne mein dard",
+        "knee pain while walking",
+        "knee pain climbing stairs",
+        "both knees paining"
+      ],
+      "k": [
+        "knee",
+        "knees",
+        "knee pain",
+        "kneecap",
+        "knee joint",
+        "walking pain",
+        "stairs"
+      ],
+      "a": "Knee pain is the commonest reason people come to Halcyon, usually osteoarthritis, a meniscal tear or ligament strain. The knee is scanned in the same appointment, and the answer may be COOLIEF cooled radiofrequency of the genicular nerves, a regenerative injection or prolotherapy.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "coolief",
+        "knee-replacement-advised",
+        "cost"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Knee"
+    },
+    {
+      "id": "low-back",
+      "chip": "I have back pain",
+      "q": [
+        "i have lower back pain",
+        "back pain treatment",
+        "nadumu noppi",
+        "kamar dard",
+        "backache for months",
+        "lumbar pain"
+      ],
+      "k": [
+        "back",
+        "back pain",
+        "lower back",
+        "low back",
+        "lumbar",
+        "backache",
+        "spine",
+        "kamar",
+        "nadumu"
+      ],
+      "a": "Low back pain can come from the facet joints, a disc or the sacroiliac joint, and each needs a different treatment. A diagnostic block is usually done first to prove which one it is, and the treatment, such as facet radiofrequency or an epidural, follows from that answer.",
+      "link": "low-back-pain-treatment/",
+      "next": [
+        "sciatica",
+        "medial-branch-block",
+        "back-red-flags"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Low back"
+    },
+    {
+      "id": "neck",
+      "q": [
+        "i have neck pain",
+        "neck stiffness",
+        "meda noppi",
+        "gardan mein dard",
+        "can't turn my neck",
+        "neck pain treatment"
+      ],
+      "k": [
+        "neck",
+        "neck pain",
+        "stiff neck",
+        "cervical",
+        "turn my head",
+        "gardan",
+        "meda"
+      ],
+      "a": "Neck pain is usually related to the facet joints or a disc. A medial branch block first identifies the joint involved, and cervical facet radiofrequency treats it only if the block confirms that joint as the source. Posture and exercise usually remain part of the plan.",
+      "link": "neck-pain-treatment/",
+      "next": [
+        "arm-radiating",
+        "cervical-spondylosis",
+        "facet-rf"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Neck"
+    },
+    {
+      "id": "shoulder",
+      "chip": "My shoulder is stiff",
+      "q": [
+        "shoulder pain",
+        "my shoulder is stiff",
+        "cannot lift my arm",
+        "bhujam noppi",
+        "kandhe mein dard",
+        "shoulder pain at night"
+      ],
+      "k": [
+        "shoulder",
+        "shoulder pain",
+        "arm up",
+        "lift my arm",
+        "cannot lift",
+        "kandha",
+        "bhujam"
+      ],
+      "a": "Most long-standing shoulder pain is frozen shoulder or a rotator cuff problem. It is scanned in the same appointment and treated with a suprascapular nerve block, hydrodilatation or a regenerative injection, usually alongside a movement programme so the range comes back.",
+      "link": "shoulder-pain/",
+      "next": [
+        "frozen-shoulder",
+        "rotator-cuff",
+        "suprascapular"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Shoulder"
+    },
+    {
+      "id": "sciatica",
+      "chip": "Pain running down my leg",
+      "q": [
+        "pain running down my leg",
+        "sciatica treatment",
+        "leg pain from back",
+        "siatica",
+        "shooting pain in leg",
+        "kaalu noppi from back"
+      ],
+      "k": [
+        "sciatica",
+        "leg pain",
+        "down my leg",
+        "shooting pain",
+        "nerve pain leg",
+        "buttock pain",
+        "radiating down my leg",
+        "radiating to leg"
+      ],
+      "a": "Pain running from the back into the leg usually means a nerve root is compressed or irritated. At Halcyon it is treated with a transforaminal or epidural injection placed under imaging, aimed at the root that is actually irritated, as day care.",
+      "link": "sciatica/",
+      "next": [
+        "transforaminal",
+        "slipped-disc",
+        "leg-weakness"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sciatica"
+    },
+    {
+      "id": "slipped-disc",
+      "q": [
+        "slipped disc treatment",
+        "herniated disc",
+        "disc problem",
+        "disc slip",
+        "disc prolapse l4 l5"
+      ],
+      "k": [
+        "disc",
+        "slipped disc",
+        "herniated",
+        "herniation",
+        "prolapse",
+        "disc slip",
+        "l4",
+        "l5",
+        "s1",
+        "pivd"
+      ],
+      "a": "A slipped or herniated disc pressing on a nerve root is, in most cases at Halcyon, treated with an image-guided epidural or transforaminal injection rather than surgery, after the examination, scan and where needed a diagnostic block confirm the level.",
+      "link": "slipped-disc-treatment/",
+      "next": [
+        "epidural",
+        "sciatica",
+        "surgery-advised"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Slipped disc"
+    },
+    {
+      "id": "hip",
+      "q": [
+        "hip pain",
+        "pain in my hip",
+        "groin pain",
+        "kulhe mein dard",
+        "hip joint pain treatment",
+        "pain on side of hip"
+      ],
+      "k": [
+        "hip",
+        "hip pain",
+        "hip joint",
+        "groin",
+        "kulha",
+        "pirra",
+        "outer hip"
+      ],
+      "a": "Hip pain usually comes from a bursa on the outside of the hip, the labrum, the tendons or an arthritic joint. It is scanned in the same room and treated with an image-guided injection into the exact structure involved; the hip is deep, so guidance matters here.",
+      "link": "the-best-hip-pain-treatment-in-hyderabad/",
+      "next": [
+        "hip-bursitis",
+        "hip-arthritis",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Hip"
+    },
+    {
+      "id": "sports",
+      "q": [
+        "sports injury",
+        "gym injury",
+        "injured while playing",
+        "cricket injury",
+        "running injury",
+        "football injury"
+      ],
+      "k": [
+        "sports",
+        "sport",
+        "sports injury",
+        "gym",
+        "playing",
+        "cricket",
+        "football",
+        "badminton",
+        "athlete",
+        "training",
+        "overuse"
+      ],
+      "a": "Most sports injuries damage a tendon, ligament or muscle. The injury is scanned to grade the damage, then usually treated with regenerative therapy or prolotherapy so the tissue heals, alongside graded rehabilitation. Return-to-sport timing is planned with you.",
+      "link": "sports-injuries-treatment/",
+      "next": [
+        "regenerative",
+        "prolotherapy",
+        "trauma"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sports injury"
+    },
+    {
+      "id": "trigeminal",
+      "q": [
+        "trigeminal neuralgia",
+        "face pain like electric shock",
+        "pain on one side of face",
+        "facial nerve pain",
+        "trigeminal pain treatment"
+      ],
+      "k": [
+        "trigeminal",
+        "neuralgia",
+        "face pain",
+        "facial pain",
+        "electric shock face",
+        "cheek pain",
+        "face"
+      ],
+      "a": "Trigeminal neuralgia causes sudden electric-shock pain across one side of the face, often set off by touch, chewing or talking. Medication is the usual first treatment; when it no longer controls the pain, Halcyon offers image-guided radiofrequency ablation of the affected branch, as day care.",
+      "link": "trigeminal-neuralgia-treatment/",
+      "next": [
+        "rfa",
+        "stroke",
+        "book"
+      ],
+      "human": true,
+      "kind": "condition",
+      "area": "Face / trigeminal neuralgia"
+    },
+    {
+      "id": "elbow-hand-wrist",
+      "q": [
+        "elbow pain",
+        "wrist pain",
+        "hand pain",
+        "cheyyi noppi",
+        "haath mein dard",
+        "pain in fingers and wrist"
+      ],
+      "k": [
+        "elbow",
+        "wrist",
+        "hand",
+        "forearm",
+        "fingers",
+        "thumb",
+        "cheyyi",
+        "haath"
+      ],
+      "a": "Elbow, hand and wrist pain usually comes from an overloaded tendon, as in tennis elbow or de Quervain's, or a trapped nerve, as in carpal tunnel. These are usually treated with ultrasound-guided nerve hydrodissection or a regenerative injection, freeing or repairing the structure rather than operating.",
+      "link": "advanced-elbow-hand-and-wrist-pain-treatment/",
+      "next": [
+        "tennis-elbow",
+        "carpal-tunnel",
+        "de-quervain"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Elbow, hand or wrist"
+    },
+    {
+      "id": "foot-ankle",
+      "chip": "Heel pain in the morning",
+      "q": [
+        "foot pain",
+        "ankle pain",
+        "heel pain",
+        "edi noppi",
+        "paadam noppi",
+        "pair mein dard",
+        "sole pain"
+      ],
+      "k": [
+        "foot",
+        "feet",
+        "ankle",
+        "heel",
+        "sole",
+        "paadam",
+        "edi"
+      ],
+      "a": "Heel pain worst on the first steps of the morning is usually plantar fasciitis; pain at the back of the ankle is often Achilles tendinitis. Both are scanned and usually treated with prolotherapy or a regenerative injection under ultrasound, alongside stretching and footwear advice.",
+      "link": "foot-ankle-pain-treatment/",
+      "next": [
+        "plantar-fasciitis",
+        "achilles",
+        "prolotherapy"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Foot or ankle"
+    },
+    {
+      "id": "cervical-spondylosis",
+      "q": [
+        "cervical spondylosis",
+        "spondylosis treatment",
+        "cervical spondilosis",
+        "neck arthritis",
+        "cervical problem"
+      ],
+      "k": [
+        "spondylosis",
+        "cervical spondylosis",
+        "neck arthritis",
+        "spondylitis",
+        "bone spur neck",
+        "osteophyte"
+      ],
+      "a": "Cervical spondylosis is age-related wear of the neck discs and facet joints, and it shows on almost every scan after a certain age. So a medial branch block first proves the worn joints are what hurts; if it does, cervical facet radiofrequency treats them.",
+      "link": "cervical-spondylosis-treatment/",
+      "next": [
+        "medial-branch-block",
+        "cord-signs",
+        "neck"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Cervical spondylosis"
+    },
+    {
+      "id": "knee-oa",
+      "q": [
+        "knee osteoarthritis",
+        "arthritis in knee",
+        "knee joint wear",
+        "cartilage gone",
+        "grade 3 knee arthritis",
+        "bone on bone knee"
+      ],
+      "k": [
+        "osteoarthritis",
+        "arthritis",
+        "oa knee",
+        "knee arthritis",
+        "cartilage",
+        "grade 2",
+        "grade 3",
+        "bone on bone",
+        "wear and tear"
+      ],
+      "a": "Knee osteoarthritis is gradual wear of the cartilage. At Halcyon it may be treated with COOLIEF cooled radiofrequency of the genicular nerves, or a regenerative injection for early to moderate wear, chosen by the scan. In advanced grade 4 arthritis with deformity, a replacement may still be right.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "coolief",
+        "knee-replacement-advised",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Knee"
+    },
+    {
+      "id": "meniscus",
+      "q": [
+        "meniscus tear",
+        "meniscal tear",
+        "torn cartilage knee",
+        "knee locking",
+        "twisted my knee"
+      ],
+      "k": [
+        "meniscus",
+        "meniscal",
+        "menisci",
+        "torn cartilage",
+        "locking",
+        "catching",
+        "twisted knee"
+      ],
+      "a": "Meniscal tears come from a twisting injury or wear in an older knee. The knee is scanned in the same appointment, and a regenerative injection placed under ultrasound is one option where the tissue has worn or torn. A knee that locks or will not straighten should be assessed.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "knee",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Knee"
+    },
+    {
+      "id": "acl-ligament",
+      "q": [
+        "acl tear",
+        "ligament injury knee",
+        "knee gives way",
+        "knee feels loose",
+        "mcl sprain",
+        "ligament tear"
+      ],
+      "k": [
+        "acl",
+        "mcl",
+        "pcl",
+        "ligament",
+        "ligament tear",
+        "ligament injury",
+        "gives way",
+        "unstable",
+        "loose knee",
+        "sprain"
+      ],
+      "a": "A strained or slack ligament that makes the knee feel loose may suit prolotherapy or a regenerative injection. A complete tear may need a different approach, so the scan and examination decide. After a fresh injury with severe swelling or deformity, go to an emergency department.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "prolotherapy",
+        "sports",
+        "trauma"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Knee"
+    },
+    {
+      "id": "runners-knee",
+      "q": [
+        "runners knee",
+        "pain around kneecap",
+        "patellofemoral pain",
+        "knee pain after running"
+      ],
+      "k": [
+        "runner's knee",
+        "runners knee",
+        "patellofemoral",
+        "kneecap pain",
+        "running knee",
+        "chondromalacia"
+      ],
+      "a": "Pain around the kneecap after running is often from overuse of the tendons or the joint behind the kneecap. The knee is examined and scanned to find which structure is involved, and treatment and your return to running are planned from that.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "knee",
+        "sports"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Knee"
+    },
+    {
+      "id": "jumpers-knee",
+      "q": [
+        "jumpers knee",
+        "patellar tendinitis",
+        "pain below kneecap",
+        "patellar tendon pain"
+      ],
+      "k": [
+        "jumper's knee",
+        "jumpers knee",
+        "patellar tendinitis",
+        "patellar tendon",
+        "patellar tendinopathy",
+        "below kneecap"
+      ],
+      "a": "Pain just below the kneecap in people who jump or run is often a patellar tendon overuse problem. Ultrasound grades the tendon, and a regenerative injection or prolotherapy may be used alongside a loading programme, depending on what the scan shows.",
+      "link": "sports-injuries-treatment/",
+      "next": [
+        "sports",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sports injury"
+    },
+    {
+      "id": "knee-swelling",
+      "q": [
+        "knee swelling",
+        "water in knee",
+        "fluid in knee",
+        "swollen knee"
+      ],
+      "k": [
+        "knee swelling",
+        "swollen knee",
+        "water in knee",
+        "fluid in knee",
+        "effusion",
+        "bursitis knee"
+      ],
+      "a": "Swelling can come with arthritis, a meniscal tear or bursitis, and the scan shows which. If the knee is hot, red and swollen with fever, or swollen after a fall and you cannot bear weight, go to an emergency department instead.",
+      "link": "knee-pain-treatment/",
+      "next": [
+        "knee",
+        "hot-joint"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Knee"
+    },
+    {
+      "id": "frozen-shoulder",
+      "q": [
+        "frozen shoulder",
+        "adhesive capsulitis",
+        "shoulder jam",
+        "can't raise arm stiff shoulder",
+        "shoulder stuck"
+      ],
+      "k": [
+        "frozen shoulder",
+        "frozen",
+        "adhesive capsulitis",
+        "capsulitis",
+        "stiff shoulder",
+        "jammed shoulder"
+      ],
+      "a": "Frozen shoulder is a tightened, thickened joint capsule, more common between about 40 and 60 and in people with diabetes. At Halcyon it is usually treated with a suprascapular nerve block and hydrodilatation, alongside a movement programme so the range comes back.",
+      "link": "shoulder-pain/",
+      "next": [
+        "hydrodilatation",
+        "suprascapular",
+        "diabetes"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Shoulder"
+    },
+    {
+      "id": "rotator-cuff",
+      "q": [
+        "rotator cuff tear",
+        "supraspinatus tear",
+        "shoulder tendon injury",
+        "cuff tendinitis"
+      ],
+      "k": [
+        "rotator cuff",
+        "rotator",
+        "cuff",
+        "supraspinatus",
+        "infraspinatus",
+        "shoulder tendon"
+      ],
+      "a": "Rotator cuff problems range from overuse to partial tears. Ultrasound shows the tendons directly, and a worn or torn tendon may be treated with a regenerative injection, or pain eased with a suprascapular block so rehabilitation can proceed.",
+      "link": "shoulder-pain/",
+      "next": [
+        "regenerative",
+        "suprascapular"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Shoulder"
+    },
+    {
+      "id": "impingement",
+      "q": [
+        "shoulder impingement",
+        "shoulder bursitis",
+        "pain lifting arm overhead",
+        "subacromial bursitis"
+      ],
+      "k": [
+        "impingement",
+        "subacromial",
+        "shoulder bursitis",
+        "overhead",
+        "painful arc"
+      ],
+      "a": "Impingement and bursitis happen when tendons or the bursa are pinched and inflamed on lifting the arm. Ultrasound can usually tell an inflamed bursa from a tear or a tight capsule in one sitting, and the treatment follows from what it shows.",
+      "link": "shoulder-pain/",
+      "next": [
+        "shoulder",
+        "rotator-cuff"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Shoulder"
+    },
+    {
+      "id": "tennis-elbow",
+      "q": [
+        "tennis elbow",
+        "lateral epicondylitis",
+        "outer elbow pain",
+        "pain gripping"
+      ],
+      "k": [
+        "tennis elbow",
+        "lateral epicondylitis",
+        "outer elbow",
+        "gripping",
+        "epicondylitis"
+      ],
+      "a": "Tennis elbow is overload and small tears in the forearm tendons at the outer elbow, painful on gripping or turning a bottle cap. At Halcyon a worn tendon is usually treated with a regenerative injection placed under ultrasound, rather than surgery.",
+      "link": "advanced-elbow-hand-and-wrist-pain-treatment/",
+      "next": [
+        "regenerative",
+        "golfers-elbow"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Elbow, hand or wrist"
+    },
+    {
+      "id": "golfers-elbow",
+      "q": [
+        "golfers elbow",
+        "inner elbow pain",
+        "medial epicondylitis",
+        "pain inside of elbow"
+      ],
+      "k": [
+        "golfer's elbow",
+        "golfers elbow",
+        "medial epicondylitis",
+        "inner elbow"
+      ],
+      "a": "Golfer's elbow is the same overload process as tennis elbow, on the inner side of the elbow. The tendon is scanned, and a regenerative injection under ultrasound is one of the usual options at Halcyon.",
+      "link": "advanced-elbow-hand-and-wrist-pain-treatment/",
+      "next": [
+        "tennis-elbow",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Elbow, hand or wrist"
+    },
+    {
+      "id": "carpal-tunnel",
+      "q": [
+        "carpal tunnel",
+        "numbness in fingers at night",
+        "hand tingling",
+        "median nerve compression",
+        "cts"
+      ],
+      "k": [
+        "carpal tunnel",
+        "carpal",
+        "median nerve",
+        "hand numbness",
+        "tingling fingers",
+        "hand tingling",
+        "cts"
+      ],
+      "a": "Carpal tunnel is the median nerve squeezed at the wrist, causing numbness or tingling in the thumb, index and middle fingers, often at night. At Halcyon it is usually treated with nerve hydrodissection under ultrasound. The neck is checked too, as it can mimic this.",
+      "link": "advanced-elbow-hand-and-wrist-pain-treatment/",
+      "next": [
+        "hydrodissection",
+        "arm-radiating"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Elbow, hand or wrist"
+    },
+    {
+      "id": "de-quervain",
+      "q": [
+        "de quervain",
+        "thumb side wrist pain",
+        "mother's thumb",
+        "pain at base of thumb"
+      ],
+      "k": [
+        "de quervain",
+        "dequervain",
+        "quervain",
+        "thumb",
+        "base of thumb",
+        "mommy thumb",
+        "tenosynovitis"
+      ],
+      "a": "De Quervain's tenosynovitis is irritation of the tendons at the base of the thumb, common in new parents and heavy phone or keyboard users. It is scanned and usually treated with a regenerative injection or other guided treatment chosen by what the ultrasound shows.",
+      "link": "advanced-elbow-hand-and-wrist-pain-treatment/",
+      "next": [
+        "elbow-hand-wrist",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Elbow, hand or wrist"
+    },
+    {
+      "id": "trigger-finger",
+      "q": [
+        "trigger finger",
+        "finger locking",
+        "finger gets stuck",
+        "finger clicking"
+      ],
+      "k": [
+        "trigger finger",
+        "finger locking",
+        "finger stuck",
+        "finger clicking",
+        "trigger thumb"
+      ],
+      "a": "Trigger finger is not one of the conditions named on the site. The elbow, hand and wrist page covers tennis elbow, carpal tunnel and de Quervain's. Call the team on +91 77880 91092 and they can say whether an assessment makes sense for you.",
+      "link": "advanced-elbow-hand-and-wrist-pain-treatment/",
+      "next": [
+        "elbow-hand-wrist",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "plantar-fasciitis",
+      "q": [
+        "plantar fasciitis",
+        "heel pain first step morning",
+        "pain under heel",
+        "morning heel pain"
+      ],
+      "k": [
+        "plantar",
+        "plantar fasciitis",
+        "fasciitis",
+        "first step",
+        "under heel",
+        "morning heel"
+      ],
+      "a": "Plantar fasciitis typically causes sharp pain under the heel on the first steps out of bed or after sitting. At Halcyon it is scanned and usually treated with prolotherapy or a regenerative injection under ultrasound, alongside stretching and footwear advice.",
+      "link": "foot-ankle-pain-treatment/",
+      "next": [
+        "prolotherapy",
+        "heel-spur"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Foot or ankle"
+    },
+    {
+      "id": "heel-spur",
+      "q": [
+        "heel spur",
+        "calcaneal spur",
+        "bone spur heel",
+        "x ray shows spur"
+      ],
+      "k": [
+        "spur",
+        "heel spur",
+        "calcaneal spur",
+        "calcaneal"
+      ],
+      "a": "A heel spur is not named separately on the site. Heel pain is usually assessed as plantar fasciitis or an Achilles problem, and the ultrasound checks the tissue and rules out other causes before any treatment is chosen.",
+      "link": "foot-ankle-pain-treatment/",
+      "next": [
+        "plantar-fasciitis",
+        "foot-ankle"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Foot or ankle"
+    },
+    {
+      "id": "achilles",
+      "q": [
+        "achilles tendinitis",
+        "pain back of heel",
+        "achilles pain",
+        "tendo achilles"
+      ],
+      "k": [
+        "achilles",
+        "achilles tendon",
+        "achilles tendinitis",
+        "back of heel",
+        "tendo achilles",
+        "calf tendon"
+      ],
+      "a": "Achilles tendinitis causes pain and stiffness at the back of the heel, often worse in the morning and after activity. It is scanned and usually treated with prolotherapy or a regenerative injection. A sudden snap with difficulty pushing off needs an emergency department.",
+      "link": "foot-ankle-pain-treatment/",
+      "next": [
+        "achilles-rupture",
+        "prolotherapy"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Foot or ankle"
+    },
+    {
+      "id": "ankle-sprain",
+      "q": [
+        "ankle sprain",
+        "twisted ankle",
+        "ankle keeps rolling",
+        "old ankle injury",
+        "ankle ligament"
+      ],
+      "k": [
+        "ankle sprain",
+        "sprained ankle",
+        "twisted ankle",
+        "rolled ankle",
+        "ankle ligament",
+        "ankle instability"
+      ],
+      "a": "An old sprain can leave the ankle ligaments slack and painful, which may suit prolotherapy or a regenerative injection after the scan. If you have just twisted it and cannot bear weight, it may be a fracture, so go to an emergency department instead.",
+      "link": "foot-ankle-pain-treatment/",
+      "next": [
+        "prolotherapy",
+        "trauma"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Foot or ankle"
+    },
+    {
+      "id": "si-joint",
+      "q": [
+        "si joint pain",
+        "sacroiliac pain",
+        "pain low on one side of back",
+        "buttock pain one side"
+      ],
+      "k": [
+        "si joint",
+        "sacroiliac",
+        "sacroiliitis",
+        "pelvis",
+        "one side low back"
+      ],
+      "a": "Sacroiliac joint pain is often felt low on one side, where the spine meets the pelvis. At Halcyon a block aimed at that joint is done first, and the next step is explained once it has confirmed the source.",
+      "link": "low-back-pain-treatment/",
+      "next": [
+        "diagnostic-block",
+        "low-back"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Low back"
+    },
+    {
+      "id": "facet",
+      "q": [
+        "facet joint pain",
+        "facet arthropathy",
+        "lumbar spondylosis",
+        "back arthritis",
+        "back pain on bending back"
+      ],
+      "k": [
+        "facet",
+        "facet joint",
+        "facet arthropathy",
+        "lumbar spondylosis",
+        "back arthritis"
+      ],
+      "a": "Facet joints are the small paired joints at the back of each spinal level, and they can wear with age. A medial branch block proves whether they are the source; if it does, facet radiofrequency can interrupt the nerves carrying the pain.",
+      "link": "low-back-pain-treatment/",
+      "next": [
+        "medial-branch-block",
+        "facet-rf"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Low back"
+    },
+    {
+      "id": "disc-bulge",
+      "q": [
+        "disc bulge",
+        "bulging disc",
+        "disc protrusion",
+        "mri says disc bulge",
+        "disc herniation"
+      ],
+      "k": [
+        "bulge",
+        "bulging",
+        "protrusion",
+        "extrusion",
+        "disc bulge",
+        "herniated disc",
+        "disc prolapse"
+      ],
+      "a": "Disc bulges are common on scans, including in people without pain, so the scan has to match the examination. Where a bulge is pressing on a nerve root, an image-guided epidural or transforaminal injection is the usual non-surgical treatment at Halcyon.",
+      "link": "slipped-disc-treatment/",
+      "next": [
+        "slipped-disc",
+        "mri-findings"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Slipped disc"
+    },
+    {
+      "id": "stenosis",
+      "q": [
+        "spinal stenosis",
+        "canal stenosis",
+        "legs pain on walking relieved by sitting",
+        "narrowing of spine"
+      ],
+      "k": [
+        "stenosis",
+        "canal stenosis",
+        "spinal stenosis",
+        "foraminal stenosis",
+        "narrowing",
+        "claudication"
+      ],
+      "a": "Spinal stenosis is narrowing of the spinal canal or nerve exits, more common in older adults, and one cause of sciatica. The examination and scans show the level, and an image-guided injection at the irritated root is the usual option at Halcyon.",
+      "link": "sciatica/",
+      "next": [
+        "sciatica",
+        "transforaminal"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sciatica"
+    },
+    {
+      "id": "spondylolisthesis",
+      "q": [
+        "spondylolisthesis",
+        "vertebra slipped",
+        "listhesis l5 s1",
+        "slipped vertebra"
+      ],
+      "k": [
+        "spondylolisthesis",
+        "listhesis",
+        "slipped vertebra",
+        "vertebra slip"
+      ],
+      "a": "Spondylolisthesis is one vertebra slipping forward on the one below, and it can irritate a nerve root and cause sciatica. The consultant examines you and reviews your scans; if surgery should be considered, you will be told so plainly.",
+      "link": "sciatica/",
+      "next": [
+        "sciatica",
+        "surgery-advised"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sciatica"
+    },
+    {
+      "id": "piriformis",
+      "q": [
+        "piriformis syndrome",
+        "deep buttock pain",
+        "pain in buttock when sitting",
+        "piriformis muscle tight"
+      ],
+      "k": [
+        "piriformis",
+        "deep buttock",
+        "buttock",
+        "glute pain"
+      ],
+      "a": "Piriformis syndrome is not named on the site, but buttock pain running into the leg is assessed along the same route as sciatica and low back pain: examination, scans and, where needed, a diagnostic block to prove the source.",
+      "link": "sciatica/",
+      "next": [
+        "sciatica",
+        "si-joint"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sciatica"
+    },
+    {
+      "id": "pinched-nerve",
+      "q": [
+        "pinched nerve",
+        "nerve compression",
+        "nerve pressing",
+        "nerve squeezed",
+        "naram pattesindi",
+        "nas dab gayi"
+      ],
+      "k": [
+        "pinched nerve",
+        "pinched",
+        "nerve compression",
+        "compressed nerve",
+        "nerve pressing",
+        "squeezed nerve"
+      ],
+      "a": "A pinched nerve in the low back usually causes sciatica, in the neck arm pain, and at the wrist carpal tunnel. Depending on where it is, treatment may be an image-guided root injection or hydrodissection to free the nerve. Tell me where you feel it.",
+      "link": "non-surgical-nerve-hydrodissection-nerve-blocks/",
+      "next": [
+        "sciatica",
+        "arm-radiating",
+        "carpal-tunnel"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "leg-numbness",
+      "q": [
+        "leg numbness",
+        "tingling in leg",
+        "pins and needles in foot",
+        "leg feels numb",
+        "kaalu timmirlu"
+      ],
+      "k": [
+        "numbness",
+        "numb",
+        "tingling",
+        "pins and needles",
+        "leg numbness",
+        "foot numbness",
+        "timmirlu",
+        "jhunjhuni"
+      ],
+      "a": "Tingling or numbness running below the knee suggests a nerve root in the low back is involved, which is usually assessed as sciatica. If it is getting worse quickly, your foot is weak, or you lose bladder or bowel control, go to an emergency department.",
+      "link": "sciatica/",
+      "next": [
+        "sciatica",
+        "leg-weakness",
+        "cauda-equina"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sciatica"
+    },
+    {
+      "id": "arm-radiating",
+      "q": [
+        "neck pain going to arm",
+        "arm pain with neck pain",
+        "cervical radiculopathy",
+        "tingling in arm",
+        "arm numbness"
+      ],
+      "k": [
+        "arm pain",
+        "radiculopathy",
+        "arm tingling",
+        "arm numbness",
+        "down the arm",
+        "shoulder blade pain",
+        "brachialgia",
+        "radiating to arm",
+        "radiating to my arm",
+        "going to my arm",
+        "going to arm",
+        "into my arm",
+        "into the arm",
+        "down my arm"
+      ],
+      "a": "Pain, tingling or numbness running from the neck into the arm can mean a disc or narrowing is irritating a nerve root. The consultant examines you and reviews scans; an image-guided injection aimed at that root may be advised. Worsening weakness needs urgent care.",
+      "link": "neck-pain-treatment/",
+      "next": [
+        "neck",
+        "cord-signs"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Neck"
+    },
+    {
+      "id": "text-neck",
+      "q": [
+        "neck pain from mobile use",
+        "posture neck pain",
+        "desk job neck pain",
+        "laptop neck pain",
+        "text neck"
+      ],
+      "k": [
+        "posture",
+        "text neck",
+        "mobile",
+        "laptop",
+        "desk",
+        "computer",
+        "work from home",
+        "sitting long"
+      ],
+      "a": "Long hours at a desk, laptop or phone with the head held forward add load to the neck. The consultant examines you to find the source; posture changes and a neck exercise programme are usually part of the plan, with a procedure only if a structure is confirmed.",
+      "link": "neck-pain-treatment/",
+      "next": [
+        "neck",
+        "physio"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Neck"
+    },
+    {
+      "id": "whiplash",
+      "q": [
+        "whiplash",
+        "neck pain after accident",
+        "neck jerk injury",
+        "car accident neck pain"
+      ],
+      "k": [
+        "whiplash",
+        "accident neck",
+        "jerk",
+        "jolt"
+      ],
+      "a": "Whiplash from a road accident or sudden jolt is one cause of neck pain seen at Halcyon. If the accident was recent, or you have weakness, numbness or severe pain, go to an emergency department first; lingering pain later can be assessed here.",
+      "link": "neck-pain-treatment/",
+      "next": [
+        "trauma",
+        "neck"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Neck"
+    },
+    {
+      "id": "neck-headache",
+      "q": [
+        "headache from neck",
+        "pain at back of head",
+        "cervicogenic headache",
+        "neck pain with headache"
+      ],
+      "k": [
+        "back of head",
+        "cervicogenic",
+        "neck headache",
+        "occipital"
+      ],
+      "a": "Headaches that start at the back of the head can come from the neck, and are assessed with neck pain. A sudden, severe headache, or one with fever and a stiff neck, is different: go to an emergency department now.",
+      "link": "neck-pain-treatment/",
+      "next": [
+        "neck",
+        "thunderclap"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Neck"
+    },
+    {
+      "id": "hip-bursitis",
+      "q": [
+        "trochanteric bursitis",
+        "hip bursitis",
+        "pain lying on side of hip",
+        "outer hip pain at night"
+      ],
+      "k": [
+        "trochanteric",
+        "hip bursitis",
+        "bursitis",
+        "lying on side",
+        "gluteal",
+        "bursa"
+      ],
+      "a": "Trochanteric bursitis is an irritated cushion on the outer side of the hip, often with gluteal tendon problems, and makes lying on that side uncomfortable. It is treated with a guided injection into the bursa or tendon, chosen by what the scan shows.",
+      "link": "the-best-hip-pain-treatment-in-hyderabad/",
+      "next": [
+        "hip",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Hip"
+    },
+    {
+      "id": "hip-arthritis",
+      "q": [
+        "hip arthritis",
+        "hip osteoarthritis",
+        "stiff hip",
+        "difficulty putting on socks",
+        "hip replacement advised"
+      ],
+      "k": [
+        "hip arthritis",
+        "hip osteoarthritis",
+        "arthritic hip",
+        "stiff hip",
+        "socks",
+        "hip replacement"
+      ],
+      "a": "An arthritic hip tends to be stiff in the morning and makes socks or shoes harder. At Halcyon it is treated with a guided injection into the joint, chosen by what the scan shows. Bring X-ray or MRI reports; they help with arthritis.",
+      "link": "the-best-hip-pain-treatment-in-hyderabad/",
+      "next": [
+        "hip",
+        "surgery-advised"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Hip"
+    },
+    {
+      "id": "labral-tear",
+      "q": [
+        "hip labral tear",
+        "labrum tear",
+        "clicking in groin",
+        "catching in hip"
+      ],
+      "k": [
+        "labral",
+        "labrum",
+        "labral tear",
+        "groin clicking",
+        "hip catching"
+      ],
+      "a": "A labral tear is damage to the rim of cartilage lining the hip socket, and may cause catching or clicking in the groin. It is treated at Halcyon with a guided injection into the joint. MRI reports help, so bring them.",
+      "link": "the-best-hip-pain-treatment-in-hyderabad/",
+      "next": [
+        "hip"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Hip"
+    },
+    {
+      "id": "hamstring",
+      "q": [
+        "hamstring injury",
+        "hamstring pull",
+        "calf strain",
+        "muscle tear thigh",
+        "pulled muscle"
+      ],
+      "k": [
+        "hamstring",
+        "calf strain",
+        "calf tear",
+        "muscle tear",
+        "pulled muscle",
+        "muscle strain",
+        "thigh"
+      ],
+      "a": "Muscle strains such as hamstring or calf tears are among the sports injuries seen at Halcyon. Ultrasound grades the damage, and treatment and return to sport are planned from that, alongside graded rehabilitation.",
+      "link": "sports-injuries-treatment/",
+      "next": [
+        "sports",
+        "regenerative"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sports injury"
+    },
+    {
+      "id": "shin-pain",
+      "q": [
+        "shin pain",
+        "shin splints",
+        "pain in front of leg when running",
+        "shin hurts after jogging"
+      ],
+      "k": [
+        "shin",
+        "shin splints",
+        "shin pain",
+        "front of leg"
+      ],
+      "a": "Shin pain is not named separately on the site. Overuse injuries from running are covered under sports injuries, where the area is examined and scanned. Pain that is worsening on one spot can need checking for a stress fracture, so get it assessed.",
+      "link": "sports-injuries-treatment/",
+      "next": [
+        "sports",
+        "book"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sports injury"
+    },
+    {
+      "id": "tendinitis",
+      "q": [
+        "tendinitis",
+        "tendon pain",
+        "tendonitis treatment",
+        "tendinopathy"
+      ],
+      "k": [
+        "tendinitis",
+        "tendonitis",
+        "tendinopathy",
+        "tendon",
+        "tendons"
+      ],
+      "a": "Tendon problems, from overuse or small tears, are common at the knee, heel, shoulder and elbow. Ultrasound shows how thickened or torn the tendon is, and a regenerative injection or prolotherapy is usually used alongside a loading programme.",
+      "link": "sports-injuries-treatment/",
+      "next": [
+        "regenerative",
+        "prolotherapy"
+      ],
+      "human": false,
+      "kind": "condition",
+      "area": "Sports injury"
+    },
+    {
+      "id": "nerve-pain",
+      "q": [
+        "nerve pain",
+        "burning pain",
+        "electric pain",
+        "naram noppi",
+        "nas ka dard"
+      ],
+      "k": [
+        "nerve",
+        "nerve pain",
+        "neuropathic",
+        "burning",
+        "electric",
+        "neuralgia pain"
+      ],
+      "a": "Nerve pain can come from a root in the spine, a trapped nerve at the wrist or elbow, or the trigeminal nerve in the face. Tell me where you feel it. Nerve blocks, hydrodissection and radiofrequency are all used, chosen by what the examination and scan show.",
+      "link": "non-surgical-nerve-hydrodissection-nerve-blocks/",
+      "next": [
+        "sciatica",
+        "carpal-tunnel",
+        "trigeminal"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "chronic-pain",
+      "q": [
+        "pain for years",
+        "chronic pain",
+        "nothing has worked",
+        "tried everything",
+        "long standing pain"
+      ],
+      "k": [
+        "chronic",
+        "chronic pain",
+        "years",
+        "long standing",
+        "nothing worked",
+        "tried everything",
+        "old pain"
+      ],
+      "a": "Long-standing pain is exactly what Halcyon focuses on. Pain that lasts is often not where it hurts, so every appointment begins with examination and ultrasound to find the source, and treatment follows from that. Bring notes of what you have already tried.",
+      "link": "pain-conditions/",
+      "next": [
+        "conditions",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    },
+    {
+      "id": "urgent",
+      "q": [
+        "emergency",
+        "it's urgent",
+        "severe pain right now",
+        "i can't bear the pain",
+        "accident happened",
+        "help urgently"
+      ],
+      "k": [
+        "emergency",
+        "ambulance",
+        "108",
+        "unbearable pain",
+        "cannot bear the pain",
+        "cant bear the pain",
+        "help urgently",
+        "urgent help",
+        "very urgent",
+        "casualty"
+      ],
+      "a": "Sudden weakness in a limb, loss of bladder or bowel control, chest pain, or back pain with fever needs to be seen urgently. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "cauda-equina",
+      "q": [
+        "cannot pass urine with back pain",
+        "loss of bladder control",
+        "numbness around private parts",
+        "bowel control lost",
+        "saddle numbness",
+        "urine not coming back pain",
+        "numbness between my legs"
+      ],
+      "k": [
+        "bladder",
+        "bowel",
+        "incontinence",
+        "saddle numbness",
+        "cannot pass urine",
+        "cant pass urine",
+        "difficulty passing urine",
+        "urine not coming",
+        "leaking urine",
+        "numbness around genitals",
+        "numb private parts",
+        "numbness around private parts",
+        "back passage",
+        "loss of bladder",
+        "numbness between my legs",
+        "numbness between legs",
+        "numb between my legs",
+        "numb between legs",
+        "numb groin",
+        "groin numbness",
+        "numbness in groin"
+      ],
+      "a": "Loss of bladder or bowel control, difficulty passing urine, or numbness around the genitals, buttocks or back passage with back or leg pain can mean nerves at the base of the spine are compressed. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "leg-weakness",
+      "q": [
+        "my leg is getting weak",
+        "foot drop",
+        "can't lift my foot",
+        "leg weakness worsening",
+        "cannot walk suddenly",
+        "sciatica in both legs"
+      ],
+      "k": [
+        "foot drop",
+        "leg weakness",
+        "weak leg",
+        "leg getting weak",
+        "leg is getting weak",
+        "cannot lift my foot",
+        "cannot lift foot",
+        "sudden weakness",
+        "worsening weakness",
+        "sciatica in both legs",
+        "both legs numb",
+        "cannot walk suddenly",
+        "suddenly cannot walk",
+        "paralysis"
+      ],
+      "a": "Sudden or worsening weakness in a leg, foot drop, sciatica in both legs or new difficulty walking needs urgent assessment, not a clinic slot. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "back-red-flags",
+      "q": [
+        "back pain with fever",
+        "back pain and weight loss",
+        "i had cancer and now back pain",
+        "back pain at night with fever"
+      ],
+      "k": [
+        "back pain with fever",
+        "back pain and fever",
+        "fever with back pain",
+        "back pain fever",
+        "fever and back pain",
+        "back pain weight loss",
+        "unexplained weight loss",
+        "cancer history",
+        "history of cancer",
+        "had cancer",
+        "night sweats"
+      ],
+      "a": "Back pain with fever, unexplained weight loss, or a history of cancer needs to be checked urgently by a doctor, as it can rarely mean infection or something else serious. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "trauma",
+      "q": [
+        "i fell and cannot walk",
+        "fracture",
+        "bone broken",
+        "accident and swelling",
+        "can't put weight on leg",
+        "fell from bike"
+      ],
+      "k": [
+        "fracture",
+        "dislocation",
+        "bone broken",
+        "broken bone",
+        "cannot bear weight",
+        "cant bear weight",
+        "cannot put weight",
+        "fell and cannot walk",
+        "fell and cant walk",
+        "road accident today",
+        "accident today",
+        "fell today",
+        "just fell",
+        "injury today",
+        "looks deformed",
+        "major injury"
+      ],
+      "a": "After a fall, accident or major injury, especially if you cannot bear weight, the limb looks deformed, or you have neck or back pain, it may be a fracture or dislocation. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "chest-pain",
+      "q": [
+        "chest pain",
+        "left arm pain with sweating",
+        "pain in chest and breathless",
+        "heart pain",
+        "chest tightness"
+      ],
+      "k": [
+        "chest pain",
+        "chest tightness",
+        "heart attack",
+        "pain in chest",
+        "left arm pain with sweating",
+        "breathlessness",
+        "short of breath",
+        "cannot breathe",
+        "cant breathe"
+      ],
+      "a": "Chest pain, or sudden left shoulder or arm pain with breathlessness or sweating, can be a heart problem. Call 108 or go to the nearest emergency department now. Please do not wait for a clinic appointment.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "stroke",
+      "q": [
+        "face drooping",
+        "slurred speech",
+        "one side weakness",
+        "stroke symptoms",
+        "sudden numbness one side"
+      ],
+      "k": [
+        "stroke",
+        "face droop",
+        "face drooping",
+        "facial drooping",
+        "slurred speech",
+        "slurred",
+        "one side weakness",
+        "one sided weakness",
+        "weakness on one side",
+        "numbness one side",
+        "sudden numbness"
+      ],
+      "a": "Sudden facial drooping, slurred speech, or weakness or numbness down one side can be a stroke. Every minute counts: call 108 or go to the nearest emergency department now. This is not something for a clinic appointment.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "thunderclap",
+      "q": [
+        "worst headache of my life",
+        "sudden severe headache",
+        "headache with stiff neck and fever",
+        "thunderclap headache"
+      ],
+      "k": [
+        "worst headache",
+        "sudden severe headache",
+        "sudden headache",
+        "thunderclap",
+        "headache with stiff neck",
+        "headache with fever",
+        "headache and vomiting"
+      ],
+      "a": "A sudden, severe headache, the worst you have had, or a headache with fever, a stiff neck, confusion or vision changes needs emergency care. Call 108 or go to the nearest emergency department now.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "hot-joint",
+      "q": [
+        "hot swollen knee with fever",
+        "red swollen joint",
+        "joint infection",
+        "fever and joint swelling"
+      ],
+      "k": [
+        "hot swollen",
+        "hot and swollen",
+        "red swollen joint",
+        "hot red swollen",
+        "joint infection",
+        "infected",
+        "pus",
+        "spreading redness",
+        "swollen with fever",
+        "swelling with fever",
+        "fever and swelling"
+      ],
+      "a": "A hot, red, very painful swollen joint, especially with fever, or spreading redness after an injection can mean infection. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "calf-dvt",
+      "q": [
+        "calf swelling and pain",
+        "leg swollen after travel",
+        "calf tender after surgery",
+        "dvt"
+      ],
+      "k": [
+        "calf swelling",
+        "swollen calf",
+        "dvt",
+        "blood clot",
+        "calf tender",
+        "calf pain and swelling",
+        "leg swollen after travel",
+        "leg swelling after flight",
+        "swollen leg after flight"
+      ],
+      "a": "Swelling, pain and tenderness in the calf, especially after a long journey or surgery, can be a blood clot and needs urgent checking. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "achilles-rupture",
+      "q": [
+        "heard a snap in my ankle",
+        "achilles rupture",
+        "pop at back of ankle",
+        "can't push off foot"
+      ],
+      "k": [
+        "heard a snap",
+        "heard a pop",
+        "snapped",
+        "achilles rupture",
+        "torn achilles",
+        "ruptured achilles",
+        "cannot push off",
+        "cant push off"
+      ],
+      "a": "A sudden snap or pop at the back of the ankle with difficulty pushing off can be an Achilles rupture. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "head-injury",
+      "q": [
+        "head injury",
+        "hit my head",
+        "fainted after fall",
+        "vomiting after head injury",
+        "unconscious"
+      ],
+      "k": [
+        "head injury",
+        "hit my head",
+        "concussion",
+        "unconscious",
+        "fainted",
+        "passed out",
+        "lost consciousness",
+        "vomiting after head injury"
+      ],
+      "a": "A head injury with confusion, vomiting, drowsiness or any loss of consciousness needs emergency care. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "cord-signs",
+      "q": [
+        "hands getting clumsy",
+        "unsteady walking with neck pain",
+        "losing balance neck",
+        "both hands numb"
+      ],
+      "k": [
+        "clumsy hands",
+        "hands getting clumsy",
+        "unsteady walking",
+        "losing balance",
+        "loss of balance",
+        "both hands numb",
+        "numbness both sides",
+        "numb both"
+      ],
+      "a": "Neck pain with clumsy hands that are getting worse, unsteady walking or loss of balance, numbness on both sides, or bladder or bowel changes can mean pressure on the spinal cord. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "diabetic-foot",
+      "q": [
+        "wound on diabetic foot",
+        "ulcer on foot sugar patient",
+        "foot colour change diabetes",
+        "black toe"
+      ],
+      "k": [
+        "diabetic foot",
+        "foot ulcer",
+        "ulcer on foot",
+        "wound on foot",
+        "foot wound",
+        "black toe",
+        "gangrene",
+        "foot colour change"
+      ],
+      "a": "A wound, ulcer or colour change on the foot if you have diabetes needs prompt medical attention today, not a pain clinic slot. If it is spreading, hot, or you feel unwell with fever, go to the nearest emergency department now or call 108.",
+      "link": null,
+      "next": [],
+      "human": true,
+      "kind": "urgent"
+    },
+    {
+      "id": "migraine",
+      "q": [
+        "do you treat migraine",
+        "migraine treatment",
+        "tala noppi",
+        "sar dard"
+      ],
+      "k": [
+        "migraine",
+        "migraines",
+        "tala noppi",
+        "sar dard",
+        "half headache"
+      ],
+      "a": "Migraine is not one of the conditions listed on the Halcyon site. Headaches that start at the back of the head can come from the neck, which is assessed with neck pain. A sudden severe headache needs an emergency department. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "headache",
+      "q": [
+        "headache treatment",
+        "i have headaches daily",
+        "head pain",
+        "constant headache"
+      ],
+      "k": [
+        "headache",
+        "headaches",
+        "head pain",
+        "head ache"
+      ],
+      "a": "Headache on its own is not one of the conditions listed on the Halcyon site. Headaches starting at the back of the head can come from the neck. A sudden, severe or new headache with other symptoms needs an emergency department. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "cancer-pain",
+      "q": [
+        "cancer pain treatment",
+        "pain due to cancer",
+        "palliative care",
+        "tumour pain"
+      ],
+      "k": [
+        "cancer",
+        "cancer pain",
+        "tumour",
+        "tumor",
+        "palliative",
+        "oncology"
+      ],
+      "a": "Cancer pain is not one of the conditions listed on the Halcyon site. Your oncology team is the first place to ask. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "diabetic-neuropathy",
+      "q": [
+        "diabetic neuropathy",
+        "burning feet sugar",
+        "neuropathy treatment",
+        "both feet burning"
+      ],
+      "k": [
+        "neuropathy",
+        "diabetic neuropathy",
+        "burning feet",
+        "peripheral neuropathy",
+        "both feet",
+        "numbness in both feet",
+        "burning in both feet",
+        "both feet numb"
+      ],
+      "a": "Diabetic neuropathy is not one of the conditions listed on the Halcyon site. Numbness or burning in both feet that is spreading should be checked by your doctor promptly. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "fibromyalgia",
+      "q": [
+        "fibromyalgia",
+        "whole body pain",
+        "pain all over body",
+        "full body ache"
+      ],
+      "k": [
+        "fibromyalgia",
+        "whole body",
+        "all over",
+        "body pain",
+        "body ache",
+        "full body"
+      ],
+      "a": "Fibromyalgia or pain all over the body is not one of the conditions listed on the Halcyon site. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "gout",
+      "q": [
+        "gout treatment",
+        "uric acid pain",
+        "big toe swelling uric acid",
+        "high uric acid joint pain"
+      ],
+      "k": [
+        "gout",
+        "uric acid",
+        "uric",
+        "big toe"
+      ],
+      "a": "Gout is not one of the conditions listed on the Halcyon site. A hot, red, swollen joint with fever needs urgent care. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "rheumatoid",
+      "q": [
+        "rheumatoid arthritis",
+        "ra factor positive",
+        "autoimmune joint pain",
+        "ankylosing spondylitis"
+      ],
+      "k": [
+        "rheumatoid",
+        "ra factor",
+        "autoimmune",
+        "lupus",
+        "ankylosing",
+        "psoriatic"
+      ],
+      "a": "Rheumatoid or other inflammatory arthritis is not one of the conditions listed on the Halcyon site. A rheumatologist usually leads its care. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "abdominal-pain",
+      "q": [
+        "stomach pain",
+        "abdominal pain",
+        "kidney stone pain",
+        "period pain",
+        "pelvic pain"
+      ],
+      "k": [
+        "stomach",
+        "abdominal",
+        "abdomen",
+        "tummy",
+        "kidney stone",
+        "period pain",
+        "menstrual",
+        "pelvic pain",
+        "gastric"
+      ],
+      "a": "Abdominal or pelvic pain is not one of the conditions listed on the Halcyon site. Severe or sudden abdominal pain needs an emergency department. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "dental-pain",
+      "q": [
+        "tooth pain",
+        "dental pain",
+        "jaw pain tmj",
+        "toothache"
+      ],
+      "k": [
+        "tooth",
+        "teeth",
+        "toothache",
+        "dental",
+        "tmj",
+        "jaw joint",
+        "gums"
+      ],
+      "a": "Tooth or jaw joint pain is not one of the conditions listed on the Halcyon site. Sudden electric-shock pain on one side of the face may be trigeminal neuralgia, which is treated here. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "upper-back",
+      "q": [
+        "upper back pain",
+        "mid back pain",
+        "pain between shoulder blades",
+        "thoracic pain"
+      ],
+      "k": [
+        "upper back",
+        "mid back",
+        "middle back",
+        "thoracic",
+        "between shoulder blades"
+      ],
+      "a": "Upper or mid back pain on its own is not one of the conditions listed on the Halcyon site. Pain spreading to the shoulder blade can come from the neck, which is covered. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "tailbone",
+      "q": [
+        "tailbone pain",
+        "coccyx pain",
+        "pain while sitting on tailbone",
+        "coccydynia treatment"
+      ],
+      "k": [
+        "tailbone",
+        "coccyx",
+        "coccydynia"
+      ],
+      "a": "Tailbone pain is not one of the conditions listed on the Halcyon site. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "shingles",
+      "q": [
+        "pain after shingles",
+        "post herpetic neuralgia",
+        "herpes zoster pain",
+        "burning after shingles rash"
+      ],
+      "k": [
+        "shingles",
+        "herpes",
+        "zoster",
+        "post herpetic"
+      ],
+      "a": "Pain after shingles is not one of the conditions listed on the Halcyon site. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "post-surgery",
+      "q": [
+        "pain after spine surgery",
+        "failed back surgery",
+        "pain after knee replacement",
+        "pain after operation"
+      ],
+      "k": [
+        "after surgery",
+        "after operation",
+        "failed back",
+        "post surgery",
+        "post operative",
+        "after replacement"
+      ],
+      "a": "Pain after an operation is not one of the conditions listed on the Halcyon site. Your surgeon should hear about new or worsening pain first. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "other-condition",
+      "q": [
+        "do you treat varicose veins",
+        "do you treat osteoporosis",
+        "can you treat my ear pain",
+        "do you treat paralysis"
+      ],
+      "k": [
+        "varicose",
+        "osteoporosis",
+        "ear pain",
+        "eye pain",
+        "skin disease",
+        "hair fall",
+        "piles",
+        "thyroid problem"
+      ],
+      "a": "That is not one of the conditions listed on the Halcyon site. Call the team on +91 77880 91092 and they can say whether an assessment makes sense, or who would be better placed to help.",
+      "link": null,
+      "next": [
+        "conditions",
+        "human"
+      ],
+      "human": true,
+      "kind": "offscope"
+    },
+    {
+      "id": "greeting",
+      "q": [
+        "namaste",
+        "namaskaram",
+        "good morning",
+        "good evening",
+        "good afternoon",
+        "namaste ji"
+      ],
+      "k": [
+        "hlo",
+        "namaste",
+        "namaskaram",
+        "namaskar",
+        "good morning",
+        "good afternoon",
+        "good evening"
+      ],
+      "a": "Hello, and welcome to Halcyon Pain Management Centre in Kukatpally. Tell me where it hurts, or ask about a treatment, cost, timings or booking, and I will help or put you in touch with the team.",
+      "link": null,
+      "next": [
+        "conditions",
+        "book",
+        "where"
+      ],
+      "human": false,
+      "kind": "smalltalk"
+    },
+    {
+      "id": "thanks",
+      "q": [
+        "thank you",
+        "thanks",
+        "dhanyavad",
+        "ok thanks",
+        "thanks a lot",
+        "shukriya"
+      ],
+      "k": [
+        "thank",
+        "thanks",
+        "thank you",
+        "thankyou",
+        "dhanyavad",
+        "dhanyavadalu",
+        "shukriya",
+        "thx",
+        "ok thanks"
+      ],
+      "a": "You are welcome. If anything else comes up, ask away, or call the team on +91 77880 91092, Monday to Saturday, 9 am to 6 pm. I hope you feel better soon.",
+      "link": null,
+      "next": [
+        "book",
+        "whatsapp"
+      ],
+      "human": false,
+      "kind": "smalltalk"
+    },
+    {
+      "id": "bye",
+      "q": [
+        "bye",
+        "goodbye",
+        "see you",
+        "ok bye",
+        "tata"
+      ],
+      "k": [
+        "bye",
+        "goodbye",
+        "see you",
+        "tata",
+        "good night",
+        "take care"
+      ],
+      "a": "Take care. When you are ready, call +91 77880 91092 or WhatsApp your reports and the team will find you a slot. Wishing you an easier day.",
+      "link": null,
+      "next": [
+        "book"
+      ],
+      "human": false,
+      "kind": "smalltalk"
+    },
+    {
+      "id": "bot",
+      "q": [
+        "are you a robot",
+        "are you human",
+        "is this ai",
+        "am i talking to a bot",
+        "who are you",
+        "are you a real person"
+      ],
+      "k": [
+        "robot",
+        "bot",
+        "an ai",
+        "artificial intelligence",
+        "human",
+        "real person",
+        "who are you",
+        "chatgpt",
+        "machine"
+      ],
+      "a": "I am the clinic's website assistant, answering from a fixed set of answers written from the site. I cannot see your case or give a diagnosis. For anything personal, the team on +91 77880 91092 can help.",
+      "link": null,
+      "next": [
+        "human",
+        "callback"
+      ],
+      "human": false,
+      "kind": "smalltalk"
+    },
+    {
+      "id": "language",
+      "q": [
+        "telugu lo matladandi",
+        "hindi me baat karo",
+        "do you speak telugu",
+        "can i talk in hindi",
+        "tamil",
+        "urdu"
+      ],
+      "k": [
+        "telugu",
+        "hindi",
+        "tamil",
+        "urdu",
+        "kannada",
+        "language",
+        "matladandi",
+        "baat karo",
+        "speak"
+      ],
+      "a": "I can only answer in English here, but you can type simply and I will do my best. For a conversation in your own language, call the team on +91 77880 91092 and ask.",
+      "link": null,
+      "next": [
+        "human",
+        "book"
+      ],
+      "human": false,
+      "kind": "smalltalk"
+    },
+    {
+      "id": "ack",
+      "q": [
+        "hmm",
+        "fine",
+        "got it",
+        "sari",
+        "theek hai",
+        "alright then"
+      ],
+      "k": [
+        "okk",
+        "hmm",
+        "fine",
+        "got it",
+        "alright",
+        "sari",
+        "theek",
+        "accha"
+      ],
+      "a": "Anything else I can help with? You can tell me where the pain is, or ask about treatments, cost, timings, the doctors or how to book an appointment.",
+      "link": null,
+      "next": [
+        "conditions",
+        "book",
+        "cost"
+      ],
+      "human": false,
+      "kind": "smalltalk"
+    },
+    {
+      "id": "compliment",
+      "q": [
+        "you are helpful",
+        "great",
+        "nice",
+        "very good",
+        "super"
+      ],
+      "k": [
+        "helpful",
+        "great",
+        "nice",
+        "very good",
+        "super",
+        "awesome",
+        "good job"
+      ],
+      "a": "Thank you. If you would like to take the next step, the team on +91 77880 91092 can find you a slot, or you can WhatsApp your reports first.",
+      "link": null,
+      "next": [
+        "book",
+        "whatsapp"
+      ],
+      "human": false,
+      "kind": "smalltalk"
+    },
+    {
+      "id": "diagnose-me",
+      "q": [
+        "what is wrong with me",
+        "can you diagnose me",
+        "what disease do i have",
+        "tell me my problem",
+        "is it serious"
+      ],
+      "k": [
+        "diagnose",
+        "diagnosis",
+        "what is wrong",
+        "which disease",
+        "what do i have",
+        "is it serious",
+        "my problem"
+      ],
+      "a": "I cannot diagnose anyone; that needs an examination and a scan. At Halcyon the consultant examines you and scans the painful area in the same appointment. If you have sudden weakness, bladder or bowel changes, or fever, seek emergency care instead.",
+      "link": null,
+      "next": [
+        "book",
+        "urgent"
+      ],
+      "human": true,
+      "kind": null
+    },
+    {
+      "id": "fallback-help",
+      "q": [
+        "help",
+        "what can you do",
+        "menu",
+        "options",
+        "what can i ask",
+        "i don't know what to ask"
+      ],
+      "k": [
+        "help",
+        "what can you do",
+        "menu",
+        "options",
+        "what can i ask",
+        "assist"
+      ],
+      "a": "I can tell you about the conditions treated, the procedures, what happens on the day, the doctors, timings, location and booking. For cost, insurance or anything about your own case, the team on +91 77880 91092 is best.",
+      "link": null,
+      "next": [
+        "conditions",
+        "treatments",
+        "book"
+      ],
+      "human": false,
+      "kind": null
+    }
+  ],
+  "synonyms": {
+    "mokalu": "knee",
+    "mokallu": "knee",
+    "mokaalu": "knee",
+    "mokkalu": "knee",
+    "mokalla": "knee",
+    "mokali": "knee",
+    "ghutna": "knee",
+    "ghutne": "knee",
+    "ghutno": "knee",
+    "gutna": "knee",
+    "gutne": "knee",
+    "ghutnon": "knee",
+    "kne": "knee",
+    "knne": "knee",
+    "neee": "knee",
+    "knees": "knee",
+    "noppi": "pain",
+    "noppulu": "pain",
+    "nopi": "pain",
+    "dard": "pain",
+    "dardh": "pain",
+    "dukhna": "pain",
+    "dukh": "pain",
+    "pira": "pain",
+    "paining": "pain",
+    "pains": "pain",
+    "pian": "pain",
+    "pane": "pain",
+    "ache": "pain",
+    "aching": "pain",
+    "hurting": "pain",
+    "hurts": "hurt",
+    "nadumu": "back",
+    "nadum": "back",
+    "naddumu": "back",
+    "kamar": "back",
+    "kamr": "back",
+    "peeth": "back",
+    "pith": "back",
+    "bak": "back",
+    "backpain": "back pain",
+    "meda": "neck",
+    "medha": "neck",
+    "gardan": "neck",
+    "gardon": "neck",
+    "nek": "neck",
+    "neckpain": "neck pain",
+    "bhujam": "shoulder",
+    "bujam": "shoulder",
+    "kandha": "shoulder",
+    "kandhe": "shoulder",
+    "kandhon": "shoulder",
+    "bhuja": "shoulder",
+    "sholder": "shoulder",
+    "shoulders": "shoulder",
+    "sholdar": "shoulder",
+    "shouldr": "shoulder",
+    "paadam": "foot",
+    "padam": "foot",
+    "pair": "foot",
+    "pao": "foot",
+    "paon": "foot",
+    "pairon": "foot",
+    "feets": "feet",
+    "edi": "heel",
+    "eddi": "heel",
+    "ediya": "heel",
+    "eedi": "heel",
+    "heels": "heel",
+    "cheyyi": "hand",
+    "cheyi": "hand",
+    "chethi": "hand",
+    "haath": "hand",
+    "hath": "hand",
+    "kaalu": "leg",
+    "kalu": "leg",
+    "kaallu": "leg",
+    "taang": "leg",
+    "tang": "leg",
+    "manikattu": "wrist",
+    "kalai": "wrist",
+    "kohni": "elbow",
+    "mochethi": "elbow",
+    "elbo": "elbow",
+    "cheelamanda": "ankle",
+    "takhna": "ankle",
+    "tokna": "ankle",
+    "ankel": "ankle",
+    "ankl": "ankle",
+    "naram": "nerve",
+    "naramu": "nerve",
+    "nas": "nerve",
+    "nass": "nerve",
+    "narve": "nerve",
+    "kulha": "hip",
+    "kulhe": "hip",
+    "pirra": "hip",
+    "pirralu": "hip",
+    "hips": "hip",
+    "kharchu": "cost",
+    "kharcha": "cost",
+    "dhara": "cost",
+    "fee": "fees",
+    "charge": "charges",
+    "costs": "cost",
+    "pricing": "price",
+    "entha": "how much",
+    "kitna": "how much",
+    "kitne": "how much",
+    "kitni": "how much",
+    "apointment": "appointment",
+    "appoinment": "appointment",
+    "appoitment": "appointment",
+    "appointmnt": "appointment",
+    "appintment": "appointment",
+    "apoinment": "appointment",
+    "appt": "appointment",
+    "apt": "appointment",
+    "appointments": "appointment",
+    "docter": "doctor",
+    "doctar": "doctor",
+    "doc": "doctor",
+    "dr": "doctor",
+    "daktar": "doctor",
+    "vaidyudu": "doctor",
+    "doctors": "doctor",
+    "siatica": "sciatica",
+    "sciatic": "sciatica",
+    "syatika": "sciatica",
+    "sciatika": "sciatica",
+    "sciatia": "sciatica",
+    "saitica": "sciatica",
+    "arthiritis": "arthritis",
+    "arthrits": "arthritis",
+    "artharitis": "arthritis",
+    "athritis": "arthritis",
+    "arthritus": "arthritis",
+    "osteoarthiritis": "osteoarthritis",
+    "spondilosis": "spondylosis",
+    "spondylitis": "spondylosis",
+    "spondalysis": "spondylosis",
+    "spondulosis": "spondylosis",
+    "spondlosis": "spondylosis",
+    "spondilytis": "spondylosis",
+    "slip disc": "slipped disc",
+    "disk": "disc",
+    "disks": "disc",
+    "discs": "disc",
+    "hernia disc": "herniated disc",
+    "frozen sholder": "frozen shoulder",
+    "plantar fascitis": "plantar fasciitis",
+    "fascitis": "fasciitis",
+    "planter": "plantar",
+    "achilis": "achilles",
+    "achillies": "achilles",
+    "tendonitis": "tendinitis",
+    "tendenitis": "tendinitis",
+    "trigeminal nuralgia": "trigeminal neuralgia",
+    "nuralgia": "neuralgia",
+    "neuralgea": "neuralgia",
+    "trigiminal": "trigeminal",
+    "trigemenal": "trigeminal",
+    "carpel": "carpal",
+    "carpal tunel": "carpal tunnel",
+    "menicus": "meniscus",
+    "miniscus": "meniscus",
+    "ligment": "ligament",
+    "ligaments": "ligament",
+    "rotator cup": "rotator cuff",
+    "tenis elbow": "tennis elbow",
+    "sciatic nerve": "sciatica",
+    "prolo therapy": "prolotherapy",
+    "prolotheraphy": "prolotherapy",
+    "prolotharapy": "prolotherapy",
+    "radio frequency": "radiofrequency",
+    "radiofrequecy": "radiofrequency",
+    "radiofreqency": "radiofrequency",
+    "radio-frequency": "radiofrequency",
+    "hydro dissection": "hydrodissection",
+    "hydrodisection": "hydrodissection",
+    "hydro-dissection": "hydrodissection",
+    "usg": "ultrasound",
+    "sonography": "ultrasound",
+    "sonogram": "ultrasound",
+    "ultra sound": "ultrasound",
+    "ultrasond": "ultrasound",
+    "physiotherapy": "physio",
+    "physiotherapist": "physio",
+    "fisio": "physio",
+    "physiyo": "physio",
+    "injuction": "injection",
+    "injektion": "injection",
+    "injecton": "injection",
+    "injction": "injection",
+    "injections": "injection",
+    "sui": "injection",
+    "coolif": "coolief",
+    "cooleif": "coolief",
+    "cool rf": "cooled rf",
+    "regenrative": "regenerative",
+    "regenarative": "regenerative",
+    "epidurel": "epidural",
+    "epideral": "epidural",
+    "anesthesia": "anaesthesia",
+    "anesthetic": "anaesthetic",
+    "opration": "operation",
+    "oparation": "operation",
+    "operashan": "operation",
+    "surgury": "surgery",
+    "sergery": "surgery",
+    "surjery": "surgery",
+    "steroid injection": "steroid",
+    "platelet rich plasma": "prp",
+    "hyd": "hyderabad",
+    "hyderbad": "hyderabad",
+    "kukatpalli": "kukatpally",
+    "kptly": "kukatpally",
+    "kukatpaly": "kukatpally",
+    "kukkatpally": "kukatpally",
+    "musapet": "moosapet",
+    "moosapeta": "moosapet",
+    "kphb colony": "kphb",
+    "repu": "tomorrow",
+    "kal": "tomorrow",
+    "tmrw": "tomorrow",
+    "tomorow": "tomorrow",
+    "eeroju": "today",
+    "ee roju": "today",
+    "aaj": "today",
+    "tdy": "today",
+    "adress": "address",
+    "addres": "address",
+    "adres": "address",
+    "loction": "location",
+    "locaton": "location",
+    "timmings": "timings",
+    "timing": "timings",
+    "timeings": "timings",
+    "insurence": "insurance",
+    "insurace": "insurance",
+    "insurnce": "insurance",
+    "watsapp": "whatsapp",
+    "whatsap": "whatsapp",
+    "watsap": "whatsapp",
+    "mri scan": "mri",
+    "xray": "x-ray",
+    "x ray": "x-ray",
+    "ct scan": "ct",
+    "pregnent": "pregnant",
+    "pragnent": "pregnant",
+    "diabetis": "diabetes",
+    "diabetese": "diabetes",
+    "sugar patient": "diabetes",
+    "blood thiner": "blood thinner",
+    "ecospirin": "ecosprin",
+    "emergancy": "emergency",
+    "emergncy": "emergency",
+    "urgant": "urgent",
+    "thanku": "thanks",
+    "tnx": "thanks",
+    "thnks": "thanks",
+    "thanx": "thanks",
+    "dhanyawad": "dhanyavad",
+    "helo": "hlo",
+    "hellow": "hlo",
+    "hi": "hlo",
+    "hii": "hlo",
+    "hiii": "hlo",
+    "hello": "hlo",
+    "hey": "hlo",
+    "heyy": "hlo",
+    "hai": "hlo",
+    "greetings": "hlo",
+    "ok": "okk",
+    "okay": "okk",
+    "okey": "okk",
+    "namasthe": "namaste",
+    "namaskar": "namaskaram",
+    "vachi": "come",
+    "raavali": "come",
+    "aana": "come",
+    "undi": "is",
+    "kavali": "want",
+    "chahiye": "want",
+    "cheyyali": "do",
+    "kaise": "how",
+    "ela": "how",
+    "enti": "what",
+    "kya": "what",
+    "treatmnt": "treatment",
+    "tretment": "treatment",
+    "treatement": "treatment",
+    "vaidyam": "treatment",
+    "ilaj": "treatment",
+    "ilaaj": "treatment",
+    "operation lekunda": "without surgery",
+    "bina operation": "without surgery",
+    "ortho": "orthopaedic",
+    "orthopedic": "orthopaedic",
+    "orthopedician": "orthopaedic",
+    "sholder jam": "frozen shoulder",
+    "vapu": "swelling",
+    "sujan": "swelling",
+    "jhunjhuni": "tingling",
+    "timmirlu": "numbness",
+    "sunn": "numb",
+    "stiffness": "stiff",
+    "jakdan": "stiff"
+  }
+}

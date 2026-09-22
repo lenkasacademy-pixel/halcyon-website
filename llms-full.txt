@@ -22,12 +22,6 @@ Book an appointment
 
 Meet the consultants
 
-Ask about a condition, a procedure, cost or booking…
-Send
-
-Halcyon Assistant
-Usually replies instantly
-
 Why Halcyon
 
 10+ Years in Pain Medicine
@@ -916,8 +910,7 @@ Above the Max showroom at Kukatpally Y Junction, on Moosapet Road — a few
 minutes from the KPHB and Moosapet metro stations.
 
 Appointments
-
-Mon–Sat, 10:00 am – 8:00 pm.
+Mon–Sat, 9:00 am – 6:00 pm. Closed on Sunday.
 
 +91 77880 91092 or
 +91 95536 04226 . Slots run through the day and are
@@ -1017,7 +1010,7 @@ No referral is needed. Call to book, and bring any reports and prescriptions you
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -1105,21 +1098,38 @@ Google Maps for directions, for instance — which have their own policies.
 
 ### 3. What this website collects
 
-Nothing.
+Only what you choose to give the assistant when you ask the team to call you back.
+The site sets no cookies and runs no analytics or advertising trackers.
 
-As this site is built today, it sets no cookies, runs no analytics or tracking, and
-sends nothing you type anywhere. The assistant on the home page answers from a fixed
-list of answers held inside the page itself — your question is never
-transmitted to us or to anyone else, and nothing you type is stored once you close
-the tab.
+The assistant. It answers from a fixed list of answers held in the
+website itself; your questions are not sent to anyone while you chat. If you ask for a
+call back and press Send to the team , the assistant sends the clinic: the name
+and mobile number you give, where the pain is and for how long, which scans you have
+had, the time you would like to be called, the questions you asked in the chat, the
+page you were on, and how you reached the site (for example, the name of the search or
+social media advert you clicked). Nothing is sent until you press that button, and you
+can use WhatsApp or call instead.
+
+Where it goes. The request is saved in the clinic’s own Google
+Sheet and emailed to the clinic’s own mailbox, using Google Workspace services that
+act on the clinic’s behalf. It is used only to call you back about your enquiry
+and to understand which pages and adverts bring people to the clinic. It is not sold
+or used to advertise to you. Confirm how long call-back requests are
+kept before they are deleted .
+
+Stored in your own browser. So the conversation is not lost when you
+move between pages, the assistant keeps it in your browser until you close the tab. It
+also remembers, for up to 90 days, which page or advert first brought you to the site,
+so a later call-back request can say so. This stays on your device; clearing your
+browser’s site data removes it.
 
 Our web host may keep standard server logs of requests, including IP addresses, for
 security and troubleshooting. Confirm what your host logs and for
 how long .
 
-If tracking, analytics, an online booking form or a live chat service are added later,
-this section must be rewritten before they go live, and a cookie notice may be
-required.
+If analytics, advertising pixels, an online booking system or a live chat service are
+added later, this section must be updated before they go live, and a cookie notice may
+be required.
 
 ### 4. Information we collect
 
@@ -1413,7 +1423,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -1567,7 +1577,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -1721,7 +1731,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -1874,7 +1884,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -2028,7 +2038,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -2182,7 +2192,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -2332,7 +2342,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -2481,7 +2491,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -2627,7 +2637,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -2775,7 +2785,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -2926,7 +2936,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -3073,7 +3083,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -3229,7 +3239,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -3383,7 +3393,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -3532,7 +3542,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -3686,7 +3696,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management Dr. PSS Kiran Consultant Radio
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -3823,7 +3833,7 @@ Dr. PSS Kiran Consultant Radiologist – MSK Imaging
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
@@ -3952,7 +3962,7 @@ Dr. Dasyam Pallavi Consultant – Pain Management
 The examination and the diagnostic ultrasound happen in the same appointment.
 Call +91 77880 91092
 
-WhatsApp us +91 95536 04226
+WhatsApp 77880 91092 or call 95536 04226 Ask the assistant
 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 Monday to Saturday, 9 am – 6 pm. Closed on Sunday.
 
