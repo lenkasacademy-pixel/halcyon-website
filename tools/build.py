@@ -360,7 +360,7 @@ PAGE_TYPE = {'home': 'MedicalWebPage', 'about': 'AboutPage', 'contact': 'Contact
              'privacy': 'WebPage'}
 
 def faqs_for(p):
-    if p['kind'] in ('condition', 'treatment', 'doctor'):
+    if p['kind'] in ('condition', 'treatment'):       # doctor pages show no FAQ, so claim none
         return [(f['q'], f['a']) for f in p['data']['faqs']]
     if p['kind'] == 'home':
         return HOME_FAQ
@@ -845,11 +845,6 @@ def render_doctor(p):
     main = f'''<article class="pg__main">
   <p class="pg__lead">{esc(d['summary'])}</p>
   {sections_html(d['sections'])}
-  <section class="pg__block" id="conditions"><h2>{esc(d.get('conditions_heading', 'Conditions treated'))}</h2>
-    <ul class="chips">{conds}</ul></section>
-  <section class="pg__block" id="treatments"><h2>{esc(d.get('treatments_heading', 'Treatments performed'))}</h2>
-    <ul class="chips">{treats}</ul></section>
-  {faq_html([(f['q'], f['a']) for f in d['faqs']])}
 </article>'''
     aside = f'''<aside class="pg__aside">
   {figure(pre, s, IMG_ALT[s], portrait=True, eager=True)}
@@ -857,7 +852,7 @@ def render_doctor(p):
   {doctors_card(pre, skip=s)}
   {book_card(pre, 'Book an appointment')}
 </aside>'''
-    body = (hero(p, 'Our Doctors', d['h1'], d['role'] + '. ' + d['hero_sub'])
+    body = (hero(p, 'Our Doctors', d['h1'], d['role'] + '. ' + d['hero_sub'], ghost=('../our-doctors/', 'Both consultants'))
             + f'\n<div class="pg"><div class="pg__grid">{main}{aside}</div></div>\n'
             + cta(pre, 'The examination and the imaging, read together.',
                   'Book a consultation and the diagnostic ultrasound happens in the same appointment. Bring any recent X-ray, MRI or scan reports you already have.'))
