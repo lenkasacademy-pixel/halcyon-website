@@ -691,6 +691,11 @@
 
     /* 2 — the lead card is waiting for a yes or a no */
     if (S.pending === 'confirm') {
+      if (TIME_RE.test(text.trim()) && text.length < 30) {
+        S.d.time = text.trim(); save();
+        say('Noted — ' + S.d.time.toLowerCase() + '. Press “Send to the team” when the rest looks right.');
+        redraw(); return;
+      }
       if (/change|edit|wrong|correct/i.test(text)) { S.pending = ''; S.lead.status = 'none'; S.mode = 'lead'; S.steps = CALLBACK.slice(); S.step = 0; S.d.name = ''; S.d.phone = ''; S.d.time = ''; save(); ask(); return; }
       if (yes(text)) { sendLead(); return; }
       if (no(text)) { S.pending = ''; S.lead.status = 'declined'; S.mode = 'qa'; save(); say('Understood — nothing has been sent. You can still WhatsApp or call whenever you are ready.'); handOver('Reach the team directly:', true); defaultChips(); return; }
@@ -784,7 +789,12 @@
         S.d.name = S.d.name.replace(/\b\w/g, function (c) { return c.toUpperCase(); });
         S.step++; save(); ask(''); return true;
       }
-      if (question && strong) return false;
+      if (question && strong && !S.retries.name) return false;
+      S.retries.name = (S.retries.name || 0) + 1; save();
+      if (S.retries.name > 1 && !/\d/.test(text) && text.trim().length <= 40) {
+        S.d.name = text.trim().slice(0, 40).replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+        S.step++; save(); ask(''); return true;
+      }
       say('Just a first name is fine — what should they call you?'); chips([{ label: 'Rather not say' }]); return true;
     }
     if (st === 'phone') {
