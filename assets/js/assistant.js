@@ -670,7 +670,8 @@
     S.asked++;
     /* keep what they asked, not what they filled in — names and numbers have their own columns */
     var filling = collecting() && S.pending === 'step';
-    if ((!filling || isQuestion(text)) && !findMobile(text) && !/^(yes|no|not now|send it|rather not)/i.test(text)) {
+    if ((!filling || isQuestion(text)) && !findMobile(text) && !TIME_RE.test(text.trim()) &&
+        !/^(yes|no|not now|send it|rather not)/i.test(text)) {
       S.qs.push(text); if (S.qs.length > 12) S.qs.shift();
     }
     save();
