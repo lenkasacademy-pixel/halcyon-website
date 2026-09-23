@@ -54,7 +54,7 @@ SITE = {
     ],
     # The clinic's Google Apps Script web-app URL (tools/lead-collector.gs). Empty until it is
     # deployed: the assistant then offers WhatsApp instead of sending the lead itself.
-    'lead_endpoint': '',
+    'lead_endpoint': 'https://script.google.com/macros/s/AKfycbyuIHzjGlpWLjqJMrJ8XFlPxqM_4_95Rn7GslCJQG2F6cZ9GBxZpmchhkBzhQ7XiPEywQ/exec',
     'area_served': ['Hyderabad', 'Kukatpally', 'KPHB Colony', 'Moosapet', 'Balanagar', 'Miyapur',
                     'Nizampet', 'Bachupally', 'Kondapur', 'Madhapur', 'HITEC City', 'Secunderabad'],
 }
