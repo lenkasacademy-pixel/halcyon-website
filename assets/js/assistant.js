@@ -898,7 +898,10 @@
         say(top.e.a, top.e.link || null, null, top.e.te);
         S.step++; save(); setTimeout(function () { ask(''); }, 350); return true;
       }
-      if (question && strong) return false;
+      /* anything the knowledge base recognises is a question, not an answer to "where is
+         the pain" — people do not phrase it as a question ("cost antha", "timings") */
+      if (strong && top.e.kind !== 'smalltalk') return false;
+      if (question) return false;
       if (text.length <= 60) { S.d.area = text; S.step++; save(); ask(''); return true; }
       return false;
     }
@@ -934,7 +937,9 @@
       if (declined(text)) { S.d.phone = ''; S.step = S.steps.length; save(); finishSteps(); return true; }
       var m = findMobile(text);
       if (m) { S.d.phone = prettyPhone(m); S.step++; save(); ask(''); return true; }
-      if (question && strong) return false;
+      /* a question here is a question, however it is phrased */
+      if (strong && top.e.kind !== 'smalltalk') return false;
+      if (question) return false;
       S.retries.phone = (S.retries.phone || 0) + 1; save();
       say(S.retries.phone > 1
         ? 'I need a 10-digit Indian mobile number starting with 6, 7, 8 or 9 — or tap "Rather not say" and use WhatsApp instead.'
