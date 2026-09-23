@@ -1,0 +1,2363 @@
+{
+  "version": 1,
+  "patches": {
+    "prp": {
+      "q": [
+        "prp cheyistara",
+        "prp injection meeru chestara",
+        "sonta raktam nunchi injection",
+        "prp mokali ki panichestunda",
+        "prp gurinchi cheppandi",
+        "platelet injection unda",
+        "naa raktam nunchi teesi vestara",
+        "prp ka injection karte ho kya",
+        "mere khoon se injection lagate ho",
+        "పీఆర్‌పీ ఇంజెక్షన్ చేస్తారా"
+      ],
+      "k": [
+        "prp cheyistara",
+        "sonta raktam",
+        "raktam nunchi injection",
+        "platelet injection unda"
+      ],
+      "te": "మీ సొంత రక్తం నుంచి తీసిన గ్రోత్ ఫ్యాక్టర్ ద్రావణాన్ని స్కాన్ చూస్తూ కీళ్లు, కండరాలకు వేస్తారు. మీ విషయంలో ఏది వాడతారో డాక్టర్ చెబుతారు."
+    },
+    "stem-cell": {
+      "q": [
+        "stem cell treatment unda",
+        "stem cell mokali ki chestara",
+        "cartilage tirigi perugutunda",
+        "ozone injection vestara",
+        "gel injection mokali lo vestara",
+        "bone marrow injection unda",
+        "stem cell therapy meeru chestara",
+        "stem cell ka ilaj hai kya",
+        "cartilage wapas ugta hai kya",
+        "స్టెమ్ సెల్ చికిత్స ఉందా"
+      ],
+      "k": [
+        "stem cell chestara",
+        "stem cell treatment unda",
+        "cartilage tirigi perugutunda",
+        "gel injection mokali"
+      ],
+      "te": "సైట్‌లో ఉన్నది మీ రక్తం నుంచి తీసిన గ్రోత్ ఫ్యాక్టర్ చికిత్స మాత్రమే. మిగతా ఇంజెక్షన్ల గురించి 77880 91092కి ఫోన్ చేసి టీమ్‌ను అడగండి."
+    },
+    "prolotherapy": {
+      "q": [
+        "prolotherapy ante enti",
+        "prolo injection ela panichestundi",
+        "sugar injection ligament ki vestara",
+        "dextrose injection vestara",
+        "prolotherapy tarvata noppi untunda",
+        "prolo therapy mokali ki manchida",
+        "prolotherapy enni injections",
+        "prolotherapy kya hota hai",
+        "sugar wala injection kaise kaam karta",
+        "ప్రొలోథెరపీ అంటే ఏమిటి"
+      ],
+      "k": [
+        "prolotherapy ante",
+        "prolo injection",
+        "dextrose injection vestara",
+        "sugar injection ligament"
+      ],
+      "te": "బలహీనమైన లిగమెంట్, కండరానికి డెక్స్‌ట్రోస్ ద్రావణాన్ని చిన్న ఇంజెక్షన్లుగా స్కాన్ కింద వేస్తారు. ఒకటి రెండు రోజులు నలుగుడు ఉండటం సహజం."
+    },
+    "doctors": {
+      "q": [
+        "doctor evaru chustaru",
+        "naaku evaru chustaru",
+        "ekkada doctor evaru unnaru",
+        "doctor gari peru enti",
+        "specialist evaru unnaru",
+        "doctor details kavali",
+        "kaun doctor dekhega",
+        "doctor ke baare mein batao",
+        "ఎవరు చూస్తారు"
+      ],
+      "k": [
+        "doctor evaru chustaru",
+        "evaru chustaru",
+        "doctor gari peru",
+        "specialist evaru"
+      ],
+      "te": "డా. దస్యం పల్లవి మిమ్మల్ని పరీక్షించి, స్కాన్ చూస్తూ ప్రొసీడ్యూర్లు చేస్తారు. రేడియాలజిస్ట్ డా. పీఎస్ఎస్ కిరణ్ ఇమేజింగ్ చూసి ఆమెతో కలిసి పని చేస్తారు."
+    },
+    "dr-pallavi": {
+      "q": [
+        "pallavi madam evaru",
+        "dr pallavi qualifications enti",
+        "pallavi madam gurinchi cheppandi",
+        "dasyam pallavi madam vivaralu",
+        "pallavi madam ki enni degrees unnayi",
+        "pallavi madam ke baare mein batao",
+        "పల్లవి మేడమ్ ఎవరు"
+      ],
+      "k": [
+        "pallavi madam",
+        "dr pallavi gurinchi",
+        "dasyam pallavi madam"
+      ],
+      "te": "డా. దస్యం పల్లవి — పెయిన్ మేనేజ్‌మెంట్ కన్సల్టెంట్, ఎంబీబీఎస్, డీఏ, ఎఫ్‌ఐఏపీఎం, సీఐపీఎస్. ఆమె రోగులను పరీక్షించి స్కాన్ కింద ప్రొసీడ్యూర్లు చేస్తారు."
+    },
+    "dr-kiran": {
+      "q": [
+        "kiran sir evaru",
+        "dr kiran gurinchi cheppandi",
+        "radiologist evaru unnaru",
+        "kiran sir qualification enti",
+        "scan chusevaru evaru",
+        "pss kiran sir vivaralu",
+        "kiran sir ke baare mein batao",
+        "కిరణ్ సర్ ఎవరు"
+      ],
+      "k": [
+        "kiran sir",
+        "dr kiran gurinchi",
+        "radiologist evaru",
+        "scan chusevaru"
+      ],
+      "te": "డా. పీఎస్ఎస్ కిరణ్ మస్క్యులోస్కెలెటల్ ఇమేజింగ్ రేడియాలజిస్ట్. ఎక్స్‌రే, ఎంఆర్‌ఐ, స్కాన్ చూసి డా. పల్లవితో కలిసి ఇమేజ్ గైడెన్స్ ఇస్తారు."
+    },
+    "who-does-procedure": {
+      "q": [
+        "injection evaru vestaru",
+        "procedure evaru chestaru",
+        "rfa evaru chestaru",
+        "sui evaru vestaru",
+        "radiologist injection vestara",
+        "madam ye vestara injection",
+        "sui kaun lagayega",
+        "ఇంజెక్షన్ ఎవరు వేస్తారు"
+      ],
+      "k": [
+        "injection evaru vestaru",
+        "procedure evaru chestaru",
+        "evaru vestaru"
+      ],
+      "te": "ఇంజెక్షన్లు, ప్రొసీడ్యూర్లు డా. దస్యం పల్లవి చేస్తారు. డా. కిరణ్ స్కాన్ చూసి ఇమేజ్ గైడెన్స్‌తో ఆమెకు సహకరిస్తారు."
+    },
+    "cips": {
+      "q": [
+        "cips ante enti",
+        "cips certificate enti",
+        "sonologist ante enti",
+        "world institute of pain certificate enti",
+        "cips matlab kya",
+        "cips ela vasthundi",
+        "సీఐపీఎస్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "cips ante",
+        "cips certificate",
+        "sonologist ante"
+      ],
+      "te": "సీఐపీఎస్ అంటే అల్ట్రాసౌండ్ గైడెడ్ పెయిన్ ప్రొసీడ్యూర్లలో వరల్డ్ ఇన్‌స్టిట్యూట్ ఆఫ్ పెయిన్, అమెరికా ఇచ్చే అంతర్జాతీయ సర్టిఫికేషన్. డా. పల్లవికి ఇది ఉంది."
+    },
+    "fiapm": {
+      "q": [
+        "fiapm ante enti",
+        "fiapm matlab kya",
+        "fellowship ante enti",
+        "indian academy of pain medicine ante enti",
+        "fiapm ela vasthundi",
+        "ఎఫ్‌ఐఏపీఎం అంటే ఏమిటి"
+      ],
+      "k": [
+        "fiapm ante",
+        "fellowship ante",
+        "fiapm matlab"
+      ],
+      "te": "ఎఫ్‌ఐఏపీఎం అంటే ఇండియన్ అకాడమీ ఆఫ్ పెయిన్ మెడిసిన్ ఫెలో. డా. పల్లవికి ఇది ఉంది; డా. కిరణ్‌కు పెయిన్ మేనేజ్‌మెంట్ ఫెలోషిప్ ఉంది."
+    },
+    "registration": {
+      "q": [
+        "doctor registration number unda",
+        "doctor nijam ga qualified na",
+        "tsmc number enti",
+        "medical council registration unda",
+        "doctor registered hai kya",
+        "doctor ki registration vivaralu",
+        "డాక్టర్ రిజిస్ట్రేషన్ నంబర్"
+      ],
+      "k": [
+        "registration number unda",
+        "nijam ga qualified",
+        "tsmc number",
+        "registration vivaralu"
+      ],
+      "te": "ఇద్దరు డాక్టర్లు తెలంగాణ స్టేట్ మెడికల్ కౌన్సిల్‌లో నమోదయ్యారు — పల్లవి 61959, కిరణ్ 62201. వివరాలు వారి ప్రొఫైల్ పేజీలలో ఉన్నాయి."
+    },
+    "experience": {
+      "q": [
+        "doctor ki enni samvatsaralu experience",
+        "experience entha undi",
+        "enni cases chesaru",
+        "doctor ki anubhavam entha",
+        "enni procedures chesaru",
+        "kitne saal ka experience hai",
+        "ఎంత అనుభవం ఉంది"
+      ],
+      "k": [
+        "enni samvatsaralu experience",
+        "experience entha",
+        "enni cases chesaru",
+        "doctor ki anubhavam"
+      ],
+      "te": "డాక్టర్ల చదువు, శిక్షణ, రిజిస్ట్రేషన్ వివరాలు ప్రొఫైల్ పేజీలలో ఉన్నాయి. మీ సమస్యలో అనుభవం గురించి 77880 91092కి ఫోన్ చేసి అడగండి."
+    },
+    "knee": {
+      "q": [
+        "mokali noppi ga undi",
+        "mokali veellu noppi",
+        "rendu mokallu noppi",
+        "mettlu ekkithe mokali noppi",
+        "mettlu digithe mokallu noppi",
+        "nadichinapudu mokali noppestundi",
+        "mokali kilu noppi chala rojula nunchi",
+        "ghutne me dard hai bahut",
+        "ghutno me dard chalne par",
+        "మోకాలి నొప్పి"
+      ],
+      "k": [
+        "mokali veellu",
+        "mokali kilu",
+        "mettlu ekkithe",
+        "mettlu digithe",
+        "nadichinapudu noppi"
+      ],
+      "te": "మోకాలి నొప్పి ఇక్కడ ఎక్కువ మంది వచ్చే సమస్య — ఆర్థరైటిస్, మెనిస్కస్ చిరుగుడు లేదా లిగమెంట్ సమస్య. అదే అపాయింట్‌మెంట్‌లో స్కాన్ చేసి చికిత్స చెబుతారు."
+    },
+    "low-back": {
+      "q": [
+        "nadumu noppi chala rojula nunchi",
+        "nadumu pattesindi",
+        "nadum noppi ga undi",
+        "nadumu kindi bhagam noppi",
+        "kurchuni lechithe nadumu noppi",
+        "nadumu noppi nela nunchi undi",
+        "kamar me dard mahino se hai",
+        "kamar pakad gayi",
+        "నడుము నొప్పి"
+      ],
+      "k": [
+        "nadumu pattesindi",
+        "nadumu pattukupoyindi",
+        "nadumu kindi bhagam",
+        "kurchuni lechithe noppi",
+        "nadumu noppi rojula nunchi"
+      ],
+      "te": "నడుము నొప్పి ఫేసెట్ కీళ్లు, డిస్క్ లేదా సాక్రోఇలియాక్ కీలు నుంచి రావచ్చు. ముందు డయాగ్నస్టిక్ బ్లాక్ చేసి ఏది కారణమో తేల్చి చికిత్స చేస్తారు."
+    },
+    "neck": {
+      "q": [
+        "meda noppi undi",
+        "meda tippaleka pothunna",
+        "meda bigutu ga undi",
+        "medha noppi chala rojula nunchi",
+        "meda pattesindi",
+        "meda kadapaleka pothunna",
+        "gardan me dard hai",
+        "gardan ghumane me dard",
+        "మెడ నొప్పి"
+      ],
+      "k": [
+        "meda tippaleka",
+        "meda pattesindi",
+        "meda bigutu",
+        "meda kadapaleka"
+      ],
+      "te": "మెడ నొప్పి సాధారణంగా ఫేసెట్ కీళ్లు లేదా డిస్క్ వల్ల వస్తుంది. ముందు మీడియల్ బ్రాంచ్ బ్లాక్‌తో నిర్ధారించి, అదే కారణమైతే రేడియోఫ్రీక్వెన్సీ చేస్తారు."
+    },
+    "shoulder": {
+      "q": [
+        "bhujam noppi undi",
+        "bhujam pyke ettaleka pothunna",
+        "cheyyi pyke ettaleka pothunna",
+        "bhujam bigutu ga undi",
+        "ratri bhujam noppi ekkuva",
+        "bhujam noppi nidra pattadam ledu",
+        "kandhe me dard hai",
+        "haath upar nahi uthta",
+        "భుజం నొప్పి"
+      ],
+      "k": [
+        "bhujam pyke ettaleka",
+        "pyke ettaleka pothunna",
+        "bhujam bigutu",
+        "ratri bhujam noppi"
+      ],
+      "te": "చాలా కాలంగా ఉన్న భుజం నొప్పి ఫ్రోజెన్ షోల్డర్ లేదా రొటేటర్ కఫ్ సమస్య కావచ్చు. స్కాన్ చేసి బ్లాక్, హైడ్రోడైలటేషన్ లేదా ఇంజెక్షన్, కదలిక వ్యాయామాలు చేస్తారు."
+    },
+    "sciatica": {
+      "q": [
+        "nadumu noppi kaalu loki velthundi",
+        "nadumu nunchi kaalu loki noppi",
+        "kaalu loki laagutondi",
+        "kaalu loki shock laga noppi",
+        "pirra nunchi kaalu loki noppi velthundi",
+        "kaalu loki noppi velthondi",
+        "kamar se taang me dard jata hai",
+        "pichhe se taang tak dard",
+        "నడుము నుంచి కాలులోకి నొప్పి"
+      ],
+      "k": [
+        "kaalu loki velthundi",
+        "kaalu loki noppi",
+        "kaalu loki laagutondi",
+        "kaalu loki shock"
+      ],
+      "te": "నడుము నుంచి కాలులోకి వెళ్లే నొప్పి అంటే నరం మీద ఒత్తిడి. ఇమేజింగ్ కింద ట్రాన్స్‌ఫొరామినల్ లేదా ఎపిడ్యూరల్ ఇంజెక్షన్ డే కేర్‌లో వేస్తారు."
+    },
+    "slipped-disc": {
+      "q": [
+        "disc jarindi",
+        "disc jaripoyindi ani chepparu",
+        "mri lo disc jarindi ani undi",
+        "l4 l5 disc jarindi",
+        "disc jarigindi treatment enti",
+        "disc slip ho gaya hai",
+        "disc kharab hai mera",
+        "డిస్క్ జారింది"
+      ],
+      "k": [
+        "disc jarindi",
+        "disc jaripoyindi",
+        "disc jarigindi"
+      ],
+      "te": "నరం మీద ఒత్తిడి పెట్టే జారిన డిస్క్‌కు ఇక్కడ ఎక్కువగా ఆపరేషన్ కాకుండా ఇమేజ్ గైడెడ్ ఎపిడ్యూరల్ లేదా ట్రాన్స్‌ఫొరామినల్ ఇంజెక్షన్ చేస్తారు."
+    },
+    "hip": {
+      "q": [
+        "pirra noppi undi",
+        "pirralu noppi",
+        "hip veellu noppi",
+        "tuntika noppi",
+        "groin lo noppi",
+        "hip pakka noppi nadavaleka",
+        "kulhe me dard hai",
+        "హిప్ నొప్పి"
+      ],
+      "k": [
+        "hip veellu",
+        "tuntika noppi",
+        "groin lo noppi",
+        "hip pakka noppi"
+      ],
+      "te": "హిప్ నొప్పి బర్సా, లాబ్రమ్, కండరాలు లేదా అరిగిన కీలు నుంచి రావచ్చు. అదే గదిలో స్కాన్ చేసి సరైన చోట గైడెడ్ ఇంజెక్షన్ వేస్తారు."
+    },
+    "sports": {
+      "q": [
+        "aata adutu debba tagilindi",
+        "gym lo debba tagilindi",
+        "cricket adutu noppi vachindi",
+        "running chesi debba tagilindi",
+        "sports injury ki treatment unda",
+        "practice lo kandaram laagindi",
+        "khelte waqt chot lagi",
+        "gym me chot lag gayi",
+        "ఆట ఆడుతూ దెబ్బ తగిలింది"
+      ],
+      "k": [
+        "aata adutu debba",
+        "gym lo debba",
+        "cricket adutu noppi",
+        "sports injury ki treatment"
+      ],
+      "te": "క్రీడా గాయాలలో ఎక్కువగా కండరం, లిగమెంట్ లేదా టెండాన్ దెబ్బతింటుంది. స్కాన్‌తో గాయం స్థాయి చూసి రీజెనరేటివ్ చికిత్స, ప్రొలోథెరపీ, దశల వారీ రీహాబ్ ప్లాన్ చేస్తారు."
+    },
+    "trigeminal": {
+      "q": [
+        "mukham oka pakka noppi",
+        "mukham lo current laga noppi",
+        "chempa lo noppi shock laga",
+        "tinnappudu mukham noppi vasthundi",
+        "mokham oka vaipu noppi",
+        "trigeminal neuralgia treatment unda",
+        "chehre ke ek taraf dard",
+        "ముఖం ఒక పక్క నొప్పి"
+      ],
+      "k": [
+        "mukham oka pakka",
+        "mukham lo current",
+        "chempa lo noppi",
+        "mokham oka vaipu"
+      ],
+      "te": "ట్రైజెమినల్ న్యూరాల్జియాలో ముఖం ఒక పక్క కరెంట్ షాక్ లాంటి నొప్పి వస్తుంది. మాత్రలు పని చేయకపోతే ఇమేజ్ గైడెడ్ రేడియోఫ్రీక్వెన్సీ డే కేర్‌లో చేస్తారు."
+    },
+    "elbow-hand-wrist": {
+      "q": [
+        "cheyyi noppi undi",
+        "mochethi noppi",
+        "manikattu noppi",
+        "chethi vellu noppi",
+        "cheyyi mariyu manikattu noppi",
+        "chethi noppi pani cheyyaleka pothunna",
+        "haath me dard hai",
+        "kalai me dard",
+        "చేతి నొప్పి"
+      ],
+      "k": [
+        "mochethi noppi",
+        "manikattu noppi",
+        "chethi vellu noppi",
+        "chethi noppi pani"
+      ],
+      "te": "మోచేయి, మణికట్టు, చేతి నొప్పి ఎక్కువగా అలసిన కండరం లేదా నొక్కుకున్న నరం వల్ల. అల్ట్రాసౌండ్ కింద హైడ్రోడిసెక్షన్ లేదా రీజెనరేటివ్ ఇంజెక్షన్‌తో చికిత్స చేస్తారు."
+    },
+    "foot-ankle": {
+      "q": [
+        "paadam noppi undi",
+        "mada noppi",
+        "edi noppi undi",
+        "cheelamanda noppi",
+        "adugu paadam noppi",
+        "paadam kinda noppi",
+        "pair me dard hai",
+        "talwe me dard",
+        "పాదం నొప్పి"
+      ],
+      "k": [
+        "paadam noppi",
+        "mada noppi",
+        "cheelamanda noppi",
+        "adugu paadam noppi"
+      ],
+      "te": "ఉదయం లేచి అడుగు పెట్టగానే మడమ నొప్పి ఎక్కువగా ప్లాంటార్ ఫాసిటిస్; మడమ వెనుక నొప్పి అకిలిస్ సమస్య. స్కాన్ చేసి ప్రొలోథెరపీ లేదా ఇంజెక్షన్, వ్యాయామాలు చెబుతారు."
+    },
+    "cervical-spondylosis": {
+      "q": [
+        "cervical spondylosis undi ani chepparu",
+        "meda lo spondylosis undi",
+        "meda veellu arigipoyayi",
+        "cervical problem undi",
+        "x ray lo spondylosis ani undi",
+        "gardan me spondylosis hai",
+        "సర్వైకల్ స్పాండిలోసిస్"
+      ],
+      "k": [
+        "meda lo spondylosis",
+        "meda veellu arigipoyayi",
+        "spondylosis undi ani"
+      ],
+      "te": "సర్వైకల్ స్పాండిలోసిస్ అంటే మెడ డిస్క్‌లు, కీళ్లు వయసుతో అరగడం. మీడియల్ బ్రాంచ్ బ్లాక్‌తో నిర్ధారణ అయితేనే సర్వైకల్ ఫేసెట్ రేడియోఫ్రీక్వెన్సీ చేస్తారు."
+    },
+    "knee-oa": {
+      "q": [
+        "mokali lo arthritis undi",
+        "mokali veellu arigipoyayi",
+        "cartilage arigipoyindi",
+        "grade 3 arthritis undi mokali lo",
+        "mokali lo gap tagginadi",
+        "mokali veellu aripoyayi ani chepparu",
+        "ghutne me arthritis hai",
+        "ghutne ki haddi ghis gayi",
+        "మోకాలి కీళ్ల అరుగుదల"
+      ],
+      "k": [
+        "mokali lo arthritis",
+        "mokali veellu arigipoyayi",
+        "cartilage arigipoyindi",
+        "mokali lo gap tagginadi"
+      ],
+      "te": "మోకాలి ఆస్టియో ఆర్థరైటిస్ అంటే మెల్లగా కార్టిలేజ్ అరగడం. స్కాన్ ప్రకారం కూల్డ్ రేడియోఫ్రీక్వెన్సీ లేదా రీజెనరేటివ్ ఇంజెక్షన్; గ్రేడ్ 4లో రిప్లేస్‌మెంట్ సరైనది కావచ్చు."
+    },
+    "meniscus": {
+      "q": [
+        "meniscus chirigindi",
+        "mokali lo cartilage chirigindi",
+        "mokali tirigi noppi vachindi",
+        "mokali lock ayipothundi",
+        "mokali madathapadatledu",
+        "meniscus tear ani mri lo undi",
+        "ghutna mud gaya tha dard",
+        "మెనిస్కస్ చిరిగింది"
+      ],
+      "k": [
+        "meniscus chirigindi",
+        "mokali lock ayipothundi",
+        "mokali tirigi noppi",
+        "mokali madathapadatledu"
+      ],
+      "te": "మెనిస్కస్ చిరుగుడు మెలిక తిరగడం లేదా అరుగుదల వల్ల వస్తుంది. అదే రోజు స్కాన్ చేసి, అవసరమైతే అల్ట్రాసౌండ్ కింద రీజెనరేటివ్ ఇంజెక్షన్ వేస్తారు."
+    },
+    "acl-ligament": {
+      "q": [
+        "mokali ligament chirigindi",
+        "acl tear undi ani mri lo",
+        "mokali jaaripothundi nadichetappudu",
+        "mokali loose ga undi",
+        "mokali balam lekunda undi",
+        "mokali ligament sprain ayindi",
+        "ghutne ka ligament phat gaya",
+        "మోకాలి లిగమెంట్ చిరిగింది"
+      ],
+      "k": [
+        "mokali ligament chirigindi",
+        "mokali jaaripothundi",
+        "mokali loose ga",
+        "mokali balam lekunda"
+      ],
+      "te": "వదులైన లిగమెంట్‌తో మోకాలు పట్టు తప్పుతుంటే ప్రొలోథెరపీ లేదా రీజెనరేటివ్ ఇంజెక్షన్ సరిపోవచ్చు. పూర్తిగా చిరిగితే వేరే దారి; పరీక్ష, స్కాన్ చూసి నిర్ణయిస్తారు."
+    },
+    "runners-knee": {
+      "q": [
+        "running chesthe mokali noppi",
+        "mokali chippa chuttu noppi",
+        "jogging tarvata mokali noppi",
+        "mokali chippa noppi parugu tarvata",
+        "roju parugu tho mokali noppi",
+        "daudne ke baad ghutne me dard",
+        "పరుగు తర్వాత మోకాలి నొప్పి"
+      ],
+      "k": [
+        "mokali chippa chuttu",
+        "running chesthe mokali noppi",
+        "jogging tarvata mokali noppi",
+        "mokali chippa noppi"
+      ],
+      "te": "పరుగు తర్వాత మోకాలి చిప్ప చుట్టూ నొప్పి ఎక్కువగా అతిగా వాడటం వల్ల. పరీక్ష, స్కాన్‌తో ఏ భాగమో తేల్చి చికిత్స, తిరిగి పరుగు ప్లాన్ చేస్తారు."
+    },
+    "jumpers-knee": {
+      "q": [
+        "mokali chippa kinda noppi",
+        "dookinappudu mokali noppi",
+        "patellar tendon noppi undi",
+        "jump chesthe mokali kinda noppi",
+        "mokali kinda kandaram noppi",
+        "kudne par ghutne ke niche dard",
+        "మోకాలి చిప్ప కింద నొప్పి"
+      ],
+      "k": [
+        "mokali chippa kinda",
+        "dookinappudu mokali noppi",
+        "mokali kinda kandaram"
+      ],
+      "te": "దూకే, పరిగెత్తే వారికి మోకాలి చిప్ప కింద ఉండే కండరం అతి భారంతో నొప్పి పెడుతుంది. అల్ట్రాసౌండ్‌లో చూసి రీజెనరేటివ్ ఇంజెక్షన్ లేదా ప్రొలోథెరపీ, వ్యాయామం."
+    },
+    "knee-swelling": {
+      "q": [
+        "mokali vaapu vachindi",
+        "mokali lo neeru cherindi",
+        "mokali ubbindi",
+        "mokali vaachipoyindi",
+        "mokali vapu ekkuva ga undi",
+        "ghutne me sujan hai",
+        "ghutne me paani bhar gaya",
+        "మోకాలి వాపు"
+      ],
+      "k": [
+        "mokali vaapu",
+        "mokali lo neeru",
+        "mokali ubbindi",
+        "mokali vaachipoyindi"
+      ],
+      "te": "వాపు ఆర్థరైటిస్, మెనిస్కస్ చిరుగుడు లేదా బర్సైటిస్ వల్ల కావచ్చు; స్కాన్ చెబుతుంది. వేడిగా, ఎర్రగా, జ్వరంతో ఉంటే వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి."
+    },
+    "frozen-shoulder": {
+      "q": [
+        "bhujam pattesindi",
+        "bhujam jam ayindi",
+        "bhujam kadapaleka pothunna bigutu",
+        "cheyyi pyke lechadam ledu bhujam bigutu",
+        "frozen shoulder undi ani chepparu",
+        "bhujam pattukupoyindi",
+        "kandha jam ho gaya",
+        "భుజం పట్టేసింది"
+      ],
+      "k": [
+        "bhujam pattesindi",
+        "bhujam jam ayindi",
+        "bhujam pattukupoyindi"
+      ],
+      "te": "ఫ్రోజెన్ షోల్డర్ అంటే భుజం కీలు కప్సూల్ బిగుసుకోవడం; షుగర్ ఉన్నవారిలో ఎక్కువ. సుప్రాస్కాపులర్ బ్లాక్, హైడ్రోడైలటేషన్‌తో పాటు కదలిక వ్యాయామాలు చేస్తారు."
+    },
+    "rotator-cuff": {
+      "q": [
+        "bhujam kandaram chirigindi",
+        "rotator cuff tear undi",
+        "supraspinatus tear ani mri lo undi",
+        "bhujam lo tendon debba tinnadi",
+        "bhujam kandaram debba",
+        "kandhe ka tendon phat gaya",
+        "భుజం కండరం చిరిగింది"
+      ],
+      "k": [
+        "bhujam kandaram chirigindi",
+        "bhujam kandaram",
+        "rotator cuff tear undi"
+      ],
+      "te": "రొటేటర్ కఫ్ సమస్యలు అతిగా వాడటం నుంచి పార్షియల్ చిరుగుడు వరకు ఉంటాయి. అల్ట్రాసౌండ్‌లో కండరాలు కనిపిస్తాయి; రీజెనరేటివ్ ఇంజెక్షన్ లేదా బ్లాక్‌తో రీహాబ్ చేయిస్తారు."
+    },
+    "impingement": {
+      "q": [
+        "cheyyi pyke ettithe bhujam noppi",
+        "bhujam lo bursa vaapu",
+        "bhujam pinch avutondi",
+        "shoulder impingement ani chepparu",
+        "cheyyi thalapaina pettithe noppi",
+        "haath upar karte waqt dard",
+        "చెయ్యి పైకి ఎత్తితే భుజం నొప్పి"
+      ],
+      "k": [
+        "cheyyi pyke ettithe",
+        "bhujam lo bursa",
+        "bhujam pinch",
+        "cheyyi thalapaina pettithe"
+      ],
+      "te": "చెయ్యి పైకి ఎత్తినప్పుడు కండరాలు లేదా బర్సా నొక్కుకుని వాపు రావడం ఇంపింజ్‌మెంట్. వాపును, చిరుగును, బిగుసుకున్న కప్సూల్‌ను అల్ట్రాసౌండ్ ఒకే సిట్టింగ్‌లో వేరు చేస్తుంది."
+    },
+    "tennis-elbow": {
+      "q": [
+        "mochethi bayata noppi",
+        "tennis elbow undi",
+        "pattukunte mochethi noppi",
+        "mochethi noppi pani chesthe",
+        "bottle cap tippithe mochethi noppi",
+        "kohni ke bahar dard",
+        "మోచేయి బయట నొప్పి"
+      ],
+      "k": [
+        "mochethi bayata noppi",
+        "mochethi bayata",
+        "pattukunte mochethi noppi"
+      ],
+      "te": "టెన్నిస్ ఎల్బో అంటే మోచేయి బయట కండరాలపై అతి భారం, చిన్న చిరుగులు; పట్టుకున్నప్పుడు నొప్పి. ఇక్కడ అల్ట్రాసౌండ్ కింద రీజెనరేటివ్ ఇంజెక్షన్ చేస్తారు, ఆపరేషన్ కాదు."
+    },
+    "golfers-elbow": {
+      "q": [
+        "mochethi lopala noppi",
+        "golfers elbow undi",
+        "mochethi lopali vaipu noppi",
+        "mochethi lona noppi",
+        "kohni ke andar dard",
+        "మోచేయి లోపల నొప్పి"
+      ],
+      "k": [
+        "mochethi lopala noppi",
+        "mochethi lopali vaipu",
+        "mochethi lona noppi"
+      ],
+      "te": "గోల్ఫర్స్ ఎల్బో కూడా అదే అతి భారం సమస్య, కానీ మోచేయి లోపలి వైపు. కండరాన్ని స్కాన్ చేసి అల్ట్రాసౌండ్ కింద రీజెనరేటివ్ ఇంజెక్షన్ ఇక్కడ చేస్తారు."
+    },
+    "carpal-tunnel": {
+      "q": [
+        "chethi vellu timmirlu",
+        "ratri chethi vellu timmirlu",
+        "chethi vellu jhunjhuni",
+        "manikattu lo nara nokkukundi",
+        "carpal tunnel undi ani chepparu",
+        "cheti vellu timmirlu ga undi",
+        "haath ki ungliyan sunn ho jati hai",
+        "చేతి వేళ్లు తిమ్మిర్లు"
+      ],
+      "k": [
+        "chethi vellu timmirlu",
+        "ratri chethi vellu",
+        "manikattu lo nara",
+        "cheti vellu timmirlu"
+      ],
+      "te": "కార్పల్ టన్నెల్ అంటే మణికట్టులో మీడియన్ నరం నొక్కుకోవడం; బొటన, చూపుడు, మధ్య వేళ్లలో తిమ్మిర్లు, రాత్రి ఎక్కువ. అల్ట్రాసౌండ్ కింద నర్వ్ హైడ్రోడిసెక్షన్ చేస్తారు."
+    },
+    "de-quervain": {
+      "q": [
+        "botana vellu noppi",
+        "manikattu botana vellu vaipu noppi",
+        "de quervain undi",
+        "paapa ni ettithe manikattu noppi",
+        "botana vellu mundu noppi",
+        "angoothe ke paas dard",
+        "బొటన వేలు నొప్పి"
+      ],
+      "k": [
+        "botana vellu noppi",
+        "botana vellu vaipu",
+        "manikattu botana",
+        "botana vellu mundu"
+      ],
+      "te": "డీ క్వెర్వైన్ అంటే బొటన వేలు మొదట్లో ఉండే కండరాల చికాకు; కొత్త తల్లులు, ఫోన్ ఎక్కువ వాడేవారిలో సాధారణం. స్కాన్ చూసి గైడెడ్ ఇంజెక్షన్ చేస్తారు."
+    },
+    "trigger-finger": {
+      "q": [
+        "vellu lock ayipothundi",
+        "vellu madathapetthadam kastam",
+        "vellu click avutondi",
+        "vellu pattesindi madavatledu",
+        "trigger finger undi",
+        "ungli phans jati hai",
+        "వేలు లాక్ అవుతోంది"
+      ],
+      "k": [
+        "vellu lock ayipothundi",
+        "vellu click avutondi",
+        "vellu madathapetthadam",
+        "vellu pattesindi"
+      ],
+      "te": "ట్రిగ్గర్ ఫింగర్ సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. 77880 91092కి ఫోన్ చేస్తే పరీక్ష ఉపయోగమా అని టీమ్ చెబుతారు."
+    },
+    "plantar-fasciitis": {
+      "q": [
+        "podunne mada noppi",
+        "mada noppi podunne lechinappudu",
+        "podunne modati adugu noppi",
+        "mada kinda noppi",
+        "edi kinda noppi podunne",
+        "kurchuni lechithe mada noppi",
+        "subah pair rakhte hi ediya me dard",
+        "పొద్దున్నే మడమ నొప్పి"
+      ],
+      "k": [
+        "podunne mada noppi",
+        "modati adugu noppi",
+        "mada kinda noppi",
+        "edi kinda noppi"
+      ],
+      "te": "ప్లాంటార్ ఫాసిటిస్‌లో ఉదయం మొదటి అడుగు వేసినప్పుడు మడమ కింద పోటు నొప్పి. స్కాన్ చేసి ప్రొలోథెరపీ లేదా రీజెనరేటివ్ ఇంజెక్షన్, సాగదీసే వ్యాయామాలు, చెప్పుల సలహా ఇస్తారు."
+    },
+    "heel-spur": {
+      "q": [
+        "edi lo spur undi ani x ray lo",
+        "mada lo mullu undi",
+        "calcaneal spur undi",
+        "heel spur ki treatment enti",
+        "mada lo spur ani chepparu",
+        "ediya me spur hai",
+        "మడమలో స్పర్"
+      ],
+      "k": [
+        "edi lo spur",
+        "mada lo mullu",
+        "mada lo spur",
+        "heel spur ki treatment"
+      ],
+      "te": "హీల్ స్పర్ సైట్‌లో వేరుగా ఇవ్వలేదు. మడమ నొప్పిని ప్లాంటార్ ఫాసిటిస్ లేదా అకిలిస్ సమస్యగా పరీక్షించి, స్కాన్‌తో ఇతర కారణాలు తోసిపుచ్చుతారు."
+    },
+    "achilles": {
+      "q": [
+        "mada venuka noppi",
+        "edi venuka noppi",
+        "achilles kandaram noppi",
+        "podunne mada venuka bigutu",
+        "mada venuka kandaram noppi",
+        "ediya ke piche dard",
+        "మడమ వెనుక నొప్పి"
+      ],
+      "k": [
+        "mada venuka noppi",
+        "edi venuka noppi",
+        "achilles kandaram",
+        "mada venuka kandaram",
+        "mada venuka bigutu"
+      ],
+      "te": "అకిలిస్ టెండినైటిస్‌లో మడమ వెనుక నొప్పి, బిగుసుకోవడం; ఉదయం, పని తర్వాత ఎక్కువ. స్కాన్ చేసి ప్రొలోథెరపీ లేదా రీజెనరేటివ్ ఇంజెక్షన్ చేస్తారు."
+    },
+    "ankle-sprain": {
+      "q": [
+        "cheelamanda mudathapadindi",
+        "kaalu mada tirigindi",
+        "cheelamanda sprain ayindi",
+        "mada tirigi noppi vachindi",
+        "purathana mada debba noppi",
+        "cheelamanda tirigi vaapu",
+        "takhna mud gaya",
+        "చీలమండ మడత పడింది"
+      ],
+      "k": [
+        "cheelamanda mudathapadindi",
+        "cheelamanda sprain",
+        "mada tirigindi",
+        "cheelamanda tirigi"
+      ],
+      "te": "పాత మడత దెబ్బ వల్ల చీలమండ లిగమెంట్లు వదులై నొప్పి ఉండవచ్చు; స్కాన్ తర్వాత ప్రొలోథెరపీ లేదా ఇంజెక్షన్. ఇప్పుడే తిరిగి బరువు మోయలేకపోతే ఎమర్జెన్సీకి వెళ్లండి."
+    },
+    "si-joint": {
+      "q": [
+        "nadumu kinda oka pakka noppi",
+        "pirra oka pakka noppi",
+        "si joint noppi undi",
+        "nadumu pakka noppi kurchunte",
+        "nadumu kinda kudi vaipu noppi",
+        "ek taraf kamar ke niche dard",
+        "నడుము కింద ఒక పక్క నొప్పి"
+      ],
+      "k": [
+        "nadumu kinda oka pakka",
+        "pirra oka pakka noppi",
+        "nadumu kinda kudi vaipu"
+      ],
+      "te": "సాక్రోఇలియాక్ కీలు నొప్పి నడుము కింద ఒక పక్క, వెన్నెముక పెల్విస్ కలిసే చోట ఉంటుంది. ముందు ఆ కీలుకి బ్లాక్ చేసి, నిర్ధారణ తర్వాత తదుపరి చికిత్స చెబుతారు."
+    },
+    "facet": {
+      "q": [
+        "nadumu venakki vanchithe noppi",
+        "facet joint noppi undi",
+        "nadumu lo spondylosis undi",
+        "lumbar spondylosis undi",
+        "nadumu veellu arigipoyayi",
+        "nadumu venakki vagithe noppi",
+        "kamar ke jodo me arthritis hai",
+        "నడుము కీళ్ల నొప్పి"
+      ],
+      "k": [
+        "nadumu venakki vanchithe",
+        "nadumu veellu arigipoyayi",
+        "nadumu lo spondylosis",
+        "nadumu venakki vagithe"
+      ],
+      "te": "ఫేసెట్ కీళ్లు వెన్నెముక వెనుక ఉండే చిన్న కీళ్లు, వయసుతో అరుగుతాయి. మీడియల్ బ్రాంచ్ బ్లాక్‌తో నిర్ధారణ అయితే ఫేసెట్ రేడియోఫ్రీక్వెన్సీతో నొప్పి నరాలను ఆపుతారు."
+    },
+    "disc-bulge": {
+      "q": [
+        "mri lo disc bulge undi",
+        "disc bulge ani report lo undi",
+        "disc konchem bayataki vachindi",
+        "disc protrusion undi ani undi",
+        "disc bulge undi treatment enti",
+        "report me disc bulge likha hai",
+        "ఎంఆర్‌ఐలో డిస్క్ బల్జ్"
+      ],
+      "k": [
+        "mri lo disc bulge",
+        "disc bulge ani report",
+        "disc bayataki vachindi",
+        "disc bulge undi treatment"
+      ],
+      "te": "నొప్పి లేని వారిలోనూ డిస్క్ బల్జ్ కనిపిస్తుంది, అందుకే స్కాన్ పరీక్షతో సరిపోలాలి. నరాన్ని నొక్కుతుంటే ఇమేజ్ గైడెడ్ ఎపిడ్యూరల్ ఇంజెక్షన్ ఇక్కడ చేస్తారు."
+    },
+    "stenosis": {
+      "q": [
+        "nadichithe kaallu noppi kurchunte thaggutundi",
+        "konchem nadichaka kaallu laagutayi",
+        "vennemuka daari irukai poyindi",
+        "stenosis undi ani mri lo undi",
+        "nadichithe kaallu balaheenam ga anipistundi",
+        "chalne par taango me dard baith jaane se aaram",
+        "స్పైనల్ స్టెనోసిస్"
+      ],
+      "k": [
+        "nadichithe kaallu noppi",
+        "kurchunte thaggutundi",
+        "vennemuka daari irukai",
+        "nadichaka kaallu laagutayi"
+      ],
+      "te": "స్పైనల్ స్టెనోసిస్ అంటే వెన్నెముక కాలువ లేదా నరం దారి ఇరుకవడం, పెద్దవారిలో ఎక్కువ. స్కాన్‌లో లెవెల్ చూసి చికాకు ఉన్న నరానికి గైడెడ్ ఇంజెక్షన్ చేస్తారు."
+    },
+    "spondylolisthesis": {
+      "q": [
+        "vennupusa jarindi",
+        "vertebra jarindi ani chepparu",
+        "l5 s1 jarindi",
+        "spondylolisthesis undi ani mri lo",
+        "vennupusa jaripoyindi ani mri lo undi",
+        "vennupusa mundhuku jarindi",
+        "haddi khisak gayi hai",
+        "వెన్నుపూస జారింది"
+      ],
+      "k": [
+        "vennupusa jarindi",
+        "vennupusa jaripoyindi",
+        "vertebra jarindi",
+        "vennupusa mundhuku jarindi"
+      ],
+      "te": "స్పాండిలోలిస్తెసిస్ అంటే ఒక వెన్నుపూస కింది దానిపై జారడం; నరం చికాకుతో సయాటికా రావచ్చు. పరీక్ష, స్కాన్ చూసి ఆపరేషన్ ఆలోచించాలంటే స్పష్టంగా చెబుతారు."
+    },
+    "piriformis": {
+      "q": [
+        "pirra lopala noppi",
+        "kurchunte pirra noppi",
+        "piriformis bigutu ga undi",
+        "pirra lopala lothaina noppi",
+        "pirra noppi kurchunnappudu ekkuva",
+        "chutad me gehra dard",
+        "పిర్రలో లోతైన నొప్పి"
+      ],
+      "k": [
+        "pirra lopala noppi",
+        "kurchunte pirra noppi",
+        "piriformis bigutu",
+        "pirra lopala lothaina"
+      ],
+      "te": "పిరిఫార్మిస్ సిండ్రోమ్ సైట్‌లో లేదు, కానీ పిర్ర నుంచి కాలులోకి వెళ్లే నొప్పిని సయాటికా లాగే పరీక్ష, స్కాన్, అవసరమైతే బ్లాక్‌తో చూస్తారు."
+    },
+    "pinched-nerve": {
+      "q": [
+        "nara nokkukundi",
+        "naram pattesindi",
+        "nara nokkukupoyindi",
+        "narala meeda otthidi undi",
+        "naram nokkukundi ani chepparu",
+        "nas dab gayi hai",
+        "నరం నొక్కుకుంది"
+      ],
+      "k": [
+        "nara nokkukundi",
+        "nara nokkukupoyindi",
+        "narala meeda otthidi"
+      ],
+      "te": "నొక్కుకున్న నరం నడుములో సయాటికా, మెడలో చేతి నొప్పి, మణికట్టులో కార్పల్ టన్నెల్ కలిగిస్తుంది. ఎక్కడ ఉందో చెప్పండి; ఇంజెక్షన్ లేదా హైడ్రోడిసెక్షన్ చేస్తారు."
+    },
+    "leg-numbness": {
+      "q": [
+        "kaalu timmirlu ga undi",
+        "paadam timmirlu",
+        "kaalu vellu timmirlu",
+        "kaalu jhunjhuni vasthundi",
+        "kaalu sunn ga undi",
+        "mokali kinda timmirlu",
+        "taang me sunn pan hai",
+        "కాలు తిమ్మిర్లు"
+      ],
+      "k": [
+        "kaalu timmirlu",
+        "paadam timmirlu",
+        "kaalu vellu timmirlu",
+        "mokali kinda timmirlu"
+      ],
+      "te": "మోకాలి కింద తిమ్మిర్లు ఉంటే నడుములో నరం మూలం కారణం కావచ్చు; సయాటికా లాగే పరీక్షిస్తారు. వేగంగా పెరిగితే, పాదం బలహీనమైతే, మూత్రం అదుపు తప్పితే వెంటనే ఆసుపత్రికి."
+    },
+    "arm-radiating": {
+      "q": [
+        "meda nunchi cheyyi loki noppi",
+        "meda noppi cheyyi loki velthundi",
+        "cheyyi loki timmirlu velthayi",
+        "cheyyi loki laagutondi",
+        "meda nunchi cheti loki noppi",
+        "cheyyi loki noppi velthondi",
+        "gardan se haath me dard jata hai",
+        "మెడ నుంచి చేతిలోకి నొప్పి"
+      ],
+      "k": [
+        "cheyyi loki noppi",
+        "meda nunchi cheyyi loki",
+        "cheyyi loki timmirlu",
+        "cheyyi loki laagutondi"
+      ],
+      "te": "మెడ నుంచి చేతిలోకి నొప్పి, తిమ్మిర్లు వస్తే డిస్క్ లేదా ఇరుకుదల నరాన్ని చికాకు పెడుతుండవచ్చు. స్కాన్ చూసి గైడెడ్ ఇంజెక్షన్ చెప్పవచ్చు; బలహీనత పెరిగితే వెంటనే చూపించుకోండి."
+    },
+    "text-neck": {
+      "q": [
+        "phone chusthe meda noppi",
+        "laptop munduku kurchoni meda noppi",
+        "computer pani valla meda noppi",
+        "posture valla meda noppi",
+        "office lo kurchoni meda noppi",
+        "roju laptop tho meda noppi",
+        "mobile dekhne se gardan dard",
+        "ఫోన్ చూస్తూ మెడ నొప్పి"
+      ],
+      "k": [
+        "phone chusthe",
+        "laptop munduku",
+        "posture valla",
+        "computer pani valla"
+      ],
+      "te": "ఎక్కువ సేపు డెస్క్, ల్యాప్‌టాప్, ఫోన్ ముందు తల ముందుకు వంచి ఉంటే మెడపై భారం పడుతుంది. పరీక్షించి భంగిమ మార్పులు, మెడ వ్యాయామాలు చెబుతారు; నిర్ధారణ అయితేనే ప్రొసీడ్యూర్."
+    },
+    "whiplash": {
+      "q": [
+        "accident tarvata meda noppi",
+        "car accident lo meda jerk ayindi",
+        "bandi accident lo meda noppi",
+        "meda kudupu tagilindi",
+        "accident ayi nela ayindi ippatiki meda noppi",
+        "accident ke baad gardan dard",
+        "యాక్సిడెంట్ తర్వాత మెడ నొప్పి"
+      ],
+      "k": [
+        "accident tarvata meda noppi",
+        "meda jerk ayindi",
+        "meda kudupu"
+      ],
+      "te": "యాక్సిడెంట్ లేదా హఠాత్ కుదుపుతో వచ్చే విప్లాష్ మెడ నొప్పి ఇక్కడ చూస్తారు. ఇప్పుడే జరిగితే, బలహీనత, తిమ్మిర్లు లేదా తీవ్ర నొప్పి ఉంటే ముందు ఆసుపత్రికి వెళ్లండి."
+    },
+    "neck-headache": {
+      "q": [
+        "meda nunchi tala noppi",
+        "tala venuka noppi",
+        "meda noppi tho tala noppi",
+        "tala venaka bhagam noppi",
+        "meda nunchi tala venuka noppi",
+        "gardan se sar dard",
+        "మెడ నుంచి తల నొప్పి"
+      ],
+      "k": [
+        "meda nunchi tala noppi",
+        "tala venuka noppi",
+        "tala venaka bhagam",
+        "meda noppi tho tala noppi"
+      ],
+      "te": "తల వెనుక భాగంలో మొదలయ్యే తలనొప్పి మెడ నుంచి రావచ్చు; మెడ నొప్పితో పాటే పరీక్షిస్తారు. హఠాత్తుగా తీవ్ర తలనొప్పి, జ్వరం, మెడ బిగుసుకుపోతే వెంటనే ఆసుపత్రికి వెళ్లండి."
+    },
+    "hip-bursitis": {
+      "q": [
+        "pakkaki padukonte hip noppi",
+        "hip bayata noppi",
+        "pirra bayata noppi ratri",
+        "trochanteric bursitis undi",
+        "pakkaki padukunte pirra noppi",
+        "hip bayata vaipu noppi",
+        "kulhe ke bahar dard lete waqt",
+        "పక్కకు పడుకుంటే హిప్ నొప్పి"
+      ],
+      "k": [
+        "pakkaki padukonte",
+        "hip bayata noppi",
+        "pirra bayata noppi",
+        "hip bayata vaipu"
+      ],
+      "te": "ట్రొకాంటెరిక్ బర్సైటిస్ అంటే హిప్ బయట ఉండే దిండు వాచడం; ఆ పక్కకు పడుకోవడం కష్టం. స్కాన్ చూసి బర్సా లేదా కండరానికి గైడెడ్ ఇంజెక్షన్ వేస్తారు."
+    },
+    "hip-arthritis": {
+      "q": [
+        "hip veellu arigipoyayi",
+        "podunne hip bigutu ga undi",
+        "socks vesukovadam kastam ga undi",
+        "hip lo arthritis undi",
+        "hip replacement cheyyali ani chepparu",
+        "hip kilu arigindi",
+        "kulhe me arthritis hai",
+        "హిప్ ఆర్థరైటిస్"
+      ],
+      "k": [
+        "hip veellu arigipoyayi",
+        "socks vesukovadam kastam",
+        "hip lo arthritis",
+        "hip kilu arigindi"
+      ],
+      "te": "అరిగిన హిప్ కీలు ఉదయం బిగుసుకుంటుంది, సాక్స్, చెప్పులు వేసుకోవడం కష్టమవుతుంది. స్కాన్ చూసి కీలులో గైడెడ్ ఇంజెక్షన్ వేస్తారు; ఎక్స్‌రే, ఎంఆర్‌ఐ రిపోర్టులు తీసుకురండి."
+    },
+    "labral-tear": {
+      "q": [
+        "hip labrum chirigindi",
+        "groin lo click avutondi",
+        "hip lo pattukupoyinatlu undi",
+        "labral tear ani mri lo undi",
+        "hip lo click sound vasthundi",
+        "kulhe me click hota hai",
+        "హిప్ లాబ్రమ్ చిరిగింది"
+      ],
+      "k": [
+        "hip labrum chirigindi",
+        "groin lo click",
+        "hip lo click",
+        "hip lo pattukupoyinatlu"
+      ],
+      "te": "లాబ్రల్ టియర్ అంటే హిప్ సాకెట్ అంచు కార్టిలేజ్ దెబ్బతినడం; గజ్జలో పట్టుకోవడం, క్లిక్ శబ్దం ఉండవచ్చు. కీలులో గైడెడ్ ఇంజెక్షన్ చేస్తారు; ఎంఆర్‌ఐ రిపోర్టులు తీసుకురండి."
+    },
+    "hamstring": {
+      "q": [
+        "thoda kandaram laagindi",
+        "hamstring laagindi",
+        "pikka kandaram chirigindi",
+        "muskulu laagayi",
+        "kandaralu chirigayi",
+        "thoda venuka kandaram noppi",
+        "jaangh ki muscle kheench gayi",
+        "తొడ కండరం లాగింది"
+      ],
+      "k": [
+        "thoda kandaram laagindi",
+        "thoda kandaram",
+        "pikka kandaram chirigindi",
+        "muskulu laagayi",
+        "thoda venuka kandaram"
+      ],
+      "te": "తొడ, పిక్క కండరాల చిరుగుడు వంటి క్రీడా గాయాలు ఇక్కడ చూస్తారు. అల్ట్రాసౌండ్‌తో దెబ్బ స్థాయి చూసి చికిత్స, దశల వారీ రీహాబ్, ఆటకు తిరిగే సమయం ప్లాన్ చేస్తారు."
+    },
+    "shin-pain": {
+      "q": [
+        "kaalu mundu bhagam noppi",
+        "kaalu mundu ennu noppi",
+        "parugu tarvata kaalu mundu noppi",
+        "shin noppi undi",
+        "jogging tarvata kaalu mundu noppi",
+        "pindli ke samne dard",
+        "కాలు ముందు భాగం నొప్పి"
+      ],
+      "k": [
+        "kaalu mundu bhagam noppi",
+        "kaalu mundu noppi",
+        "shin noppi",
+        "kaalu mundu ennu"
+      ],
+      "te": "షిన్ నొప్పి సైట్‌లో వేరుగా లేదు; పరుగు వల్ల వచ్చే గాయాలను క్రీడా గాయాల కింద పరీక్షిస్తారు. ఒకే చోట నొప్పి పెరుగుతుంటే స్ట్రెస్ ఫ్రాక్చర్ కోసం చూపించుకోండి."
+    },
+    "tendinitis": {
+      "q": [
+        "kandaram noppi undi",
+        "kandaram vaachindi",
+        "kandaralu noppi ga unnayi",
+        "kandaram debba tagilindi noppi",
+        "tendon noppi undi",
+        "nas ke tendon me soojan",
+        "కండరం నొప్పి"
+      ],
+      "k": [
+        "kandaram noppi",
+        "kandaram vaachindi",
+        "kandaralu noppi"
+      ],
+      "te": "అతిగా వాడటం, చిన్న చిరుగుల వల్ల మోకాలు, మడమ, భుజం, మోచేయి కండరాలలో సమస్యలు వస్తాయి. అల్ట్రాసౌండ్‌లో చూసి రీజెనరేటివ్ ఇంజెక్షన్ లేదా ప్రొలోథెరపీ, వ్యాయామం."
+    },
+    "nerve-pain": {
+      "q": [
+        "nara noppi undi",
+        "manta laga noppi",
+        "kaaluthunnattu noppi",
+        "naram noppi undi",
+        "narala noppi tho badha pedutondi",
+        "jhunjhuni tho manta",
+        "nas ka dard aur jalan",
+        "నరాల నొప్పి"
+      ],
+      "k": [
+        "nara noppi",
+        "manta laga noppi",
+        "kaaluthunnattu noppi",
+        "narala noppi"
+      ],
+      "te": "నరాల నొప్పి వెన్నెముక మూలం, మణికట్టు లేదా మోచేయిలో నొక్కుకున్న నరం, ముఖంలో ట్రైజెమినల్ నరం నుంచి రావచ్చు. ఎక్కడ ఉందో చెప్పండి; బ్లాక్, హైడ్రోడిసెక్షన్, రేడియోఫ్రీక్వెన్సీ ఉన్నాయి."
+    },
+    "chronic-pain": {
+      "q": [
+        "samvatsaralu nunchi noppi undi",
+        "chala nelala nunchi noppi undi",
+        "enno treatments chesa emi thaggaledu",
+        "annee try chesanu emi labham ledu",
+        "purathana noppi tho badha",
+        "chala kalam nunchi noppi",
+        "saalo se dard hai theek nahi hua",
+        "సంవత్సరాల నుంచి నొప్పి"
+      ],
+      "k": [
+        "samvatsaralu nunchi noppi",
+        "nelala nunchi noppi",
+        "emi thaggaledu",
+        "chala kalam nunchi noppi"
+      ],
+      "te": "చాలా కాలం నుంచి ఉన్న నొప్పి మీదే హాల్సియాన్ దృష్టి. నొప్పి మూలం వేరే చోట ఉండవచ్చు, అందుకే ప్రతి అపాయింట్‌మెంట్‌లో పరీక్ష, స్కాన్ చేస్తారు. పాత వివరాలు తీసుకురండి."
+    },
+    "urgent": {
+      "q": [
+        "noppi bharinchaleka pothunna",
+        "noppi tattukoleka pothunna",
+        "chala urgent ga chudali",
+        "emergency ga chudali",
+        "ippudu chala noppi ga undi urgent",
+        "noppi tho chaavu vachinatlu undi",
+        "bahut urgent hai dard bardasht nahi ho raha",
+        "అత్యవసరం, నొప్పి భరించలేకపోతున్నా"
+      ],
+      "k": [
+        "bharinchaleka pothunna",
+        "tattukoleka pothunna",
+        "emergency ga chudali",
+        "urgent ga chudali"
+      ],
+      "te": "హఠాత్ బలహీనత, మూత్రం ఆగిపోవడం, ఛాతీ నొప్పి లేదా జ్వరంతో నడుము నొప్పి ఉంటే వెంటనే దగ్గరి ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి, లేదా 108కి ఫోన్ చేయండి. అపాయింట్‌మెంట్ కోసం ఆగకండి."
+    },
+    "cauda-equina": {
+      "q": [
+        "moothram raavatledu nadumu noppi",
+        "urine aagatledu",
+        "moothram ravadam ledu",
+        "motions control avvatledu",
+        "rendu kaallu madhya timmirlu",
+        "pirralu madhya timmirlu nadumu noppi",
+        "moothram aapukoleka pothunna",
+        "peshab nahi aa raha aur kamar dard",
+        "మూత్రం రావట్లేదు, నడుము నొప్పి"
+      ],
+      "k": [
+        "moothram raavatledu",
+        "moothram ravadam ledu",
+        "motions control avvatledu",
+        "kaallu madhya timmirlu",
+        "pirralu madhya timmirlu",
+        "moothram aapukoleka"
+      ],
+      "te": "మూత్రం, మలం అదుపు తప్పడం, మూత్రం రాకపోవడం, పిర్రల మధ్య తిమ్మిర్లు — వెన్నెముక కింది నరాల ఒత్తిడి కావచ్చు. వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి."
+    },
+    "leg-weakness": {
+      "q": [
+        "kaalu balaheenam ga undi",
+        "kaalu balam tagginadi",
+        "paadam ettaleka pothunna",
+        "kaalu sahakarinchatledu",
+        "unnattundi nadavaleka pothunna",
+        "rendu kaallu lo sciatica undi",
+        "kaalu shakti poyindi",
+        "taang me taakat nahi hai",
+        "కాలు బలహీనంగా ఉంది"
+      ],
+      "k": [
+        "kaalu balaheenam",
+        "kaalu balam tagginadi",
+        "paadam ettaleka pothunna",
+        "unnattundi nadavaleka",
+        "kaalu sahakarinchatledu",
+        "kaalu shakti poyindi"
+      ],
+      "te": "కాలు హఠాత్తుగా బలహీనం కావడం, పాదం ఎత్తలేకపోవడం, రెండు కాళ్లలో సయాటికా, కొత్తగా నడవడం కష్టం — వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి."
+    },
+    "back-red-flags": {
+      "q": [
+        "nadumu noppi tho jwaram",
+        "jwaram tho nadumu noppi",
+        "nadumu noppi baruvu tagguthunna",
+        "cancer undi ippudu nadumu noppi",
+        "ratri jwaram tho nadumu noppi",
+        "nadumu noppi tho jwaram vanthulu",
+        "bukhar ke saath kamar dard",
+        "జ్వరంతో నడుము నొప్పి"
+      ],
+      "k": [
+        "nadumu noppi tho jwaram",
+        "jwaram tho nadumu noppi",
+        "kamar dard aur bukhar",
+        "baruvu tagguthunna",
+        "ratri jwaram tho noppi"
+      ],
+      "te": "జ్వరం, కారణం తెలియని బరువు తగ్గడం లేదా క్యాన్సర్ చరిత్రతో నడుము నొప్పి ఉంటే వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి. ఆలస్యం చేయకండి."
+    },
+    "trauma": {
+      "q": [
+        "padipoyanu nadavaleka pothunna",
+        "kindapadi ennu virigindi",
+        "accident ayindi vaapu vachindi",
+        "bike meeda nunchi padipoyanu",
+        "kaalu meeda baruvu pettaleka pothunna",
+        "ippude accident ayindi",
+        "kindapadi noppi ga undi",
+        "gir gaya chal nahi pa raha",
+        "haddi tut gayi hai",
+        "పడిపోయాను, నడవలేకపోతున్నా"
+      ],
+      "k": [
+        "padipoyanu nadavaleka",
+        "ennu virigindi",
+        "baruvu pettaleka pothunna",
+        "kindapadi noppi",
+        "bike meeda nunchi padipoyanu",
+        "ippude accident ayindi"
+      ],
+      "te": "పడటం, యాక్సిడెంట్ తర్వాత బరువు మోయలేకపోతే, అవయవం వంకరగా ఉంటే ఎముక విరగడం కావచ్చు. వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి."
+    },
+    "chest-pain": {
+      "q": [
+        "chest lo noppi",
+        "gunde lo noppi",
+        "chaati lo noppi",
+        "chest noppi tho chemata",
+        "oopiri adaledu chest noppi",
+        "gunde lo noppi cheyyi loki",
+        "seene me dard aur paseena",
+        "ఛాతీలో నొప్పి"
+      ],
+      "k": [
+        "chest lo noppi",
+        "gunde lo noppi",
+        "chaati lo noppi",
+        "oopiri adaledu",
+        "chest noppi tho chemata"
+      ],
+      "te": "ఛాతీ నొప్పి, లేదా ఎడమ భుజం చేతి నొప్పితో ఊపిరి ఆడకపోవడం, చెమటలు — గుండె సమస్య కావచ్చు. వెంటనే 108కి ఫోన్ చేయండి లేదా దగ్గరి ఎమర్జెన్సీకి వెళ్లండి."
+    },
+    "stroke": {
+      "q": [
+        "mukham vankara ayindi",
+        "matalu raavatledu",
+        "oka pakka balaheenam ga undi",
+        "oka pakka cheyyi kaalu panichestledu",
+        "matladaleka pothunnaru",
+        "mukham oka pakka jarindi",
+        "muh tedha ho gaya",
+        "ek taraf kamzori aa gayi",
+        "ముఖం వంకర అయింది"
+      ],
+      "k": [
+        "mukham vankara",
+        "matalu raavatledu",
+        "oka pakka balaheenam",
+        "oka pakka panichestledu",
+        "matladaleka pothunnaru",
+        "mukham oka pakka jarindi"
+      ],
+      "te": "ముఖం వంకర పోవడం, మాట తడబడటం, ఒక పక్క బలహీనత లేదా తిమ్మిర్లు — స్ట్రోక్ కావచ్చు. ప్రతి నిమిషం విలువైనది; వెంటనే 108కి ఫోన్ చేయండి లేదా ఎమర్జెన్సీకి వెళ్లండి."
+    },
+    "thunderclap": {
+      "q": [
+        "jeevitham lo lenanta tala noppi",
+        "unnattundi vipareetham ga tala noppi",
+        "tala noppi tho jwaram meda bigutu",
+        "tala noppi tho vanthulu",
+        "tala pagilipoyinatlu noppi",
+        "achanak tez sar dard",
+        "హఠాత్తుగా తీవ్రమైన తలనొప్పి"
+      ],
+      "k": [
+        "lenanta tala noppi",
+        "vipareetham ga tala noppi",
+        "tala noppi tho vanthulu",
+        "tala noppi tho jwaram",
+        "tala pagilipoyinatlu"
+      ],
+      "te": "ఇప్పటివరకు లేనంత తీవ్రమైన హఠాత్ తలనొప్పి, లేదా జ్వరం, మెడ బిగుసుకోవడం, గందరగోళం, చూపు మార్పుతో తలనొప్పి — వెంటనే 108కి ఫోన్ చేయండి లేదా ఎమర్జెన్సీకి వెళ్లండి."
+    },
+    "hot-joint": {
+      "q": [
+        "veellu vaachi erraga vedi ga undi",
+        "jwaram tho mokali vaapu",
+        "veellu lo infection ayindi",
+        "mokali vedi ga erraga undi",
+        "injection tarvata erupu perigindi",
+        "kilu vaachi vedi ga undi",
+        "jodo me sujan aur bukhar",
+        "కీలు వేడిగా ఎర్రగా వాచింది"
+      ],
+      "k": [
+        "erraga vedi ga undi",
+        "jwaram tho mokali vaapu",
+        "veellu lo infection",
+        "vedi ga erraga",
+        "injection tarvata erupu"
+      ],
+      "te": "కీలు వేడిగా, ఎర్రగా, తీవ్ర నొప్పితో వాచి జ్వరం ఉంటే, లేదా ఇంజెక్షన్ తర్వాత ఎరుపు వ్యాపిస్తే ఇన్ఫెక్షన్ కావచ్చు. వెంటనే ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి."
+    },
+    "calf-dvt": {
+      "q": [
+        "pikka vaachindi noppi ga undi",
+        "prayanam tarvata kaalu vaapu",
+        "operation tarvata pikka noppi vaapu",
+        "pikka tho kaalu vaachipoyindi",
+        "pikka muttukunte noppi vaapu",
+        "pindli me sujan aur dard",
+        "పిక్క వాచి నొప్పి"
+      ],
+      "k": [
+        "pikka vaachindi noppi",
+        "prayanam tarvata kaalu vaapu",
+        "pikka noppi vaapu",
+        "pikka muttukunte noppi"
+      ],
+      "te": "పిక్కలో వాపు, నొప్పి, తాకితే నొప్పి — ముఖ్యంగా దూర ప్రయాణం లేదా ఆపరేషన్ తర్వాత — రక్తం గడ్డ కావచ్చు. వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి."
+    },
+    "achilles-rupture": {
+      "q": [
+        "mada venuka tup mani sound vachindi",
+        "achilles kandaram tegipoyindi",
+        "mada venuka pop ayindi",
+        "kaalu meeda nettaleka pothunna",
+        "achilles tegindi",
+        "kandaram tegipoyindi",
+        "pichhe se awaaz aayi phat gaya",
+        "మడమ వెనుక కండరం తెగింది"
+      ],
+      "k": [
+        "tup mani sound",
+        "kandaram tegipoyindi",
+        "mada venuka pop",
+        "achilles tegindi",
+        "kaalu meeda nettaleka"
+      ],
+      "te": "మడమ వెనుక హఠాత్తుగా టప్ మని శబ్దం వచ్చి కాలు మీద నెట్టలేకపోతే అకిలిస్ తెగడం కావచ్చు. వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి."
+    },
+    "head-injury": {
+      "q": [
+        "tala ki debba tagilindi",
+        "tala kottukundi",
+        "tala debba tarvata vanthulu",
+        "padipoyi spruha kolipoyanu",
+        "tala debba tarvata nidra ga undi",
+        "tala meeda debba padindi",
+        "sar pe chot lagi",
+        "gir ke behosh ho gaya",
+        "తలకు దెబ్బ తగిలింది"
+      ],
+      "k": [
+        "tala ki debba",
+        "tala debba tarvata vanthulu",
+        "tala kottukundi",
+        "spruha kolipoyanu",
+        "tala meeda debba"
+      ],
+      "te": "తలకు దెబ్బ తగిలి గందరగోళం, వాంతులు, నిద్రమత్తు లేదా స్పృహ తప్పడం ఉంటే వెంటనే ఆసుపత్రి ఎమర్జెన్సీకి వెళ్లండి లేదా 108కి ఫోన్ చేయండి."
+    },
+    "cord-signs": {
+      "q": [
+        "chethulu pattu tappipothunnayi",
+        "nadichetappudu balance povutondi",
+        "rendu chethulu timmirlu",
+        "meda noppi tho chethulu panichestledu",
+        "chethulu nunchi vasthuvulu padipothunnayi",
+        "nadakalo tootoo pothunna",
+        "haath se cheezein gir rahi hai",
+        "రెండు చేతులు తిమ్మిర్లు"
+      ],
+      "k": [
+        "chethulu pattu tappipothunnayi",
+        "balance povutondi",
+        "rendu chethulu timmirlu",
+        "chethulu panichestledu",
+        "vasthuvulu padipothunnayi"
+      ],
+      "te": "మెడ నొప్పితో చేతులు పట్టు తప్పడం, నడకలో బ్యాలెన్స్ పోవడం, రెండు వైపులా తిమ్మిర్లు, మూత్ర సమస్యలు — వెన్నుపాముపై ఒత్తిడి కావచ్చు. వెంటనే ఎమర్జెన్సీకి వెళ్లండి లేదా 108."
+    },
+    "diabetic-foot": {
+      "q": [
+        "sugar undi paadam lo pundu",
+        "sugar patient paadam lo gaayam",
+        "kaalu vellu nalupu ayindi",
+        "sugar undi kaalu gaayam mandatledu",
+        "paadam lo pundu vasthundi sugar undi",
+        "sugar wale pair me zakhm hai",
+        "షుగర్ ఉంది, పాదంలో పుండు"
+      ],
+      "k": [
+        "paadam lo pundu",
+        "kaalu gaayam mandatledu",
+        "kaalu vellu nalupu",
+        "paadam lo gaayam"
+      ],
+      "te": "షుగర్ ఉన్నవారికి పాదంలో గాయం, పుండు లేదా రంగు మారడం ఈ రోజే డాక్టర్‌కు చూపించాలి. వ్యాపిస్తుంటే, వేడిగా ఉంటే, జ్వరం ఉంటే వెంటనే ఎమర్జెన్సీకి వెళ్లండి లేదా 108."
+    },
+    "migraine": {
+      "q": [
+        "sagam tala noppi",
+        "migraine ki treatment unda",
+        "tala noppi migraine undi",
+        "tala noppi tho vakarintha",
+        "sagam tala noppi vasthundi",
+        "aadha sar dard hota hai",
+        "సగం తల నొప్పి"
+      ],
+      "k": [
+        "sagam tala noppi",
+        "migraine ki treatment",
+        "tala noppi migraine"
+      ],
+      "te": "మైగ్రేన్ సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. తల వెనుక మొదలయ్యే నొప్పి మెడ నుంచి రావచ్చు. హఠాత్ తీవ్ర తలనొప్పికి ఎమర్జెన్సీ; వివరాలకు 77880 91092కి ఫోన్ చేయండి."
+    },
+    "headache": {
+      "q": [
+        "roju tala noppi",
+        "tala noppi ki treatment unda",
+        "eppudu tala noppi ga undi",
+        "roju roju tala noppi",
+        "tala noppi tho badha pedutondi",
+        "roz roz sar dard rehta hai",
+        "ప్రతి రోజూ తల నొప్పి"
+      ],
+      "k": [
+        "roju tala noppi",
+        "tala noppi ki treatment",
+        "roju roju tala noppi"
+      ],
+      "te": "తలనొప్పి మాత్రమే సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. తల వెనుక మొదలయ్యేది మెడ నుంచి రావచ్చు. కొత్త, తీవ్ర తలనొప్పికి ఎమర్జెన్సీ; వివరాలకు 77880 91092."
+    },
+    "cancer-pain": {
+      "q": [
+        "cancer noppi ki treatment unda",
+        "cancer valla noppi",
+        "cancer patient noppi",
+        "tumour noppi ki chikitsa",
+        "cancer noppi thaggutunda",
+        "cancer ka dard ka ilaj",
+        "క్యాన్సర్ నొప్పి"
+      ],
+      "k": [
+        "cancer noppi",
+        "cancer valla noppi",
+        "cancer patient noppi",
+        "tumour noppi"
+      ],
+      "te": "క్యాన్సర్ నొప్పి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. మొదట మీ ఆంకాలజీ డాక్టర్‌ను అడగండి. 77880 91092కి ఫోన్ చేస్తే టీమ్ మార్గం చెబుతారు."
+    },
+    "diabetic-neuropathy": {
+      "q": [
+        "sugar valla kaallu manta",
+        "rendu paadalu manta ga undi",
+        "sugar valla timmirlu",
+        "neuropathy ki treatment unda",
+        "rendu kaallu manta ga unnayi",
+        "sugar se pairon me jalan",
+        "షుగర్ వల్ల కాళ్లు మంట"
+      ],
+      "k": [
+        "rendu paadalu manta",
+        "sugar valla kaallu manta",
+        "sugar valla timmirlu",
+        "rendu kaallu manta"
+      ],
+      "te": "డయబెటిక్ న్యూరోపతి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. రెండు కాళ్లలో తిమ్మిర్లు, మంట పెరుగుతుంటే మీ డాక్టర్‌కు త్వరగా చూపించండి. వివరాలకు 77880 91092."
+    },
+    "fibromyalgia": {
+      "q": [
+        "ollu antha noppi",
+        "shareeram antha noppi",
+        "moththam body noppi",
+        "fibromyalgia undi ani chepparu",
+        "ollu noppulu antha chotla",
+        "pura badan dard hai",
+        "ఒళ్లంతా నొప్పి"
+      ],
+      "k": [
+        "ollu antha noppi",
+        "shareeram antha noppi",
+        "moththam body noppi",
+        "ollu noppulu"
+      ],
+      "te": "ఫైబ్రోమయాల్జియా లేదా ఒళ్లంతా నొప్పి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. 77880 91092కి ఫోన్ చేస్తే పరీక్ష ఉపయోగమా, ఎవరు బాగా సహాయపడతారో టీమ్ చెబుతారు."
+    },
+    "gout": {
+      "q": [
+        "uric acid ekkuva veellu noppi",
+        "uric acid valla noppi",
+        "botana vellu vaapu uric acid",
+        "gout undi ani chepparu",
+        "uric acid tho kaalu vellu vaapu",
+        "uric acid badha hai jodo me dard",
+        "యూరిక్ ఆసిడ్ నొప్పి"
+      ],
+      "k": [
+        "uric acid veellu noppi",
+        "uric acid valla noppi",
+        "botana vellu vaapu",
+        "uric acid tho vaapu"
+      ],
+      "te": "గౌట్ సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. కీలు వేడిగా, ఎర్రగా వాచి జ్వరం ఉంటే వెంటనే వైద్య సహాయం తీసుకోండి. వివరాలకు 77880 91092కి ఫోన్ చేయండి."
+    },
+    "rheumatoid": {
+      "q": [
+        "rheumatoid arthritis undi",
+        "ra factor positive vachindi",
+        "autoimmune veellu noppi",
+        "ankylosing spondylitis undi",
+        "podunne veellu bigutu ra factor",
+        "gathiya hai mujhe",
+        "రుమటాయిడ్ ఆర్థరైటిస్"
+      ],
+      "k": [
+        "ra factor positive",
+        "rheumatoid arthritis undi",
+        "autoimmune veellu noppi"
+      ],
+      "te": "రుమటాయిడ్ లేదా ఇతర ఇన్‌ఫ్లమేటరీ ఆర్థరైటిస్ సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. వాటికి రుమటాలజిస్ట్ చికిత్స చేస్తారు. వివరాలకు 77880 91092కి ఫోన్ చేయండి."
+    },
+    "abdominal-pain": {
+      "q": [
+        "kadupu noppi",
+        "pottalo noppi",
+        "kidney stone noppi",
+        "nela sari noppi",
+        "kadupu kinda noppi",
+        "pait me dard hai",
+        "కడుపు నొప్పి"
+      ],
+      "k": [
+        "kadupu noppi",
+        "pottalo noppi",
+        "nela sari noppi",
+        "kadupu kinda noppi"
+      ],
+      "te": "కడుపు లేదా పెల్విక్ నొప్పి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. తీవ్రమైన, హఠాత్ కడుపు నొప్పికి ఎమర్జెన్సీకి వెళ్లండి. వివరాలకు 77880 91092కి ఫోన్ చేయండి."
+    },
+    "dental-pain": {
+      "q": [
+        "pallu noppi",
+        "danta noppi",
+        "dwada noppi",
+        "pallu noppi ga undi",
+        "dwada kilu noppi",
+        "daant me dard hai",
+        "పళ్ల నొప్పి"
+      ],
+      "k": [
+        "pallu noppi",
+        "danta noppi",
+        "dwada noppi",
+        "dwada kilu noppi"
+      ],
+      "te": "పళ్లు, దవడ కీలు నొప్పి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. ముఖం ఒక పక్క కరెంట్ లాంటి నొప్పి ట్రైజెమినల్ న్యూరాల్జియా కావచ్చు, అది ఇక్కడ చేస్తారు. 77880 91092."
+    },
+    "upper-back": {
+      "q": [
+        "venuka paina bhagam noppi",
+        "rendu bhujalu madhya noppi",
+        "venuka madhya noppi",
+        "vennu paina bhagam noppi",
+        "bhujalu madhya noppi ga undi",
+        "peeth ke upar dard",
+        "భుజాల మధ్య నొప్పి"
+      ],
+      "k": [
+        "venuka paina bhagam noppi",
+        "bhujalu madhya noppi",
+        "venuka madhya noppi",
+        "vennu paina bhagam"
+      ],
+      "te": "పైభాగం లేదా మధ్య వెన్ను నొప్పి మాత్రమే సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. భుజం బ్లేడ్ వైపు వ్యాపించే నొప్పి మెడ నుంచి రావచ్చు. 77880 91092కి ఫోన్ చేయండి."
+    },
+    "tailbone": {
+      "q": [
+        "toka emuka noppi",
+        "kurchunte toka emuka noppi",
+        "vennu chivara noppi",
+        "toka emuka dhabba tagilindi",
+        "coccyx noppi undi",
+        "reedh ke aakhir me dard",
+        "తోక ఎముక నొప్పి"
+      ],
+      "k": [
+        "toka emuka noppi",
+        "kurchunte toka emuka",
+        "vennu chivara noppi"
+      ],
+      "te": "తోక ఎముక నొప్పి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. 77880 91092కి ఫోన్ చేస్తే పరీక్ష ఉపయోగమా, ఎవరు బాగా సహాయపడతారో టీమ్ చెబుతారు."
+    },
+    "shingles": {
+      "q": [
+        "shingles tarvata noppi",
+        "bobbalu tarvata manta",
+        "kummari purugu tarvata noppi",
+        "herpes zoster tarvata noppi",
+        "bobbalu poyaka noppi undi",
+        "shingles ke baad jalan",
+        "షింగిల్స్ తర్వాత నొప్పి"
+      ],
+      "k": [
+        "shingles tarvata noppi",
+        "bobbalu tarvata manta",
+        "kummari purugu",
+        "bobbalu poyaka noppi"
+      ],
+      "te": "షింగిల్స్ తర్వాత వచ్చే నొప్పి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. 77880 91092కి ఫోన్ చేస్తే పరీక్ష ఉపయోగమా, ఎవరు బాగా సహాయపడతారో టీమ్ చెబుతారు."
+    },
+    "post-surgery": {
+      "q": [
+        "operation tarvata noppi",
+        "surgery tarvata noppi thaggaledu",
+        "mokali replacement tarvata noppi",
+        "vennu operation tarvata noppi",
+        "operation cheyinchukunnanu ippatiki noppi",
+        "operation ke baad bhi dard hai",
+        "ఆపరేషన్ తర్వాత నొప్పి"
+      ],
+      "k": [
+        "operation tarvata noppi",
+        "surgery tarvata noppi",
+        "replacement tarvata noppi",
+        "operation cheyinchukunnanu"
+      ],
+      "te": "ఆపరేషన్ తర్వాత నొప్పి సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. కొత్త లేదా పెరిగే నొప్పి గురించి మొదట మీ సర్జన్‌కు చెప్పండి. వివరాలకు 77880 91092."
+    },
+    "other-condition": {
+      "q": [
+        "varicose veins chestara",
+        "osteoporosis ki treatment unda",
+        "chevi noppi chustara",
+        "juttu ralipovadam ki treatment unda",
+        "paralysis ki chikitsa unda",
+        "thyroid samasya chustara",
+        "ye bimari ka ilaj hai kya",
+        "ఇది మీరు చూస్తారా"
+      ],
+      "k": [
+        "varicose veins chestara",
+        "chevi noppi chustara",
+        "juttu ralipovadam",
+        "osteoporosis ki treatment",
+        "thyroid samasya"
+      ],
+      "te": "ఇది సైట్‌లో ఇచ్చిన సమస్యలలో లేదు. 77880 91092కి ఫోన్ చేస్తే పరీక్ష ఉపయోగమా, లేదా ఎవరు బాగా సహాయపడతారో టీమ్ చెబుతారు."
+    },
+    "greeting": {
+      "q": [
+        "namaskaram andi",
+        "namaskaram sir",
+        "bagunnara",
+        "namaste andi",
+        "namaskaram madam",
+        "aadab arz hai",
+        "నమస్కారం"
+      ],
+      "k": [
+        "namaskaram andi",
+        "bagunnara",
+        "namaskaram sir"
+      ],
+      "te": "నమస్కారం. కూకట్‌పల్లిలోని హాల్సియాన్ పెయిన్ మేనేజ్‌మెంట్ సెంటర్‌కు స్వాగతం. ఎక్కడ నొప్పి ఉందో చెప్పండి, లేదా చికిత్స, ఖర్చు, సమయాలు, అపాయింట్‌మెంట్ గురించి అడగండి."
+    },
+    "thanks": {
+      "q": [
+        "dhanyavadalu andi",
+        "meeku dhanyavadalu",
+        "chala dhanyavadalu",
+        "thanks andi",
+        "chala thanks andi",
+        "bahut shukriya aapka",
+        "ధన్యవాదాలు"
+      ],
+      "k": [
+        "dhanyavadalu andi",
+        "meeku dhanyavadalu",
+        "chala dhanyavadalu"
+      ],
+      "te": "సంతోషం. మరేదైనా ఉంటే అడగండి, లేదా సోమవారం నుంచి శనివారం ఉదయం 9 నుంచి సాయంత్రం 6 వరకు 77880 91092కి ఫోన్ చేయండి. త్వరగా కోలుకోండి."
+    },
+    "bye": {
+      "q": [
+        "velthanu andi",
+        "sare vasthanu",
+        "malli matladutanu",
+        "ok bye andi",
+        "selavu andi",
+        "chalo bye phir baat karenge",
+        "వెళ్తాను, ధన్యవాదాలు"
+      ],
+      "k": [
+        "velthanu andi",
+        "malli matladutanu",
+        "sare vasthanu",
+        "selavu andi"
+      ],
+      "te": "జాగ్రత్తగా ఉండండి. సిద్ధమైనప్పుడు 77880 91092కి ఫోన్ చేయండి లేదా రిపోర్టులు వాట్సాప్ చేయండి; టీమ్ స్లాట్ ఇస్తారు. త్వరగా కోలుకోండి."
+    },
+    "bot": {
+      "q": [
+        "meeru manishi na",
+        "nuvvu robot a",
+        "meeru manishi na machine na",
+        "idi ai na",
+        "meeru nijam ga manishi na",
+        "aap insaan ho ya robot",
+        "మీరు మనిషి నా"
+      ],
+      "k": [
+        "meeru manishi na",
+        "nuvvu robot a",
+        "manishi na machine na",
+        "nijam ga manishi"
+      ],
+      "te": "నేను క్లినిక్ వెబ్‌సైట్ అసిస్టెంట్‌ను; సైట్ ఆధారంగా రాసిన సమాధానాలే చెబుతాను. మీ కేసు చూడలేను, రోగ నిర్ణయం చేయలేను. వ్యక్తిగత విషయాలకు 77880 91092."
+    },
+    "language": {
+      "q": [
+        "telugu lo cheppandi",
+        "telugu lo matladandi",
+        "telugu vasthunda meeku",
+        "meeku telugu telusa",
+        "hindi lo cheppandi",
+        "telugu me baat karo",
+        "తెలుగులో చెప్పండి"
+      ],
+      "k": [
+        "telugu lo cheppandi",
+        "telugu lo matladandi",
+        "telugu vasthunda",
+        "meeku telugu telusa"
+      ],
+      "te": "ఇక్కడ నేను రాసి ఉన్న సమాధానాలే ఇవ్వగలను; మీరు తెలుగులో సులభంగా టైప్ చేయవచ్చు. మీ భాషలో మాట్లాడాలంటే 77880 91092కి ఫోన్ చేసి అడగండి."
+    },
+    "ack": {
+      "q": [
+        "sare andi",
+        "ardham ayindi",
+        "manchidi andi",
+        "sare ante ardham ayindi",
+        "sare telisindi",
+        "theek hai bhai",
+        "సరే అండి"
+      ],
+      "k": [
+        "sare andi",
+        "ardham ayindi",
+        "sare telisindi",
+        "manchidi andi"
+      ],
+      "te": "ఇంకేమైనా సహాయం కావాలా? నొప్పి ఎక్కడ ఉందో చెప్పండి, లేదా చికిత్సలు, ఖర్చు, సమయాలు, డాక్టర్లు, అపాయింట్‌మెంట్ గురించి అడగండి."
+    },
+    "compliment": {
+      "q": [
+        "chala bagundi andi",
+        "meeru bagaa cheppaaru",
+        "chala help ayindi",
+        "super andi",
+        "chala upayogam ga undi",
+        "bahut accha bataya aapne",
+        "చాలా బాగుంది"
+      ],
+      "k": [
+        "chala bagundi",
+        "chala help ayindi",
+        "bagaa cheppaaru",
+        "chala upayogam ga"
+      ],
+      "te": "ధన్యవాదాలు. తదుపరి అడుగు వేయాలంటే 77880 91092కి ఫోన్ చేస్తే టీమ్ స్లాట్ ఇస్తారు, లేదా ముందుగా రిపోర్టులు వాట్సాప్ చేయవచ్చు."
+    },
+    "diagnose-me": {
+      "q": [
+        "naaku emi ayindi",
+        "naa problem enti cheppandi",
+        "idi seriousa",
+        "naaku emi jarigindi",
+        "idi emi jaadyam",
+        "mujhe kya hua hai bataiye",
+        "నాకు ఏమి అయింది"
+      ],
+      "k": [
+        "naaku emi ayindi",
+        "naa problem enti",
+        "idi seriousa",
+        "naaku emi jarigindi",
+        "emi jaadyam"
+      ],
+      "te": "నేను రోగ నిర్ణయం చేయలేను; దానికి పరీక్ష, స్కాన్ కావాలి. ఇక్కడ అదే అపాయింట్‌మెంట్‌లో డాక్టర్ పరీక్షించి నొప్పి ఉన్న చోట స్కాన్ చేస్తారు. బలహీనత, జ్వరం ఉంటే ఎమర్జెన్సీకి."
+    },
+    "fallback-help": {
+      "q": [
+        "sahayam kavali",
+        "meeru emi cheppagalaru",
+        "emi adagalanu",
+        "emi adagali naaku teliyadu",
+        "meeru ela sahayam chestaru",
+        "madad chahiye kya puchu",
+        "ఏమి అడగాలి"
+      ],
+      "k": [
+        "meeru emi cheppagalaru",
+        "emi adagalanu",
+        "sahayam kavali",
+        "emi adagali"
+      ],
+      "te": "చికిత్సలు, ప్రొసీడ్యూర్లు, ఆ రోజు ఏమి జరుగుతుంది, డాక్టర్లు, సమయాలు, చిరునామా, అపాయింట్‌మెంట్ గురించి చెప్పగలను. ఖర్చు, ఇన్సూరెన్స్, మీ కేసు వివరాలకు 77880 91092."
+    }
+  },
+  "tests": [
+    [
+      "prp panichestunda mokali ki",
+      "prp"
+    ],
+    [
+      "naa raktam nunchi injection vestara",
+      "prp"
+    ],
+    [
+      "stem cell mokali ki panichestunda",
+      "stem-cell"
+    ],
+    [
+      "ozone gel injection unda",
+      "stem-cell"
+    ],
+    [
+      "prolo therapy ela chestaru",
+      "prolotherapy"
+    ],
+    [
+      "dextrose sugar injection ante enti",
+      "prolotherapy"
+    ],
+    [
+      "naaku ee clinic lo evaru chustaru",
+      "doctors"
+    ],
+    [
+      "doctor gari peru cheppandi",
+      "doctors"
+    ],
+    [
+      "pallavi madam chaduvu enti",
+      "dr-pallavi"
+    ],
+    [
+      "kiran sir ki emi qualification undi",
+      "dr-kiran"
+    ],
+    [
+      "procedure evaru chestaru madam a",
+      "who-does-procedure"
+    ],
+    [
+      "cips certificate ante emiti",
+      "cips"
+    ],
+    [
+      "fiapm ante emi",
+      "fiapm"
+    ],
+    [
+      "tsmc registration number unda doctor ki",
+      "registration"
+    ],
+    [
+      "doctor ki entha anubhavam undi",
+      "experience"
+    ],
+    [
+      "mokali kilu noppi chala ga undi",
+      "knee"
+    ],
+    [
+      "mokalla veellu noppi nadavaleka",
+      "knee"
+    ],
+    [
+      "nadum pattukupoyindi lechaleka pothunna",
+      "low-back"
+    ],
+    [
+      "kamar ka dard bahut dino se",
+      "low-back"
+    ],
+    [
+      "meda tippaleka pothunnanu noppi",
+      "neck"
+    ],
+    [
+      "medha bigutu ga undi tippaleka",
+      "neck"
+    ],
+    [
+      "bhuja pyke ettaleka pothunnanu",
+      "shoulder"
+    ],
+    [
+      "ratri putu bhujam noppi ekkuva",
+      "shoulder"
+    ],
+    [
+      "nadumu nunchi kaali loki noppi velthondi",
+      "sciatica"
+    ],
+    [
+      "kamar se leg me dard aa raha hai",
+      "sciatica"
+    ],
+    [
+      "naaku disc jarindi ani doctor cheppadu",
+      "slipped-disc"
+    ],
+    [
+      "hip veellu noppi ga undi",
+      "hip"
+    ],
+    [
+      "tuntika veellu noppi ga undi",
+      "hip"
+    ],
+    [
+      "cricket adutunnapudu debba tagilindi",
+      "sports"
+    ],
+    [
+      "gym lo workout chesi debba tagilindi",
+      "sports"
+    ],
+    [
+      "mukham oka pakka current laga noppi",
+      "trigeminal"
+    ],
+    [
+      "chempa meeda shock laga noppi vasthundi",
+      "trigeminal"
+    ],
+    [
+      "manikattu noppi ga undi pani cheyyaleka",
+      "elbow-hand-wrist"
+    ],
+    [
+      "mochethi noppi undi",
+      "elbow-hand-wrist"
+    ],
+    [
+      "adugu paadam noppi ga undi",
+      "foot-ankle"
+    ],
+    [
+      "cheelamanda noppi undi",
+      "foot-ankle"
+    ],
+    [
+      "meda lo spondylosis ani report lo undi",
+      "cervical-spondylosis"
+    ],
+    [
+      "mokali lo cartilage arigipoyindi ani chepparu",
+      "knee-oa"
+    ],
+    [
+      "mokali veellu arigipoyayi ani mri",
+      "knee-oa"
+    ],
+    [
+      "mokali lock ayipotondi tirigindi",
+      "meniscus"
+    ],
+    [
+      "meniscus tear undi ani chepparu",
+      "meniscus"
+    ],
+    [
+      "mokali ligament sprain ayindi loose ga undi",
+      "acl-ligament"
+    ],
+    [
+      "parugettithe mokali chippa chuttu noppi",
+      "runners-knee"
+    ],
+    [
+      "dookithe mokali chippa kinda noppi",
+      "jumpers-knee"
+    ],
+    [
+      "mokali ubbi neeru cherindi",
+      "knee-swelling"
+    ],
+    [
+      "bhujam pattesindi kadapaleka pothunna",
+      "frozen-shoulder"
+    ],
+    [
+      "bhujam jam ayipoyindi",
+      "frozen-shoulder"
+    ],
+    [
+      "bhujam kandaram chirigindi ani scan lo",
+      "rotator-cuff"
+    ],
+    [
+      "cheyyi pyke ettithe bhujam lo noppi vasthundi",
+      "impingement"
+    ],
+    [
+      "mochethi bayata vaipu noppi pattukunnapudu",
+      "tennis-elbow"
+    ],
+    [
+      "mochethi lopali vaipu noppi ga undi",
+      "golfers-elbow"
+    ],
+    [
+      "ratri putu chethi vellu timmirlu vasthayi",
+      "carpal-tunnel"
+    ],
+    [
+      "manikattu lo nara nokkukundi ani chepparu",
+      "carpal-tunnel"
+    ],
+    [
+      "botana vellu vaipu manikattu noppi",
+      "de-quervain"
+    ],
+    [
+      "vellu lock ayipotondi click avutondi",
+      "trigger-finger"
+    ],
+    [
+      "podunne lechagane mada noppi podustundi",
+      "plantar-fasciitis"
+    ],
+    [
+      "edi kinda noppi podunne ekkuva",
+      "plantar-fasciitis"
+    ],
+    [
+      "x ray lo mada lo spur ani undi",
+      "heel-spur"
+    ],
+    [
+      "mada venuka kandaram noppi ga undi",
+      "achilles"
+    ],
+    [
+      "cheelamanda tirigi vaapu vachindi",
+      "ankle-sprain"
+    ],
+    [
+      "nadumu kinda oka pakka matrame noppi",
+      "si-joint"
+    ],
+    [
+      "nadumu venakki vanchinapudu noppi",
+      "facet"
+    ],
+    [
+      "mri report lo disc bulge ani undi",
+      "disc-bulge"
+    ],
+    [
+      "nadichithe kaallu noppi kurchunte thaggipothundi",
+      "stenosis"
+    ],
+    [
+      "vennupusa jaripoyindi ani chepparu",
+      "spondylolisthesis"
+    ],
+    [
+      "kurchunnapudu pirra lopala noppi",
+      "piriformis"
+    ],
+    [
+      "nara nokkukupoyindi ani chepparu",
+      "pinched-nerve"
+    ],
+    [
+      "paadam lo timmirlu ga undi",
+      "leg-numbness"
+    ],
+    [
+      "meda nunchi cheti loki timmirlu velthayi",
+      "arm-radiating"
+    ],
+    [
+      "roju phone chusthe meda noppi vasthundi",
+      "text-neck"
+    ],
+    [
+      "accident ayina tarvata nunchi meda noppi",
+      "whiplash"
+    ],
+    [
+      "meda nunchi tala venuka noppi vasthundi",
+      "neck-headache"
+    ],
+    [
+      "pakkaki padukunte hip bayata noppi",
+      "hip-bursitis"
+    ],
+    [
+      "hip kilu arigindi socks vesukovadam kastam",
+      "hip-arthritis"
+    ],
+    [
+      "hip lo click sound tho noppi",
+      "labral-tear"
+    ],
+    [
+      "thoda kandaram laagi noppi ga undi",
+      "hamstring"
+    ],
+    [
+      "parugu tarvata kaalu mundu bhagam noppi",
+      "shin-pain"
+    ],
+    [
+      "kandaram vaachi noppi ga undi",
+      "tendinitis"
+    ],
+    [
+      "manta laga noppi narala lo",
+      "nerve-pain"
+    ],
+    [
+      "rendu samvatsaralu nunchi noppi thaggaledu",
+      "chronic-pain"
+    ],
+    [
+      "noppi bharinchaleka pothunnanu emergency",
+      "urgent"
+    ],
+    [
+      "dard bardasht nahi ho raha urgent",
+      "urgent"
+    ],
+    [
+      "nadumu noppi tho moothram raavatledu",
+      "cauda-equina"
+    ],
+    [
+      "urine control avvatledu kaallu timmirlu",
+      "cauda-equina"
+    ],
+    [
+      "naa kaalu balaheenam ga ayipothundi",
+      "leg-weakness"
+    ],
+    [
+      "paadam ettaleka pothunnanu",
+      "leg-weakness"
+    ],
+    [
+      "nadumu noppi tho jwaram vasthundi",
+      "back-red-flags"
+    ],
+    [
+      "kamar me dard aur bukhar bhi hai",
+      "back-red-flags"
+    ],
+    [
+      "ippude padipoyanu kaalu meeda baruvu pettaleka",
+      "trauma"
+    ],
+    [
+      "kindapadi ennu virigindi ani anipistundi",
+      "trauma"
+    ],
+    [
+      "chaati lo noppi chemata pattindi",
+      "chest-pain"
+    ],
+    [
+      "gunde lo noppi oopiri adaledu",
+      "chest-pain"
+    ],
+    [
+      "mukham vankara poyindi matalu raavatledu",
+      "stroke"
+    ],
+    [
+      "oka vaipu cheyyi kaalu panichestledu",
+      "stroke"
+    ],
+    [
+      "unnattundi tala pagilipoyinatlu noppi",
+      "thunderclap"
+    ],
+    [
+      "tala noppi tho vanthulu jwaram",
+      "thunderclap"
+    ],
+    [
+      "mokali vaachi vedi ga erraga undi jwaram",
+      "hot-joint"
+    ],
+    [
+      "kilu erraga vaachi jwaram undi",
+      "hot-joint"
+    ],
+    [
+      "prayanam tarvata pikka vaachi noppi",
+      "calf-dvt"
+    ],
+    [
+      "operation tarvata pikka vaapu noppi",
+      "calf-dvt"
+    ],
+    [
+      "mada venuka tup mani sound vachi nettaleka",
+      "achilles-rupture"
+    ],
+    [
+      "mada venuka kandaram tegipoyindi ani anipistundi",
+      "achilles-rupture"
+    ],
+    [
+      "tala meeda debba padindi vanthulu avutunnayi",
+      "head-injury"
+    ],
+    [
+      "padipoyi spruha kolipoyaru",
+      "head-injury"
+    ],
+    [
+      "meda noppi tho chethulu pattu tappipothunnayi",
+      "cord-signs"
+    ],
+    [
+      "nadichetappudu balance povutondi rendu chethulu timmirlu",
+      "cord-signs"
+    ],
+    [
+      "sugar undi paadam lo gaayam mandatledu",
+      "diabetic-foot"
+    ],
+    [
+      "kaalu vellu nalupu ga marindi sugar",
+      "diabetic-foot"
+    ],
+    [
+      "sagam tala noppi vasthu untundi",
+      "migraine"
+    ],
+    [
+      "roju roju tala noppi vasthundi",
+      "headache"
+    ],
+    [
+      "cancer valla noppi ki chikitsa unda",
+      "cancer-pain"
+    ],
+    [
+      "sugar valla rendu kaallu manta ga undi",
+      "diabetic-neuropathy"
+    ],
+    [
+      "ollu antha noppulu ga undi",
+      "fibromyalgia"
+    ],
+    [
+      "uric acid ekkuva undi veellu noppi",
+      "gout"
+    ],
+    [
+      "ra factor positive vachindi veellu noppi",
+      "rheumatoid"
+    ],
+    [
+      "pottalo noppi ga undi",
+      "abdominal-pain"
+    ],
+    [
+      "dwada kilu noppi ga undi",
+      "dental-pain"
+    ],
+    [
+      "rendu bhujalu madhya noppi undi",
+      "upper-back"
+    ],
+    [
+      "kurchunte toka emuka noppi vasthundi",
+      "tailbone"
+    ],
+    [
+      "bobbalu tarvata manta ga undi",
+      "shingles"
+    ],
+    [
+      "vennu operation cheyinchukunnanu ippatiki noppi",
+      "post-surgery"
+    ],
+    [
+      "chevi noppi ki treatment chestara",
+      "other-condition"
+    ],
+    [
+      "namaskaram andi bagunnara",
+      "greeting"
+    ],
+    [
+      "chala dhanyavadalu andi",
+      "thanks"
+    ],
+    [
+      "sare velthanu andi",
+      "bye"
+    ],
+    [
+      "meeru manishi na leda machine na",
+      "bot"
+    ],
+    [
+      "meeku telugu telusa telugu lo cheppandi",
+      "language"
+    ],
+    [
+      "sare andi ardham ayindi",
+      "ack"
+    ],
+    [
+      "chala help ayindi andi bagundi",
+      "compliment"
+    ],
+    [
+      "naaku emi jarigindi cheppandi",
+      "diagnose-me"
+    ],
+    [
+      "meeru emi cheppagalaru naaku",
+      "fallback-help"
+    ]
+  ]
+}

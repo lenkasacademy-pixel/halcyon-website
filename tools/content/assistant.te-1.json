@@ -1,0 +1,2619 @@
+{
+  "version": 1,
+  "patches": {
+    "book": {
+      "q": [
+        "appointment ela teesukovali",
+        "appointment kavali sir",
+        "ee roju appointment dorukutunda",
+        "doctor ni ela kalavali",
+        "slot book cheyyali",
+        "naku appointment kavali repu",
+        "appointment kaise lena hai",
+        "doctor se milna hai appointment chahiye",
+        "అపాయింట్‌మెంట్ ఎలా తీసుకోవాలి"
+      ],
+      "k": [
+        "appointment ela",
+        "appointment kavali",
+        "book cheyyali",
+        "appointment kaise lena"
+      ],
+      "te": "అపాయింట్‌మెంట్ కోసం +91 77880 91092 కి ఫోన్ చేయండి — సోమవారం నుంచి శనివారం, ఉదయం 9 నుంచి సాయంత్రం 6 వరకు. పాత రిపోర్టులు తీసుకురండి."
+    },
+    "callback": {
+      "q": [
+        "naaku call cheyyandi",
+        "meeru call cheyyagalara",
+        "call back kavali",
+        "phone cheyyandi naaku",
+        "oka call cheyyandi",
+        "mujhe phone karo bhai",
+        "call back karo please",
+        "నాకు ఫోన్ చేయండి"
+      ],
+      "k": [
+        "naaku call cheyyandi",
+        "call back kavali",
+        "call cheyyagalara",
+        "mujhe call karo"
+      ],
+      "te": "మీ పేరు, ఫోన్ నంబర్, ఎక్కడ నొప్పి ఉందో చెప్పండి — మీరు ఒప్పుకుంటే క్లినిక్ టీమ్ మీకు తిరిగి ఫోన్ చేస్తారు."
+    },
+    "human": {
+      "q": [
+        "manishi tho matladali",
+        "staff tho matladali",
+        "evaraina matladandi",
+        "reception tho matladocha",
+        "clinic lo evaritho matladali",
+        "reception se baat karni hai",
+        "kisi se baat karao",
+        "మనిషితో మాట్లాడాలి"
+      ],
+      "k": [
+        "manishi tho matladali",
+        "staff tho matladali",
+        "evaraina matladandi",
+        "baat karni hai"
+      ],
+      "te": "క్లినిక్ సిబ్బందికి +91 77880 91092 కి ఫోన్ చేయండి లేదా వాట్సాప్ చేయండి — సోమవారం నుంచి శనివారం, ఉదయం 9 నుంచి సాయంత్రం 6 వరకు."
+    },
+    "where": {
+      "q": [
+        "clinic ye area lo undi",
+        "clinic address cheppandi",
+        "meeru ekkada unnaru",
+        "clinic ekkada",
+        "location ekkada undi",
+        "clinic ka address kahan hai",
+        "address bhejo",
+        "క్లినిక్ ఎక్కడ ఉంది"
+      ],
+      "k": [
+        "clinic ekkada",
+        "address cheppandi",
+        "meeru ekkada unnaru",
+        "clinic kahan hai"
+      ],
+      "te": "హాల్సియాన్ కూకట్‌పల్లి వై జంక్షన్, మూసాపేట రోడ్‌లో KKR కమర్షియల్ కాంప్లెక్స్ 3వ అంతస్తులో, మ్యాక్స్ షోరూం పైన ఉంది."
+    },
+    "directions": {
+      "q": [
+        "ela raavali clinic ki",
+        "dari cheppandi",
+        "clinic ki ela vellali",
+        "miyapur nunchi ela raavali",
+        "google maps link pampandi",
+        "kaise aana hai wahan",
+        "raasta batao",
+        "ఎలా రావాలి"
+      ],
+      "k": [
+        "ela raavali",
+        "dari cheppandi",
+        "ela vellali",
+        "kaise aana hai"
+      ],
+      "te": "కూకట్‌పల్లి వై జంక్షన్ వైపు రండి — మ్యాక్స్ షోరూం పైన KKR కాంప్లెక్స్ 3వ అంతస్తు. దారి తెలియకపోతే టీమ్‌కి ఫోన్ చేయండి."
+    },
+    "metro": {
+      "q": [
+        "metro lo ravacha",
+        "metro station ekkada",
+        "daggara metro station edi",
+        "kphb metro nunchi entha dooram",
+        "metro se kitna door hai",
+        "metro stop konda",
+        "మెట్రో స్టేషన్ ఎక్కడ"
+      ],
+      "k": [
+        "metro lo ravacha",
+        "metro station ekkada",
+        "daggara metro",
+        "metro se kaise"
+      ],
+      "te": "దగ్గరి మెట్రో స్టేషన్లు రెడ్ లైన్‌లో KPHB కాలనీ, మూసాపేట — అక్కడి నుంచి కూకట్‌పల్లి వై జంక్షన్ కొద్ది నిమిషాలే."
+    },
+    "parking": {
+      "q": [
+        "parking undha",
+        "car parking undha",
+        "bike parking ekkada",
+        "vehicle ekkada pettali",
+        "gaadi kahan rakhe",
+        "parking jagah hai kya",
+        "పార్కింగ్ ఉందా"
+      ],
+      "k": [
+        "parking undha",
+        "car parking undha",
+        "ekkada pettali",
+        "gaadi kahan"
+      ],
+      "te": "క్లినిక్ KKR కమర్షియల్ కాంప్లెక్స్‌లో ఉంది — పార్కింగ్ ఎక్కడ సులభమో టీమ్‌కి ముందుగా ఫోన్ చేసి అడగండి."
+    },
+    "timings": {
+      "q": [
+        "clinic eppudu open",
+        "timings entha",
+        "clinic samayam cheppandi",
+        "eppudu open chestaru",
+        "eppati varaku open untundi",
+        "clinic kab tak khula rehta hai",
+        "kitne baje band hota hai",
+        "క్లినిక్ సమయం ఎంత"
+      ],
+      "k": [
+        "eppudu open",
+        "timings entha",
+        "clinic samayam",
+        "kab khulta hai"
+      ],
+      "te": "సోమవారం నుంచి శనివారం, ఉదయం 9 నుంచి సాయంత్రం 6 వరకు. ఆదివారం మూసి ఉంటుంది. ఈ రోజు స్లాట్ కోసం ఫోన్ చేయండి."
+    },
+    "sunday": {
+      "q": [
+        "aadivaram open na",
+        "aadivaram pani chestara",
+        "aadivaram vachocha",
+        "aadivaram clinic teruvutara",
+        "ravivar ko khula hai kya",
+        "itwar ko aa sakta hoon",
+        "ఆదివారం తెరిచి ఉంటుందా"
+      ],
+      "k": [
+        "aadivaram open",
+        "aadivaram pani",
+        "aadivaram clinic",
+        "ravivar khula"
+      ],
+      "te": "ఆదివారం క్లినిక్ మూసి ఉంటుంది. సోమవారం నుంచి శనివారం, ఉదయం 9 నుంచి సాయంత్రం 6 వరకు తెరిచి ఉంటుంది."
+    },
+    "today-open": {
+      "q": [
+        "ee roju open na",
+        "eeroju vastara",
+        "ippudu open undha",
+        "ee roju vellocha",
+        "aaj khula hai kya",
+        "abhi khula hai",
+        "ఈ రోజు తెరిచి ఉందా"
+      ],
+      "k": [
+        "ee roju open",
+        "eeroju vastara",
+        "ippudu open",
+        "aaj khula hai"
+      ],
+      "te": "క్లినిక్ సోమవారం నుంచి శనివారం, ఉదయం 9 నుంచి సాయంత్రం 6 వరకు. ఈ రోజు రావాలంటే ముందుగా ఫోన్ చేయండి."
+    },
+    "holidays": {
+      "q": [
+        "panduga rojullo open na",
+        "sankranti open na",
+        "diwali roju open undha",
+        "selavu rojullo open undha",
+        "chutti ke din khula hai",
+        "holiday roju pani chestara",
+        "పండుగ రోజు తెరిచి ఉంటుందా"
+      ],
+      "k": [
+        "panduga rojullo",
+        "selavu rojullo",
+        "sankranti open",
+        "chutti ke din"
+      ],
+      "te": "సాధారణ సమయం సోమవారం నుంచి శనివారం, ఉదయం 9 నుంచి సాయంత్రం 6. పండుగలకు ముందుగా ఫోన్ చేసి నిర్ధారించుకోండి."
+    },
+    "walk-in": {
+      "q": [
+        "appointment lekunda vaccha",
+        "direct ga vaste saripotunda",
+        "booking lekunda vellocha",
+        "just ga vaste chustara",
+        "seedha aa sakta hoon kya",
+        "bina appointment aa sakte hain",
+        "అపాయింట్‌మెంట్ లేకుండా రావచ్చా"
+      ],
+      "k": [
+        "appointment lekunda",
+        "direct ga vaste",
+        "booking lekunda",
+        "bina appointment"
+      ],
+      "te": "ముందుగా +91 77880 91092 కి ఫోన్ చేయడం మంచిది — స్లాట్ ఇస్తారు, నిరీక్షణ తక్కువగా ఉంటుంది."
+    },
+    "cost": {
+      "q": [
+        "enta avutundi",
+        "entha kharchu avutundi",
+        "treatment ki enta avutundi",
+        "kharchu entha padutundi",
+        "mokali injection ki enta avutundi",
+        "kitna kharcha aayega",
+        "paisa kitna lagega",
+        "ఎంత ఖర్చు అవుతుంది"
+      ],
+      "k": [
+        "enta avutundi",
+        "kharchu entha",
+        "entha kharchu",
+        "kitna kharcha",
+        "paisa kitna"
+      ],
+      "te": "ప్రక్రియ, ఎన్ని సిట్టింగ్‌లు కావాలో బట్టి ఖర్చు ఉంటుంది — ఏదీ బుక్ చేయకముందే కన్సల్టేషన్‌లో స్పష్టంగా చెబుతారు."
+    },
+    "consult-fee": {
+      "q": [
+        "consultation fee entha",
+        "doctor fee entha",
+        "modati visit ki enta",
+        "op fee entha",
+        "doctor ni chupinchukovadaniki fee entha",
+        "doctor ki kitni fees hai",
+        "pehli baar dikhane ka kitna",
+        "డాక్టర్ ఫీజు ఎంత"
+      ],
+      "k": [
+        "consultation fee entha",
+        "doctor fee entha",
+        "modati visit ki enta",
+        "kitni fees hai"
+      ],
+      "te": "కన్సల్టేషన్ ఫీజు కోసం +91 77880 91092 కి ఫోన్ చేయండి. ప్రక్రియ ఖర్చు స్కాన్ చూసి కన్సల్టేషన్‌లో చెబుతారు."
+    },
+    "insurance": {
+      "q": [
+        "insurance panichestunda",
+        "insurance undi vaadocha",
+        "mediclaim accept chestara",
+        "insurance lo vastunda",
+        "insurance chalti hai kya",
+        "mediclaim lagta hai kya",
+        "ఇన్సూరెన్స్ పనిచేస్తుందా"
+      ],
+      "k": [
+        "insurance panichestunda",
+        "insurance undi vaadocha",
+        "insurance lo vastunda",
+        "mediclaim accept chestara"
+      ],
+      "te": "మీ పాలసీ, ప్రక్రియ బట్టి ఉంటుంది. +91 77880 91092 కి ఫోన్ చేసి పాలసీ వివరాలతో టీమ్‌ని అడగండి."
+    },
+    "cashless": {
+      "q": [
+        "cashless untunda",
+        "cashless facility undha",
+        "tpa list lo unnara",
+        "network hospital aa meeru",
+        "cashless hota hai kya",
+        "star health chalega kya",
+        "క్యాష్‌లెస్ ఉంటుందా"
+      ],
+      "k": [
+        "cashless untunda",
+        "cashless facility undha",
+        "tpa list",
+        "cashless hota hai"
+      ],
+      "te": "క్యాష్‌లెస్ లేదా ఏ టీపీఏ వర్తిస్తుందో టీమ్ చూడాలి — పాలసీ వివరాలతో +91 77880 91092 కి ఫోన్ చేయండి."
+    },
+    "payment": {
+      "q": [
+        "card accept chestara",
+        "upi lo pay cheyyocha",
+        "gpay panichestunda",
+        "cash ivvala",
+        "instalment lo ivvocha",
+        "card chalega kya",
+        "kishton me de sakte hain",
+        "యూపీఐ పనిచేస్తుందా"
+      ],
+      "k": [
+        "card accept chestara",
+        "upi lo pay",
+        "gpay panichestunda",
+        "cash ivvala",
+        "card chalega"
+      ],
+      "te": "ఏ చెల్లింపు పద్ధతులు, వాయిదాల సౌకర్యం ఉన్నాయో టీమ్ చెబుతారు — +91 77880 91092 కి ఫోన్ చేయండి."
+    },
+    "bring": {
+      "q": [
+        "enti teesukuravali",
+        "em teesukuravali",
+        "old reports teesukuravala",
+        "mri report teesukuravala",
+        "papers enni kavali",
+        "kaunse papers laane hai",
+        "reports laane hai kya",
+        "ఏమి తీసుకురావాలి"
+      ],
+      "k": [
+        "enti teesukuravali",
+        "em teesukuravali",
+        "reports teesukuravala",
+        "leke aana hai"
+      ],
+      "te": "ఇటీవలి ఎక్స్‌రే, ఎమ్మారై, సీటీ, అల్ట్రాసౌండ్ రిపోర్టులు, వాడే మందుల జాబితా, పాత చికిత్స వివరాలు తీసుకురండి."
+    },
+    "reports-online": {
+      "q": [
+        "reports pampinchocha",
+        "mri whatsapp lo pampocha",
+        "scan pampistanu chustara",
+        "report munde pampocha",
+        "x ray pampali",
+        "report bhej sakta hoon",
+        "whatsapp par mri bhejo",
+        "రిపోర్టులు పంపవచ్చా"
+      ],
+      "k": [
+        "reports pampocha",
+        "whatsapp lo pampocha",
+        "report munde pampocha",
+        "report bhej sakta"
+      ],
+      "te": "అవును — ఇటీవలి ఎక్స్‌రే, ఎమ్మారై రిపోర్టులు వాట్సాప్‌లో +91 77880 91092 కి పంపండి, స్లాట్‌కు ముందే చూస్తారు."
+    },
+    "referral": {
+      "q": [
+        "referral kavala",
+        "doctor letter kavala",
+        "referral lekunda vaccha",
+        "vere doctor nunchi letter kavala",
+        "referral zaroori hai kya",
+        "letter chahiye kya",
+        "రెఫరల్ కావాలా"
+      ],
+      "k": [
+        "referral kavala",
+        "referral lekunda",
+        "doctor letter kavala",
+        "referral zaroori hai"
+      ],
+      "te": "రెఫరల్ అవసరం లేదు. ఫోన్ చేసి బుక్ చేసుకోండి, ఇదే నొప్పికి ఉన్న రిపోర్టులు, ప్రిస్క్రిప్షన్లు తీసుకురండి."
+    },
+    "visit": {
+      "q": [
+        "aa roju enti jarugutundi",
+        "rojuki enti chestaru",
+        "process ela untundi",
+        "vachaka enti cheptaru",
+        "procedure day ela untundi",
+        "us din kya hota hai",
+        "ఆ రోజు ఏమి జరుగుతుంది"
+      ],
+      "k": [
+        "enti jarugutundi",
+        "process ela untundi",
+        "enti chestaru",
+        "procedure day ela"
+      ],
+      "te": "ఒకే అపాయింట్‌మెంట్‌లో ఐదు దశలు — రిజిస్ట్రేషన్, పరీక్ష, అల్ట్రాసౌండ్ స్కాన్, నిర్ణయం, అవసరమైతే ప్రక్రియ. చాలా మంది రెండు గంటల్లో ఇంటికి."
+    },
+    "first-visit": {
+      "q": [
+        "modati sari vastunnanu",
+        "first time vastunnanu",
+        "modati visit lo enti chestaru",
+        "kotha patient ni",
+        "pehli baar aa raha hoon",
+        "pehli visit me kya hoga",
+        "మొదటి సారి వస్తున్నాను"
+      ],
+      "k": [
+        "modati sari vastunnanu",
+        "modati visit lo",
+        "kotha patient",
+        "pehli baar aa raha"
+      ],
+      "te": "మొదటి విజిట్‌లో చరిత్ర, పరీక్ష, అదే గదిలో అల్ట్రాసౌండ్ స్కాన్. సరైనదైతే అదే అపాయింట్‌మెంట్‌లో ప్రక్రియ చేయవచ్చు. రిపోర్టులు తీసుకురండి."
+    },
+    "howlong-visit": {
+      "q": [
+        "entha samayam padutundi",
+        "entha sepu untundi akkada",
+        "clinic lo entha sepu",
+        "entha time pattukovali",
+        "enni gantalu padutundi",
+        "kitna time lagega wahan",
+        "kitni der lagegi",
+        "ఎంత సమయం పడుతుంది"
+      ],
+      "k": [
+        "entha time padutundi",
+        "entha sepu untundi",
+        "enni gantalu",
+        "kitna time lagega"
+      ],
+      "te": "చాలా మంది వచ్చిన రెండు గంటల్లో ఇంటికి వెళ్ళిపోతారు — రిజిస్ట్రేషన్, డాక్టర్‌తో సుమారు 20 నిమిషాలు, స్కాన్, అవసరమైతే ప్రక్రియ."
+    },
+    "procedure-time": {
+      "q": [
+        "procedure ki entha sepu padutundi",
+        "injection ki entha time padutundi",
+        "rfa ki enni nimishalu",
+        "procedure entha sepu",
+        "table meeda entha sepu",
+        "injection me kitna time lagta hai",
+        "ప్రక్రియకు ఎంత సమయం"
+      ],
+      "k": [
+        "procedure ki entha sepu",
+        "injection ki entha time",
+        "enni nimishalu",
+        "procedure entha sepu"
+      ],
+      "te": "ప్రక్రియ బట్టి మారుతుంది — సాధారణ ఇంజెక్షన్ తక్కువ సమయం, రేడియోఫ్రీక్వెన్సీ ఎక్కువ. మొత్తం సుమారు రెండు గంటల్లో ఇంటికి."
+    },
+    "same-day": {
+      "q": [
+        "ade roju chestara",
+        "ade roju injection chestara",
+        "modati roje treatment chestara",
+        "marosari raavala",
+        "ade appointment lo chestara",
+        "usi din ho jayega kya",
+        "అదే రోజు చేస్తారా"
+      ],
+      "k": [
+        "ade roju chestara",
+        "modati roje treatment",
+        "marosari raavala",
+        "usi din ho jayega"
+      ],
+      "te": "చాలా సందర్భాల్లో అవును — స్కాన్ చూపిస్తే అదే అపాయింట్‌మెంట్‌లో చేస్తారు. రేడియోఫ్రీక్వెన్సీకి ముందు డయాగ్నస్టిక్ బ్లాక్ కావాలి."
+    },
+    "wait-time": {
+      "q": [
+        "entha sepu wait cheyyali",
+        "queue untunda",
+        "rush untunda",
+        "wait cheyyalsi vastunda",
+        "line undha akkada",
+        "kitna wait karna padega",
+        "వేచి ఉండాలా"
+      ],
+      "k": [
+        "wait cheyyali",
+        "queue untunda",
+        "rush untunda",
+        "kitna wait karna"
+      ],
+      "te": "అపాయింట్‌మెంట్లు రోజు పొడవునా వేరువేరుగా ఇస్తారు, అందుకే వేచి ఉండే సమయం తక్కువ. ముందుగా ఫోన్ చేసి స్లాట్ తీసుకోండి."
+    },
+    "fasting": {
+      "q": [
+        "pachi kadupu tho raavala",
+        "tinakunda raavala",
+        "bhojanam chesi raavocha",
+        "upavasam undala",
+        "tiffin chesi vellocha",
+        "khali pet aana hai kya",
+        "khana kha ke aa sakte hain",
+        "పచ్చి కడుపుతో రావాలా"
+      ],
+      "k": [
+        "pachi kadupu tho",
+        "tinakunda raavala",
+        "upavasam undala",
+        "khali pet aana"
+      ],
+      "te": "ప్రక్రియ ముందు ఏమి చేయాలో టీమ్ చెబుతారు — తినడం, మందుల గురించి. సొంతంగా ఉపవాసం ఉండకండి, +91 77880 91092 కి ఫోన్ చేయండి."
+    },
+    "companion": {
+      "q": [
+        "okkade raavocha",
+        "evarinaina teesukuravala",
+        "thodu kavala",
+        "family vellocha",
+        "attendant kavala",
+        "akela aa sakta hoon",
+        "kisi ko saath lana hai kya",
+        "ఒక్కరే రావచ్చా"
+      ],
+      "k": [
+        "okkade raavocha",
+        "evarinaina teesukuravala",
+        "thodu kavala",
+        "akela aa sakta"
+      ],
+      "te": "కన్సల్టేషన్‌కి ఒక్కరే రావచ్చు. ప్రక్రియ ఉంటే ఎవరినైనా తీసుకురావడం మంచిది — కొన్ని బ్లాక్‌ల తర్వాత కాలు మొద్దుబారవచ్చు."
+    },
+    "wear": {
+      "q": [
+        "enti vesukovali",
+        "ye battalu vesukovali",
+        "dress enti vesukoni raavali",
+        "shorts vesukovala",
+        "kaunse kapde pehne",
+        "kya pehen ke aana hai",
+        "ఏమి వేసుకోవాలి"
+      ],
+      "k": [
+        "enti vesukovali",
+        "battalu vesukovali",
+        "dress vesukoni",
+        "kapde pehne"
+      ],
+      "te": "నొప్పి ఉన్న భాగం సులభంగా కనిపించేలా వదులుగా, సౌకర్యంగా ఉన్న బట్టలు వేసుకోండి. ఇంకేదైనా కావాలంటే టీమ్ చెబుతారు."
+    },
+    "review": {
+      "q": [
+        "malli raavala",
+        "follow up eppudu",
+        "review eppudu raavali",
+        "tarvata malli chupinchukovala",
+        "check up eppudu undi",
+        "dobara aana padega kya",
+        "మళ్ళీ రావాలా"
+      ],
+      "k": [
+        "malli raavala",
+        "follow up eppudu",
+        "review eppudu",
+        "dobara aana padega"
+      ],
+      "te": "అవును — జాగ్రత్తలు, రివ్యూ తేదీ ఇస్తారు, చికిత్స ఎలా పనిచేసిందో చూడటానికి. మార్చాలంటే +91 77880 91092 కి ఫోన్ చేయండి."
+    },
+    "reschedule": {
+      "q": [
+        "appointment cancel cheyyali",
+        "appointment marchali",
+        "slot marchocha",
+        "vere roju ki marchandi",
+        "late avutunna",
+        "appointment badalna hai",
+        "cancel karna hai",
+        "అపాయింట్‌మెంట్ మార్చాలి"
+      ],
+      "k": [
+        "appointment cancel cheyyali",
+        "appointment marchali",
+        "slot marchocha",
+        "appointment badalna hai"
+      ],
+      "te": "+91 77880 91092 కి ఫోన్ చేయండి లేదా వాట్సాప్ చేయండి — స్లాట్ మార్చుతారు లేదా రద్దు చేస్తారు. ఆలస్యమైతే ఫోన్ చేయండి."
+    },
+    "whatsapp": {
+      "q": [
+        "whatsapp cheyyocha",
+        "whatsapp number ivvandi",
+        "whatsapp undha",
+        "message pampocha",
+        "whatsapp lo matladocha",
+        "whatsapp number do",
+        "వాట్సాప్ ఉందా"
+      ],
+      "k": [
+        "whatsapp cheyyocha",
+        "whatsapp number ivvandi",
+        "whatsapp undha",
+        "message pampocha"
+      ],
+      "te": "అవును — +91 77880 91092 కి వాట్సాప్ చేయండి. స్కాన్లు, రిపోర్టులు ముందే పంపడానికి ఇది సులభమైన మార్గం."
+    },
+    "email": {
+      "q": [
+        "email id enti",
+        "mail id cheppandi",
+        "email ki pampocha",
+        "meeku email undha",
+        "mail id do",
+        "email address kya hai",
+        "ఈమెయిల్ ఐడీ ఏమిటి"
+      ],
+      "k": [
+        "email id enti",
+        "mail id cheppandi",
+        "email ki pampocha",
+        "email address kya hai"
+      ],
+      "te": "info@halcyonpainfree.com కి మెయిల్ చేయవచ్చు. అపాయింట్‌మెంట్‌కి +91 77880 91092 కి ఫోన్ లేదా వాట్సాప్ వేగం."
+    },
+    "phone": {
+      "q": [
+        "phone number ivvandi",
+        "number enti meeru",
+        "contact number cheppandi",
+        "mobile number kavali",
+        "clinic number enti",
+        "number do bhai",
+        "phone number kya hai",
+        "ఫోన్ నంబర్ ఇవ్వండి"
+      ],
+      "k": [
+        "phone number ivvandi",
+        "number cheppandi",
+        "contact number cheppandi",
+        "phone number kya hai"
+      ],
+      "te": "+91 77880 91092 లేదా +91 95536 04226 కి ఫోన్ చేయండి — సోమవారం నుంచి శనివారం, ఉదయం 9 నుంచి సాయంత్రం 6 వరకు."
+    },
+    "branches": {
+      "q": [
+        "vere branch undha",
+        "inko branch undha",
+        "secunderabad lo branch undha",
+        "enni centres unnayi",
+        "maa area lo undha",
+        "doosri branch hai kya",
+        "వేరే బ్రాంచ్ ఉందా"
+      ],
+      "k": [
+        "vere branch undha",
+        "inko branch",
+        "enni centres",
+        "doosri branch hai"
+      ],
+      "te": "హాల్సియాన్ ఒకే కేంద్రం, కూకట్‌పల్లి వై జంక్షన్‌లో. కన్సల్టేషన్, స్కాన్, ప్రక్రియ అన్నీ అక్కడే — వేరే చిరునామాకు వెళ్ళాల్సిన అవసరం లేదు."
+    },
+    "outstation": {
+      "q": [
+        "hyderabad bayata untanu",
+        "vere ooru nunchi vastunna",
+        "vijayawada nunchi vastunna",
+        "warangal nunchi raavali",
+        "ooru nunchi vaste entha sepu",
+        "doosre shehar se aa raha hoon",
+        "ఊరి నుంచి వస్తున్నాను"
+      ],
+      "k": [
+        "hyderabad bayata",
+        "vere ooru nunchi",
+        "ooru nunchi vastunna",
+        "doosre shehar se"
+      ],
+      "te": "బయటి ఊరి నుంచి వస్తుంటే రిపోర్టులు వాట్సాప్‌లో +91 77880 91092 కి పంపి ఫోన్ చేయండి — స్కాన్, ప్రక్రియ ఒకే విజిట్‌లో కావచ్చు."
+    },
+    "online-consult": {
+      "q": [
+        "online consultation untunda",
+        "video call lo matladocha",
+        "phone lo consultation untunda",
+        "doctor ni video lo chupinchocha",
+        "online lo chupinchukovocha",
+        "video par baat ho sakti hai",
+        "ఆన్‌లైన్ కన్సల్టేషన్ ఉందా"
+      ],
+      "k": [
+        "online consultation untunda",
+        "video call lo",
+        "phone lo consultation",
+        "online lo chupinchukovocha"
+      ],
+      "te": "పరీక్ష, అల్ట్రాసౌండ్ స్కాన్ కోసం మీరు గదిలో ఉండాలి. రిమోట్‌గా ఏదైనా సాధ్యమా అని +91 77880 91092 కి ఫోన్ చేసి అడగండి."
+    },
+    "home-visit": {
+      "q": [
+        "intiki vastara",
+        "doctor intiki vastara",
+        "home visit untunda",
+        "intlo treatment chestara",
+        "ghar aa sakte hain kya",
+        "ghar par ilaaj hota hai",
+        "ఇంటికి వస్తారా"
+      ],
+      "k": [
+        "intiki vastara",
+        "home visit untunda",
+        "intlo treatment",
+        "ghar aa sakte hain"
+      ],
+      "te": "చికిత్స క్లినిక్‌లోని స్కాన్, ప్రక్రియ మీద ఆధారపడి ఉంటుంది. ఇంటికి రావడం సాధ్యమా అని +91 77880 91092 కి ఫోన్ చేసి అడగండి."
+    },
+    "elderly": {
+      "q": [
+        "maa amma ki 75 years",
+        "peddavallaki chestara",
+        "maa nanna ki nadavadam kastam",
+        "vruddhulaki safe na",
+        "wheelchair lo teesukuravocha",
+        "buzurgon ke liye theek hai kya",
+        "పెద్దవారికి చేస్తారా"
+      ],
+      "k": [
+        "peddavallaki chestara",
+        "maa amma ki",
+        "maa nanna ki",
+        "buzurgon ke liye"
+      ],
+      "te": "పెద్దవారు చాలా మంది వస్తారు; ప్రక్రియలు లోకల్ అనస్థీషియాతో డే కేర్‌గా చేస్తారు. గుండె, షుగర్, బీపీ, మందుల వివరాలు టీమ్‌కి చెప్పండి."
+    },
+    "children": {
+      "q": [
+        "pillalaki chestara",
+        "chinna pillalaki treatment untunda",
+        "maa abbayi ki 12 years",
+        "maa ammayi ki noppi",
+        "bacchon ka ilaaj karte hain kya",
+        "mere bete ko dard hai",
+        "పిల్లలకు చేస్తారా"
+      ],
+      "k": [
+        "pillalaki chestara",
+        "chinna pillalaki",
+        "maa abbayi ki",
+        "bacchon ka ilaaj"
+      ],
+      "te": "పిల్లల గురించి సైట్‌లో వివరాలు లేవు — +91 77880 91092 కి ఫోన్ చేయండి, మీ బిడ్డకు సరిపోతుందా టీమ్ చెబుతారు."
+    },
+    "lady-doctor": {
+      "q": [
+        "lady doctor unnara",
+        "aada doctor unnara",
+        "mahila doctor undha",
+        "lady doctor ni chupinchukovocha",
+        "ladies doctor hai kya",
+        "aurat doctor hai",
+        "లేడీ డాక్టర్ ఉన్నారా"
+      ],
+      "k": [
+        "lady doctor unnara",
+        "aada doctor",
+        "mahila doctor",
+        "ladies doctor hai"
+      ],
+      "te": "డా. దస్యం పల్లవి, కన్సల్టెంట్ – పెయిన్ మేనేజ్‌మెంట్, మహిళా కన్సల్టెంట్. బుక్ చేసేటప్పుడు ఆమె పేరు అడగవచ్చు."
+    },
+    "ask-doctor-name": {
+      "q": [
+        "doctor peru cheppi book cheyyocha",
+        "ee doctor tho appointment kavali",
+        "doctor ni chupinchukovali nenu korukunna",
+        "naku dr kiran kavali",
+        "dr pallavi ni chupinchukovocha",
+        "dr pallavi se milna hai",
+        "డాక్టర్ పేరు చెప్పి బుక్ చేయవచ్చా"
+      ],
+      "k": [
+        "doctor peru cheppi",
+        "ee doctor tho appointment",
+        "doctor ni chupinchukovali",
+        "se milna hai"
+      ],
+      "te": "అవును — ఫోన్ చేసినప్పుడు ఇద్దరు కన్సల్టెంట్లలో ఎవరి పేరైనా అడగవచ్చు. అపాయింట్‌మెంట్ ఎలాగైనా ఒకేలా జరుగుతుంది."
+    },
+    "privacy": {
+      "q": [
+        "naa data safe na",
+        "nenu type chesindi store chestara",
+        "ee chat private na",
+        "naa vivaralu evaru chustaru",
+        "privacy policy enti",
+        "mera data safe hai kya",
+        "నా వివరాలు సురక్షితమా"
+      ],
+      "k": [
+        "naa data safe",
+        "naa vivaralu evaru",
+        "chat private na",
+        "mera data safe"
+      ],
+      "te": "మీ ప్రశ్నలకు ఈ పేజీలోనే స్థిర జవాబులు వస్తాయి. మీరు ఒప్పుకుని కాల్‌బ్యాక్ అడిగితేనే వివరాలు క్లినిక్ టీమ్‌కి వెళ్తాయి."
+    },
+    "records": {
+      "q": [
+        "naa records kavali",
+        "naa reports copy kavali",
+        "naa data teesivvandi",
+        "naa vivaralu marchandi",
+        "medical records ivvandi",
+        "mera record chahiye",
+        "నా రికార్డులు కావాలి"
+      ],
+      "k": [
+        "naa records kavali",
+        "reports copy kavali",
+        "naa data teesivvandi",
+        "mera record chahiye"
+      ],
+      "te": "క్లినిక్ వద్ద ఉన్న వివరాలు, సరిదిద్దడం, తొలగించడం కోసం +91 77880 91092 లేదా info@halcyonpainfree.com ని సంప్రదించండి."
+    },
+    "reviews": {
+      "q": [
+        "ee clinic manchidena",
+        "reviews ela unnayi",
+        "google rating entha",
+        "patients enti chebutaru",
+        "nijamaina clinic na",
+        "ye clinic acha hai kya",
+        "క్లినిక్ మంచిదేనా"
+      ],
+      "k": [
+        "clinic manchidena",
+        "reviews ela unnayi",
+        "nijamaina clinic",
+        "clinic acha hai"
+      ],
+      "te": "గూగుల్ ప్రొఫైల్‌లో రోగుల అభిప్రాయాలు చదవవచ్చు. పరీక్ష, స్కాన్ చేసి స్పష్టంగా చెబుతారు — ఊహతో ఇంజెక్షన్ ఇవ్వరు."
+    },
+    "about": {
+      "q": [
+        "halcyon gurinchi cheppandi",
+        "ee center gurinchi cheppandi",
+        "ide hospital na",
+        "halcyon ante enti",
+        "ee clinic gurinchi cheppandi",
+        "halcyon kya hai",
+        "హాల్సియాన్ గురించి చెప్పండి"
+      ],
+      "k": [
+        "halcyon gurinchi",
+        "ee center gurinchi",
+        "halcyon ante enti",
+        "halcyon kya hai"
+      ],
+      "te": "కూకట్‌పల్లిలోని హాల్సియాన్ పెయిన్ మేనేజ్‌మెంట్ సెంటర్ దీర్ఘకాల నొప్పికి ఆపరేషన్ లేకుండా చికిత్స చేస్తుంది. ప్రతి విజిట్‌లో పరీక్ష, అల్ట్రాసౌండ్ స్కాన్."
+    },
+    "second-opinion": {
+      "q": [
+        "second opinion kavali",
+        "inko doctor abhiprayam kavali",
+        "vere doctor cheppindi correct na",
+        "naa mri ki second opinion kavali",
+        "maro abhiprayam kavali",
+        "doosri raay chahiye",
+        "సెకండ్ ఒపీనియన్ కావాలి"
+      ],
+      "k": [
+        "second opinion kavali",
+        "inko doctor abhiprayam",
+        "maro abhiprayam",
+        "doosri raay chahiye"
+      ],
+      "te": "అవును — రిపోర్టులు, పాత ప్రిస్క్రిప్షన్లు తీసుకురండి లేదా వాట్సాప్ చేయండి. పరీక్ష, స్కాన్ చేసి కారణం ఏమిటో స్పష్టంగా చెబుతారు."
+    },
+    "surgery-advised": {
+      "q": [
+        "operation tappadu annaru",
+        "doctor surgery cheyali annaru",
+        "ortho operation cheyali annadu",
+        "spine surgery kavali annaru",
+        "vere doctor operation annaru",
+        "doctor ne operation bola hai",
+        "ఆపరేషన్ చేయాలి అన్నారు"
+      ],
+      "k": [
+        "operation cheyali annaru",
+        "surgery cheyali annaru",
+        "operation cheyali annadu",
+        "operation bola hai"
+      ],
+      "te": "రిపోర్టులు తీసుకురండి — ఆపరేషన్ లేని మార్గం మీకు సరిపోతుందా చూస్తారు. కొన్నిసార్లు ఆపరేషనే సరైనది అయితే స్పష్టంగా చెబుతారు."
+    },
+    "knee-replacement-advised": {
+      "q": [
+        "mokali marpidi cheyali annaru",
+        "replacement cheyali annaru",
+        "marpidi tappinchocha",
+        "tkr cheyali annaru",
+        "marpidi avasarama",
+        "ghutne ka replacement bola hai",
+        "మోకాలి మార్పిడి చేయాలి అన్నారు"
+      ],
+      "k": [
+        "mokali marpidi",
+        "replacement cheyali annaru",
+        "marpidi tappinchocha",
+        "replacement bola hai"
+      ],
+      "te": "మోకాలి ఆర్థరైటిస్‌లో కూలీఫ్ కూల్డ్ రేడియోఫ్రీక్వెన్సీ నొప్పి తగ్గించవచ్చు లేదా ఆపరేషన్ వాయిదా వేయవచ్చు. తీవ్రమైన గ్రేడ్ 4లో మార్పిడి అవసరమవచ్చు."
+    },
+    "surgery": {
+      "q": [
+        "operation avasarama",
+        "operation lekunda nayam avutunda",
+        "surgery avasarama",
+        "kotha kokunda treatment untunda",
+        "operation cheyyakunda tagguthunda",
+        "bina operation ke theek hoga kya",
+        "operation zaroori hai kya",
+        "ఆపరేషన్ అవసరమా"
+      ],
+      "k": [
+        "operation avasarama",
+        "operation lekunda nayam",
+        "surgery avasarama",
+        "kotha kokunda",
+        "bina operation ke"
+      ],
+      "te": "హాల్సియాన్ ఆపరేషన్ లేని కేంద్రం — అన్ని ప్రక్రియలు సూదితో, స్కాన్ చూపుతో, డే కేర్‌గా. తీవ్రమైన గ్రేడ్ 4 మోకాలికి మార్పిడి సరైనది."
+    },
+    "admission": {
+      "q": [
+        "admit cheyyala",
+        "hospital lo undala",
+        "ratri undala",
+        "enni rojulu undali",
+        "day care aa",
+        "bharti hona padega kya",
+        "raat rukna padega",
+        "ఆసుపత్రిలో ఉండాలా"
+      ],
+      "k": [
+        "admit cheyyala",
+        "hospital lo undala",
+        "ratri undala",
+        "bharti hona padega"
+      ],
+      "te": "అడ్మిషన్ అవసరం లేదు. లోకల్ అనస్థీషియాతో డే కేర్ — రాత్రి ఉండాల్సిన అవసరం లేదు, సుమారు రెండు గంటల్లో ఇంటికి."
+    },
+    "anaesthesia": {
+      "q": [
+        "noppi telustunda",
+        "mattu injection istara",
+        "mabbu injection istara",
+        "nidra pothana",
+        "melakuve untana",
+        "general anaesthesia aa local aa",
+        "noppi vestunda procedure lo",
+        "dard hoga kya",
+        "నొప్పి తెలుస్తుందా"
+      ],
+      "k": [
+        "noppi telustunda",
+        "mattu injection",
+        "mabbu injection",
+        "melakuve untana",
+        "nidra pothana"
+      ],
+      "te": "ప్రక్రియలు లోకల్ అనస్థీషియాతో, అల్ట్రాసౌండ్ చూపుతో చేస్తారు — మీరు మెలకువగా ఉంటారు. ఎక్కువమందికి ఒత్తిడి లేదా చిన్న నొప్పి అనిపిస్తుంది."
+    },
+    "needle-fear": {
+      "q": [
+        "injection ki bhayam ga undi",
+        "sudi ante bhayam",
+        "naku injection bhayam",
+        "injection ki bhayapadutunna",
+        "sudi choosi bhayam vestundi",
+        "injection se bahut darr lagta hai",
+        "sui se darr",
+        "సూది అంటే భయం"
+      ],
+      "k": [
+        "injection ante bhayam",
+        "sudi ante bhayam",
+        "injection bhayam",
+        "injection se darr"
+      ],
+      "te": "అది సాధారణం — మొదట చర్మాన్ని లోకల్ అనస్థీషియాతో మొద్దుబారుస్తారు, సూది సన్నగా ఉంటుంది, మీరు మెలకువగా ఉండి చెప్పవచ్చు."
+    },
+    "pain-after": {
+      "q": [
+        "injection tarvata noppi untunda",
+        "procedure tarvata noppi vestunda",
+        "tarvata vapu vastunda",
+        "injection tarvata baguntunda",
+        "injection ke baad dard hoga",
+        "baad me sujan aayegi kya",
+        "ఇంజెక్షన్ తర్వాత నొప్పి ఉంటుందా"
+      ],
+      "k": [
+        "injection tarvata noppi",
+        "procedure tarvata noppi",
+        "tarvata vapu",
+        "injection ke baad dard"
+      ],
+      "te": "కొంత నొప్పి సాధారణం — ప్రోలోథెరపీ తర్వాత ఒకటి రెండు రోజులు, రీజెనరేటివ్ తర్వాత కొన్ని రోజులు. పెరిగితే టీమ్‌కి చెప్పండి."
+    },
+    "recovery": {
+      "q": [
+        "eppudu normal avutanu",
+        "kolukovadaniki entha time",
+        "vishranti kavala",
+        "rest teesukovala",
+        "eppudu nadavagalanu",
+        "kitne din aaram karna hai",
+        "kab tak theek ho jaunga",
+        "ఎప్పుడు మామూలు అవుతాను"
+      ],
+      "k": [
+        "eppudu normal avutanu",
+        "vishranti kavala",
+        "rest teesukovala",
+        "eppudu nadavagalanu",
+        "aaram karna hai"
+      ],
+      "te": "ఎక్కువమంది నడుచుకుంటూ వెళ్ళి సాధారణ లేదా తేలికపాటి రోజు గడుపుతారు. ఎంత విశ్రాంతి కావాలో ప్రక్రియ బట్టి డాక్టర్ చెబుతారు."
+    },
+    "drive": {
+      "q": [
+        "driving cheyyocha",
+        "car nadapocha",
+        "bike nadapocha",
+        "nene drive chesukuni vellocha",
+        "scooter nadapagalana",
+        "gaadi chala sakta hoon kya",
+        "డ్రైవింగ్ చేయవచ్చా"
+      ],
+      "k": [
+        "driving cheyyocha",
+        "car nadapocha",
+        "bike nadapocha",
+        "gaadi chala sakta"
+      ],
+      "te": "ప్రక్రియ బట్టి ఉంటుంది. కొన్ని నరాల బ్లాక్‌ల తర్వాత చేయి లేదా కాలు కొన్ని గంటలు మొద్దుబారవచ్చు, ఎవరైనా ఇంటికి తీసుకెళ్ళడం సురక్షితం."
+    },
+    "work": {
+      "q": [
+        "office ki vellocha",
+        "office ki eppudu vellocha",
+        "repu pani cheyyocha",
+        "duty ki eppudu vellali",
+        "enni rojulu selavu kavali",
+        "kaam par kab jaa sakta hoon",
+        "kitni chutti chahiye",
+        "ఆఫీసుకి ఎప్పుడు వెళ్ళవచ్చు"
+      ],
+      "k": [
+        "office ki vellocha",
+        "office ki eppudu",
+        "duty ki eppudu",
+        "selavu kavali",
+        "kaam par kab"
+      ],
+      "te": "ఎక్కువమంది త్వరలోనే సాధారణ లేదా తేలికపాటి పని చేస్తారు; ప్రక్రియ, మీ పని బట్టి మారుతుంది. బరువైన పనికి కొంత విశ్రాంతి కావచ్చు."
+    },
+    "howlong-relief": {
+      "q": [
+        "entha kalam upasamanam untundi",
+        "noppi malli vastunda",
+        "effect entha rojulu untundi",
+        "entha kalam pani chestundi",
+        "relief entha sepu untundi",
+        "kitne din tak aaram rahega",
+        "dard wapas aayega kya",
+        "ఎంత కాలం ఉపశమనం ఉంటుంది"
+      ],
+      "k": [
+        "entha kalam upasamanam",
+        "noppi malli vastunda",
+        "entha kalam pani chestundi",
+        "kitne din tak aaram"
+      ],
+      "te": "అది ఏ సమస్య, కీలు ఎంత అరిగింది, కారణం ఏమిటో బట్టి మారుతుంది. అందుకే స్కాన్ ముందు — మీ విషయంలో వాస్తవంగా చెబుతారు."
+    },
+    "permanent": {
+      "q": [
+        "permanent ga tagguthunda",
+        "shashwatamga nayam avutunda",
+        "purthiga nayam avutunda",
+        "noppi eppatiki povutunda",
+        "guarantee undha",
+        "hamesha ke liye theek hoga",
+        "poora theek ho jayega kya",
+        "శాశ్వతంగా నయం అవుతుందా"
+      ],
+      "k": [
+        "permanent ga tagguthunda",
+        "shashwatamga nayam",
+        "purthiga nayam",
+        "hamesha ke liye theek"
+      ],
+      "te": "అందరికీ నయం అవుతుందని ఏ క్లినిక్ హామీ ఇవ్వలేదు. అసలు కారణం కనుక్కుని చికిత్స చేస్తారు — అదే మంచి అవకాశం."
+    },
+    "success-rate": {
+      "q": [
+        "success rate entha",
+        "idi nijamga pani chestunda",
+        "naaku pani chestunda",
+        "ento mandiki pani chesindi",
+        "ela pani chestundi idi",
+        "kaam karega kya",
+        "kitne percent success hai",
+        "ఇది పని చేస్తుందా"
+      ],
+      "k": [
+        "success rate entha",
+        "nijamga pani chestunda",
+        "naaku pani chestunda",
+        "kaam karega kya"
+      ],
+      "te": "సమస్య, వ్యక్తి, కణజాలం ఎంత అరిగింది బట్టి మారుతుంది; ఒకే సంఖ్య తప్పుదోవ పట్టిస్తుంది. అందుకే స్కాన్, బ్లాక్ ముందు."
+    },
+    "sessions": {
+      "q": [
+        "enni sessions kavali",
+        "enni injections kavali",
+        "enni sittings padutundi",
+        "okkasari saripotunda",
+        "malli malli cheyyala",
+        "kitni baar aana padega",
+        "kitni sittings hongi",
+        "ఎన్ని సిట్టింగ్‌లు కావాలి"
+      ],
+      "k": [
+        "enni sessions kavali",
+        "enni injections kavali",
+        "enni sittings",
+        "kitni sittings"
+      ],
+      "te": "చికిత్స, మీ పరిస్థితి బట్టి ఉంటుంది. ప్రోలోథెరపీ చిన్న ఇంజెక్షన్ల కోర్సు; రేడియోఫ్రీక్వెన్సీ నొప్పి తిరిగివస్తే మళ్ళీ చేయవచ్చు."
+    },
+    "side-effects": {
+      "q": [
+        "side effects em unnayi",
+        "dushparinamalu unnaya",
+        "emaina problem vastunda",
+        "infection vastunda aa",
+        "nashtam jarugutunda",
+        "side effect hote hain kya",
+        "koi nuksan hai kya",
+        "సైడ్ ఎఫెక్ట్స్ ఏమిటి"
+      ],
+      "k": [
+        "side effects enti",
+        "dushparinamalu unnaya",
+        "emaina problem vastunda",
+        "koi nuksan hai"
+      ],
+      "te": "సూది వల్ల సాధారణంగా నొప్పి, వాపు, గాయం మచ్చ; అప్పుడప్పుడు తాత్కాలిక మొద్దుబారడం. ఇన్ఫెక్షన్, రక్తస్రావం అరుదు. జ్వరం వస్తే వెంటనే వైద్యసహాయం."
+    },
+    "safety": {
+      "q": [
+        "idi safe na",
+        "surakshitama idi",
+        "ee treatment safe na",
+        "pramadam emaina undha",
+        "bhayam ledu kada",
+        "ye safe hai kya",
+        "koi khatra hai kya",
+        "ఇది సురక్షితమా"
+      ],
+      "k": [
+        "idi safe na",
+        "surakshitama idi",
+        "pramadam emaina undha",
+        "koi khatra hai"
+      ],
+      "te": "ఈ ప్రక్రియలు సాధారణంగా బాగా తట్టుకుంటారు. సన్నని సూదితో, లైవ్ అల్ట్రాసౌండ్ చూపుతో చేస్తారు. మీ ఆరోగ్యం, మందులు టీమ్‌కి చెప్పండి."
+    },
+    "steroids": {
+      "q": [
+        "steroid injection aa",
+        "steroids vaadutara",
+        "steroid isthara",
+        "steroid harm chestunda",
+        "cortisone injection aa idi",
+        "steroid lagate hain kya",
+        "స్టెరాయిడ్ ఇంజెక్షన్ ఆ"
+      ],
+      "k": [
+        "steroid injection aa",
+        "steroids vaadutara",
+        "steroid isthara",
+        "steroid lagate hain"
+      ],
+      "te": "ఎప్పుడూ కాదు. నరాల బ్లాక్ సాధారణంగా లోకల్ అనస్థీషియా, కొన్నిసార్లు స్టెరాయిడ్‌తో. రీజెనరేటివ్‌లో మీ రక్తం, ప్రోలోథెరపీలో డెక్స్‌ట్రోస్."
+    },
+    "is-injection": {
+      "q": [
+        "idi injection ena",
+        "injection matrame na",
+        "injection aa tablets aa",
+        "sudi tho chestara",
+        "treatment ante injection na",
+        "sirf injection hai kya",
+        "ఇది ఇంజెక్షన్ ఏనా"
+      ],
+      "k": [
+        "idi injection ena",
+        "injection matrame",
+        "injection aa tablets aa",
+        "sudi tho chestara"
+      ],
+      "te": "అవును — ప్రతి ప్రక్రియ సన్నని సూదితో, స్కాన్ చూపుతో; కోత లేదు. సూది ద్వారా ఏమి ఇస్తారో చికిత్స బట్టి మారుతుంది."
+    },
+    "radiation": {
+      "q": [
+        "radiation untunda",
+        "scan valla radiation vastunda",
+        "x ray radiation undha",
+        "ultrasound safe na",
+        "radiation hota hai kya",
+        "kirano ka nuksan hai kya",
+        "రేడియేషన్ ఉంటుందా"
+      ],
+      "k": [
+        "radiation untunda",
+        "scan valla radiation",
+        "ultrasound safe na",
+        "radiation hota hai"
+      ],
+      "te": "అల్ట్రాసౌండ్ ధ్వని తరంగాలతో పనిచేస్తుంది, రేడియేషన్ ఉండదు. వేరే ఇమేజింగ్ కావాలంటే డాక్టర్ ముందే వివరిస్తారు."
+    },
+    "ultrasound": {
+      "q": [
+        "ultrasound enduku",
+        "scan enduku chestaru",
+        "usg akkade chestara",
+        "sonography chestara akkada",
+        "scan enti chestundi",
+        "ultrasound kyun karte hain",
+        "అల్ట్రాసౌండ్ ఎందుకు"
+      ],
+      "k": [
+        "ultrasound enduku",
+        "scan enduku chestaru",
+        "usg akkade",
+        "ultrasound kyun karte"
+      ],
+      "te": "అల్ట్రాసౌండ్ రెండుసార్లు ఉపయోగిస్తారు — నొప్పి ఎక్కడి నుంచి వస్తుందో కనుక్కోవడానికి, తర్వాత సూదిని సరైన చోటికి చూపించడానికి."
+    },
+    "ultrasound-vs-mri": {
+      "q": [
+        "ultrasound mri kante manchida",
+        "mri aa ultrasound aa",
+        "mri enduku cheyyaru",
+        "mri ultrasound teda enti",
+        "edi better mri na ultrasound na",
+        "mri ya ultrasound kaunsa acha",
+        "ఎమ్మారై లేదా అల్ట్రాసౌండ్ ఏది మంచిది"
+      ],
+      "k": [
+        "ultrasound mri kante",
+        "mri aa ultrasound aa",
+        "mri ultrasound teda",
+        "mri ya ultrasound"
+      ],
+      "te": "రెండూ వేరు వేరు విషయాలు చూపిస్తాయి. ఎమ్మారై వివరమైన చిత్రాలు; అల్ట్రాసౌండ్ కదులుతున్నప్పుడు లైవ్‌గా చూపిస్తుంది. హాల్సియాన్‌లో రెండూ కలిపి చూస్తారు."
+    },
+    "mri-first": {
+      "q": [
+        "mri munde teeyinchala",
+        "mri munde cheyinchukovala",
+        "mri lekunda vaccha",
+        "scan cheyinchukoni raavala",
+        "x ray teeyinchukoni raavala",
+        "mri karwana padega kya",
+        "pehle mri karana hai kya",
+        "ఎమ్మారై తీయించాలా"
+      ],
+      "k": [
+        "mri teeyinchala",
+        "mri munde cheyinchukovala",
+        "mri lekunda vaccha",
+        "mri karwana padega"
+      ],
+      "te": "అవసరం లేదు. చాలా సమస్యలు కన్సల్టేషన్‌లో అల్ట్రాసౌండ్‌తో చూడవచ్చు. ఉన్న ఎక్స్‌రే, ఎమ్మారై రిపోర్టులు తీసుకురండి."
+    },
+    "mri-findings": {
+      "q": [
+        "naa mri lo chala problems unnayi",
+        "mri lo degeneration undi annaru",
+        "report lo unnadi naa noppi na",
+        "x ray lo arthritis undi annaru",
+        "mri report lo chala unnayi",
+        "mri me bahut kuch aaya hai",
+        "రిపోర్టులో చాలా ఉన్నాయి"
+      ],
+      "k": [
+        "mri lo chala problems",
+        "mri lo degeneration",
+        "report lo unnadi",
+        "mri me bahut kuch"
+      ],
+      "te": "ఎమ్మారై, ఎక్స్‌రేలో కనిపించే అన్నీ నొప్పికి కారణం కావు — నొప్పి లేని వారిలో కూడా కనిపిస్తాయి. అందుకే పరీక్షతో కలిపి చూస్తారు."
+    },
+    "physio": {
+      "q": [
+        "physiotherapy continue cheyyala",
+        "physio kavala",
+        "vyayamam cheyyala",
+        "injection tho patu physio cheyyala",
+        "exercises cheyyocha",
+        "physio karna hai kya",
+        "వ్యాయామం చేయాలా"
+      ],
+      "k": [
+        "physiotherapy continue cheyyala",
+        "physio kavala",
+        "vyayamam cheyyala",
+        "physio karna hai"
+      ],
+      "te": "సాధారణంగా అవును. ప్రక్రియతో పాటు ఫిజియోథెరపీ లేదా వ్యాయామాలు తరచుగా ప్లాన్‌లో ఉంటాయి. ఎప్పుడు, ఏమి చేయాలో డాక్టర్ చెబుతారు."
+    },
+    "painkiller-after": {
+      "q": [
+        "injection tarvata ye tablet vesukovali",
+        "tarvata combiflam vesukovocha",
+        "ibuprofen vesukovocha",
+        "prp tarvata noppi matra vesukovocha",
+        "injection ke baad kaunsi goli",
+        "combiflam le sakta hoon",
+        "తర్వాత ఏ మాత్ర వేసుకోవాలి"
+      ],
+      "k": [
+        "ye tablet vesukovali",
+        "tarvata combiflam",
+        "ibuprofen vesukovocha",
+        "kaunsi goli"
+      ],
+      "te": "ఏ నొప్పి మాత్ర వాడాలో టీమ్‌ని అడగండి. రీజెనరేటివ్, ప్రోలోథెరపీ తర్వాత కొన్ని యాంటీ ఇన్‌ఫ్లమేటరీ మాత్రలు నయం కావడాన్ని తగ్గించవచ్చు."
+    },
+    "painkillers": {
+      "q": [
+        "matralu vesukoni visigipoyanu",
+        "painkillers vaadi vaadi visugu vachindi",
+        "tablets pani cheyyatledu",
+        "matralu apeyyocha",
+        "eppudu matralu vesukovala",
+        "goli kha kha ke thak gaya",
+        "kya hamesha goli khani padegi",
+        "మాత్రలు పని చేయటం లేదు"
+      ],
+      "k": [
+        "matralu vesukoni visigipoyanu",
+        "painkillers vaadi",
+        "tablets pani cheyyatledu",
+        "matralu apeyyocha",
+        "goli kha kha ke"
+      ],
+      "te": "మాత్రలు సరిపోకపోవడంతో చాలా మంది వస్తారు. కారణానికి చికిత్స లక్ష్యం. సొంతంగా మందులు ఆపకండి — డాక్టర్‌తో కలిసి తగ్గించాలి."
+    },
+    "meds": {
+      "q": [
+        "naa matralu apeyyala",
+        "naa mandulu vesukoni raavocha",
+        "bp matralu vesukuntunna",
+        "mandula list ivvala",
+        "medicine apeyyala nenu",
+        "meri dawai band karni hai kya",
+        "నా మందులు ఆపేయాలా"
+      ],
+      "k": [
+        "naa matralu apeyyala",
+        "mandulu vesukoni raavocha",
+        "mandula list",
+        "dawai band karni"
+      ],
+      "te": "సొంతంగా ఏదీ ఆపకండి, మొదలుపెట్టకండి. బుక్ చేసేటప్పుడు వాడే అన్ని మందుల గురించి టీమ్‌కి చెప్పండి. సందేహమైతే ఫోన్ చేయండి."
+    },
+    "blood-thinners": {
+      "q": [
+        "raktham palachana mandulu vesukuntunna",
+        "blood thinner vesukuntunna",
+        "ecosprin vesukuntunna injection cheyyocha",
+        "aspirin vaadutunna",
+        "clopidogrel vesukuntunna",
+        "khoon patla karne ki dawai leta hoon",
+        "రక్తం పలచన మందులు వేసుకుంటున్నాను"
+      ],
+      "k": [
+        "raktham palachana mandulu",
+        "blood thinner vesukuntunna",
+        "ecosprin vesukuntunna",
+        "khoon patla karne"
+      ],
+      "te": "బుక్ చేసేటప్పుడు చెప్పండి — రక్తం పలచన మందులకు ఇంజెక్షన్ ముందు ప్లాన్ కావాలి. సొంతంగా ఆపకండి, +91 77880 91092 కి ఫోన్ చేయండి."
+    },
+    "diabetes": {
+      "q": [
+        "naaku sugar undi",
+        "diabetes undi injection cheyyocha",
+        "sugar patient ni",
+        "sugar ekkuva undi safe na",
+        "madhumeham undi naaku",
+        "mujhe sugar hai",
+        "షుగర్ ఉంది ఇంజెక్షన్ చేయవచ్చా"
+      ],
+      "k": [
+        "naaku sugar undi",
+        "diabetes undi injection",
+        "sugar patient ni",
+        "madhumeham undi",
+        "mujhe sugar hai"
+      ],
+      "te": "బుక్ చేసేటప్పుడు చెప్పండి. షుగర్ అదుపులో లేకపోతే ప్రక్రియ వాయిదా పడవచ్చు; స్టెరాయిడ్ వాడితే కొంతకాలం షుగర్ పెరగవచ్చు."
+    },
+    "bp-heart": {
+      "q": [
+        "naaku bp undi",
+        "gunde jabbu undi",
+        "heart patient ni treatment cheyyocha",
+        "stent vesaru naaku",
+        "raktha potu ekkuva undi",
+        "mujhe bp hai",
+        "dil ki bimari hai",
+        "గుండె జబ్బు ఉంది"
+      ],
+      "k": [
+        "naaku bp undi",
+        "gunde jabbu",
+        "heart patient ni",
+        "raktha potu",
+        "dil ki bimari"
+      ],
+      "te": "గుండె, రక్తపోటు సమస్యలు, వాడే అన్ని మందులు బుక్ చేసేటప్పుడు చెప్పండి. రక్తం పలచన మందులకు ప్రత్యేక ప్లాన్ కావాలి. సొంతంగా ఆపకండి."
+    },
+    "pregnancy": {
+      "q": [
+        "nenu garbhavati ni",
+        "garbham dhariste injection cheyyocha",
+        "pregnancy lo noppi undi",
+        "palichche talli ni nenu",
+        "nelaki tappindi",
+        "main pregnant hoon",
+        "doodh pilati hoon injection safe hai",
+        "గర్భవతిని"
+      ],
+      "k": [
+        "nenu garbhavati",
+        "garbham dhariste",
+        "palichche talli",
+        "main pregnant hoon"
+      ],
+      "te": "గర్భవతి అయితే, అవకాశం ఉన్నా, పాలిచ్చే తల్లి అయినా ముందే చెప్పండి — వాడే మందులు మారుతాయి. +91 77880 91092 కి ఫోన్ చేయండి."
+    },
+    "allergy": {
+      "q": [
+        "naaku mandulu allergy",
+        "injection allergy undi",
+        "anaesthesia allergy undi",
+        "mandulu paditavu naaku",
+        "allergy undi cheyyocha",
+        "mujhe dawai se allergy hai",
+        "మందులు అల్లర్జీ ఉంది"
+      ],
+      "k": [
+        "mandulu allergy",
+        "injection allergy undi",
+        "mandulu paditavu",
+        "dawai se allergy"
+      ],
+      "te": "అల్లర్జీ ఉంటే బుక్ చేసేటప్పుడు, ఆ రోజు కూడా చెప్పండి. రీజెనరేటివ్‌లో మీ సొంత రక్తమే వాడతారు, అల్లర్జీ ఆశించరు."
+    },
+    "what-is-ipm": {
+      "q": [
+        "interventional pain management ante enti",
+        "interventional ante enti",
+        "matralaki teda enti",
+        "pain management ante enti",
+        "ee vidhanam enti",
+        "interventional ka matlab kya hai",
+        "ఇంటర్వెన్షనల్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "interventional ante enti",
+        "pain management ante enti",
+        "matralaki teda enti",
+        "interventional ka matlab"
+      ],
+      "te": "ఇంటర్వెన్షనల్ పెయిన్ మేనేజ్‌మెంట్ అంటే నొప్పికి కారణమైన భాగాన్ని కనుక్కుని, స్కాన్ చూపుతో సూది ద్వారా నేరుగా చికిత్స చేయడం."
+    },
+    "pain-specialist": {
+      "q": [
+        "pain specialist ante evaru",
+        "pain doctor enti chestaru",
+        "noppi doctor ante enti",
+        "pain specialist ni enduku chudali",
+        "pain doctor kya karte hain",
+        "పెయిన్ స్పెషలిస్ట్ అంటే ఎవరు"
+      ],
+      "k": [
+        "pain specialist ante",
+        "pain doctor enti chestaru",
+        "noppi doctor ante",
+        "pain doctor kya karte"
+      ],
+      "te": "పెయిన్ స్పెషలిస్ట్ దీర్ఘకాల నొప్పి ఎక్కడి నుంచి వస్తుందో చూసి మందులు, స్కాన్ చూపు ప్రక్రియలు, పునరావాసంతో చికిత్స చేస్తారు."
+    },
+    "why-radiologist": {
+      "q": [
+        "radiologist enduku unnaru",
+        "radiologist enti chestaru",
+        "iddaru doctors enduku",
+        "radiologist pani enti akkada",
+        "radiologist kyun hai",
+        "రేడియాలజిస్ట్ ఎందుకు"
+      ],
+      "k": [
+        "radiologist enduku",
+        "radiologist enti chestaru",
+        "iddaru doctors enduku",
+        "radiologist kyun hai"
+      ],
+      "te": "ఎమ్మారై, ఎక్స్‌రేలో కనిపించేది ఎప్పుడూ నొప్పి కారణం కాదు. డా. పీఎస్‌ఎస్ కిరణ్, రేడియాలజిస్ట్, స్కాన్లు చదివి ప్రక్రియలకు ఇమేజ్ గైడెన్స్ ఇస్తారు."
+    },
+    "ortho-vs-pain": {
+      "q": [
+        "ortho aa pain doctor aa",
+        "ortho ki vellala",
+        "ortho pain specialist teda enti",
+        "emuka doctor aa noppi doctor aa",
+        "ortho ni chupinchukovala",
+        "haddi ka doctor ya pain doctor",
+        "ఆర్థో దగ్గరికి వెళ్ళాలా"
+      ],
+      "k": [
+        "ortho aa pain doctor aa",
+        "ortho ki vellala",
+        "ortho pain specialist teda",
+        "emuka doctor aa",
+        "haddi ka doctor"
+      ],
+      "te": "రెండింటికీ చోటు ఉంది. ఆపరేషన్ కావాలంటే ఆర్థోపెడిక్ సర్జన్; ఆపరేషన్ లేకుండా కారణం కనుక్కుని చికిత్సకు పెయిన్ స్పెషలిస్ట్."
+    },
+    "treatments": {
+      "q": [
+        "enni treatments unnayi",
+        "ye chikitsalu chestaru",
+        "em em treatments unnayi",
+        "treatment options cheppandi",
+        "meeru enti chestaru",
+        "kaunse ilaaj karte hain",
+        "ఏ చికిత్సలు చేస్తారు"
+      ],
+      "k": [
+        "enni treatments unnayi",
+        "ye chikitsalu chestaru",
+        "em em treatments",
+        "kaunse ilaaj karte"
+      ],
+      "te": "నాలుగు మార్గాలు, అన్నీ స్కాన్ చూపుతో డే కేర్ — రీజెనరేటివ్ మెడిసిన్, రేడియోఫ్రీక్వెన్సీ, ప్రోలోథెరపీ, నరాల హైడ్రోడిసెక్షన్, నరాల బ్లాక్‌లు."
+    },
+    "conditions": {
+      "q": [
+        "ye samasyalaki chikitsa chestaru",
+        "ye noppulaki chestaru",
+        "em em problems chestaru",
+        "ye rogalaki chikitsa chestaru",
+        "enni conditions treat chestaru",
+        "kaunsi bimari ka ilaaj karte hain",
+        "ఏ సమస్యలకు చికిత్స చేస్తారు"
+      ],
+      "k": [
+        "ye samasyalaki chikitsa",
+        "ye noppulaki chestaru",
+        "em em problems",
+        "kaunsi bimari ka ilaaj"
+      ],
+      "te": "పన్నెండు సమస్యలకు చికిత్స — మోకాలు, నడుము, మెడ, భుజం నొప్పి, సయాటికా, డిస్క్ జారడం, తుంటి, క్రీడా గాయాలు, మోచేయి, చేతి, పాదం నొప్పి."
+    },
+    "diagnostic-block": {
+      "q": [
+        "diagnostic block ante enti",
+        "test injection ante enti",
+        "block enduku mundu chestaru",
+        "rf ki mundu block enduku",
+        "test block ante enti",
+        "test injection kya hai",
+        "డయాగ్నస్టిక్ బ్లాక్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "diagnostic block ante",
+        "test injection ante",
+        "block enduku mundu",
+        "test injection kya hai"
+      ],
+      "te": "అనుమానించిన భాగం మీద చిన్న లోకల్ అనస్థీషియా ఇంజెక్షన్. మీ నొప్పి తగ్గితే అదే కారణం; తగ్గకపోతే ప్లాన్ మారుతుంది."
+    },
+    "medial-branch-block": {
+      "q": [
+        "medial branch block ante enti",
+        "mbb ante enti",
+        "facet block ante enti",
+        "nadumu noppi ki block ante enti",
+        "medial branch block kya hai",
+        "మెడియల్ బ్రాంచ్ బ్లాక్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "medial branch block ante",
+        "mbb ante enti",
+        "facet block ante",
+        "medial branch block kya hai"
+      ],
+      "te": "మెడియల్ బ్రాంచ్ బ్లాక్ మెడ లేదా నడుములో అనుమానించిన ఫేసెట్ కీలుకు వెళ్ళే సన్నని నరాలను కొద్దిసేపు మొద్దుబారుస్తుంది. నొప్పి తగ్గితే కారణం నిర్ధారణ."
+    },
+    "epidural": {
+      "q": [
+        "epidural injection ante enti",
+        "epidural nadumu noppi ki",
+        "epidural steroid injection enti",
+        "caudal epidural ante enti",
+        "epidural injection kya hai",
+        "ఎపిడ్యూరల్ ఇంజెక్షన్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "epidural injection ante",
+        "epidural nadumu noppi",
+        "caudal epidural ante",
+        "epidural injection kya hai"
+      ],
+      "te": "ఎపిడ్యూరల్ ఇంజెక్షన్ స్కాన్, పరీక్ష చూపిన స్థానంలో ఎపిడ్యూరల్ ప్రదేశంలో వేస్తారు. నరం మీద డిస్క్ ఒత్తిడికి ఇదే సాధారణ చికిత్స."
+    },
+    "transforaminal": {
+      "q": [
+        "transforaminal injection ante enti",
+        "root block ante enti",
+        "nerve root injection enti",
+        "tfesi ante enti",
+        "root block kya hai",
+        "ట్రాన్స్‌ఫొరామినల్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "transforaminal injection ante",
+        "root block ante enti",
+        "nerve root injection enti",
+        "root block kya hai"
+      ],
+      "te": "ట్రాన్స్‌ఫొరామినల్ ఇంజెక్షన్ చికాకుపడిన నరం వెన్నెముక నుంచి బయటకు వచ్చే చోట స్కాన్ చూపుతో వేస్తారు. సయాటికా, డిస్క్ జారడానికి సాధారణ చికిత్స."
+    },
+    "nerve-block": {
+      "q": [
+        "nerve block ante enti",
+        "nara block ante enti",
+        "narala block enti",
+        "nerve block ela pani chestundi",
+        "block therapy ante enti",
+        "nerve block kya hota hai",
+        "నరాల బ్లాక్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "nerve block ante enti",
+        "nara block ante",
+        "narala block enti",
+        "nerve block kya hota"
+      ],
+      "te": "నరాల బ్లాక్ అంటే ఒక నిర్దిష్ట నరం మీద స్కాన్ చూపుతో లోకల్ అనస్థీషియా, కొన్నిసార్లు స్టెరాయిడ్ వేయడం."
+    },
+    "hydrodissection": {
+      "q": [
+        "hydrodissection ante enti",
+        "nara irukkunte enti chestaru",
+        "irukkuna nara chikitsa",
+        "nerve release operation lekunda",
+        "hydro dissection enti",
+        "hydrodissection kya hai",
+        "హైడ్రోడిసెక్షన్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "hydrodissection ante",
+        "nara irukkunte",
+        "irukkuna nara",
+        "hydrodissection kya hai"
+      ],
+      "te": "ఇరుక్కున్న నరం చుట్టూ అల్ట్రాసౌండ్ చూపుతో ద్రవం వేసి, ఒత్తిడి పెడుతున్న కణజాలం నుంచి వేరు చేస్తారు. నరం కోయరు."
+    },
+    "suprascapular": {
+      "q": [
+        "suprascapular nerve block ante enti",
+        "bhujam noppi ki block ante enti",
+        "ssnb ante enti",
+        "shoulder nerve injection enti",
+        "bhuja nara block ante enti",
+        "kandhe ka nerve block kya hai",
+        "సుప్రాస్కాపులర్ బ్లాక్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "suprascapular nerve block ante",
+        "bhujam noppi ki block",
+        "ssnb ante enti",
+        "bhuja nara block"
+      ],
+      "te": "సుప్రాస్కాపులర్ నరాల బ్లాక్ భుజం కీలుకు వెళ్ళే ముఖ్య నరాన్ని శాంతపరుస్తుంది. ఫ్రోజెన్ షోల్డర్, రొటేటర్ కఫ్ నొప్పికి కదలిక వ్యాయామాలతో వాడతారు."
+    },
+    "hydrodilatation": {
+      "q": [
+        "hydrodilatation ante enti",
+        "frozen shoulder ki hydrodilatation",
+        "keelu saagadeeyadam ante enti",
+        "capsule distension ante enti",
+        "hydrodilatation kya hai",
+        "హైడ్రోడైలటేషన్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "hydrodilatation ante",
+        "keelu saagadeeyadam",
+        "capsule distension ante",
+        "hydrodilatation kya hai"
+      ],
+      "te": "హైడ్రోడైలటేషన్‌లో బిగుసుకుపోయిన భుజం కాప్సూల్‌ను సాగదీయడానికి స్కాన్ చూపుతో కీలులో ద్రవం వేస్తారు. సుప్రాస్కాపులర్ బ్లాక్, కదలిక వ్యాయామాలతో కలిపి చేస్తారు."
+    },
+    "rfa": {
+      "q": [
+        "radiofrequency ante enti",
+        "rfa ante enti",
+        "nara kalchutara",
+        "nara kaalchadam ante enti",
+        "rf ablation ante enti",
+        "nas jalate hain kya",
+        "రేడియోఫ్రీక్వెన్సీ అంటే ఏమిటి"
+      ],
+      "k": [
+        "radiofrequency ante enti",
+        "rfa ante enti",
+        "nara kalchutara",
+        "nara kaalchadam",
+        "nas jalate hain"
+      ],
+      "te": "రేడియోఫ్రీక్వెన్సీ అబ్లేషన్ సన్నని ప్రోబ్ ద్వారా నియంత్రిత కరెంట్‌తో నొప్పి సంకేతం మోసే చిన్న నరాన్ని ఆపుతుంది. డయాగ్నస్టిక్ బ్లాక్ నిర్ధారించిన తర్వాతే చేస్తారు."
+    },
+    "coolief": {
+      "q": [
+        "coolief ante enti",
+        "cooled radiofrequency ante enti",
+        "coolief mokali ki",
+        "coolief fda approved na",
+        "cooled rf ante enti",
+        "coolief kya hai",
+        "కూలీఫ్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "coolief ante enti",
+        "cooled radiofrequency ante",
+        "coolief mokali ki",
+        "coolief kya hai"
+      ],
+      "te": "కూలీఫ్ అనేది మోకాలి నొప్పికి హాల్సియాన్ వాడే US FDA ఆమోదిత కూల్డ్ రేడియోఫ్రీక్వెన్సీ వ్యవస్థ. ముందు డయాగ్నస్టిక్ బ్లాక్ నరాలను నిర్ధారిస్తుంది."
+    },
+    "genicular": {
+      "q": [
+        "genicular nerve block ante enti",
+        "mokali narala chikitsa",
+        "genicular ante enti",
+        "mokali nerve block enti",
+        "gnb ante enti",
+        "ghutne ke nerve ka ilaaj",
+        "జెనిక్యులర్ నరాల బ్లాక్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "genicular nerve block ante",
+        "mokali narala chikitsa",
+        "genicular ante enti",
+        "mokali nerve block"
+      ],
+      "te": "జెనిక్యులర్ నరాలు మోకాలి నొప్పి సంకేతాలను మోస్తాయి. బ్లాక్ నిర్ధారిస్తే కూలీఫ్ కూల్డ్ రేడియోఫ్రీక్వెన్సీ ఆ సంకేతం ఆపుతుంది. కీలును కాదు, నరాలకే చికిత్స."
+    },
+    "facet-rf": {
+      "q": [
+        "facet rf ante enti",
+        "facet joint radiofrequency ante enti",
+        "nadumu ki rf chestara",
+        "meda ki rf ante enti",
+        "lumbar rf ante enti",
+        "facet rf kya hai",
+        "ఫేసెట్ రేడియోఫ్రీక్వెన్సీ అంటే ఏమిటి"
+      ],
+      "k": [
+        "facet rf ante enti",
+        "nadumu ki rf",
+        "meda ki rf",
+        "facet rf kya hai"
+      ],
+      "te": "ఫేసెట్ రేడియోఫ్రీక్వెన్సీ మెడ లేదా నడుములో అరిగిన ఫేసెట్ కీలు నొప్పి మోసే మెడియల్ బ్రాంచ్ నరాలను ఆపుతుంది. బ్లాక్ నిర్ధారించిన తర్వాతే చేస్తారు."
+    },
+    "pulsed-rf": {
+      "q": [
+        "pulsed rf chestara",
+        "pulsed radiofrequency untunda",
+        "prf chestara",
+        "pulsed rf ante enti",
+        "pulsed rf karte hain kya",
+        "పల్స్‌డ్ రేడియోఫ్రీక్వెన్సీ చేస్తారా"
+      ],
+      "k": [
+        "pulsed rf chestara",
+        "pulsed radiofrequency untunda",
+        "prf chestara",
+        "pulsed rf karte hain"
+      ],
+      "te": "పల్స్‌డ్ రేడియోఫ్రీక్వెన్సీ గురించి సైట్‌లో వివరాలు లేవు. మీ విషయంలో సరిపోతుందా అని +91 77880 91092 కి ఫోన్ చేసి డాక్టర్‌ని అడగండి."
+    },
+    "regenerative": {
+      "q": [
+        "regenerative medicine ante enti",
+        "growth factor injection ante enti",
+        "sonta raktham injection",
+        "gfc treatment ante enti",
+        "maa raktham tho chestara",
+        "apne khoon se injection",
+        "రీజెనరేటివ్ మెడిసిన్ అంటే ఏమిటి"
+      ],
+      "k": [
+        "regenerative medicine ante",
+        "growth factor injection ante",
+        "sonta raktham injection",
+        "apne khoon se"
+      ],
+      "te": "మీ సొంత రక్తం కొద్దిగా తీసి, దానిలోని గ్రోత్ ఫ్యాక్టర్లను గాఢంగా చేసి, అరిగిన కండరం లేదా కీలులో అల్ట్రాసౌండ్ చూపుతో వేస్తారు."
+    }
+  },
+  "tests": [
+    [
+      "appointment ela book cheyyali",
+      "book"
+    ],
+    [
+      "naaku appointment kavali",
+      "book"
+    ],
+    [
+      "naaku oka call cheyyandi",
+      "callback"
+    ],
+    [
+      "call back cheyyandi sir",
+      "callback"
+    ],
+    [
+      "manishi tho matladali sir",
+      "human"
+    ],
+    [
+      "clinic staff tho matladali",
+      "human"
+    ],
+    [
+      "clinic ekkada undi cheppandi",
+      "where"
+    ],
+    [
+      "aspatri kahan hai",
+      "where"
+    ],
+    [
+      "clinic ki ela raavali",
+      "directions"
+    ],
+    [
+      "kukatpally ki ela vellali",
+      "directions"
+    ],
+    [
+      "daggara metro station enti",
+      "metro"
+    ],
+    [
+      "metro lo raavocha",
+      "metro"
+    ],
+    [
+      "car parking undha akkada",
+      "parking"
+    ],
+    [
+      "bike ekkada pettali",
+      "parking"
+    ],
+    [
+      "clinic eppudu open chestaru",
+      "timings"
+    ],
+    [
+      "timings entha cheppandi",
+      "timings"
+    ],
+    [
+      "aadivaram open na clinic",
+      "sunday"
+    ],
+    [
+      "aadivaram pani chestara meeru",
+      "sunday"
+    ],
+    [
+      "ee roju open undha",
+      "today-open"
+    ],
+    [
+      "ippudu open na",
+      "today-open"
+    ],
+    [
+      "panduga rojullo pani chestara",
+      "holidays"
+    ],
+    [
+      "selavu rojullo open na",
+      "holidays"
+    ],
+    [
+      "appointment lekunda vellocha",
+      "walk-in"
+    ],
+    [
+      "direct ga vaste chustara",
+      "walk-in"
+    ],
+    [
+      "ee treatment ki enta padutundi",
+      "cost"
+    ],
+    [
+      "kharchu entha avutundi",
+      "cost"
+    ],
+    [
+      "doctor fee entha cheppandi",
+      "consult-fee"
+    ],
+    [
+      "consultation fee entha undi",
+      "consult-fee"
+    ],
+    [
+      "insurance panichestunda aa",
+      "insurance"
+    ],
+    [
+      "mediclaim lo vastunda",
+      "insurance"
+    ],
+    [
+      "cashless untunda maaku",
+      "cashless"
+    ],
+    [
+      "cashless facility untunda",
+      "cashless"
+    ],
+    [
+      "upi lo pay cheyyavaccha",
+      "payment"
+    ],
+    [
+      "card accept chestara meeru",
+      "payment"
+    ],
+    [
+      "enti teesukuravali clinic ki",
+      "bring"
+    ],
+    [
+      "old reports teesukuravala nenu",
+      "bring"
+    ],
+    [
+      "naa reports pampocha munde",
+      "reports-online"
+    ],
+    [
+      "scan whatsapp lo pampocha",
+      "reports-online"
+    ],
+    [
+      "referral kavala naaku",
+      "referral"
+    ],
+    [
+      "doctor letter kavala aa",
+      "referral"
+    ],
+    [
+      "aa roju enti jarugutundi akkada",
+      "visit"
+    ],
+    [
+      "process ela untundi cheppandi",
+      "visit"
+    ],
+    [
+      "nenu modati sari vastunnanu",
+      "first-visit"
+    ],
+    [
+      "modati visit lo enti jarugutundi",
+      "first-visit"
+    ],
+    [
+      "appointment ki entha time padutundi",
+      "howlong-visit"
+    ],
+    [
+      "enni gantalu padutundi clinic lo",
+      "howlong-visit"
+    ],
+    [
+      "procedure ki entha sepu avutundi",
+      "procedure-time"
+    ],
+    [
+      "injection ki enni nimishalu",
+      "procedure-time"
+    ],
+    [
+      "ade roju treatment chestara",
+      "same-day"
+    ],
+    [
+      "marosari raavala malli",
+      "same-day"
+    ],
+    [
+      "entha sepu wait cheyyali akkada",
+      "wait-time"
+    ],
+    [
+      "rush untunda clinic lo",
+      "wait-time"
+    ],
+    [
+      "pachi kadupu tho raavala naa",
+      "fasting"
+    ],
+    [
+      "tinakunda vellala",
+      "fasting"
+    ],
+    [
+      "nenu okkade raavocha",
+      "companion"
+    ],
+    [
+      "thodu kavala naaku",
+      "companion"
+    ],
+    [
+      "ye battalu vesukovali clinic ki",
+      "wear"
+    ],
+    [
+      "enti vesukoni raavali",
+      "wear"
+    ],
+    [
+      "malli raavala nenu",
+      "review"
+    ],
+    [
+      "follow up eppudu undi",
+      "review"
+    ],
+    [
+      "naa appointment marchali",
+      "reschedule"
+    ],
+    [
+      "appointment cancel cheyyali sir",
+      "reschedule"
+    ],
+    [
+      "whatsapp undha meeku",
+      "whatsapp"
+    ],
+    [
+      "whatsapp lo message pampocha",
+      "whatsapp"
+    ],
+    [
+      "email id cheppandi",
+      "email"
+    ],
+    [
+      "mail id enti meeru",
+      "email"
+    ],
+    [
+      "phone number cheppandi",
+      "phone"
+    ],
+    [
+      "clinic number ivvandi",
+      "phone"
+    ],
+    [
+      "vere branch undha meeku",
+      "branches"
+    ],
+    [
+      "inko branch ekkadaina undha",
+      "branches"
+    ],
+    [
+      "vere ooru nunchi vastunnanu",
+      "outstation"
+    ],
+    [
+      "hyderabad bayata nunchi vastunna",
+      "outstation"
+    ],
+    [
+      "online consultation untunda meeku",
+      "online-consult"
+    ],
+    [
+      "video call lo doctor ni matladocha",
+      "online-consult"
+    ],
+    [
+      "doctor intiki vastara maa",
+      "home-visit"
+    ],
+    [
+      "intlo treatment chestara aa",
+      "home-visit"
+    ],
+    [
+      "peddavallaki idi cheyyocha",
+      "elderly"
+    ],
+    [
+      "maa amma ki 80 years nadavaleka",
+      "elderly"
+    ],
+    [
+      "pillalaki treatment chestara",
+      "children"
+    ],
+    [
+      "chinna pillalaki chestara aa",
+      "children"
+    ],
+    [
+      "lady doctor unnara akkada",
+      "lady-doctor"
+    ],
+    [
+      "mahila doctor unnara",
+      "lady-doctor"
+    ],
+    [
+      "doctor peru cheppi appointment teesukovocha",
+      "ask-doctor-name"
+    ],
+    [
+      "ee doctor tho appointment ivvandi",
+      "ask-doctor-name"
+    ],
+    [
+      "naa data safe na ikkada",
+      "privacy"
+    ],
+    [
+      "naa vivaralu evaru chustaru andi",
+      "privacy"
+    ],
+    [
+      "naa records kavali naaku",
+      "records"
+    ],
+    [
+      "naa reports copy kavali sir",
+      "records"
+    ],
+    [
+      "ee clinic manchidena cheppandi",
+      "reviews"
+    ],
+    [
+      "reviews ela unnayi meeku",
+      "reviews"
+    ],
+    [
+      "halcyon gurinchi cheppandi konchem",
+      "about"
+    ],
+    [
+      "halcyon ante enti sir",
+      "about"
+    ],
+    [
+      "naaku second opinion kavali",
+      "second-opinion"
+    ],
+    [
+      "maro abhiprayam kavali naaku",
+      "second-opinion"
+    ],
+    [
+      "doctor operation cheyali annaru",
+      "surgery-advised"
+    ],
+    [
+      "spine surgery cheyali annaru",
+      "surgery-advised"
+    ],
+    [
+      "mokali marpidi cheyali antunnaru",
+      "knee-replacement-advised"
+    ],
+    [
+      "marpidi tappinchocha ela",
+      "knee-replacement-advised"
+    ],
+    [
+      "naaku operation avasarama",
+      "surgery"
+    ],
+    [
+      "operation lekunda nayam avutunda aa",
+      "surgery"
+    ],
+    [
+      "admit cheyyala naaku",
+      "admission"
+    ],
+    [
+      "ratri hospital lo undala",
+      "admission"
+    ],
+    [
+      "procedure lo noppi telustunda",
+      "anaesthesia"
+    ],
+    [
+      "mattu injection istara naaku",
+      "anaesthesia"
+    ],
+    [
+      "naaku injection ante bhayam",
+      "needle-fear"
+    ],
+    [
+      "sudi ante bhayam undi",
+      "needle-fear"
+    ],
+    [
+      "injection tarvata noppi vestunda",
+      "pain-after"
+    ],
+    [
+      "procedure tarvata vapu vastunda",
+      "pain-after"
+    ],
+    [
+      "eppudu normal avutanu nenu",
+      "recovery"
+    ],
+    [
+      "vishranti kavala procedure tarvata",
+      "recovery"
+    ],
+    [
+      "tarvata driving cheyyocha",
+      "drive"
+    ],
+    [
+      "bike nadapocha injection tarvata",
+      "drive"
+    ],
+    [
+      "office ki eppudu vellali",
+      "work"
+    ],
+    [
+      "enni rojulu selavu kavali naaku",
+      "work"
+    ],
+    [
+      "entha kalam upasamanam untundi maku",
+      "howlong-relief"
+    ],
+    [
+      "noppi malli vastunda aa",
+      "howlong-relief"
+    ],
+    [
+      "permanent ga tagguthunda aa",
+      "permanent"
+    ],
+    [
+      "purthiga nayam avutunda naaku",
+      "permanent"
+    ],
+    [
+      "success rate entha undi",
+      "success-rate"
+    ],
+    [
+      "idi naaku pani chestunda",
+      "success-rate"
+    ],
+    [
+      "enni sittings padutundi naaku",
+      "sessions"
+    ],
+    [
+      "enni injections kavali cheppandi",
+      "sessions"
+    ],
+    [
+      "side effects enti unnayi",
+      "side-effects"
+    ],
+    [
+      "dushparinamalu emaina unnaya",
+      "side-effects"
+    ],
+    [
+      "idi safe na cheppandi",
+      "safety"
+    ],
+    [
+      "pramadam emaina undha idi",
+      "safety"
+    ],
+    [
+      "steroid injection aa idi",
+      "steroids"
+    ],
+    [
+      "steroids vaadutara meeru",
+      "steroids"
+    ],
+    [
+      "idi injection ena cheppandi",
+      "is-injection"
+    ],
+    [
+      "sudi tho ne chestara",
+      "is-injection"
+    ],
+    [
+      "radiation untunda ee scan lo",
+      "radiation"
+    ],
+    [
+      "ultrasound safe na cheppandi",
+      "radiation"
+    ],
+    [
+      "ultrasound enduku chestaru",
+      "ultrasound"
+    ],
+    [
+      "usg akkade chestara meeru",
+      "ultrasound"
+    ],
+    [
+      "mri aa ultrasound aa edi manchidi",
+      "ultrasound-vs-mri"
+    ],
+    [
+      "mri ultrasound teda enti cheppandi",
+      "ultrasound-vs-mri"
+    ],
+    [
+      "mri teeyinchala munde",
+      "mri-first"
+    ],
+    [
+      "mri lekunda vellocha",
+      "mri-first"
+    ],
+    [
+      "naa mri lo chala problems chupincharu",
+      "mri-findings"
+    ],
+    [
+      "mri lo degeneration undi ani cheparu",
+      "mri-findings"
+    ],
+    [
+      "physio kavala naaku",
+      "physio"
+    ],
+    [
+      "vyayamam cheyyala tarvata",
+      "physio"
+    ],
+    [
+      "injection tarvata ye matra vesukovali",
+      "painkiller-after"
+    ],
+    [
+      "tarvata combiflam vesukovocha aa",
+      "painkiller-after"
+    ],
+    [
+      "matralu vesukoni visigipoyanu nenu",
+      "painkillers"
+    ],
+    [
+      "tablets pani cheyyatledu ippudu",
+      "painkillers"
+    ],
+    [
+      "naa matralu apeyyala munde",
+      "meds"
+    ],
+    [
+      "naa mandulu vesukoni raavocha aa",
+      "meds"
+    ],
+    [
+      "nenu raktham palachana mandulu vesukuntunna",
+      "blood-thinners"
+    ],
+    [
+      "ecosprin vesukuntunna injection istara",
+      "blood-thinners"
+    ],
+    [
+      "naaku sugar undi injection cheyyocha",
+      "diabetes"
+    ],
+    [
+      "madhumeham undi naaku treatment",
+      "diabetes"
+    ],
+    [
+      "naaku bp undi treatment cheyyocha",
+      "bp-heart"
+    ],
+    [
+      "gunde jabbu undi naaku",
+      "bp-heart"
+    ],
+    [
+      "nenu garbhavati ni ippudu",
+      "pregnancy"
+    ],
+    [
+      "palichche talli ni injection cheyyocha",
+      "pregnancy"
+    ],
+    [
+      "naaku mandulu allergy undi",
+      "allergy"
+    ],
+    [
+      "mandulu paditavu naaku emi cheyyali",
+      "allergy"
+    ],
+    [
+      "interventional ante enti ardham",
+      "what-is-ipm"
+    ],
+    [
+      "pain management ante enti cheppandi",
+      "what-is-ipm"
+    ],
+    [
+      "pain specialist ante evaru cheppandi",
+      "pain-specialist"
+    ],
+    [
+      "noppi doctor ante enti ardham",
+      "pain-specialist"
+    ],
+    [
+      "radiologist enduku akkada unnaru",
+      "why-radiologist"
+    ],
+    [
+      "iddaru doctors enduku chustaru",
+      "why-radiologist"
+    ],
+    [
+      "ortho ki vellala leda pain doctor ki",
+      "ortho-vs-pain"
+    ],
+    [
+      "emuka doctor aa noppi doctor aa evaru",
+      "ortho-vs-pain"
+    ],
+    [
+      "ye chikitsalu chestaru meeru",
+      "treatments"
+    ],
+    [
+      "enni treatments unnayi akkada",
+      "treatments"
+    ],
+    [
+      "ye samasyalaki chikitsa chestaru meeru",
+      "conditions"
+    ],
+    [
+      "ye noppulaki chestaru akkada",
+      "conditions"
+    ],
+    [
+      "diagnostic block ante enti ardham",
+      "diagnostic-block"
+    ],
+    [
+      "mundu block enduku chestaru",
+      "diagnostic-block"
+    ],
+    [
+      "medial branch block ante enti cheppandi",
+      "medial-branch-block"
+    ],
+    [
+      "mbb ante enti ardham",
+      "medial-branch-block"
+    ],
+    [
+      "epidural injection ante enti ardham",
+      "epidural"
+    ],
+    [
+      "caudal epidural ante emiti",
+      "epidural"
+    ],
+    [
+      "transforaminal injection ante enti ardham",
+      "transforaminal"
+    ],
+    [
+      "root block ante enti cheppandi",
+      "transforaminal"
+    ],
+    [
+      "nerve block ante enti ardham",
+      "nerve-block"
+    ],
+    [
+      "narala block enti cheppandi",
+      "nerve-block"
+    ],
+    [
+      "hydrodissection ante enti ardham",
+      "hydrodissection"
+    ],
+    [
+      "irukkuna nara ki chikitsa",
+      "hydrodissection"
+    ],
+    [
+      "suprascapular nerve block ante enti ardham",
+      "suprascapular"
+    ],
+    [
+      "ssnb ante enti cheppandi",
+      "suprascapular"
+    ],
+    [
+      "hydrodilatation ante enti ardham",
+      "hydrodilatation"
+    ],
+    [
+      "keelu saagadeeyadam ela chestaru",
+      "hydrodilatation"
+    ],
+    [
+      "radiofrequency ante enti ardham",
+      "rfa"
+    ],
+    [
+      "nara kalchutara aa",
+      "rfa"
+    ],
+    [
+      "coolief ante enti ardham",
+      "coolief"
+    ],
+    [
+      "coolief mokali ki chestara",
+      "coolief"
+    ],
+    [
+      "genicular ante enti ardham",
+      "genicular"
+    ],
+    [
+      "mokali narala chikitsa ela chestaru",
+      "genicular"
+    ],
+    [
+      "facet rf ante enti ardham",
+      "facet-rf"
+    ],
+    [
+      "nadumu ki rf chestara meeru",
+      "facet-rf"
+    ],
+    [
+      "pulsed rf chestara meeru",
+      "pulsed-rf"
+    ],
+    [
+      "pulsed radiofrequency untunda akkada",
+      "pulsed-rf"
+    ],
+    [
+      "regenerative medicine ante enti ardham",
+      "regenerative"
+    ],
+    [
+      "sonta raktham injection chestara",
+      "regenerative"
+    ]
+  ]
+}

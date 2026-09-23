@@ -132,7 +132,13 @@
         "kkr",
         "ekkada",
         "kahan",
-        "building"
+        "building",
+        "hospital where",
+        "where hospital",
+        "clinic where",
+        "where clinic",
+        "hospital address",
+        "clinic address"
       ],
       "a": "Halcyon is on the 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072, above the Max showroom. It is a few minutes from the KPHB Colony and Moosapet metro stations on the Red Line.",
       "link": "contact/",
@@ -1127,7 +1133,10 @@
         "old age knee pain",
         "is it safe for senior citizens",
         "my father can't walk much",
-        "wheelchair access"
+        "wheelchair access",
+        "do you treat elderly patients",
+        "elderly ki ee treatment chestara",
+        "is this treatment for elderly people"
       ],
       "k": [
         "elderly",
@@ -1141,7 +1150,12 @@
         "grandfather",
         "wheelchair",
         "75 years",
-        "80 years"
+        "80 years",
+        "elderly treatment",
+        "treatment elderly",
+        "elderly people",
+        "old age treatment",
+        "treat elderly"
       ],
       "a": "Many people seen at Halcyon are older, and the procedures are done under local anaesthetic as day care, with no general anaesthetic or admission. Tell the team about any heart, sugar or blood pressure problems and all medicines when you book. For access or wheelchair questions, call +91 77880 91092.",
       "link": null,
@@ -1505,8 +1519,6 @@
         "sedation"
       ],
       "k": [
-        "hurt",
-        "painful",
         "anaesthesia",
         "anaesthetic",
         "anesthesia",
@@ -1516,7 +1528,20 @@
         "put to sleep",
         "general anaesthesia",
         "local anaesthetic",
-        "numb"
+        "numb",
+        "will it hurt",
+        "does it hurt",
+        "hurt during",
+        "painful procedure",
+        "hurts during",
+        "is it painful",
+        "procedure painful",
+        "injection painful",
+        "painful aa",
+        "will it be painful",
+        "painful ah",
+        "is it paining",
+        "paining aa"
       ],
       "a": "Procedures are done under local anaesthetic with ultrasound guidance, so you stay awake and talking throughout. Most people feel pressure or a brief ache rather than sharp pain. There is no general anaesthetic and no hospital admission.",
       "link": null,
@@ -3106,7 +3131,13 @@
         "backache",
         "spine",
         "kamar",
-        "nadumu"
+        "nadumu",
+        "nadum pattukupoyindi",
+        "nadumu pattukupoyindi",
+        "nadumu pattesindi",
+        "nadum pattesindi",
+        "lechaleka pothunna",
+        "vamgaleka pothunna"
       ],
       "a": "Low back pain can come from the facet joints, a disc or the sacroiliac joint, and each needs a different treatment. A diagnostic block is usually done first to prove which one it is, and the treatment, such as facet radiofrequency or an epidural, follows from that answer.",
       "link": "low-back-pain-treatment/",
@@ -3261,7 +3292,11 @@
         "groin",
         "kulha",
         "pirra",
-        "outer hip"
+        "outer hip",
+        "tuntika noppi",
+        "tuntika",
+        "walking difficulty hip",
+        "hip walking difficulty"
       ],
       "a": "Hip pain usually comes from a bursa on the outside of the hip, the labrum, the tendons or an arthritic joint. It is scanned in the same room and treated with an image-guided injection into the exact structure involved; the hip is deep, so guidance matters here.",
       "link": "the-best-hip-pain-treatment-in-hyderabad/",
@@ -3610,11 +3645,11 @@
       ],
       "k": [
         "frozen shoulder",
-        "frozen",
         "adhesive capsulitis",
         "capsulitis",
         "stiff shoulder",
-        "jammed shoulder"
+        "frozen shoulder",
+        "shoulder jammed"
       ],
       "a": "Frozen shoulder is a tightened, thickened joint capsule, more common between about 40 and 60 and in people with diabetes. At Halcyon it is usually treated with a suprascapular nerve block and hydrodilatation, alongside a movement programme so the range comes back.",
       "link": "shoulder-pain/",
@@ -3870,7 +3905,12 @@
         "achilles tendinitis",
         "back of heel",
         "tendo achilles",
-        "calf tendon"
+        "calf tendon",
+        "venuka kandaram",
+        "mada venuka",
+        "heel back tendon",
+        "mada venuka noppi",
+        "venuka kandaram noppi"
       ],
       "a": "Achilles tendinitis causes pain and stiffness at the back of the heel, often worse in the morning and after activity. It is scanned and usually treated with prolotherapy or a regenerative injection. A sudden snap with difficulty pushing off needs an emergency department.",
       "link": "foot-ankle-pain-treatment/",
@@ -4325,7 +4365,11 @@
         "muscle tear",
         "pulled muscle",
         "muscle strain",
-        "thigh"
+        "thigh",
+        "thoda kandaram",
+        "thoda laagindi",
+        "thoda venuka noppi",
+        "thigh back tendon"
       ],
       "a": "Muscle strains such as hamstring or calf tears are among the sports injuries seen at Halcyon. Ultrasound grades the damage, and treatment and return to sport are planned from that, alongside graded rehabilitation.",
       "link": "sports-injuries-treatment/",
@@ -4532,7 +4576,9 @@
         "both legs numb",
         "cannot walk suddenly",
         "suddenly cannot walk",
-        "paralysis"
+        "paralysis",
+        "walking difficulty weakness",
+        "weakness walking difficulty"
       ],
       "a": "Sudden or worsening weakness in a leg, foot drop, sciatica in both legs or new difficulty walking needs urgent assessment, not a clinic slot. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
       "link": null,
@@ -4559,7 +4605,12 @@
         "cancer history",
         "history of cancer",
         "had cancer",
-        "night sweats"
+        "night sweats",
+        "noppi and fever",
+        "back pain with fever and",
+        "kamar dard bukhar",
+        "nadumu noppi jwaram",
+        "jwaram noppi"
       ],
       "a": "Back pain with fever, unexplained weight loss, or a history of cancer needs to be checked urgently by a doctor, as it can rarely mean infection or something else serious. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
       "link": null,
@@ -4746,7 +4797,11 @@
         "torn achilles",
         "ruptured achilles",
         "cannot push off",
-        "cant push off"
+        "cant push off",
+        "kandaram tegipoyindi",
+        "tegipoyindi",
+        "kandaram tegindi",
+        "venuka kandaram tegipoyindi"
       ],
       "a": "A sudden snap or pop at the back of the ankle with difficulty pushing off can be an Achilles rupture. Please go to the nearest hospital emergency department now, or call 108 for an ambulance. This is not something to wait for a clinic appointment for.",
       "link": null,

@@ -63,6 +63,64 @@
     return prev[b.length];
   }
 
+  /* ----------------------------------------------------------------------
+     Indic input. Two problems, two fixes.
+
+     1. Some people type in Telugu or Devanagari script. Each letter is mapped
+        to roman, so తెలుగు and telugu end up as the same word.
+     2. Most type Telugu in English letters, and nobody spells it twice the same
+        way: mokali / mokaali / mokallu / mokkali. fold() strips the differences
+        that carry no meaning — doubled letters, long vowels, aspirated
+        consonants, the trailing vowel Telugu words end in — so all four become
+        one key. Entries and questions are folded the same way, so the fold only
+        has to be consistent, not linguistically correct.
+     ---------------------------------------------------------------------- */
+  var TE_V = {'అ':'a','ఆ':'aa','ఇ':'i','ఈ':'ii','ఉ':'u','ఊ':'uu','ఋ':'ru','ఎ':'e','ఏ':'ee','ఐ':'ai','ఒ':'o','ఓ':'oo','ఔ':'au'};
+  var TE_C = {'క':'k','ఖ':'kh','గ':'g','ఘ':'gh','ఙ':'ng','చ':'ch','ఛ':'chh','జ':'j','ఝ':'jh','ఞ':'ny','ట':'t','ఠ':'th','డ':'d','ఢ':'dh','ణ':'n','త':'t','థ':'th','ద':'d','ధ':'dh','న':'n','ప':'p','ఫ':'ph','బ':'b','భ':'bh','మ':'m','య':'y','ర':'r','ఱ':'r','ల':'l','ళ':'l','వ':'v','శ':'s','ష':'sh','స':'s','హ':'h'};
+  var TE_M = {'ా':'aa','ి':'i','ీ':'ii','ు':'u','ూ':'uu','ృ':'ru','ె':'e','ే':'ee','ై':'ai','ొ':'o','ో':'oo','ౌ':'au','్':''};
+  var DE_V = {'अ':'a','आ':'aa','इ':'i','ई':'ii','उ':'u','ऊ':'uu','ए':'e','ऐ':'ai','ओ':'o','औ':'au'};
+  var DE_C = {'क':'k','ख':'kh','ग':'g','घ':'gh','ङ':'ng','च':'ch','छ':'chh','ज':'j','झ':'jh','ञ':'ny','ट':'t','ठ':'th','ड':'d','ढ':'dh','ण':'n','त':'t','थ':'th','द':'d','ध':'dh','न':'n','प':'p','फ':'ph','ब':'b','भ':'bh','म':'m','य':'y','र':'r','ल':'l','ळ':'l','व':'v','श':'sh','ष':'sh','स':'s','ह':'h','क़':'k','ख़':'kh','ग़':'g','ज़':'j','ड़':'d','ढ़':'dh','फ़':'f','य़':'y'};
+  var DE_M = {'ा':'aa','ि':'i','ी':'ii','ु':'u','ू':'uu','े':'e','ै':'ai','ो':'o','ौ':'au','्':''};
+  var INDIC_RE = /[ऀ-ॿఀ-౿]/;
+
+  function translit(text) {
+    if (!INDIC_RE.test(text)) return text;
+    var out = '', i, ch, pending = null;      /* pending = a consonant awaiting its vowel */
+    /* a consonant carries an inherent 'a' unless a vowel sign or virama follows */
+    function flush(v) { if (pending !== null) { out += pending + v; pending = null; } }
+    for (i = 0; i < text.length; i++) {
+      ch = text.charAt(i);
+      if (TE_C[ch] || DE_C[ch]) { flush('a'); pending = TE_C[ch] || DE_C[ch]; }
+      else if (TE_M.hasOwnProperty(ch) || DE_M.hasOwnProperty(ch)) {
+        var m = TE_M.hasOwnProperty(ch) ? TE_M[ch] : DE_M[ch];
+        if (pending !== null) { out += pending + m; pending = null; } else out += m;
+      }
+      else if (TE_V[ch] || DE_V[ch]) { flush('a'); out += TE_V[ch] || DE_V[ch]; }
+      else if (ch === 'ం' || ch === 'ं' || ch === 'ఁ' || ch === 'ँ') { flush('a'); out += 'm'; }
+      else if (ch === 'ః' || ch === 'ः') { flush('a'); out += 'h'; }
+      else if (ch === '‌' || ch === '‍' || ch === '़' || ch === '్') { /* joiners */ }
+      else { flush('a'); out += ch; }
+    }
+    flush('a');
+    return out;
+  }
+
+  function fold(t) {
+    if (t.length < 3) return t;
+    var v = t;
+    v = v.replace(/(.)\1+/g, '$1');                 /* mokallu -> mokalu, noppi -> nopi */
+    v = v.replace(/aa|ae/g, 'a').replace(/ee|ie|ea/g, 'i').replace(/ii/g, 'i')
+         .replace(/oo|ou/g, 'u').replace(/uu/g, 'u').replace(/ai|ay/g, 'e').replace(/au|ow/g, 'o');
+    v = v.replace(/kh/g, 'k').replace(/gh/g, 'g').replace(/ch/g, 'c').replace(/jh/g, 'j')
+         .replace(/th/g, 't').replace(/dh/g, 'd').replace(/ph|f/g, 'p').replace(/bh/g, 'b')
+         .replace(/sh|z/g, 's').replace(/w/g, 'v').replace(/x/g, 'ks').replace(/q/g, 'k');
+    v = v.replace(/(.)\1+/g, '$1');
+    if (v.length >= 5) v = v.replace(/[aeiou]$/, '');   /* mokala / mokali / mokalu -> mokal */
+    /* Hindi drops the short 'a' people never type: ghutane -> ghutne, kamara -> kamar */
+    if (v.length >= 6) v = v.replace(/([^aeiou])a([^aeiou])/g, '$1$2');
+    return v || t;
+  }
+
   function Engine(kb) {
     var entries = kb.entries || [];
     var syn = kb.synonyms || {};
@@ -75,7 +133,7 @@
     multi.sort(function (a, b) { return b[0].length - a[0].length; });
 
     function clean(text) {
-      var s = String(text || '').toLowerCase();
+      var s = translit(String(text || '')).toLowerCase();
       if (s.normalize) s = s.normalize('NFKD').replace(/[̀-ͯ]/g, '');
       s = s.replace(/[’‘`]/g, "'").replace(/'s\b/g, '').replace(/[^a-z0-9' ]+/g, ' ').replace(/'/g, '');
       return ' ' + s.replace(/\s+/g, ' ').trim() + ' ';
@@ -90,27 +148,51 @@
     function norm(text) { return ' ' + tokens(applySyn(clean(text))).join(' ') + ' '; }
 
     /* ---- index ---- */
-    var vocab = {}, df = {}, docs = [], avgLen = 0;
+    var vocab = {}, df = {}, docs = [], fdf = {}, fdocs = [], avgLen = 0, favgLen = 0;
+    function foldStr(s) { return s.trim().split(' ').filter(Boolean).map(fold).join(' '); }
     entries.forEach(function (e, idx) {
-      e._keys = (e.k || []).map(function (k) { return norm(k).trim(); }).filter(Boolean);
+      /* two keys can normalise to the same words (a Telugu key and its English twin);
+         keep one, or the entry would score that phrase twice */
+      var seenKey = {};
+      e._keys = (e.k || []).map(function (k) { return norm(k).trim(); }).filter(function (k) {
+        if (!k || seenKey[k]) return false;
+        seenKey[k] = 1; return true;
+      });
+      var seenFold = {};
+      e._fkeys = e._keys.map(foldStr).filter(function (k) {
+        if (!k || seenFold[k]) return false;
+        seenFold[k] = 1; return true;
+      });
       /* topic words: a page FAQ's subject. They break ties between a specific FAQ and a
          generic answer; on their own they are not enough to beat the topic's overview */
       e._soft = (e.kt || []).map(function (k) { return norm(k).trim(); }).filter(Boolean);
-      var text = (e.q || []).concat(e.k || []).concat(e.chip ? [e.chip] : []).join(' ');
+      /* the Telugu gist is searchable too: it is transliterated like any other input,
+         so a question typed in Telugu script can match it */
+      /* the Telugu gist is searchable too — except on small talk, where it lists the
+         topics on offer ("treatments, cost, timings…") and would match all of them */
+      var teSearchable = e.te && e.kind !== 'smalltalk';
+      var text = (e.q || []).concat(e.k || []).concat(e.chip ? [e.chip] : []).concat(teSearchable ? [e.te] : []).join(' ');
       var toks = norm(text).trim().split(' ').filter(function (t) { return t && !STOPSET[t]; });
-      var tf = {};
-      toks.forEach(function (t) { tf[t] = (tf[t] || 0) + 1; vocab[t] = 1; });
+      var tf = {}, ftf = {};
+      toks.forEach(function (t) {
+        tf[t] = (tf[t] || 0) + 1; vocab[t] = 1;
+        var f = fold(t); ftf[f] = (ftf[f] || 0) + 1;
+      });
       Object.keys(tf).forEach(function (t) { df[t] = (df[t] || 0) + 1; });
+      Object.keys(ftf).forEach(function (t) { fdf[t] = (fdf[t] || 0) + 1; });
       docs[idx] = { tf: tf, len: toks.length };
-      avgLen += toks.length;
+      fdocs[idx] = { tf: ftf, len: toks.length };
+      avgLen += toks.length; favgLen += toks.length;
       e._keys.concat(e._soft).forEach(function (k) { k.split(' ').forEach(function (t) { vocab[t] = 1; }); });
     });
     Object.keys(single).forEach(function (k) { vocab[stem(single[k])] = 1; });
     avgLen = avgLen / Math.max(1, entries.length);
+    favgLen = favgLen / Math.max(1, entries.length);
     var N = entries.length;
     var vocabList = Object.keys(vocab).filter(function (w) { return w.length >= 4; });
 
     function idf(t) { var n = df[t] || 0; return Math.log(1 + (N - n + 0.5) / (n + 0.5)); }
+    function fidf(t) { var n = fdf[t] || 0; return Math.log(1 + (N - n + 0.5) / (n + 0.5)); }
 
     /* unknown words are corrected to the nearest known one, so 'sciatca' and
        'kneee' still land; short words are left alone — too many near-misses */
@@ -126,41 +208,76 @@
       }).join(' ') + ' ';
     }
 
+    function score(entry, i, q, qt, keys, dd, avg, idfFn) {
+      var sum = 0, hits = 0, longest = 0, j;
+      for (j = 0; j < keys.length; j++) {
+        var key = keys[j];
+        if (key && q.indexOf(' ' + key + ' ') > -1) {
+          hits++; sum += key.length;
+          if (key.length > longest) longest = key.length;
+        }
+      }
+      var phrase = hits ? sum + hits * 2 + longest : 0;
+      /* a page FAQ answers a detailed question about its topic. Name the topic and it
+         beats the topic's overview; don't, and the overview should win. */
+      var onTopic = false;
+      for (j = 0; j < entry._soft.length; j++) {
+        if (q.indexOf(' ' + entry._soft[j] + ' ') > -1) { phrase += entry._soft[j].length * 0.9 + 3; onTopic = true; break; }
+      }
+      var bm = 0, covered = 0, d = dd[i];
+      for (j = 0; j < qt.length; j++) {
+        var f = d.tf[qt[j]];
+        if (!f) continue;
+        covered++;
+        bm += idfFn(qt[j]) * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * d.len / avg));
+      }
+      /* an entry that explains every word of the question beats one that
+         shares a single strong word with it */
+      var coverage = qt.length ? covered / qt.length : 0;
+      var total = (phrase + bm * 3.2) * (0.6 + 0.4 * coverage);
+      if (entry.faq && !onTopic) total *= 0.85;
+      /* "ok" is small talk; "ok what is the cost" is a question with small talk in front */
+      if (entry.kind === 'smalltalk' && covered < qt.length) total *= 0.3;
+      return { s: total, phrase: phrase };
+    }
+
     function rank(text) {
-      var s = correct(norm(text));
-      var qt = s.trim().split(' ').filter(function (t) { return t && !STOPSET[t]; });
+      var q = correct(norm(text));
+      var qt = q.trim().split(' ').filter(function (t) { return t && !STOPSET[t]; });
+      var fq = ' ' + foldStr(q) + ' ';
+      var fqt = qt.map(fold);
       var out = [];
       for (var i = 0; i < entries.length; i++) {
-        var e = entries[i], sum = 0, hits = 0, longest = 0;
-        for (var j = 0; j < e._keys.length; j++) {
-          var key = e._keys[j];
-          if (key && s.indexOf(' ' + key + ' ') > -1) {
-            hits++; sum += key.length;
-            if (key.length > longest) longest = key.length;
-          }
-        }
-        var phrase = hits ? sum + hits * 2 + longest : 0;
-        for (var t = 0; t < e._soft.length; t++) {
-          if (s.indexOf(' ' + e._soft[t] + ' ') > -1) { phrase += e._soft[t].length * 0.6 + 2; break; }
-        }
-        var bm = 0, d = docs[i], covered = 0;
-        for (var q = 0; q < qt.length; q++) {
-          var f = d.tf[qt[q]];
-          if (!f) continue;
-          covered++;
-          bm += idf(qt[q]) * (f * 2.2) / (f + 1.2 * (0.25 + 0.75 * d.len / avgLen));
-        }
-        /* an entry that explains every word of the question beats one that
-           shares a single strong word with it */
-        var coverage = qt.length ? covered / qt.length : 0;
-        var score = (phrase + bm * 3.2) * (0.6 + 0.4 * coverage);
-        if (score > 0) out.push({ e: e, s: score, phrase: phrase, bm: bm });
+        var e = entries[i];
+        var a = score(e, i, q, qt, e._keys, docs, avgLen, idf);
+        /* the same question spelled the way someone actually types Telugu */
+        var b = score(e, i, fq, fqt, e._fkeys, fdocs, favgLen, fidf);
+        b.s *= 0.92; b.phrase *= 0.92;
+        var best = b.s > a.s ? b : a;
+        if (best.s > 0) out.push({ e: e, s: best.s, phrase: Math.max(a.phrase, b.phrase) });
       }
       out.sort(function (a, b) { return b.s - a.s; });
       return out.slice(0, 6);
     }
 
-    return { rank: rank, norm: norm, correct: correct };
+    /* is this written in Telugu or Hindi? (script, or words from the word list) */
+    var indicSet = {};
+    (kb.indic || []).forEach(function (w) {
+      indicSet[w] = 1;
+      indicSet[w.split(' ').map(fold).join(' ')] = 1;     /* however they spell it */
+    });
+    function isIndic(text) {
+      if (INDIC_RE.test(text)) return true;
+      var t = clean(text).trim().split(' ');
+      var f = t.map(fold);
+      for (var i = 0; i < t.length; i++) if (indicSet[t[i]] || indicSet[f[i]]) return true;
+      for (var j = 0; j < t.length - 1; j++) {
+        if (indicSet[t[j] + ' ' + t[j + 1]] || indicSet[f[j] + ' ' + f[j + 1]]) return true;
+      }
+      return false;
+    }
+
+    return { rank: rank, norm: norm, correct: correct, isIndic: isIndic, fold: fold, translit: translit };
   }
 
   var THRESH = { sure: 16, maybe: 9, hint: 5, urgent: 10 };
@@ -352,7 +469,7 @@
   function fresh() {
     return { v: 2, log: [], mode: 'intake', steps: INTAKE.slice(), step: 0,
              d: { area: '', since: '', scan: '', name: '', phone: '', time: '' },
-             lead: { status: 'none', id: '' }, asked: 0, answered: 0, offerAt: -9, handAt: -99,
+             lead: { status: 'none', id: '' }, te: false, asked: 0, answered: 0, offerAt: -9, handAt: -99,
              qs: [], topics: [], pending: '', retries: {} };
   }
   var S = SS.get(KEY, null);
@@ -366,6 +483,11 @@
 
   function drawBubble(item) {
     var b = el('div', 'msg msg--' + item.t);
+    if (item.te) {
+      var line = el('span', 'msg__te');
+      line.textContent = item.te;
+      b.appendChild(line);
+    }
     b.appendChild(document.createTextNode(item.x));
     if (item.l) {
       var a = el('a', 'msg__link');
@@ -378,8 +500,9 @@
     return b;
   }
 
-  function say(text, link, cls) {
+  function say(text, link, cls, te) {
     var item = { t: cls || 'bot', x: text };
+    if (te && S.te) item.te = te;
     if (link) item.l = link;
     S.log.push(item); save();
     drawBubble(item); scrollDown();
@@ -520,6 +643,7 @@
   /* ======================================================================
      HELPERS
      ====================================================================== */
+  function ui(key) { return (S.te && KB && KB.ui && KB.ui[key]) || ''; }
   function cap(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
   function areaPhrase() {
     var a = (S.d.area || '').trim();
@@ -573,7 +697,7 @@
     var q = FLOW[st].q;
     if (st === 'name' && S.mode === 'intake') q = (lead ? '' : 'Thank you. ') + 'So the team can call you back — what name should they ask for?';
     if (st === 'phone') q = (S.d.name ? 'Thanks, ' + S.d.name + '. ' : '') + 'Which mobile number should they call?';
-    say((lead || '') + q);
+    say((lead || '') + q, null, null, ui(st));
     chips(FLOW[st].chips.map(function (l) { return { label: l }; }));
     S.pending = 'step'; save();
   }
@@ -581,7 +705,8 @@
   function finishSteps() {
     S.pending = '';
     if (S.d.phone) {
-      say('Here is what I will pass to the team. Check it, then send it — they will call you during clinic hours (' + C().hours + ').');
+      say('Here is what I will pass to the team. Check it, then send it — they will call you during clinic hours (' + C().hours + ').',
+          null, null, ui('summary'));
       showLead();
     } else {
       S.mode = 'qa'; save();
@@ -609,7 +734,7 @@
     S.answered++;
     if (e.id && S.topics.indexOf(e.id) === -1) S.topics.push(e.id);
     if (e.kind === 'condition' && e.area && !S.d.area) S.d.area = e.area;
-    say(e.a, e.link || null);
+    say(e.a, e.link || null, null, e.te);
     if (alts && alts.length) {
       chips(alts.map(function (a) { return { label: a.e.chip || a.e.q && a.e.q[0] || a.e.id, run: function () { forceEntry(a.e); } }; })
         .concat([CALLBACK_CHIP]));
@@ -633,12 +758,12 @@
       if (collecting()) S.mode = 'qa';
       S.pending = 'urgent'; save();
       chips([]);
-      say(e.a, e.link || null);
+      say(e.a, e.link || null, null, e.te);
       handOver('If you are not sure how urgent it is, speak to the team now:', true);
       return;
     }
     if (e.kind === 'lead') {
-      say(e.a, e.link || null);
+      say(e.a, e.link || null, null, e.te);
       startCallback('');
       return;
     }
@@ -676,7 +801,11 @@
     }
     save();
     chips([]);
-    withKB(function () { typingThen(function () { route(text); }, 90); });
+    withKB(function () {
+      /* notice the language once, then keep answering that way */
+      if (!S.te && ENGINE.isIndic(text)) { S.te = true; save(); }
+      typingThen(function () { route(text); }, 90);
+    });
   }
 
   function route(text) {
@@ -766,7 +895,7 @@
       }
       if (top && top.e.kind === 'condition' && top.s >= THRESH.maybe) {
         S.d.area = top.e.area || text;
-        say(top.e.a, top.e.link || null);
+        say(top.e.a, top.e.link || null, null, top.e.te);
         S.step++; save(); setTimeout(function () { ask(''); }, 350); return true;
       }
       if (question && strong) return false;
@@ -785,18 +914,21 @@
     }
     if (st === 'name') {
       if (declined(text)) { S.d.name = ''; S.step++; save(); ask(''); return true; }
-      if (looksLikeName(text) && !(strong && top.e.kind !== 'smalltalk')) {
-        S.d.name = text.replace(/^(my name is|i am|i'm|this is|naa peru|mera naam)\s+/i, '').trim().slice(0, 40);
+      /* a question is a question, however many times it is asked — never a name */
+      if (strong && top.e.kind !== 'smalltalk') return false;
+      if (looksLikeName(text)) {
+        S.d.name = text.replace(/^(my name is|i am|i'm|this is|naa peru|naa piru|mera naam)\s+/i, '').trim().slice(0, 40);
         S.d.name = S.d.name.replace(/\b\w/g, function (c) { return c.toUpperCase(); });
         S.step++; save(); ask(''); return true;
       }
-      if (question && strong && !S.retries.name) return false;
       S.retries.name = (S.retries.name || 0) + 1; save();
-      if (S.retries.name > 1 && !/\d/.test(text) && text.trim().length <= 40) {
+      /* an unusual name the knowledge base happens to know a word from: take it as given */
+      if (S.retries.name > 1 && !/\d/.test(text) && text.trim().length <= 40 && !isQuestion(text)) {
         S.d.name = text.trim().slice(0, 40).replace(/\b\w/g, function (c) { return c.toUpperCase(); });
         S.step++; save(); ask(''); return true;
       }
-      say('Just a first name is fine — what should they call you?'); chips([{ label: 'Rather not say' }]); return true;
+      say('Just a first name is fine — what should they call you?', null, null, ui('name'));
+      chips([{ label: 'Rather not say' }]); return true;
     }
     if (st === 'phone') {
       if (declined(text)) { S.d.phone = ''; S.step = S.steps.length; save(); finishSteps(); return true; }
@@ -814,6 +946,7 @@
 
   function answerFrom(ranked, text) {
     var top = ranked[0];
+    if (top && top.s >= THRESH.maybe) S.misses = 0;
     if (top && top.s >= THRESH.sure) {
       var alts = ranked.slice(1, 3).filter(function (r) { return r.s >= top.s * 0.82 && r.e.kind !== 'smalltalk' && r.e.kind !== 'urgent'; });
       respondTo(top.e, alts);
@@ -823,11 +956,24 @@
       respondTo(top.e, ranked.slice(1, 3).filter(function (r) { return r.s >= THRESH.hint && r.e.kind !== 'urgent'; }));
       return;
     }
+    S.misses = (S.misses || 0) + 1; save();
+    /* twice in a row without understanding: stop guessing, put them on to a person */
+    if (S.misses >= 2 && S.lead.status !== 'sent' && !collecting()) {
+      S.misses = 0; save();
+      say('I am not following, and I would rather not guess. The team can answer this properly — shall I ask them to call you?',
+          null, null, ui('fallback'));
+      S.pending = 'offer'; save();
+      chips([{ label: 'Yes, call me back', run: function () { submit('Yes, call me back'); } },
+             { label: 'No, I will call', run: function () { submit('Not now'); } }]);
+      handOver('Or reach them now:', true);
+      return;
+    }
     var hints = ranked.filter(function (r) { return r.s >= THRESH.hint && r.e.kind !== 'urgent' && r.e.kind !== 'smalltalk'; }).slice(0, 3);
     var fb = byId('fallback-help');
     say(hints.length
       ? 'I am not sure I have that exactly. Is it one of these?'
-      : (fb ? fb.a : 'I am not sure I have that one. The team will know — call ' + C().call + ', or send scans over WhatsApp.'));
+      : (fb ? fb.a : 'I am not sure I have that one. The team will know — call ' + C().call + ', or send scans over WhatsApp.'),
+      null, null, hints.length ? '' : ui('fallback'));
     if (hints.length) chips(hints.map(function (r) { return { label: r.e.chip || (r.e.q && r.e.q[0]) || r.e.id, run: function () { forceEntry(r.e); } }; }).concat([CALLBACK_CHIP]));
     else defaultChips();
     handOver('Easier to ask someone directly:');
@@ -884,7 +1030,7 @@
       S.lead.status = 'sent'; S.mode = 'qa'; save(); repaint();
       say('Done — your request is with the Halcyon team. They will call ' + S.d.phone +
           (S.d.time && !/any/i.test(S.d.time) ? ' in the ' + S.d.time.split(' ')[0].toLowerCase() : '') +
-          ' during clinic hours (' + C().hours + '). If you have reports, you can WhatsApp them now.');
+          ' during clinic hours (' + C().hours + '). If you have reports, you can WhatsApp them now.', null, null, ui('sent'));
       handOver('Send reports or talk now:', true);
       defaultChips();
     }).catch(function () {
@@ -924,7 +1070,8 @@
     if (here && !S.d.area) S.d.area = here;
     say(S.d.area
       ? 'Hello — I am the Halcyon assistant. Ask me anything about ' + areaPhrase() + ', or answer a few quick questions and the team will call you back.'
-      : 'Hello — I am the Halcyon assistant. Tell me where it hurts and I can have everything ready for the team to call you. Ask me anything as we go.');
+      : 'Hello — I am the Halcyon assistant. Tell me where it hurts and I can have everything ready for the team to call you. Ask me anything as we go.',
+      null, null, ui('greeting'));
     setTimeout(function () { ask(''); }, 500);
   }
 

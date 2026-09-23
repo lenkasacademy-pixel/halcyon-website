@@ -190,6 +190,10 @@ html.is-split .nav__cta{margin-left:auto}
   color:var(--rose-700); border-bottom:1px solid var(--rose-200); padding-bottom:1px}
 .msg a.msg__link:hover{color:var(--rose-500); border-color:var(--rose-400)}
 .msg a.msg__link::after{content:"→"; font-weight:400}
+.msg__te{display:block; margin-bottom:7px; padding-bottom:7px; font-size:15.5px; line-height:1.6;
+  color:var(--rose-700); border-bottom:1px solid rgba(191,56,114,.16);
+  font-family:"Noto Sans Telugu","Noto Serif Telugu","Gautami","Nirmala UI",system-ui,sans-serif}
+.msg--me .msg__te{color:var(--rose-100); border-color:rgba(255,255,255,.2)}
 .msg__alt{display:block; margin-top:8px; font-size:13px; color:var(--muted)}
 .msg--sys{align-self:center; max-width:92%; padding:6px 12px; background:none; font-size:12.5px; color:var(--muted); text-align:center}
 

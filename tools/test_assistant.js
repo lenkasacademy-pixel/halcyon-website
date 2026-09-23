@@ -49,7 +49,7 @@ const CASES = [
   ['sciatica', 'sciatica'], ['siatica pain', 'sciatica'], ['pain going down my leg', 'kind:condition'],
   ['slipped disc', 'slipped-disc'], ['disc bulge l4 l5', 'disc-bulge|slipped-disc'], ['herniated disc', 'kind:condition'],
   ['hip pain', 'hip'], ['sports injury', 'sports'], ['tennis elbow', 'tennis-elbow'], ['carpal tunnel', 'carpal-tunnel'],
-  ['wrist pain', 'elbow-hand-wrist'], ['heel pain in the morning', 'kind:condition'], ['plantar fasciitis', 'plantar-fasciitis'],
+  ['wrist pain', 'elbow-hand-wrist'], ['heel pain in the morning', 'foot-ankle|foot-ankle-pain-treatment-faq-2'], ['plantar fasciitis', 'plantar-fasciitis'],
   ['ankle sprain', 'ankle-sprain'], ['trigeminal neuralgia', 'trigeminal'], ['face pain like electric shock', 'trigeminal'],
   ['cervical spondylosis', 'cervical-spondylosis'], ['spondylitis', 'cervical-spondylosis'], ['arthritis in knee', 'knee-oa'],
   ['meniscus tear', 'meniscus'], ['acl injury', 'acl-ligament'], ['numbness in leg', 'leg-numbness'],
@@ -77,6 +77,12 @@ const CASES = [
 const CALM = ['back pain', 'my back hurts when i sit', 'knee pain after a fall last year', 'neck pain and headache',
   'leg pain', 'i have fever and body pain', 'my knee is swollen', 'shoulder pain for months', 'heel pain',
   'numbness in fingers', 'back pain for 2 years', 'is the injection painful'];
+
+/* the Telugu/Hindi cases live with the phrasings they test, in tools/content/assistant.te-*.json */
+for (const f of fs.readdirSync(path.join(root, 'tools/content')).filter(n => /^assistant\.te-.*\.json$/.test(n))) {
+  const d = JSON.parse(fs.readFileSync(path.join(root, 'tools/content', f), 'utf8'));
+  for (const t of d.tests || []) CASES.push(t);
+}
 
 let pass = 0, fail = [];
 for (const [q, want] of CASES) {
