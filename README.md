@@ -132,10 +132,16 @@ sends and stores; the retention period is a placeholder for the clinic to decide
    registrar to GitHub Pages. Do this only when ready to switch — the moment `CNAME`
    exists, the preview URL starts redirecting to the domain. `robots.txt` and
    `sitemap.xml` only take effect once the site is at the domain root.
-2. **Google Search Console:** verify halcyonpainfree.com (DNS record), submit
-   `https://halcyonpainfree.com/sitemap.xml`, and use URL Inspection → Request indexing on
-   the home page and the 12 condition pages. Watch Pages → "Not found (404)" for a few
-   weeks for any old URL that still needs a redirect.
+2. **Google Search Console — verify by DNS *before* the switch.** The old WordPress site
+   carries no verification tag and the domain has no `google-site-verification` TXT record,
+   so today's verification almost certainly rides on Google Site Kit or the Analytics tag —
+   both of which disappear with the old site. In Search Console add the **Domain** property
+   `halcyonpainfree.com`, copy the TXT record it gives you into the registrar's DNS, and
+   verify. That method survives any change of site or host. (If you would rather use the
+   HTML tag method, paste its content value into `SITE['google_site_verification']` in
+   `tools/build.py` and rebuild.) Then submit `https://halcyonpainfree.com/sitemap.xml`, and
+   use URL Inspection → Request indexing on the home page and the 12 condition pages. Watch
+   Pages → "Not found (404)" for a few weeks for any old URL that still needs a redirect.
 3. **Bing Webmaster Tools:** import from Search Console and submit the sitemap. Bing's
    index also feeds ChatGPT search and Copilot.
 4. **Google Business Profile:** set the website to `https://halcyonpainfree.com/` and the
@@ -145,6 +151,22 @@ sends and stores; the retention period is a placeholder for the clinic to decide
    https://validator.schema.org/.
 6. **Ads:** the old `/pain-relief-ad1/` and `/pain-relief-ad2/` landing pages now redirect
    to the home page. Point live ad campaigns at a condition page instead.
+
+## Measurement and cookies
+
+The old site loaded Google Tag Manager (`GTM-PBQT2N67`) and Google Analytics
+(`G-TV4ZWHCQWL`) on every page, with no consent step. This site loads **Tag Manager only,
+and only after the visitor presses Accept** on the cookie notice (`assets/js/consent.js`,
+container id in `SITE['gtm_id']`). Decline — or ignore it — and nothing is downloaded and
+no cookies are set. The choice lasts a year and can be changed from the link in the privacy
+policy.
+
+So Analytics now lives *inside* Tag Manager: add the GA4 tag (`G-TV4ZWHCQWL`) to the
+container once, and anything else (Google Ads conversions, Meta pixel) the same way, with
+no code change here. Note that visitors who decline are not measured, so the numbers will
+read lower than the old site's — that is the trade for consent. List whatever you switch on
+inside the container in section 3 of the privacy policy, which currently carries a
+placeholder for it.
 
 ## Before this goes live
 

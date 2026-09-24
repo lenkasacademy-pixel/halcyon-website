@@ -55,6 +55,12 @@ SITE = {
     # The clinic's Google Apps Script web-app URL (tools/lead-collector.gs). Empty until it is
     # deployed: the assistant then offers WhatsApp instead of sending the lead itself.
     'lead_endpoint': 'https://script.google.com/macros/s/AKfycbyuIHzjGlpWLjqJMrJ8XFlPxqM_4_95Rn7GslCJQG2F6cZ9GBxZpmchhkBzhQ7XiPEywQ/exec',
+    # Google Tag Manager container (the one the old WordPress site used). Loaded only
+    # after the visitor accepts the cookie notice — see assets/js/consent.js.
+    'gtm_id': 'GTM-PBQT2N67',
+    # Search Console: prefer verifying the domain by DNS (it survives any site change).
+    # If you verify with an HTML tag instead, paste its content value here.
+    'google_site_verification': '',
     'area_served': ['Hyderabad', 'Kukatpally', 'KPHB Colony', 'Moosapet', 'Balanagar', 'Miyapur',
                     'Nizampet', 'Bachupally', 'Kondapur', 'Madhapur', 'HITEC City', 'Secunderabad'],
 }
@@ -474,7 +480,12 @@ def seo_head(p, extra_css=''):
         '<link rel="preload" href="%sassets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>' % pre,
         '<link rel="preload" href="%sassets/fonts/playfair-display-italic.woff2" as="font" type="font/woff2" crossorigin>' % pre,
     ]
+    if SITE.get('google_site_verification'):
+        out.append('<meta name="google-site-verification" content="%s">' % esc(SITE['google_site_verification']))
     if p['kind'] != 'noindex':
+        if SITE.get('gtm_id'):
+            out.append('<script src="%sassets/js/consent.js?v=%s" data-gtm="%s" data-root="%s" defer></script>'
+                       % (pre, ASSET_V, SITE['gtm_id'], home_href(p['path'])))
         out += ['<link rel="stylesheet" href="%sassets/css/assistant.css?v=%s">' % (pre, ASSET_V),
                 '<script src="%sassets/js/assistant.js?v=%s" data-root="%s" data-v="%s" defer></script>'
                 % (pre, ASSET_V, home_href(p['path']), KB_V)]
@@ -1298,7 +1309,7 @@ def build_assistant_kb():
           'window.HALCYON_KB = ' + json.dumps(kb, ensure_ascii=False, separators=(',', ':')) + ';\n')
     write('assets/js/assistant-kb.js', js)
     KB_V = hashlib.sha1(js.encode()).hexdigest()[:8]
-    engine = read('assets/js/assistant.js') + read('assets/css/assistant.css')
+    engine = read('assets/js/assistant.js') + read('assets/css/assistant.css') + read('assets/js/consent.js')
     ASSET_V = hashlib.sha1(engine.encode()).hexdigest()[:8]
     return len(kb['entries']), len(kb['synonyms']), sum(1 for e in entries if e.get('te')), len(indic)
 

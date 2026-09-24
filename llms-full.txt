@@ -1,6 +1,6 @@
 # Halcyon Pain Management Centre — full site text
 
-Source: https://halcyonpainfree.com/ · Updated 2026-09-23 · Phone +91 77880 91092 · 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
+Source: https://halcyonpainfree.com/ · Updated 2026-09-24 · Phone +91 77880 91092 · 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 
 
 ---
@@ -1096,8 +1096,8 @@ Google Maps for directions, for instance — which have their own policies.
 
 ### 3. What this website collects
 
-Only what you choose to give the assistant when you ask the team to call you back.
-The site sets no cookies and runs no analytics or advertising trackers.
+Only what you choose to give the assistant when you ask the team to call you back,
+and — if you agree to it — anonymous statistics about how the site is used.
 
 The assistant. It answers from a fixed list of answers held in the
 website itself; your questions are not sent to anyone while you chat. If you ask for a
@@ -1121,13 +1121,23 @@ also remembers, for up to 90 days, which page or advert first brought you to the
 so a later call-back request can say so. This stays on your device; clearing your
 browser’s site data removes it.
 
+Cookies and measurement. When you first arrive, we ask whether we
+may use cookies to see how the site is used. Nothing is loaded until you press
+Accept : no cookies are set, and Google Tag Manager — which we use to
+run our website statistics — is not even downloaded. If you accept, it and the
+measurement tools it manages may set cookies to count visits, see which pages and
+adverts bring people to the site, and spot pages that are not working. If you decline,
+or ignore the notice, the site works exactly the same. You can change your mind at any
+time: change your cookie choice . Confirm
+which measurement tools are switched on inside Tag Manager, and list them here .
+
 Our web host may keep standard server logs of requests, including IP addresses, for
 security and troubleshooting. Confirm what your host logs and for
 how long .
 
-If analytics, advertising pixels, an online booking system or a live chat service are
-added later, this section must be updated before they go live, and a cookie notice may
-be required.
+If advertising pixels, an online booking system or a live chat service are added later
+— including through Tag Manager — this section must be updated before they
+go live.
 
 ### 4. Information we collect
 
