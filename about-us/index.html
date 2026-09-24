@@ -500,8 +500,12 @@ button{font:inherit;color:inherit}
 @media (max-width:900px){ .pp__grid{grid-template-columns:1fr} }
 @media (max-width:560px){
   .pp__card{flex-direction:column; gap:0; padding:0}
-  /* photo and copy share one left inset, so they line up */
-  .pp__photo{width:min(52vw,180px); align-self:flex-start; margin:0 0 -4px clamp(18px,5vw,24px)}
+  /* Stacked, a 180px portrait left most of the card empty beside it. It
+     spans the copy's full width instead, framed and cropped to
+     head-and-shoulders so the card gets no taller. */
+  .pp__photo{align-self:stretch; width:auto; height:clamp(230px,64vw,290px);
+             margin:0 clamp(18px,5vw,24px) 16px;
+             object-fit:cover; object-position:50% 0; border-radius:16px}
   .pp__body{padding:0 clamp(18px,5vw,24px) clamp(20px,3vh,28px)}
 }
 
