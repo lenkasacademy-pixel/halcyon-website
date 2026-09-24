@@ -650,7 +650,9 @@ PG_CSS = r'''
 .rel__grid a{display:block; border-radius:22px; overflow:hidden; background:#fff; border:1px solid var(--stone);
   transition:transform .35s var(--ease), box-shadow .35s var(--ease)}
 .rel__grid a:hover{transform:translateY(-3px); box-shadow:0 18px 38px -22px rgba(76,20,48,.45)}
-.rel__grid img{width:100%; aspect-ratio:4/3; object-fit:cover}
+.rel__grid img{width:100%; height:auto; aspect-ratio:4/3; object-fit:cover}   /* height:auto or the HTML height attribute wins as a presentational
+      hint, aspect-ratio is ignored, and the card renders the image at its
+      full natural height — 1075px of it on a phone */
 .rel__grid b{display:block; padding:16px 18px 4px; font-family:var(--serif); font-style:italic; font-size:21px; color:var(--rose-800)}
 .rel__grid span{display:block; padding:0 18px 18px; font-size:14px; line-height:1.5; color:var(--muted)}
 
