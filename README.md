@@ -134,16 +134,29 @@ WordPress.
 1. `python3 tools/build.py && python3 tools/package.py` → `dist/halcyon-site.zip`
    (113 files, ~3 MB, including `.htaccess`). Or download the same zip from the repo's
    Releases page.
-2. **Back up the old site first.** In cPanel: File Manager → select everything in
+2. **Put it in its own folder and point the domain there later.** This is the safest
+   cutover: WordPress keeps running untouched while the new site is checked, and switching
+   is one setting — reversible in seconds.
+   - cPanel → File Manager → create `/public_html/halcyon` (any name).
+   - cPanel → Domains → Create a subdomain `new.halcyonpainfree.com` with that folder as its
+     document root, so you can open the site straight away. `.htaccess` refuses indexing on
+     any `new. / staging. / test. / dev.` hostname, and does not force the live address
+     there, so the test copy can never be mistaken for the real site.
+   - Deploy into the folder (zip upload, or the GitHub Action with the FTP account's
+     Directory set to it).
+   - When you are happy: cPanel → Domains → halcyonpainfree.com → change **Document Root**
+     to `/public_html/halcyon`. The site is live at that moment, and switching the document
+     root back restores WordPress. (If your cPanel will not let you change the primary
+     domain's document root, move the folder's contents into `public_html` instead, after
+     clearing the WordPress files.)
+
+3. **Back up the old site first.** In cPanel: File Manager → select everything in
    `public_html` → Compress → download the archive. Also take a database backup
    (phpMyAdmin → Export) — WordPress needs it if you ever restore.
-3. **Try it on a subdomain before the switch.** cPanel → Domains → Create
-   `staging.halcyonpainfree.com`, upload the zip into its folder, Extract, and open it.
-   Everything works there except the canonical tags, which point at the live domain.
-4. **Go live.** In `public_html`: delete the WordPress files (or move them into a folder
-   named `old-wp`), upload `halcyon-site.zip`, right-click → Extract, then delete the zip.
-   `.htaccess` starts with a dot, so switch on File Manager → Settings → **Show hidden
-   files** to confirm it arrived.
+4. **Go live** by pointing the document root at the folder (step 2), or — if you prefer
+   the site directly in `public_html` — delete the WordPress files there, upload
+   `halcyon-site.zip`, right-click → Extract, then delete the zip. `.htaccess` starts with a
+   dot, so switch on File Manager → Settings → **Show hidden files** to confirm it arrived.
 5. Check: the home page loads over https, `https://halcyonpainfree.com/knee-pain-treatment/`
    works, an old address such as `/Halcyon-About.html` or `/book-an-appointment/` lands on
    the new page, and a made-up address shows the site's own 404 page.

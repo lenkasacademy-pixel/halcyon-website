@@ -1054,7 +1054,7 @@ REDIRECTS = {
 }
 
 def write_htaccess():
-    host = U.split('//')[1].strip('/')
+    host = re.escape(U.split('//')[1].strip('/'))
     rules = []
     for old, new in sorted(REDIRECTS.items()):
         src = '/' + re.escape(old.rstrip('/')).replace('\\/', '/') + ('/?' if old.endswith('/') else '')
@@ -1073,9 +1073,11 @@ AddDefaultCharset UTF-8
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # one address for every page: https, no www
+  # one address for every page: https, no www — but only on the live domain, so a
+  # staging hostname serving this same folder is not bounced to the live site
+  RewriteCond %{{HTTP_HOST}} ^(www\\.)?{host}$ [NC]
   RewriteCond %{{HTTPS}} !=on [OR]
-  RewriteCond %{{HTTP_HOST}} ^www\.(.*)$ [NC]
+  RewriteCond %{{HTTP_HOST}} ^www\\. [NC]
   RewriteRule ^(.*)$ {U}$1 [R=301,L]
 
   # /about-us/index.html -> /about-us/
@@ -1088,6 +1090,18 @@ AddDefaultCharset UTF-8
 
 # ---------------------------------------------------------------- old addresses
 {body}
+
+# ---------------------------------------------------------------- staging
+# While the site is being checked it may be served from a second hostname
+# (new.halcyonpainfree.com, staging., test., dev., or a GoDaddy temporary URL)
+# pointing at this same folder. Google must not index that copy.
+<IfModule mod_setenvif.c>
+  SetEnvIf Host "^(new|staging|stage|test|dev|preview)\\." NOINDEX_HOST
+  SetEnvIf Host "(secureserver\\.net|temporary\\.link|godaddysites\\.com)$" NOINDEX_HOST
+</IfModule>
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow" env=NOINDEX_HOST
+</IfModule>
 
 # ---------------------------------------------------------------- caching
 <IfModule mod_expires.c>
