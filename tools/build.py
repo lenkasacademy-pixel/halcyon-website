@@ -199,12 +199,24 @@ def write(f, s):
 
 IMG_SIZE = {}
 def img_size(name):
+    """Real pixel size of an image, for the width/height attributes.
+
+    Without Pillow this used to return None and the build quietly emitted
+    pages with no dimensions — or kept stale ones — which is how width="540"
+    ended up on an 860px image and why a build here disagreed with CI. A
+    missing Pillow is a broken toolchain, so say so instead.
+    """
     if name not in IMG_SIZE:
         try:
             from PIL import Image
+        except ImportError:
+            raise SystemExit('Pillow is not installed, so image sizes cannot be read and the\n'
+                             'pages would be built with the wrong width/height.\n'
+                             'Run: pip install -r tools/requirements.txt')
+        try:
             IMG_SIZE[name] = Image.open('assets/img/' + name).size
         except Exception:
-            IMG_SIZE[name] = None
+            IMG_SIZE[name] = None          # image genuinely absent; check.py reports it
     return IMG_SIZE[name]
 
 # ============================================================================ page registry
