@@ -6,7 +6,7 @@
   "h1": "Dr. PSS Kiran",
   "role": "Consultant Radiologist – Musculoskeletal Imaging & Image Guidance",
   "credentials_line": "MBBS, MD (Radiodiagnosis), Fellowship in Pain Management",
-  "hero_sub": "MBBS, MD (Radiodiagnosis), Fellowship in Pain Management — at Halcyon, Kukatpally.",
+  "hero_sub": "MBBS, MD (Radiodiagnosis), Fellowship in Pain Management.",
   "summary": "Dr. PSS Kiran is the consultant radiologist for musculoskeletal imaging and image guidance at Halcyon Pain Management Centre in Kukatpally, Hyderabad. An MD Radiodiagnosis physician with additional fellowship training in pain management and musculoskeletal ultrasound, he focuses on the radiological evaluation of musculoskeletal and pain conditions — reading X-rays, MRI and ultrasound alongside the clinical picture.",
   "sections": [
     {
@@ -53,7 +53,6 @@
         "MBBS",
         "MD (Radiodiagnosis)",
         "Fellowship in Pain Management",
-        "Additional fellowship training in Musculoskeletal Ultrasound",
         "Telangana State Medical Council Registration No. 62201"
       ]
     }
@@ -131,5 +130,10 @@
       "a": "Call +91 77880 91092. The clinic is open Monday to Saturday, 9 am to 6 pm, on the 3rd floor of the KKR Commercial Complex at Kukatpally Y Junction, Hyderabad."
     }
   ],
-  "short_role": "Consultant Radiologist – MSK Imaging"
+  "short_role": "Consultant Radiologist – MSK Imaging",
+  "qualifications_lines": [
+    "MBBS, MD (Radiodiagnosis)",
+    "Fellowship in Pain Management"
+  ],
+  "show_summary": false
 }

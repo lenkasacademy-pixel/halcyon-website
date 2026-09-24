@@ -755,7 +755,9 @@ def figure(pre, slug, alt, portrait=False, eager=False):
     return f'<figure class="{cls}"><img src="{pre}assets/img/{name}" alt="{esc(alt)}" width="{sz[0]}" height="{sz[1]}" {load} decoding="async"></figure>'
 
 def facts_card(facts):
-    rows = ''.join(f'<div><dt>{esc(f["label"])}</dt><dd>{esc(f["value"])}</dd></div>' for f in facts)
+    def val(v):
+        return '<br>'.join(esc(x) for x in v) if isinstance(v, list) else esc(v)
+    rows = ''.join(f'<div><dt>{esc(f["label"])}</dt><dd>{val(f["value"])}</dd></div>' for f in facts)
     return f'<section class="card"><h2>At a glance</h2><dl class="facts">{rows}</dl></section>'
 
 def rel_section(pre, heading, slugs, source):
@@ -849,12 +851,14 @@ def render_doctor(p):
     d = p['data']; pre = prefix(p['path']); s = d['slug']
     conds = ''.join(f'<li><a href="{pre}{c}/">{esc(CONDITIONS[c]["name"])}</a></li>' for c in d['conditions'] if c in CONDITIONS)
     treats = ''.join(f'<li><a href="{pre}{t}/">{esc(TREATMENTS[t]["name"])}</a></li>' for t in d['treatments'] if t in TREATMENTS)
-    creds = [{'label': 'Qualifications', 'value': d['credentials_line']}, {'label': 'Role', 'value': d['role']}]
+    creds = [{'label': 'Qualifications', 'value': d.get('qualifications_lines') or d['credentials_line']},
+             {'label': 'Role', 'value': d['role']}]
     if d.get('registration'):
         creds.append({'label': 'Registration', 'value': 'Regd. No. %s — %s' % (d['registration']['number'], d['registration']['council'])})
     creds.append({'label': 'Consults at', 'value': 'Kukatpally Y Junction, Hyderabad — by appointment'})
+    lead = '' if d.get('show_summary') is False else f'<p class="pg__lead">{esc(d["summary"])}</p>'
     main = f'''<article class="pg__main">
-  <p class="pg__lead">{esc(d['summary'])}</p>
+  {lead}
   {sections_html(d['sections'])}
 </article>'''
     aside = f'''<aside class="pg__aside">
