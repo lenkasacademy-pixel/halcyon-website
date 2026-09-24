@@ -1,0 +1,84 @@
+name: Publish to GoDaddy
+
+# Every push to main is checked and then published to the hosting over FTPS.
+# Run it by hand from the Actions tab too — with "dry run" ticked to see what
+# would change without touching the server.
+#
+# Add these three repository secrets first (Settings → Secrets and variables →
+# Actions → New repository secret). They are never visible in the logs:
+#   FTP_SERVER    the FTP host from cPanel, e.g. ftp.halcyonpainfree.com
+#   FTP_USERNAME  the FTP user
+#   FTP_PASSWORD  its password
+# And one variable (same screen, Variables tab), only if the site is not served
+# from public_html:
+#   FTP_DIR       remote folder, default public_html/
+#   DEPLOY        set to  true  to switch publishing on (until then only the checks run)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (list changes, upload nothing)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check the build is current
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: pip install -r tools/requirements.txt
+      - name: Rebuild and compare
+        run: |
+          python3 tools/build.py
+          if ! git diff --quiet; then
+            echo "::error::The published files are out of date. Run 'python3 tools/build.py' and commit the result."
+            git diff --stat
+            exit 1
+          fi
+      - name: Links, schema, titles, images
+        run: python3 tools/check.py
+      - name: The assistant answers the right things
+        run: node tools/test_assistant.js
+
+  publish:
+    name: Upload to the hosting
+    needs: check
+    # stays switched off until you set the variable DEPLOY to true, so pushes are
+    # only checked (never published) while the site still lives on GitHub Pages
+    if: vars.DEPLOY == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: FTPS upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps               # encrypted; plain ftp would send the password in the clear
+          port: 21
+          server-dir: ${{ vars.FTP_DIR || 'public_html/' }}
+          local-dir: ./
+          dry-run: ${{ inputs.dry_run == true }}
+          # what belongs on the server is the site itself — not its sources
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/tools/**
+            **/dist/**
+            **/node_modules/**
+            **/.DS_Store
+            README.md

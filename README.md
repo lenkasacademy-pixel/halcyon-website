@@ -156,6 +156,29 @@ for images and fonts, always re-check pages) and compression, and points 404s at
 files matter, but overwriting everything is safest. GitHub Pages stays as the preview and
 the record of what is published.
 
+### Publishing automatically (`.github/workflows/deploy.yml`)
+
+Every push to `main` rebuilds the site on GitHub, fails if the committed pages are stale,
+runs the link/schema checks and the 529 assistant tests, and then uploads the site to the
+hosting over **FTPS** (encrypted — plain FTP would send the password in clear text).
+
+One-time setup, all in your own accounts:
+
+1. cPanel → **FTP Accounts** → create one (or use the main account). Note the FTP server
+   (usually `ftp.halcyonpainfree.com`), the username and the password.
+2. GitHub → repo **Settings → Secrets and variables → Actions → Secrets** → add
+   `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`. GitHub encrypts them; they never appear in
+   logs, and nobody — including whoever maintains this site — can read them back.
+3. Same screen, **Variables** tab → add `DEPLOY` = `true`. Until you do, pushes are only
+   checked, never published. Add `FTP_DIR` too if the site is not served from `public_html/`.
+4. Actions tab → **Publish to GoDaddy** → Run workflow with **dry run** ticked, to see the
+   file list without touching the server. Then run it for real.
+
+The first upload adds files without deleting anything, so **clear the old WordPress files
+out of `public_html` yourself** (after the backup) — otherwise they sit there unused, and an
+out-of-date WordPress is worth removing anyway. Later runs upload only what changed, using
+a small state file the action keeps on the server.
+
 ## Launch checklist
 
 1. **Point the domain here.** Add a `CNAME` file containing `halcyonpainfree.com`, set the
