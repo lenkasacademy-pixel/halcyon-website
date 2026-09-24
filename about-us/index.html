@@ -500,7 +500,8 @@ button{font:inherit;color:inherit}
 @media (max-width:900px){ .pp__grid{grid-template-columns:1fr} }
 @media (max-width:560px){
   .pp__card{flex-direction:column; gap:0; padding:0}
-  .pp__photo{width:min(52vw,180px); align-self:flex-start; margin:0 0 -4px clamp(10px,3vw,18px)}
+  /* photo and copy share one left inset, so they line up */
+  .pp__photo{width:min(52vw,180px); align-self:flex-start; margin:0 0 -4px clamp(18px,5vw,24px)}
   .pp__body{padding:0 clamp(18px,5vw,24px) clamp(20px,3vh,28px)}
 }
 

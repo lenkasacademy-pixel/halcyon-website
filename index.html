@@ -1115,8 +1115,10 @@ html.is-split .nav__cta{margin-left:auto}
   /* the consultant card's two columns have nothing left to give at this
      width — the photo squeezes and the bio turns into a ragged gutter */
   .dr__card{flex-direction:column; gap:0; padding:0}
+  /* the photo's left edge and the copy's left edge are the same inset —
+     one value, so they cannot drift apart again */
   .dr__photo{width:min(56vw,205px); align-self:flex-start;
-             margin:0 0 -4px clamp(10px,3vw,18px)}
+             margin:0 0 -4px clamp(18px,5vw,24px)}
   .dr__body{padding:0 clamp(18px,5vw,24px) clamp(22px,3.5vh,30px)}
   .dr__quals{max-width:none}
 
