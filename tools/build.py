@@ -605,8 +605,10 @@ PG_CSS = r'''
 .pg__aside > .card--book{position:sticky; top:104px}
 .pg__fig{margin:0; border-radius:24px; overflow:hidden; background:var(--sand); aspect-ratio:4/5}
 .pg__fig img{width:100%; height:100%; object-fit:cover}
-.pg__fig--portrait{background:linear-gradient(158deg, var(--rose-800), var(--rose-900) 58%); display:flex; align-items:flex-end; justify-content:center}
-.pg__fig--portrait img{height:auto; width:88%; object-fit:contain; filter:drop-shadow(0 22px 36px rgba(24,4,14,.5))}
+/* white behind the portrait: both consultants wear dark colours and were
+   sinking into the plum panel this used to be */
+.pg__fig--portrait{background:linear-gradient(168deg, #fff, var(--rose-50) 58%, var(--sand)); border:1px solid var(--stone); display:flex; align-items:flex-end; justify-content:center}
+.pg__fig--portrait img{height:auto; width:88%; object-fit:contain; filter:drop-shadow(0 16px 28px rgba(76,20,48,.2))}
 .card{padding:22px 24px; border-radius:22px; background:#fff; border:1px solid var(--stone)}
 .card h2, .card h3{margin:0 0 12px; font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--muted)}
 .facts{margin:0; display:grid; gap:14px}
@@ -920,8 +922,14 @@ HUB_CSS = '''
 .cd__more, .tx__more, .dr__more{display:inline-flex; align-items:center; gap:8px; margin-top:14px; font-size:14.5px; font-weight:600;
   color:var(--rose-600); border-bottom:1px solid var(--rose-200); padding-bottom:2px; transition:color .3s, border-color .3s}
 .cd__more:hover, .tx__more:hover, .dr__more:hover{color:var(--rose-800); border-color:var(--rose-400)}
-.dr__more{color:var(--rose-200); border-color:rgba(238,156,192,.35)}
-.dr__more:hover{color:var(--cream); border-color:var(--rose-300)}
+/* the arrow is a stroked icon: without this it fills black and takes its
+   default size, which is how it was rendering on every card */
+.cd__more svg, .tx__more svg, .dr__more svg{width:16px; height:16px; flex:none;
+  fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round;
+  transition:transform .3s var(--ease)}
+.cd__more:hover svg, .tx__more:hover svg, .dr__more:hover svg{transform:translateX(3px)}
+/* the consultant card is white now, so this link is dark on it like the others */
+.dr__more{white-space:nowrap}
 '''
 HOME_FAQ_CSS = '''
 .hfaq{background:var(--cream); padding:clamp(64px,10vh,120px) var(--gut)}

@@ -475,24 +475,27 @@ button{font:inherit;color:inherit}
 .pp__head .l1,.pp__head .l2{display:block}
 .pp__head .l2{color:var(--rose-500)}
 .pp__grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(20px,2.6vw,36px)}
+/* White behind the figures: both consultants wear dark colours and were
+   disappearing into the plum card. */
 .pp__card{
   display:flex; align-items:flex-end; gap:clamp(14px,1.8vw,26px);
   padding:0 clamp(18px,2vw,28px) 0 0; border-radius:24px; overflow:hidden;
-  background:linear-gradient(150deg, var(--rose-800), var(--rose-900) 62%);
-  color:var(--cream); will-change:transform,opacity;
+  background:linear-gradient(152deg, #fff, var(--rose-50) 62%);
+  border:1px solid var(--stone); box-shadow:0 24px 50px -32px rgba(76,20,48,.45);
+  color:var(--ink); will-change:transform,opacity;
 }
 .pp__photo{
   flex:none; width:clamp(130px,15vw,190px); height:auto; align-self:flex-end;
-  filter:drop-shadow(0 22px 36px rgba(24,4,14,.45));
+  filter:drop-shadow(0 16px 28px rgba(76,20,48,.2));
 }
 .pp__body{padding:clamp(22px,3vh,32px) 0}
 .pp__name{
   margin:0; font-family:var(--serif); font-style:italic; font-weight:600;
-  font-size:clamp(20px,2vw,27px); color:var(--cream);
+  font-size:clamp(20px,2vw,27px); color:var(--rose-800);
 }
 .pp__role{margin:6px 0 0; font-size:11px; font-weight:700; letter-spacing:.15em;
-          text-transform:uppercase; color:var(--aqua)}
-.pp__quals{margin:14px 0 0; font-size:14.5px; line-height:1.6; color:rgba(251,227,237,.8)}
+          text-transform:uppercase; color:var(--aqua-600)}
+.pp__quals{margin:14px 0 0; font-size:14.5px; line-height:1.6; color:var(--charcoal)}
 .pp__cta{margin:clamp(28px,3.6vh,44px) 0 0}
 @media (max-width:900px){ .pp__grid{grid-template-columns:1fr} }
 @media (max-width:560px){
