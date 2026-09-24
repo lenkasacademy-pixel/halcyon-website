@@ -11,3 +11,6 @@
 # scratch
 *.log
 node_modules/
+
+# build output
+dist/
