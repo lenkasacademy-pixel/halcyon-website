@@ -209,19 +209,26 @@ brings it back.
 
 ## Measurement and cookies
 
-The old site loaded Google Tag Manager (`GTM-PBQT2N67`) and Google Analytics
-(`G-TV4ZWHCQWL`) on every page, with no consent step. This site loads **Tag Manager only,
-and only after the visitor presses Accept** on the cookie notice (`assets/js/consent.js`,
-container id in `SITE['gtm_id']`). Decline — or ignore it — and nothing is downloaded and
-no cookies are set. The choice lasts a year and can be changed from the link in the privacy
-policy.
+Google Tag Manager (`GTM-PBQT2N67`) loads on **every page view** —
+`assets/js/analytics.js`, container id in `SITE['gtm_id']`. There is no cookie banner.
 
-So Analytics now lives *inside* Tag Manager: add the GA4 tag (`G-TV4ZWHCQWL`) to the
-container once, and anything else (Google Ads conversions, Meta pixel) the same way, with
-no code change here. Note that visitors who decline are not measured, so the numbers will
-read lower than the old site's — that is the trade for consent. List whatever you switch on
-inside the container in section 3 of the privacy policy, which currently carries a
-placeholder for it.
+It was built the other way first, gated behind an Accept button, and that was changed
+deliberately: only the visitors who pressed Accept were being counted, which made the
+numbers worse than useless. The one exception kept is a browser already asking not to be
+tracked — **Do Not Track or Global Privacy Control, and the tag does not load at all**.
+
+Analytics lives *inside* Tag Manager: add the GA4 tag (`G-TV4ZWHCQWL`) to the container
+once, and anything else (Google Ads conversions, Meta pixel) the same way, with no code
+change here. **List whatever you switch on in the "Cookies and measurement" part of the
+privacy policy**, which carries a placeholder for it.
+
+That last point is not bookkeeping. The policy describes what the code does, in writing,
+to patients. If `analytics.js` changes, that section changes in the same commit — a
+privacy policy that does not match the code is worse than none.
+
+India's DPDP Act is the law that applies here, and this is a clinic. Whether notice-only
+measurement is the right posture is a question for whoever advises the practice, not a
+question this file can settle.
 
 ## Before this goes live
 

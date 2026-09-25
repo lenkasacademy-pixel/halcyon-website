@@ -1121,15 +1121,17 @@ also remembers, for up to 90 days, which page or advert first brought you to the
 so a later call-back request can say so. This stays on your device; clearing your
 browser’s site data removes it.
 
-Cookies and measurement. When you first arrive, we ask whether we
-may use cookies to see how the site is used. Nothing is loaded until you press
-Accept : no cookies are set, and Google Tag Manager — which we use to
-run our website statistics — is not even downloaded. If you accept, it and the
-measurement tools it manages may set cookies to count visits, see which pages and
-adverts bring people to the site, and spot pages that are not working. If you decline,
-or ignore the notice, the site works exactly the same. You can change your mind at any
-time: change your cookie choice . Confirm
-which measurement tools are switched on inside Tag Manager, and list them here .
+Cookies and measurement. We use Google Tag Manager to run our
+website statistics, and it loads on every page. It and the measurement tools it
+manages set cookies to count visits, see which pages and adverts bring people to the
+site, and spot pages that are not working. This tells us how the site is used; it is
+not linked to your medical records, and we do not use it to identify you.
+
+If your browser is set to Do Not Track or sends a Global Privacy Control
+signal, we do not load Tag Manager at all. You can also block or delete cookies in
+your browser settings at any time — the site works exactly the same without
+them. Confirm which measurement tools are switched on inside Tag
+Manager, and list them here .
 
 Our web host may keep standard server logs of requests, including IP addresses, for
 security and troubleshooting. Confirm what your host logs and for
