@@ -55,6 +55,11 @@ SITE = {
     # The clinic's Google Apps Script web-app URL (tools/lead-collector.gs). Empty until it is
     # deployed: the assistant then offers WhatsApp instead of sending the lead itself.
     'lead_endpoint': 'https://script.google.com/macros/s/AKfycbyuIHzjGlpWLjqJMrJ8XFlPxqM_4_95Rn7GslCJQG2F6cZ9GBxZpmchhkBzhQ7XiPEywQ/exec',
+    # The clinic's CAPI intake — the same Apps Script the ad landing pages
+    # (7788.html, 8585.html, 7272.html) already post to. A website lead is sent
+    # here as well as to the collector above, so it lands in the Leads sheet,
+    # fires HEnquiry and appears in the callers' queue. Empty = don't send.
+    'capi_endpoint': 'https://script.google.com/macros/s/AKfycbxFxqWFKVMpBZKTJ2VYVdFKcGX-LfwjZ49IJkfhLb8bve0O3E39qTze_jleBpN6FUHFLA/exec',
     # Google Tag Manager container (the one the old WordPress site used). Loaded only
     # on every page view — see assets/js/analytics.js, and the privacy policy.
     'gtm_id': 'GTM-PBQT2N67',
@@ -1501,6 +1506,7 @@ def build_assistant_kb():
             page_areas[e['link']] = e['area']
     kb = {
         'v': 1, 'endpoint': SITE.get('lead_endpoint', ''),
+        'intake': SITE.get('capi_endpoint', ''),
         'contact': {'call': SITE['tel_display'], 'tel': SITE['tel'], 'alt': SITE['tel2_display'], 'telAlt': SITE['tel2'],
                     'wa': SITE['wa'], 'email': SITE['email'], 'hours': 'Monday to Saturday, 9 am to 6 pm'},
         'starters': [i for i in ('visit', 'cost', 'surgery', 'where', 'doctors') if i in {e['id'] for e in entries}][:4],

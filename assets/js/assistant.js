@@ -1018,6 +1018,67 @@
       .then(function (j) { if (!j || !j.ok) throw new Error((j && j.error) || 'rejected'); return j; });
   }
 
+  /* ------------------------------------------------------------------
+     The clinic's CAPI intake — the same endpoint the ad landing pages post
+     to. Sending here is what puts a website enquiry in the callers' queue,
+     fires HEnquiry and pings Telegram; the collector post below still runs
+     and keeps the whole conversation, which the Leads sheet has no room for.
+
+     Form-encoded and fired as a beacon, exactly as the ad pages do it: no
+     CORS preflight, no response to parse (the script answers with plain
+     "ok", not JSON), and it survives the page being closed.
+     ------------------------------------------------------------------ */
+  var IKEY = 'halcyon.intake';     /* ids already sent, so a retry cannot double-write */
+
+  function cookie(n) {
+    var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
+    return m ? m.pop() : '';
+  }
+
+  function intake(p) {
+    var url = KB && KB.intake;
+    if (!url || !p || !p.phone) return;
+    var done = LS.get(IKEY, []);
+    if (done.indexOf(p.id) >= 0) return;          /* already in the sheet */
+
+    /* Meta's own cookies give the best match quality; fall back to building
+       fbc from a click id we saw on the landing URL, the way Meta documents. */
+    var fbc = cookie('_fbc');
+    if (!fbc && p.fbclid) fbc = 'fb.1.' + Date.now() + '.' + p.fbclid;
+
+    var f = {
+      name: p.name || '', phone: p.phone, source: 'website',
+      fbc: fbc, fbp: cookie('_fbp'),
+      referrer: p.referrer || '',
+      channel: 'assistant', ua: navigator.userAgent,
+      time: p.ts || new Date().toISOString(),
+      /* both spellings: the ad pages send snake_case and the sheet reads
+         camelCase, and which one the deployed script honours is not worth
+         guessing at the cost of a dropped page URL */
+      page_url: location.href, pageUrl: location.href,
+      event_id: p.id, eventId: p.id
+    };
+    var body = Object.keys(f).map(function (k) {
+      return encodeURIComponent(k) + '=' + encodeURIComponent(f[k]);
+    }).join('&');
+
+    var sent = false;
+    try {
+      if (navigator.sendBeacon) {
+        sent = navigator.sendBeacon(url, new Blob([body], { type: 'application/x-www-form-urlencoded' }));
+      }
+    } catch (e) {}
+    if (!sent) {
+      try {
+        fetch(url, { method: 'POST', mode: 'no-cors', keepalive: true,
+                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                     body: body }).catch(function () {});
+      } catch (e) {}
+    }
+    done.push(p.id);
+    LS.set(IKEY, done.slice(-50));
+  }
+
   function sendLead(paint) {
     if (S.lead.status === 'sent' || S.lead.status === 'sending') return;
     var lead = null;
@@ -1031,6 +1092,7 @@
     }
     S.lead.status = 'sending'; S.pending = ''; save(); repaint();
     var p = payload();
+    intake(p);                    /* into the callers' queue, whatever happens below */
     post(p).then(function () {
       S.lead.status = 'sent'; S.mode = 'qa'; save(); repaint();
       say('Done — your request is with the Halcyon team. They will call ' + S.d.phone +
@@ -1056,7 +1118,7 @@
       var left = [];
       var chain = Promise.resolve();
       q.forEach(function (p) {
-        chain = chain.then(function () { return post(p).then(function () {
+        chain = chain.then(function () { intake(p); return post(p).then(function () {
           if (S.lead.id === p.id) { S.lead.status = 'sent'; save(); if (open) redraw(); }
         }).catch(function () { left.push(p); }); });
       });
