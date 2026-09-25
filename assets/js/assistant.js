@@ -1015,7 +1015,17 @@
     return fetch(url, { method: 'POST', body: JSON.stringify(p), headers: { 'Content-Type': 'text/plain;charset=utf-8' },
                         signal: ctl ? ctl.signal : undefined, keepalive: true, redirect: 'follow' })
       .then(function (r) { clearTimeout(timer); return r.json(); })
-      .then(function (j) { if (!j || !j.ok) throw new Error((j && j.error) || 'rejected'); return j; });
+      .then(function (j) {
+        if (!j || !j.ok) {
+          /* The clinic's system answered and said no — a bad number, a missing
+             field. Queueing this to retry would fail forever, so mark it as a
+             refusal and let the caller tell the two apart. */
+          var err = new Error((j && j.error) || 'rejected');
+          err.refused = true;
+          throw err;
+        }
+        return j;
+      });
   }
 
   /* ------------------------------------------------------------------
@@ -1100,7 +1110,18 @@
           ' during clinic hours (' + C().hours + '). If you have reports, you can WhatsApp them now.', null, null, ui('sent'));
       handOver('Send reports or talk now:', true);
       defaultChips();
-    }).catch(function () {
+    }).catch(function (err) {
+      if (err && err.refused) {
+        /* Not an outage: the system looked at it and would not take it. Saying
+           "I could not reach them" would be a lie, and retrying never succeeds. */
+        S.lead.status = 'none'; S.mode = 'qa'; save(); repaint();
+        say(/mobile|phone/i.test(err.message)
+          ? 'That mobile number was not accepted — it needs to be a 10-digit Indian mobile. You can tell me the right one, or send it on WhatsApp.'
+          : 'The clinic’s system would not accept that request. Please send it on WhatsApp and the team will pick it up.');
+        handOver('Send it now:', true);
+        defaultChips();
+        return;
+      }
       var q = LS.get(QKEY, []); q.push(p); LS.set(QKEY, q.slice(-5));
       S.lead.status = 'queued'; S.mode = 'qa'; save(); repaint();
       say('I could not reach the clinic’s system just now. I will keep trying in the background — or send it on WhatsApp to be sure.');
@@ -1120,7 +1141,11 @@
       q.forEach(function (p) {
         chain = chain.then(function () { intake(p); return post(p).then(function () {
           if (S.lead.id === p.id) { S.lead.status = 'sent'; save(); if (open) redraw(); }
-        }).catch(function () { left.push(p); }); });
+        }).catch(function (err) {
+          /* a refusal will be refused again every time — drop it rather than
+             retrying it on every page load for the rest of the visitor's life */
+          if (!(err && err.refused)) left.push(p);
+        }); });
       });
       chain.then(function () { LS.set(QKEY, left); });
     });

@@ -55,11 +55,19 @@ SITE = {
     # The clinic's Google Apps Script web-app URL (tools/lead-collector.gs). Empty until it is
     # deployed: the assistant then offers WhatsApp instead of sending the lead itself.
     'lead_endpoint': 'https://script.google.com/macros/s/AKfycbyuIHzjGlpWLjqJMrJ8XFlPxqM_4_95Rn7GslCJQG2F6cZ9GBxZpmchhkBzhQ7XiPEywQ/exec',
-    # The clinic's CAPI intake — the same Apps Script the ad landing pages
-    # (7788.html, 8585.html, 7272.html) already post to. A website lead is sent
-    # here as well as to the collector above, so it lands in the Leads sheet,
-    # fires HEnquiry and appears in the callers' queue. Empty = don't send.
-    'capi_endpoint': 'https://script.google.com/macros/s/AKfycbxFxqWFKVMpBZKTJ2VYVdFKcGX-LfwjZ49IJkfhLb8bve0O3E39qTze_jleBpN6FUHFLA/exec',
+    # The clinic's CAPI intake: the 'halcyon lead v2' Apps Script, which also serves
+    # the CRM at ?app=crm. A website lead is sent here as well as to the collector
+    # above, so it lands in the Leads sheet, fires HEnquiry and appears in the
+    # callers' queue. Empty = don't send.
+    #
+    # NOT the URL the ad landing pages (7788/8585/7272.html) use. Theirs points at an
+    # older, orphaned deployment whose doPost stopped executing: verified 25 Sep 2026,
+    # two POSTs to it produced zero script executions and wrote nothing, and the Leads
+    # sheet had taken no row since 8 Sep. Its doGet still answers, titled
+    # "Halcyon — Leads" against this one's "Halcyon leads", which is why it looked
+    # healthy. Those pages are being replaced by a single /enquire page, so they are
+    # left alone; when that page lands, point it here, not there.
+    'capi_endpoint': 'https://script.google.com/macros/s/AKfycbyZN6HDK5kDK0jB5hvpHNOmhlRQF452Ulf2rRN5owK1zutVenDAET2a61kQu1QZ4zfO4g/exec',
     # Google Tag Manager container (the one the old WordPress site used). Loaded only
     # on every page view — see assets/js/analytics.js, and the privacy policy.
     'gtm_id': 'GTM-PBQT2N67',
