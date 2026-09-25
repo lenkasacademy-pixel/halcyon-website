@@ -17,9 +17,15 @@ errors, warns = [], []
 def is_stub(s):
     return 'http-equiv="refresh"' in s
 
+# Pages carried over from the old WordPress site that we host but do not own:
+# the Meta ad landing pages and their leftovers. They are deployed so the ads
+# keep working, but they are not part of this site and are not held to its
+# rules — no canonical, no schema, no Open Graph. Do not "fix" them here.
+CARRIED = {'7272.html', '7788.html', '8585.html', 'home.html', '404.shtml'}
+
 pages = {}
 for f in sorted(glob.glob('**/*.html', recursive=True)):
-    if f.startswith(('tools/', 'node_modules/')):
+    if f.startswith(('tools/', 'node_modules/')) or f in CARRIED:
         continue
     pages[f] = open(f, encoding='utf-8').read()
 
