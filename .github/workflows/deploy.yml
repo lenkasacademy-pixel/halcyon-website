@@ -1,18 +1,20 @@
-name: Publish to GoDaddy
+name: Publish the site
 
 # Every push to main is checked and then published to the hosting over FTPS.
+# The site is on Hostinger; halcyonpainfree.com serves it directly.
 # Run it by hand from the Actions tab too — with "dry run" ticked to see what
-# would change without touching the server.
+# would change without touching the server. Always dry-run first after
+# changing any of the settings below.
 #
-# Add these three repository secrets first (Settings → Secrets and variables →
-# Actions → New repository secret). They are never visible in the logs:
-#   FTP_SERVER    the FTP host from cPanel, e.g. ftp.halcyonpainfree.com
-#   FTP_USERNAME  the FTP user
+# Secrets (Settings → Secrets and variables → Actions). Never shown in logs:
+#   FTP_SERVER    the FTP IP from hPanel → Files → FTP Accounts. Use the IP:
+#                 ftp.halcyonpainfree.com has no DNS record and never resolves.
+#   FTP_USERNAME  the FTP user, e.g. u0000000.deploy
 #   FTP_PASSWORD  its password
-# And one variable (same screen, Variables tab), only if the site is not served
-# from public_html:
-#   FTP_DIR       remote folder, default public_html/
-#   DEPLOY        set to  true  to switch publishing on (until then only the checks run)
+# Variables (same screen, Variables tab):
+#   FTP_DIR       remote folder. './' is right when the FTP account is rooted
+#                 at the site's own public_html, which is how it is set up.
+#   DEPLOY        'true' to publish; anything else runs the checks only.
 
 on:
   push:
