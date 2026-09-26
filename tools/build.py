@@ -78,6 +78,18 @@ SITE = {
     # Search Console: prefer verifying the domain by DNS (it survives any site change).
     # If you verify with an HTML tag instead, paste its content value here.
     'google_site_verification': '',
+    # Meta Business Manager domain verification. It has to be in the static <head> —
+    # Meta refuses a tag added by JavaScript — so it is emitted with the rest of the
+    # head block below, on every page rather than only the home page, which costs
+    # nothing and survives someone linking Meta at an inner page.
+    #
+    # This matters beyond the badge: the CAPI script sends action_source 'website'
+    # on every event, so each one carries an event_source_url, and events pointing
+    # at a domain Meta cannot verify get deprioritised. Once this is verified,
+    # SITE_ORIGIN in the Config tab must move to halcyonpainfree.com — it still
+    # says halcyonpainmanagement.com, which is where every HContacted, HQualified
+    # and HConverted currently claims to come from.
+    'facebook_domain_verification': '82am420ix4ibbdk5zdokcw46zatrm4',
     'area_served': ['Hyderabad', 'Kukatpally', 'KPHB Colony', 'Moosapet', 'Balanagar', 'Miyapur',
                     'Nizampet', 'Bachupally', 'Kondapur', 'Madhapur', 'HITEC City', 'Secunderabad'],
 }
@@ -519,6 +531,9 @@ def seo_head(p, extra_css=''):
     ]
     if SITE.get('google_site_verification'):
         out.append('<meta name="google-site-verification" content="%s">' % esc(SITE['google_site_verification']))
+    if SITE.get('facebook_domain_verification'):
+        out.append('<meta name="facebook-domain-verification" content="%s">'
+                   % esc(SITE['facebook_domain_verification']))
     # Measurement is opt-in for a noindex page: an ad landing page is kept out of
     # search but still has to report its conversions, so it sets gtm=True.
     if SITE.get('gtm_id') and (p['kind'] != 'noindex' or p.get('gtm')):
