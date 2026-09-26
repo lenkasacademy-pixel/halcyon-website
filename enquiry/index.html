@@ -549,6 +549,19 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     if (answer.area)  q.push('area='  + encodeURIComponent(answer.area));
     if (answer.since) q.push('since=' + encodeURIComponent(answer.since));
     if (answer.place) q.push('place=' + encodeURIComponent(answer.place));
+
+    /* Which ad sent them. Meta puts this on the landing URL only if the ad's
+       "URL parameters" field is filled in — nothing here can invent it. The
+       list is a whitelist on purpose: the rest of a query string is other
+       people's tracking, and this ends up in a sheet the clinic reads. */
+    try {
+      var KEEP = /^(utm_(source|medium|campaign|content|term)|ad_id|adset_id|campaign_id|ad_name|adset_name|campaign_name|placement|site_source_name)$/i;
+      var inc = new URLSearchParams(location.search);
+      inc.forEach(function (v, k) {
+        if (v && KEEP.test(k)) q.push(encodeURIComponent(k) + '=' + encodeURIComponent(v));
+      });
+    } catch (e) {}
+
     if (q.length) url += '?' + q.join('&');
 
     var f = {
