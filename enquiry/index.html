@@ -251,9 +251,37 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
   <div class="gate" id="gate" data-at="1">
     <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
 
-    <!-- 1 ---------------------------------------------------------------- -->
+    <!-- 1: who we are calling -------------------------------------------- -->
     <div class="step" data-step="1">
+      <h3>మీకు కాల్ చేయడానికి వివరాలు<i>Your details, so we can call you</i></h3>
+
+      <div class="field" id="f-name">
+        <label for="i-name">మీ పేరు <i>/ Your name</i></label>
+        <input id="i-name" type="text" name="name" autocomplete="name" enterkeyhint="next" placeholder="">
+        <div class="err">మీ పేరు నమోదు చేయండి <i>/ Please enter your name</i></div>
+      </div>
+
+      <div class="field" id="f-phone">
+        <label for="i-phone">మీ ఫోన్ నంబర్ <i>/ Your phone number</i></label>
+        <input id="i-phone" type="tel" name="phone" inputmode="numeric" autocomplete="tel-national" maxlength="10" enterkeyhint="next" placeholder="">
+        <div class="err">సరైన 10 అంకెల ఫోన్ నంబర్ నమోదు చేయండి <i>/ Enter a valid 10-digit number</i></div>
+      </div>
+
+      <div class="field" id="f-place">
+        <label for="i-place">మీరు ఎక్కడ ఉన్నారు? <i>/ Where are you?</i></label>
+        <input id="i-place" type="text" name="place" autocomplete="address-level2"
+               enterkeyhint="go" placeholder="కూకట్‌పల్లి / Kukatpally">
+        <div class="err">మీ ప్రాంతం నమోదు చేయండి <i>/ Please enter your area</i></div>
+      </div>
+
+      <button class="cta" id="gsubmit" type="button">కాల్ చేయండి <i>/ Call now</i></button>
+      <p class="privacy">మీ వివరాలు గోప్యంగా ఉంచుతాము. మా వైద్య సిబ్బంది మాత్రమే మిమ్మల్ని సంప్రదిస్తారు.<br>Your details are kept private. Only our clinic staff will contact you.</p>
+    </div>
+
+    <!-- 2: what hurts — asked as routing, which is what it is ------------- -->
+    <div class="step" data-step="2">
       <h3>నొప్పి ఎక్కడ ఉంది?<i>Where is the pain?</i></h3>
+      <p class="gsub">సరైన స్పెషలిస్ట్‌కు కలపడానికి<br>So we put you through to the right specialist</p>
       <div class="chips" id="c-area">
         <button class="chip" type="button" data-v="Knee" data-vte="మోకాలి"><b>మోకాలి</b><i>Knee</i></button>
         <button class="chip" type="button" data-v="Lower back" data-vte="నడుము"><b>నడుము</b><i>Lower back</i></button>
@@ -264,43 +292,16 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       </div>
     </div>
 
-    <!-- 2 ---------------------------------------------------------------- -->
-    <div class="step" data-step="2">
+    <!-- 3: how long ------------------------------------------------------- -->
+    <div class="step" data-step="3">
       <h3>ఎంతకాలంగా ఉంది?<i>How long have you had it?</i></h3>
+      <p class="gsub">చివరి ప్రశ్న<br>Last one</p>
       <div class="chips" id="c-since">
         <button class="chip" type="button" data-v="Less than a week" data-vte="వారం రోజులలోపు"><b>వారం రోజులలోపు</b><i>Less than a week</i></button>
         <button class="chip" type="button" data-v="A few weeks" data-vte="కొన్ని వారాలు"><b>కొన్ని వారాలు</b><i>A few weeks</i></button>
         <button class="chip" type="button" data-v="A few months" data-vte="కొన్ని నెలలు"><b>కొన్ని నెలలు</b><i>A few months</i></button>
         <button class="chip" type="button" data-v="More than a year" data-vte="ఒక సంవత్సరానికి పైగా"><b>ఒక సంవత్సరానికి పైగా</b><i>More than a year</i></button>
       </div>
-    </div>
-
-    <!-- 3 ---------------------------------------------------------------- -->
-    <div class="step" data-step="3">
-      <h3>మీ వివరాలు ఇవ్వండి<i>Your details</i></h3>
-      <p class="recap" id="recap"></p>
-
-      <div class="field" id="f-place">
-        <label for="i-place">మీరు ఎక్కడ ఉన్నారు? <i>/ Where are you?</i></label>
-        <input id="i-place" type="text" name="place" autocomplete="address-level2"
-               enterkeyhint="next" placeholder="కూకట్‌పల్లి / Kukatpally">
-        <div class="err">మీ ప్రాంతం నమోదు చేయండి <i>/ Please enter your area</i></div>
-      </div>
-
-      <div class="field" id="f-name">
-        <label for="i-name">మీ పేరు <i>/ Your name</i></label>
-        <input id="i-name" type="text" name="name" autocomplete="name" enterkeyhint="next" placeholder="">
-        <div class="err">మీ పేరు నమోదు చేయండి <i>/ Please enter your name</i></div>
-      </div>
-
-      <div class="field" id="f-phone">
-        <label for="i-phone">మీ ఫోన్ నంబర్ <i>/ Your phone number</i></label>
-        <input id="i-phone" type="tel" name="phone" inputmode="numeric" autocomplete="tel-national" maxlength="10" enterkeyhint="go" placeholder="">
-        <div class="err">సరైన 10 అంకెల ఫోన్ నంబర్ నమోదు చేయండి <i>/ Enter a valid 10-digit number</i></div>
-      </div>
-
-      <button class="cta" id="gsubmit" type="button">నంబర్‌ను చూపించండి <i>/ Show the number</i></button>
-      <p class="privacy">మీ వివరాలు గోప్యంగా ఉంచుతాము. మా వైద్య సిబ్బంది మాత్రమే మిమ్మల్ని సంప్రదిస్తారు.<br>Your details are kept private. Only our clinic staff will contact you.</p>
     </div>
 
     <button class="back" id="back" type="button">← వెనుకకు / Back</button>
@@ -352,7 +353,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     <!-- No number here until the form is filled — it used to print it in full,
          which meant scrolling past the gate was enough to skip it. unlock()
          swaps this for the real number and a tel: link. -->
-    <a class="cta" id="closecta" href="#gate">3 ప్రశ్నలు — తర్వాత నంబర్ <i>/ 3 questions, then the number</i></a>
+    <a class="cta" id="closecta" href="#gate">ఇప్పుడే కాల్ చేయండి <i>/ Call now</i></a>
     <p data-te="మీ నొప్పి గురించి మాట్లాడటానికి ఈరోజే మా వైద్యులను సంప్రదించండి." data-en="Contact our doctors today to talk about your pain.">మీ నొప్పి గురించి మాట్లాడటానికి ఈరోజే మా వైద్యులను సంప్రదించండి.</p>
   </div>
 
@@ -361,7 +362,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
 </main>
 
 <div class="sticky">
-  <a id="stickycta" href="#gate" data-te="3 ప్రశ్నలు — తర్వాత నంబర్" data-en="3 quick questions, then the number">3 ప్రశ్నలు — తర్వాత నంబర్</a>
+  <a id="stickycta" href="#gate" data-te="కాల్ చేయండి" data-en="Call now">కాల్ చేయండి</a>
 </div>
 
 <script>
@@ -466,6 +467,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       nameI  = document.getElementById('i-name'),
       phoneI = document.getElementById('i-phone'),
       sent   = false,
+      held   = null,
       at     = 1,
       answer = { area: '', since: '', place: '' };
 
@@ -478,7 +480,6 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     gate.setAttribute('data-at', String(n));
     var dots = gate.querySelectorAll('.dots i');
     for (var i = 0; i < dots.length; i++) dots[i].className = (i < n ? 'on' : '');
-    if (n === 3) drawRecap();
     gate.scrollIntoView({ block: 'nearest' });
   }
 
@@ -489,17 +490,13 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     return te ? te + ' / ' + value : value;
   }
 
-  function drawRecap() {
-    var r = document.getElementById('recap');
-    if (!answer.area) { r.textContent = ''; return; }
-    r.textContent = label('c-area', answer.area) +
-      (answer.since ? '  ·  ' + label('c-since', answer.since) : '');
-  }
+  /* the recap went with the reorder: the details are step one now, so there is
+     nothing to confirm back before asking for them */
 
   /* `next` is the step to advance to after choosing; the location chooser passes
      none, because it sits on the last step beside the name and number and must
      not jump anywhere. */
-  function chips(group, key, next) {
+  function chips(group, key, next, done) {
     document.getElementById(group).addEventListener('click', function (e) {
       var b = e.target.closest ? e.target.closest('.chip') : null;
       if (!b) return;
@@ -511,10 +508,11 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       var f = this.closest ? this.closest('.field') : null;
       if (f) f.classList.remove('bad');
       if (next) setTimeout(function () { goto(next); }, 140);
+      else if (done) setTimeout(done, 140);
     });
   }
-  chips('c-area', 'area', 2);
-  chips('c-since', 'since', 3);
+  chips('c-area', 'area', 3);
+  chips('c-since', 'since', 0, finish);
 
   document.getElementById('back').addEventListener('click', function () {
     goto(at > 1 ? at - 1 : 1);
@@ -525,7 +523,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
   });
   nameI.addEventListener('input',  function () { nameF.classList.remove('bad'); });
   phoneI.addEventListener('input', function () { phoneF.classList.remove('bad'); });
-  phoneI.addEventListener('keydown', function (e) {
+  document.getElementById('i-place').addEventListener('keydown', function (e) {
     if (e.key === 'Enter') { e.preventDefault(); submit(); }
   });
 
@@ -626,31 +624,46 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     if (card && card.scrollIntoView) card.scrollIntoView({ block: 'center' });
   }
 
+  /* Step one takes the details and nothing else, because that is the part the
+     clinic cannot work without. The two questions come after, framed as what
+     they are — routing the call — rather than as a form standing between a
+     patient and a phone number. */
   function submit() {
     var name = nameI.value.trim();
     var phone = validPhone(phoneI.value);
     var placeF = document.getElementById('f-place'), placeI = document.getElementById('i-place');
     answer.place = placeI.value.trim();
     var bad = false;
-    if (answer.place.length < 2) { placeF.classList.add('bad'); bad = true; }
     if (name.length < 2) { nameF.classList.add('bad'); bad = true; }
     if (!phone) { phoneF.classList.add('bad'); bad = true; }
+    if (answer.place.length < 2) { placeF.classList.add('bad'); bad = true; }
     if (bad) {
-      (answer.place.length < 2 ? placeI : name.length < 2 ? nameI : phoneI).focus();
+      (name.length < 2 ? nameI : !phone ? phoneI : placeI).focus();
       return;
     }
+    /* Held, not sent. One send carries the answers too — see flush(). */
+    held = { name: name, phone: phone };
+    track('Details', {});
+    goto(2);
+  }
 
-    if (!sent) {
-      sent = true;
-      var eid = send(name, phone);
-      track('Lead', { eventID: eid, area: answer.area, since: answer.since, place: answer.place });
-    }
-    /* Reveal the number and stop. The visitor decides whether to call, and
-       dialling for them would hijack the tap they meant for a button. Their
-       details are with the clinic either way, so a lead is captured even if
-       they never press Call. */
+  function finish() {
+    flush();
     unlock();
   }
+
+  /* The single send. Called when the questions are done, or by the browser on
+     the way out if they are not — a visitor who gave a name and number and
+     then closed the tab is still a lead, and losing them to two unanswered
+     taps would be worse than losing the answers. Guarded so it happens once. */
+  function flush() {
+    if (sent || !held) return;
+    sent = true;
+    var eid = send(held.name, held.phone);
+    track('Lead', { eventID: eid, area: answer.area, since: answer.since, place: answer.place });
+  }
+  window.addEventListener('pagehide', flush);
+  document.addEventListener('visibilitychange', function () { if (document.hidden) flush(); });
 
   document.getElementById('gsubmit').addEventListener('click', submit);
 
