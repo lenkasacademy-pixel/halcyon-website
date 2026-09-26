@@ -125,8 +125,18 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:500;
 .chip{flex:1 1 calc(50% - 5px);font:inherit;font-size:15px;font-weight:500;
   color:#fff;background:rgba(255,255,255,.07);
   border:1.5px solid rgba(255,255,255,.22);border-radius:11px;
-  padding:14px 10px;min-height:52px;cursor:pointer;text-align:center;
+  padding:11px 8px;min-height:58px;cursor:pointer;text-align:center;
   transition:background .12s,border-color .12s}
+/* Every question and answer carries both languages at once. The toggle is for
+   the sales copy; the part someone has to understand before answering should
+   not depend on finding a button first. */
+.chip b{display:block;font-weight:600;line-height:1.3}
+.chip i{display:block;font-style:normal;font-size:12px;font-weight:400;
+  opacity:.68;margin-top:2px;line-height:1.3}
+.gate h3 i{display:block;font-style:normal;font-size:13.5px;font-weight:400;
+  opacity:.72;margin-top:4px;line-height:1.35}
+.field label i{font-style:normal;opacity:.7}
+.cta i{font-style:normal;font-weight:500;opacity:.8}
 .chip:active{background:rgba(255,255,255,.18)}
 .chip.on{background:var(--rose-600);border-color:var(--rose-400)}
 .back{display:none;margin:13px auto 0;font:inherit;font-size:13px;
@@ -236,59 +246,59 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
 
     <!-- 1 ---------------------------------------------------------------- -->
     <div class="step" data-step="1">
-      <h3 data-te="నొప్పి ఎక్కడ ఉంది?" data-en="Where is the pain?">నొప్పి ఎక్కడ ఉంది?</h3>
-      <p class="gsub" data-te="మీకు సరిపోయేది ఎంచుకోండి" data-en="Choose what fits you best">మీకు సరిపోయేది ఎంచుకోండి</p>
+      <h3>నొప్పి ఎక్కడ ఉంది?<i>Where is the pain?</i></h3>
       <div class="chips" id="c-area">
-        <button class="chip" type="button" data-v="Knee" data-te="మోకాలి" data-en="Knee">మోకాలి</button>
-        <button class="chip" type="button" data-v="Lower back" data-te="నడుము" data-en="Lower back">నడుము</button>
-        <button class="chip" type="button" data-v="Shoulder" data-te="భుజం" data-en="Shoulder">భుజం</button>
-        <button class="chip" type="button" data-v="Neck" data-te="మెడ" data-en="Neck">మెడ</button>
-        <button class="chip" type="button" data-v="Leg or nerve pain" data-te="కాలు / నరాల నొప్పి" data-en="Leg or nerve pain">కాలు / నరాల నొప్పి</button>
-        <button class="chip" type="button" data-v="Somewhere else" data-te="ఇతర చోట" data-en="Somewhere else">ఇతర చోట</button>
+        <button class="chip" type="button" data-v="Knee" data-vte="మోకాలి"><b>మోకాలి</b><i>Knee</i></button>
+        <button class="chip" type="button" data-v="Lower back" data-vte="నడుము"><b>నడుము</b><i>Lower back</i></button>
+        <button class="chip" type="button" data-v="Shoulder" data-vte="భుజం"><b>భుజం</b><i>Shoulder</i></button>
+        <button class="chip" type="button" data-v="Neck" data-vte="మెడ"><b>మెడ</b><i>Neck</i></button>
+        <button class="chip" type="button" data-v="Leg or nerve pain" data-vte="కాలు / నరాల నొప్పి"><b>కాలు / నరాల నొప్పి</b><i>Leg or nerve pain</i></button>
+        <button class="chip" type="button" data-v="Somewhere else" data-vte="ఇతర చోట"><b>ఇతర చోట</b><i>Somewhere else</i></button>
       </div>
     </div>
 
     <!-- 2 ---------------------------------------------------------------- -->
     <div class="step" data-step="2">
-      <h3 data-te="ఎన్నాళ్ల నుంచి ఉంది?" data-en="How long have you had it?">ఎన్నాళ్ల నుంచి ఉంది?</h3>
-      <p class="gsub" data-te="సుమారుగా చెప్పండి చాలు" data-en="A rough answer is fine">సుమారుగా చెప్పండి చాలు</p>
+      <h3>ఎన్నాళ్ల నుంచి ఉంది?<i>How long have you had it?</i></h3>
       <div class="chips" id="c-since">
-        <button class="chip" type="button" data-v="Less than a week" data-te="వారం లోపు" data-en="Less than a week">వారం లోపు</button>
-        <button class="chip" type="button" data-v="A few weeks" data-te="కొన్ని వారాలు" data-en="A few weeks">కొన్ని వారాలు</button>
-        <button class="chip" type="button" data-v="A few months" data-te="కొన్ని నెలలు" data-en="A few months">కొన్ని నెలలు</button>
-        <button class="chip" type="button" data-v="More than a year" data-te="ఒక సంవత్సరం పైగా" data-en="More than a year">ఒక సంవత్సరం పైగా</button>
+        <button class="chip" type="button" data-v="Less than a week" data-vte="వారం లోపు"><b>వారం లోపు</b><i>Less than a week</i></button>
+        <button class="chip" type="button" data-v="A few weeks" data-vte="కొన్ని వారాలు"><b>కొన్ని వారాలు</b><i>A few weeks</i></button>
+        <button class="chip" type="button" data-v="A few months" data-vte="కొన్ని నెలలు"><b>కొన్ని నెలలు</b><i>A few months</i></button>
+        <button class="chip" type="button" data-v="More than a year" data-vte="ఒక సంవత్సరం పైగా"><b>ఒక సంవత్సరం పైగా</b><i>More than a year</i></button>
       </div>
     </div>
 
     <!-- 3 ---------------------------------------------------------------- -->
     <div class="step" data-step="3">
-      <h3 data-te="మిమ్మల్ని ఎలా సంప్రదించాలి?" data-en="How should we reach you?">మిమ్మల్ని ఎలా సంప్రదించాలి?</h3>
+      <h3>మీ వివరాలు ఇవ్వండి<i>Your name and number</i></h3>
       <p class="recap" id="recap"></p>
 
       <div class="field" id="f-name">
-        <label for="i-name" data-te="మీ పేరు" data-en="Your name">మీ పేరు</label>
+        <label for="i-name">మీ పేరు <i>/ Your name</i></label>
         <input id="i-name" type="text" name="name" autocomplete="name" enterkeyhint="next" placeholder="">
-        <div class="err" data-te="మీ పేరు రాయండి" data-en="Please enter your name">మీ పేరు రాయండి</div>
+        <div class="err">మీ పేరు రాయండి <i>/ Please enter your name</i></div>
       </div>
 
       <div class="field" id="f-phone">
-        <label for="i-phone" data-te="మీ ఫోన్ నంబర్" data-en="Your phone number">మీ ఫోన్ నంబర్</label>
+        <label for="i-phone">మీ ఫోన్ నంబర్ <i>/ Your phone number</i></label>
         <input id="i-phone" type="tel" name="phone" inputmode="numeric" autocomplete="tel-national" maxlength="10" enterkeyhint="go" placeholder="">
-        <div class="err" data-te="సరైన 10 అంకెల నంబర్ రాయండి" data-en="Please enter a valid 10-digit number">సరైన 10 అంకెల నంబర్ రాయండి</div>
+        <div class="err">సరైన 10 అంకెల నంబర్ రాయండి <i>/ Enter a valid 10-digit number</i></div>
       </div>
 
-      <button class="cta" id="gsubmit" type="button" data-te="నంబర్ చూపించండి" data-en="Show the number">నంబర్ చూపించండి</button>
-      <p class="privacy" data-te="మీ వివరాలు గోప్యంగా ఉంచబడతాయి. కేవలం మా వైద్య సిబ్బంది మాత్రమే సంప్రదిస్తారు." data-en="Your details are kept private. Only our clinic staff will contact you.">మీ వివరాలు గోప్యంగా ఉంచబడతాయి. కేవలం మా వైద్య సిబ్బంది మాత్రమే సంప్రదిస్తారు.</p>
+      <button class="cta" id="gsubmit" type="button">నంబర్ చూపించండి <i>/ Show the number</i></button>
+      <p class="privacy">మీ వివరాలు గోప్యంగా ఉంచబడతాయి. కేవలం మా వైద్య సిబ్బంది మాత్రమే సంప్రదిస్తారు.<br>Your details are kept private. Only our clinic staff will contact you.</p>
     </div>
 
-    <button class="back" id="back" type="button" data-te="← వెనుకకు" data-en="← Back">← వెనుకకు</button>
-    <a class="wa" id="wa" href="https://wa.me/917788091092" data-te="WhatsApp ద్వారా కూడా సంప్రదించండి" data-en="Contact us on WhatsApp">WhatsApp ద్వారా కూడా సంప్రదించండి</a>
+    <button class="back" id="back" type="button">← వెనుకకు / Back</button>
   </div>
 
   <div class="numbercard">
     <div class="numlabel" data-te="ఇప్పుడే కాల్ చేయండి" data-en="Call now">ఇప్పుడే కాల్ చేయండి</div>
     <a class="num" href="tel:+917788091092">77880 91092</a>
-    <a class="cta" href="tel:+917788091092" data-call="1" data-te="ఇప్పుడే కాల్ చేయండి" data-en="Call now">ఇప్పుడే కాల్ చేయండి</a>
+    <a class="cta" href="tel:+917788091092" data-call="1">ఇప్పుడే కాల్ చేయండి <i>/ Call now</i></a>
+    <!-- WhatsApp lives here, not in the gate: before the form is filled there is
+         no way to reach the clinic at all, which is the whole point of a gate. -->
+    <a class="wa" id="wa" href="https://wa.me/917788091092">WhatsApp <i>/ సంప్రదించండి</i></a>
   </div>
 
   <div class="videowrap">
@@ -310,7 +320,10 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
   <p class="body" data-te="మోకాలి నొప్పి అయినా, భుజం నొప్పి అయినా, నడుము నొప్పి అయినా — మీ నొప్పికి కారణాన్ని అర్థం చేసుకుని, మీ పరిస్థితికి సరైన చికిత్సా మార్గాన్ని మా వైద్యులు సూచిస్తారు." data-en="Whether it is knee pain, shoulder pain or back pain — our doctors will understand the cause of your pain and recommend the treatment approach that suits your condition.">మోకాలి నొప్పి అయినా, భుజం నొప్పి అయినా, నడుము నొప్పి అయినా — మీ నొప్పికి కారణాన్ని అర్థం చేసుకుని, మీ పరిస్థితికి సరైన చికిత్సా మార్గాన్ని మా వైద్యులు సూచిస్తారు.</p>
 
   <div class="closer">
-    <a class="cta" id="closecta" href="#gate" data-te="ఇప్పుడే కాల్ చేయండి — 77880 91092" data-en="Call now — 77880 91092">ఇప్పుడే కాల్ చేయండి — 77880 91092</a>
+    <!-- No number here until the form is filled — it used to print it in full,
+         which meant scrolling past the gate was enough to skip it. unlock()
+         swaps this for the real number and a tel: link. -->
+    <a class="cta" id="closecta" href="#gate">3 ప్రశ్నలు — తర్వాత నంబర్ <i>/ 3 questions, then the number</i></a>
     <p data-te="మీ నొప్పి గురించి మాట్లాడటానికి ఈరోజే మా వైద్యులను సంప్రదించండి." data-en="Contact our doctors today to talk about your pain.">మీ నొప్పి గురించి మాట్లాడటానికి ఈరోజే మా వైద్యులను సంప్రదించండి.</p>
   </div>
 
@@ -433,17 +446,18 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     gate.scrollIntoView({ block: 'nearest' });
   }
 
+  /* Both languages, same as the questions themselves. */
   function label(group, value) {
     var b = document.querySelector('#' + group + ' .chip[data-v="' + value + '"]');
-    return b ? (b.getAttribute('data-' + cur) || b.textContent) : value;
+    var te = b && b.getAttribute('data-vte');
+    return te ? te + ' / ' + value : value;
   }
 
   function drawRecap() {
     var r = document.getElementById('recap');
     if (!answer.area) { r.textContent = ''; return; }
-    var sep = ' · ';
     r.textContent = label('c-area', answer.area) +
-      (answer.since ? sep + label('c-since', answer.since) : '');
+      (answer.since ? '  ·  ' + label('c-since', answer.since) : '');
   }
 
   function chips(group, key) {
@@ -536,10 +550,12 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     document.body.classList.add('unlocked');
     var sticky = document.getElementById('stickycta');
     sticky.href = TEL;
-    sticky.innerHTML = (cur === 'en' ? 'Call ' : 'కాల్ చేయండి ') + NUM;
-    sticky.setAttribute('data-te', 'కాల్ చేయండి ' + NUM);
-    sticky.setAttribute('data-en', 'Call ' + NUM);
-    document.getElementById('closecta').href = TEL;
+    sticky.innerHTML = 'కాల్ చేయండి / Call ' + NUM;
+    sticky.setAttribute('data-te', 'కాల్ చేయండి / Call ' + NUM);
+    sticky.setAttribute('data-en', 'కాల్ చేయండి / Call ' + NUM);
+    var close = document.getElementById('closecta');
+    close.href = TEL;
+    close.innerHTML = 'ఇప్పుడే కాల్ చేయండి — ' + NUM + ' <i>/ Call now</i>';
     var card = document.querySelector('.numbercard');
     if (card && card.scrollIntoView) card.scrollIntoView({ block: 'center' });
   }
