@@ -50,6 +50,26 @@ RedirectMatch 301 "^/shoulder\-pain\.html$" "https://halcyonpainfree.com/shoulde
 RedirectMatch 301 "^/thankyou/?$" "https://halcyonpainfree.com/"
 RedirectMatch 301 "^/the\-ultimate\-guide\-to\-recognizing\-and\-treating\-arthritis\-symptoms/?$" "https://halcyonpainfree.com/knee-pain-treatment/"
 
+# ---------------------------------------------------------------- staff
+# A short address the callers can remember and keep on a phone's home screen.
+# The CRM itself runs on Apps Script — its server half needs Apps Script's own
+# access to the leads sheet, so it cannot be served from here. This is a doorway
+# and nothing more.
+#
+# 302, not 301: a 301 is cached by the browser more or less for ever, and the
+# target changes if that deployment is ever recreated. A stale 301 would strand
+# every caller on a dead URL with no way to clear it but wiping their history.
+RedirectMatch 302 "^/crm/?$" "https://script.google.com/macros/s/AKfycbyZN6HDK5kDK0jB5hvpHNOmhlRQF452Ulf2rRN5owK1zutVenDAET2a61kQu1QZ4zfO4g/exec?app=crm"
+
+# The address is guessable, so keep it out of search results. This says nothing
+# about who may open it — that is the password on the Users sheet.
+<IfModule mod_setenvif.c>
+  SetEnvIf Request_URI "^/crm/?$" NOINDEX_PATH
+</IfModule>
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow" env=NOINDEX_PATH
+</IfModule>
+
 # ---------------------------------------------------------------- staging
 # While the site is being checked it may be served from a second hostname
 # (new.halcyonpainfree.com, staging., test., dev., or a GoDaddy temporary URL)
