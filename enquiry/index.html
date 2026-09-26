@@ -154,9 +154,15 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:500;
 .unlocked .gate{display:none}
 .numlabel{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
   color:var(--rose-200);font-weight:500}
-.num{display:block;margin:6px 0 14px;padding:4px 0;font-size:clamp(27px,8.2vw,34px);
+.num{display:block;margin:2px 0 0;padding:2px 0;font-size:clamp(25px,7.6vw,31px);
   font-weight:600;color:#fff;letter-spacing:.02em;text-decoration:none;
   font-variant-numeric:tabular-nums}
+/* One block per number, each with both ways of reaching the clinic. */
+.numrow{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14)}
+.numrow:first-of-type{margin-top:10px;padding-top:0;border-top:0}
+.actions{display:flex;gap:9px;margin-top:10px}
+.actions > a{flex:1 1 50%;margin-top:0;font-size:clamp(14.5px,4.2vw,16px);
+  padding:13px 8px;min-height:50px}
 
 /* ---------------------------------------------------------------- buttons */
 .cta{display:block;background:var(--rose-600);color:#fff;text-decoration:none;
@@ -271,8 +277,15 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
 
     <!-- 3 ---------------------------------------------------------------- -->
     <div class="step" data-step="3">
-      <h3>మీ వివరాలు ఇవ్వండి<i>Your name and number</i></h3>
+      <h3>మీ వివరాలు ఇవ్వండి<i>Your details</i></h3>
       <p class="recap" id="recap"></p>
+
+      <div class="field" id="f-place">
+        <label for="i-place">మీరు ఎక్కడ ఉన్నారు? <i>/ Where are you?</i></label>
+        <input id="i-place" type="text" name="place" autocomplete="address-level2"
+               enterkeyhint="next" placeholder="కూకట్‌పల్లి / Kukatpally">
+        <div class="err">మీ ప్రాంతం రాయండి <i>/ Please enter your area</i></div>
+      </div>
 
       <div class="field" id="f-name">
         <label for="i-name">మీ పేరు <i>/ Your name</i></label>
@@ -294,12 +307,27 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
   </div>
 
   <div class="numbercard">
-    <div class="numlabel" data-te="ఇప్పుడే కాల్ చేయండి" data-en="Call now">ఇప్పుడే కాల్ చేయండి</div>
-    <a class="num" href="tel:+917788091092">77880 91092</a>
-    <a class="cta" href="tel:+917788091092" data-call="1">ఇప్పుడే కాల్ చేయండి <i>/ Call now</i></a>
-    <!-- WhatsApp lives here, not in the gate: before the form is filled there is
-         no way to reach the clinic at all, which is the whole point of a gate. -->
-    <a class="wa" id="wa" href="https://wa.me/917788091092">WhatsApp <i>/ సంప్రదించండి</i></a>
+    <!-- Both numbers, and both ways of using each. All of it lives inside the card,
+         which stays display:none until the form is filled — before that there is no
+         route to the clinic at all, which is the point of the gate. The hrefs are
+         written by setWa() so the WhatsApp message follows the chosen language. -->
+    <div class="numlabel">ఇప్పుడే సంప్రదించండి <i>/ Contact us now</i></div>
+
+    <div class="numrow">
+      <a class="num" href="tel:+917788091092">77880 91092</a>
+      <div class="actions">
+        <a class="cta" href="tel:+917788091092" data-call="1">కాల్ <i>/ Call</i></a>
+        <a class="wa" data-wanum="917788091092" href="https://wa.me/917788091092">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="numrow">
+      <a class="num" href="tel:+918585072072">8585 072 072</a>
+      <div class="actions">
+        <a class="cta" href="tel:+918585072072" data-call="1">కాల్ <i>/ Call</i></a>
+        <a class="wa" data-wanum="918585072072" href="https://wa.me/918585072072">WhatsApp</a>
+      </div>
+    </div>
   </div>
 
   <div class="videowrap">
@@ -343,7 +371,6 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
   var TEL  = 'tel:+917788091092',
       NUM  = '77880 91092',
       SRC  = 'enquiry',                 /* the Source column in the leads sheet */
-      WA_BASE = 'https://wa.me/917788091092?text=',
       WA_TE = '%E0%B0%A8%E0%B0%AE%E0%B0%B8%E0%B1%8D%E0%B0%95%E0%B0%BE%E0%B0%B0%E0%B0%82%2C%20%E0%B0%A8%E0%B0%BE%E0%B0%95%E0%B1%81%20%E0%B0%A8%E0%B1%8A%E0%B0%AA%E0%B1%8D%E0%B0%AA%E0%B0%BF%20%E0%B0%9A%E0%B0%BF%E0%B0%95%E0%B0%BF%E0%B0%A4%E0%B1%8D%E0%B0%B8%20%E0%B0%97%E0%B1%81%E0%B0%B0%E0%B0%BF%E0%B0%82%E0%B0%9A%E0%B0%BF%20%E0%B0%B8%E0%B0%AE%E0%B0%BE%E0%B0%9A%E0%B0%BE%E0%B0%B0%E0%B0%82%20%E0%B0%95%E0%B0%BE%E0%B0%B5%E0%B0%BE%E0%B0%B2%E0%B0%BF',
       WA_EN = 'Hello%2C%20I%20would%20like%20information%20about%20pain%20treatment';
 
@@ -354,8 +381,17 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
 
   /* ---------------------------------------------------------------- language */
   var btn = document.getElementById('lang'),
-      wa  = document.getElementById('wa'),
       cur = 'te';
+
+  /* There is a WhatsApp link per number now, so the message text is written to
+     all of them rather than to one element by id. */
+  function setWa(l) {
+    var links = document.querySelectorAll('a[data-wanum]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = 'https://wa.me/' + links[i].getAttribute('data-wanum') +
+        '?text=' + (l === 'en' ? WA_EN : WA_TE);
+    }
+  }
 
   function apply(l) {
     cur = l;
@@ -365,7 +401,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     for (var i = 0; i < nodes.length; i++) {
       nodes[i].innerHTML = nodes[i].getAttribute('data-' + l);
     }
-    wa.href = WA_BASE + (l === 'en' ? WA_EN : WA_TE);
+    setWa(l);
     btn.textContent = (l === 'en' ? 'తెలుగు' : 'English');
     try { localStorage.setItem('hlang', l); } catch (e) {}
   }
@@ -374,7 +410,6 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
      document.documentElement.lang. The build stamps lang="en-IN" on every page,
      and the copy below it is Telugu until someone presses the toggle — left
      alone, a screen reader would read Telugu with English pronunciation. */
-  wa.href = WA_BASE + WA_TE;
   var saved = '';
   try { saved = localStorage.getItem('hlang') || ''; } catch (e) {}
   apply(saved === 'en' ? 'en' : 'te');
@@ -432,7 +467,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       phoneI = document.getElementById('i-phone'),
       sent   = false,
       at     = 1,
-      answer = { area: '', since: '' };
+      answer = { area: '', since: '', place: '' };
 
   /* Three short questions before the number. They cost the visitor a few
      seconds and give the caller something to open the conversation with —
@@ -461,7 +496,10 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       (answer.since ? '  ·  ' + label('c-since', answer.since) : '');
   }
 
-  function chips(group, key) {
+  /* `next` is the step to advance to after choosing; the location chooser passes
+     none, because it sits on the last step beside the name and number and must
+     not jump anywhere. */
+  function chips(group, key, next) {
     document.getElementById(group).addEventListener('click', function (e) {
       var b = e.target.closest ? e.target.closest('.chip') : null;
       if (!b) return;
@@ -470,16 +508,21 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       b.classList.add('on');
       answer[key] = b.getAttribute('data-v');
       track('Step', { step: key, value: answer[key] });
-      setTimeout(function () { goto(key === 'area' ? 2 : 3); }, 140);
+      var f = this.closest ? this.closest('.field') : null;
+      if (f) f.classList.remove('bad');
+      if (next) setTimeout(function () { goto(next); }, 140);
     });
   }
-  chips('c-area', 'area');
-  chips('c-since', 'since');
+  chips('c-area', 'area', 2);
+  chips('c-since', 'since', 3);
 
   document.getElementById('back').addEventListener('click', function () {
     goto(at > 1 ? at - 1 : 1);
   });
 
+  document.getElementById('i-place').addEventListener('input', function () {
+    document.getElementById('f-place').classList.remove('bad');
+  });
   nameI.addEventListener('input',  function () { nameF.classList.remove('bad'); });
   phoneI.addEventListener('input', function () { phoneF.classList.remove('bad'); });
   phoneI.addEventListener('keydown', function (e) {
@@ -493,7 +536,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       var cl = new URLSearchParams(location.search).get('fbclid');
       if (cl) fbc = 'fb.1.' + Date.now() + '.' + cl;
     }
-    var detail = [answer.area, answer.since].filter(Boolean).join(' · ');
+    var detail = [answer.area, answer.since, answer.place].filter(Boolean).join(' · ');
 
     /* The answers ride along on the page URL as well as in their own fields.
        The intake stores Page URL but drops anything it does not recognise, so
@@ -505,6 +548,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     var q = [];
     if (answer.area)  q.push('area='  + encodeURIComponent(answer.area));
     if (answer.since) q.push('since=' + encodeURIComponent(answer.since));
+    if (answer.place) q.push('place=' + encodeURIComponent(answer.place));
     if (q.length) url += '?' + q.join('&');
 
     var f = {
@@ -517,7 +561,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
          reach the Remarks column yet — saveLead_ reads only name, phone,
          source and the attribution fields. Sent anyway so that the day the
          script learns to store them, every page already supplies them. */
-      area: answer.area, since: answer.since, remarks: detail
+      area: answer.area, since: answer.since, place: answer.place, remarks: detail
     };
     var body = Object.keys(f).map(function (k) {
       return encodeURIComponent(k) + '=' + encodeURIComponent(f[k] == null ? '' : f[k]);
@@ -564,15 +608,21 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
   function submit() {
     var name = nameI.value.trim();
     var phone = validPhone(phoneI.value);
+    var placeF = document.getElementById('f-place'), placeI = document.getElementById('i-place');
+    answer.place = placeI.value.trim();
     var bad = false;
+    if (answer.place.length < 2) { placeF.classList.add('bad'); bad = true; }
     if (name.length < 2) { nameF.classList.add('bad'); bad = true; }
     if (!phone) { phoneF.classList.add('bad'); bad = true; }
-    if (bad) { (name.length < 2 ? nameI : phoneI).focus(); return; }
+    if (bad) {
+      (answer.place.length < 2 ? placeI : name.length < 2 ? nameI : phoneI).focus();
+      return;
+    }
 
     if (!sent) {
       sent = true;
       var eid = send(name, phone);
-      track('Lead', { eventID: eid, area: answer.area, since: answer.since });
+      track('Lead', { eventID: eid, area: answer.area, since: answer.since, place: answer.place });
     }
     /* Reveal the number and stop. The visitor decides whether to call, and
        dialling for them would hijack the tap they meant for a button. Their
