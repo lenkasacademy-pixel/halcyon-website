@@ -113,6 +113,29 @@ h1 em{font-family:var(--serif);font-style:italic;font-weight:500;
 .privacy{margin-top:12px;font-size:11.5px;color:var(--rose-200);opacity:.7;
   text-align:center;line-height:1.5}
 
+/* ---------------------------------------------------------------- the steps */
+.dots{display:flex;gap:6px;justify-content:center;margin-bottom:14px}
+.dots i{width:22px;height:3px;border-radius:2px;background:rgba(255,255,255,.2)}
+.dots i.on{background:var(--rose-400)}
+.step{display:none}
+.gate[data-at="1"] .step[data-step="1"],
+.gate[data-at="2"] .step[data-step="2"],
+.gate[data-at="3"] .step[data-step="3"]{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.chip{flex:1 1 calc(50% - 5px);font:inherit;font-size:15px;font-weight:500;
+  color:#fff;background:rgba(255,255,255,.07);
+  border:1.5px solid rgba(255,255,255,.22);border-radius:11px;
+  padding:14px 10px;min-height:52px;cursor:pointer;text-align:center;
+  transition:background .12s,border-color .12s}
+.chip:active{background:rgba(255,255,255,.18)}
+.chip.on{background:var(--rose-600);border-color:var(--rose-400)}
+.back{display:none;margin:13px auto 0;font:inherit;font-size:13px;
+  color:var(--rose-200);background:none;border:0;cursor:pointer;
+  opacity:.75;padding:6px 10px}
+.gate[data-at="2"] .back,.gate[data-at="3"] .back{display:block}
+.recap{margin-top:11px;font-size:12.5px;color:var(--rose-200);opacity:.8;
+  text-align:center;line-height:1.5}
+
 /* ---------------------------------------------------------------- revealed number */
 .numbercard{display:none;margin:22px 0 0;background:var(--rose-900);
   border-radius:16px;padding:20px 16px 18px;text-align:center}
@@ -208,24 +231,57 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     <p class="lead" data-te="మా నొప్పి వైద్య నిపుణులతో మాట్లాడి తెలుసుకోండి." data-en="Talk to our pain specialists and find out.">మా నొప్పి వైద్య నిపుణులతో మాట్లాడి తెలుసుకోండి.</p>
   </div>
 
-  <div class="gate" id="gate">
-    <h3 data-te="మీ వివరాలు ఇచ్చి కాల్ చేయండి" data-en="Enter your details to call">మీ వివరాలు ఇచ్చి కాల్ చేయండి</h3>
-    <p class="gsub" data-te="వివరాలు ఇచ్చిన వెంటనే కాల్ కలుపబడుతుంది" data-en="Submit once, then call or message on WhatsApp">వివరాలు ఇచ్చిన వెంటనే కాల్ కలుపబడుతుంది</p>
+  <div class="gate" id="gate" data-at="1">
+    <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
 
-    <div class="field" id="f-name">
-      <label for="i-name" data-te="మీ పేరు" data-en="Your name">మీ పేరు</label>
-      <input id="i-name" type="text" name="name" autocomplete="name" enterkeyhint="next" placeholder="">
-      <div class="err" data-te="మీ పేరు రాయండి" data-en="Please enter your name">మీ పేరు రాయండి</div>
+    <!-- 1 ---------------------------------------------------------------- -->
+    <div class="step" data-step="1">
+      <h3 data-te="నొప్పి ఎక్కడ ఉంది?" data-en="Where is the pain?">నొప్పి ఎక్కడ ఉంది?</h3>
+      <p class="gsub" data-te="మీకు సరిపోయేది ఎంచుకోండి" data-en="Choose what fits you best">మీకు సరిపోయేది ఎంచుకోండి</p>
+      <div class="chips" id="c-area">
+        <button class="chip" type="button" data-v="Knee" data-te="మోకాలి" data-en="Knee">మోకాలి</button>
+        <button class="chip" type="button" data-v="Lower back" data-te="నడుము" data-en="Lower back">నడుము</button>
+        <button class="chip" type="button" data-v="Shoulder" data-te="భుజం" data-en="Shoulder">భుజం</button>
+        <button class="chip" type="button" data-v="Neck" data-te="మెడ" data-en="Neck">మెడ</button>
+        <button class="chip" type="button" data-v="Leg or nerve pain" data-te="కాలు / నరాల నొప్పి" data-en="Leg or nerve pain">కాలు / నరాల నొప్పి</button>
+        <button class="chip" type="button" data-v="Somewhere else" data-te="ఇతర చోట" data-en="Somewhere else">ఇతర చోట</button>
+      </div>
     </div>
 
-    <div class="field" id="f-phone">
-      <label for="i-phone" data-te="మీ ఫోన్ నంబర్" data-en="Your phone number">మీ ఫోన్ నంబర్</label>
-      <input id="i-phone" type="tel" name="phone" inputmode="numeric" autocomplete="tel-national" maxlength="10" enterkeyhint="go" placeholder="">
-      <div class="err" data-te="సరైన 10 అంకెల నంబర్ రాయండి" data-en="Please enter a valid 10-digit number">సరైన 10 అంకెల నంబర్ రాయండి</div>
+    <!-- 2 ---------------------------------------------------------------- -->
+    <div class="step" data-step="2">
+      <h3 data-te="ఎన్నాళ్ల నుంచి ఉంది?" data-en="How long have you had it?">ఎన్నాళ్ల నుంచి ఉంది?</h3>
+      <p class="gsub" data-te="సుమారుగా చెప్పండి చాలు" data-en="A rough answer is fine">సుమారుగా చెప్పండి చాలు</p>
+      <div class="chips" id="c-since">
+        <button class="chip" type="button" data-v="Less than a week" data-te="వారం లోపు" data-en="Less than a week">వారం లోపు</button>
+        <button class="chip" type="button" data-v="A few weeks" data-te="కొన్ని వారాలు" data-en="A few weeks">కొన్ని వారాలు</button>
+        <button class="chip" type="button" data-v="A few months" data-te="కొన్ని నెలలు" data-en="A few months">కొన్ని నెలలు</button>
+        <button class="chip" type="button" data-v="More than a year" data-te="ఒక సంవత్సరం పైగా" data-en="More than a year">ఒక సంవత్సరం పైగా</button>
+      </div>
     </div>
 
-    <button class="cta" id="gsubmit" type="button" data-te="కాల్ చేయండి" data-en="Call now">కాల్ చేయండి</button>
-    <p class="privacy" data-te="మీ వివరాలు గోప్యంగా ఉంచబడతాయి. కేవలం మా వైద్య సిబ్బంది మాత్రమే సంప్రదిస్తారు." data-en="Your details are kept private. Only our clinic staff will contact you.">మీ వివరాలు గోప్యంగా ఉంచబడతాయి. కేవలం మా వైద్య సిబ్బంది మాత్రమే సంప్రదిస్తారు.</p>
+    <!-- 3 ---------------------------------------------------------------- -->
+    <div class="step" data-step="3">
+      <h3 data-te="మిమ్మల్ని ఎలా సంప్రదించాలి?" data-en="How should we reach you?">మిమ్మల్ని ఎలా సంప్రదించాలి?</h3>
+      <p class="recap" id="recap"></p>
+
+      <div class="field" id="f-name">
+        <label for="i-name" data-te="మీ పేరు" data-en="Your name">మీ పేరు</label>
+        <input id="i-name" type="text" name="name" autocomplete="name" enterkeyhint="next" placeholder="">
+        <div class="err" data-te="మీ పేరు రాయండి" data-en="Please enter your name">మీ పేరు రాయండి</div>
+      </div>
+
+      <div class="field" id="f-phone">
+        <label for="i-phone" data-te="మీ ఫోన్ నంబర్" data-en="Your phone number">మీ ఫోన్ నంబర్</label>
+        <input id="i-phone" type="tel" name="phone" inputmode="numeric" autocomplete="tel-national" maxlength="10" enterkeyhint="go" placeholder="">
+        <div class="err" data-te="సరైన 10 అంకెల నంబర్ రాయండి" data-en="Please enter a valid 10-digit number">సరైన 10 అంకెల నంబర్ రాయండి</div>
+      </div>
+
+      <button class="cta" id="gsubmit" type="button" data-te="నంబర్ చూపించండి" data-en="Show the number">నంబర్ చూపించండి</button>
+      <p class="privacy" data-te="మీ వివరాలు గోప్యంగా ఉంచబడతాయి. కేవలం మా వైద్య సిబ్బంది మాత్రమే సంప్రదిస్తారు." data-en="Your details are kept private. Only our clinic staff will contact you.">మీ వివరాలు గోప్యంగా ఉంచబడతాయి. కేవలం మా వైద్య సిబ్బంది మాత్రమే సంప్రదిస్తారు.</p>
+    </div>
+
+    <button class="back" id="back" type="button" data-te="← వెనుకకు" data-en="← Back">← వెనుకకు</button>
     <a class="wa" id="wa" href="https://wa.me/917788091092" data-te="WhatsApp ద్వారా కూడా సంప్రదించండి" data-en="Contact us on WhatsApp">WhatsApp ద్వారా కూడా సంప్రదించండి</a>
   </div>
 
@@ -263,7 +319,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
 </main>
 
 <div class="sticky">
-  <a id="stickycta" href="#gate" data-te="వివరాలు ఇచ్చి కాల్ చేయండి" data-en="Enter details to call">వివరాలు ఇచ్చి కాల్ చేయండి</a>
+  <a id="stickycta" href="#gate" data-te="3 ప్రశ్నలు — తర్వాత నంబర్" data-en="3 quick questions, then the number">3 ప్రశ్నలు — తర్వాత నంబర్</a>
 </div>
 
 <script>
@@ -355,11 +411,59 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
   }
 
   /* ---------------------------------------------------------------- the gate */
-  var nameF  = document.getElementById('f-name'),
+  var gate   = document.getElementById('gate'),
+      nameF  = document.getElementById('f-name'),
       phoneF = document.getElementById('f-phone'),
       nameI  = document.getElementById('i-name'),
       phoneI = document.getElementById('i-phone'),
-      sent   = false;
+      sent   = false,
+      at     = 1,
+      answer = { area: '', since: '' };
+
+  /* Three short questions before the number. They cost the visitor a few
+     seconds and give the caller something to open the conversation with —
+     and a lead that answered them is worth ringing sooner than one that
+     only left a number. */
+  function goto(n) {
+    at = n;
+    gate.setAttribute('data-at', String(n));
+    var dots = gate.querySelectorAll('.dots i');
+    for (var i = 0; i < dots.length; i++) dots[i].className = (i < n ? 'on' : '');
+    if (n === 3) drawRecap();
+    gate.scrollIntoView({ block: 'nearest' });
+  }
+
+  function label(group, value) {
+    var b = document.querySelector('#' + group + ' .chip[data-v="' + value + '"]');
+    return b ? (b.getAttribute('data-' + cur) || b.textContent) : value;
+  }
+
+  function drawRecap() {
+    var r = document.getElementById('recap');
+    if (!answer.area) { r.textContent = ''; return; }
+    var sep = ' · ';
+    r.textContent = label('c-area', answer.area) +
+      (answer.since ? sep + label('c-since', answer.since) : '');
+  }
+
+  function chips(group, key) {
+    document.getElementById(group).addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('.chip') : null;
+      if (!b) return;
+      var all = this.querySelectorAll('.chip');
+      for (var i = 0; i < all.length; i++) all[i].classList.remove('on');
+      b.classList.add('on');
+      answer[key] = b.getAttribute('data-v');
+      track('Step', { step: key, value: answer[key] });
+      setTimeout(function () { goto(key === 'area' ? 2 : 3); }, 140);
+    });
+  }
+  chips('c-area', 'area');
+  chips('c-since', 'since');
+
+  document.getElementById('back').addEventListener('click', function () {
+    goto(at > 1 ? at - 1 : 1);
+  });
 
   nameI.addEventListener('input',  function () { nameF.classList.remove('bad'); });
   phoneI.addEventListener('input', function () { phoneF.classList.remove('bad'); });
@@ -374,12 +478,31 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
       var cl = new URLSearchParams(location.search).get('fbclid');
       if (cl) fbc = 'fb.1.' + Date.now() + '.' + cl;
     }
+    var detail = [answer.area, answer.since].filter(Boolean).join(' · ');
+
+    /* The answers ride along on the page URL as well as in their own fields.
+       The intake stores Page URL but drops anything it does not recognise, so
+       this is the only way the caller sees what hurts and for how long before
+       they dial — without touching the live script. It stays a real, valid URL,
+       so Meta's event_source_url is unaffected. Drop this the day saveLead_
+       learns to read `remarks`. */
+    var url = location.origin + location.pathname;
+    var q = [];
+    if (answer.area)  q.push('area='  + encodeURIComponent(answer.area));
+    if (answer.since) q.push('since=' + encodeURIComponent(answer.since));
+    if (q.length) url += '?' + q.join('&');
+
     var f = {
       name: name, phone: phone, source: SRC, channel: 'call',
       fbc: fbc, fbp: cookie('_fbp'),
-      page_url: location.href, referrer: document.referrer || '',
+      page_url: url, pageUrl: url, referrer: document.referrer || '',
       event_id: eid, eventId: eid,
-      ua: navigator.userAgent, time: new Date().toISOString()
+      ua: navigator.userAgent, time: new Date().toISOString(),
+      /* The answers. The intake ignores unknown fields today, so these do not
+         reach the Remarks column yet — saveLead_ reads only name, phone,
+         source and the attribution fields. Sent anyway so that the day the
+         script learns to store them, every page already supplies them. */
+      area: answer.area, since: answer.since, remarks: detail
     };
     var body = Object.keys(f).map(function (k) {
       return encodeURIComponent(k) + '=' + encodeURIComponent(f[k] == null ? '' : f[k]);
@@ -417,6 +540,8 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     sticky.setAttribute('data-te', 'కాల్ చేయండి ' + NUM);
     sticky.setAttribute('data-en', 'Call ' + NUM);
     document.getElementById('closecta').href = TEL;
+    var card = document.querySelector('.numbercard');
+    if (card && card.scrollIntoView) card.scrollIntoView({ block: 'center' });
   }
 
   function submit() {
@@ -430,11 +555,13 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     if (!sent) {
       sent = true;
       var eid = send(name, phone);
-      track('Lead', { eventID: eid });
+      track('Lead', { eventID: eid, area: answer.area, since: answer.since });
     }
+    /* Reveal the number and stop. The visitor decides whether to call, and
+       dialling for them would hijack the tap they meant for a button. Their
+       details are with the clinic either way, so a lead is captured even if
+       they never press Call. */
     unlock();
-    /* Give the beacon a moment, then dial. */
-    setTimeout(function () { location.href = TEL; }, 180);
   }
 
   document.getElementById('gsubmit').addEventListener('click', submit);
