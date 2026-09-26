@@ -288,6 +288,14 @@ def reg():
             crumbs=[('Our Doctors', 'our-doctors/'), (d['name'], s + '/')])
     add(path='Halcyon-YourVisit-demo.html', file='Halcyon-YourVisit-demo.html', kind='noindex',
         title='Your Visit (demo) — Halcyon', desc='Earlier standalone demo of the visit timeline.')
+    # The ad landing page. noindex because it is written for paid traffic and would
+    # otherwise compete with the real pages for the same words, but gtm=True: it
+    # still has to report its conversions. It deliberately carries no nav and no
+    # assistant — the only things to do on it are submit, call, or WhatsApp.
+    add(path='enquiry/', file='enquiry/index.html', kind='noindex', gtm=True,
+        title='Knee, Shoulder and Back Pain Treatment — Halcyon, Hyderabad',
+        desc='Struggling with knee, shoulder or back pain? Talk to our pain specialists. '
+             'Non-surgical, image-guided treatment in Kukatpally, Hyderabad.')
     return P
 
 PAGES = reg()
@@ -511,10 +519,12 @@ def seo_head(p, extra_css=''):
     ]
     if SITE.get('google_site_verification'):
         out.append('<meta name="google-site-verification" content="%s">' % esc(SITE['google_site_verification']))
+    # Measurement is opt-in for a noindex page: an ad landing page is kept out of
+    # search but still has to report its conversions, so it sets gtm=True.
+    if SITE.get('gtm_id') and (p['kind'] != 'noindex' or p.get('gtm')):
+        out.append('<script src="%sassets/js/analytics.js?v=%s" data-gtm="%s" data-root="%s" defer></script>'
+                   % (pre, ASSET_V, SITE['gtm_id'], home_href(p['path'])))
     if p['kind'] != 'noindex':
-        if SITE.get('gtm_id'):
-            out.append('<script src="%sassets/js/analytics.js?v=%s" data-gtm="%s" data-root="%s" defer></script>'
-                       % (pre, ASSET_V, SITE['gtm_id'], home_href(p['path'])))
         out += ['<link rel="stylesheet" href="%sassets/css/assistant.css?v=%s">' % (pre, ASSET_V),
                 '<script src="%sassets/js/assistant.js?v=%s" data-root="%s" data-v="%s" defer></script>'
                 % (pre, ASSET_V, home_href(p['path']), KB_V)]
