@@ -659,6 +659,8 @@ PG_CSS = r'''
 .pg__aside > .card--book{position:sticky; top:104px}
 .pg__fig{margin:0; border-radius:24px; overflow:hidden; background:var(--sand); aspect-ratio:4/5}
 .pg__fig img{width:100%; height:100%; object-fit:cover}
+.pg__wide{margin:28px 0 0; border-radius:20px; overflow:hidden; border:1px solid var(--stone)}
+.pg__wide img{display:block; width:100%; height:auto}
 /* white behind the portrait: both consultants wear dark colours and were
    sinking into the plum panel this used to be */
 .pg__fig--portrait{background:linear-gradient(168deg, #fff, var(--rose-50) 58%, var(--sand)); border:1px solid var(--stone); display:flex; align-items:flex-end; justify-content:center}
@@ -812,6 +814,18 @@ def figure(pre, slug, alt, portrait=False, eager=False):
     cls = 'pg__fig pg__fig--portrait' if portrait else 'pg__fig'
     return f'<figure class="{cls}"><img src="{pre}assets/img/{name}" alt="{esc(alt)}" width="{sz[0]}" height="{sz[1]}" {load} decoding="async"></figure>'
 
+WIDE = {  # treatment slug -> (image, alt) shown as a full-width banner under the lead
+    'radiofrequency-ablations': ('coolief-cooled-radiofrequency-treatment.webp',
+        'COOLIEF cooled radiofrequency treatment system: FDA-cleared, for knee, spine, shoulder and hip pain in selected patients'),
+}
+
+def wide_figure(pre, slug):
+    if slug not in WIDE:
+        return ''
+    name, alt = WIDE[slug]
+    sz = img_size(name) or (2000, 1000)
+    return f'\n  <figure class="pg__wide"><img src="{pre}assets/img/{name}" alt="{esc(alt)}" width="{sz[0]}" height="{sz[1]}" loading="lazy" decoding="async"></figure>'
+
 def facts_card(facts):
     def val(v):
         return '<br>'.join(esc(x) for x in v) if isinstance(v, list) else esc(v)
@@ -883,7 +897,7 @@ def render_treatment(p):
     d = p['data']; pre = prefix(p['path']); s = d['slug']
     chips = ''.join(f'<li><a href="{pre}{c}/">{esc(CONDITIONS[c]["name"])}</a></li>' for c in d.get('conditions', []) if c in CONDITIONS)
     main = f'''<article class="pg__main">
-  <p class="pg__lead">{esc(d['summary'])}</p>
+  <p class="pg__lead">{esc(d['summary'])}</p>{wide_figure(pre, s)}
   {sections_html(d['sections'])}
   <section class="pg__block" id="conditions"><h2>Conditions it is used for</h2>
     <p>Each links to how that condition is assessed and treated at Halcyon.</p>
