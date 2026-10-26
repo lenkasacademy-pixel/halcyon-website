@@ -1,6 +1,6 @@
 # Halcyon Pain Management Centre — full site text
 
-Source: https://halcyonpainfree.com/ · Updated 2026-10-18 · Phone +91 77880 91092 · 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
+Source: https://halcyonpainfree.com/ · Updated 2026-10-26 · Phone +91 77880 91092 · 3rd Floor, KKR Commercial Complex, Kukatpally Y Junction, Moosapet Road, Hyderabad 500072
 
 
 ---
@@ -1121,14 +1121,14 @@ also remembers, for up to 90 days, which page or advert first brought you to the
 so a later call-back request can say so. This stays on your device; clearing your
 browser’s site data removes it.
 
-Cookies and measurement. We use Google Tag Manager to run our
-website statistics, and it loads on every page. It and the measurement tools it
+Cookies and measurement. We use Google Tag Manager and a Google Ads
+tag to run our website statistics and measure our adverts, and they load on every page. It and the measurement tools it
 manages set cookies to count visits, see which pages and adverts bring people to the
 site, and spot pages that are not working. This tells us how the site is used; it is
 not linked to your medical records, and we do not use it to identify you.
 
 If your browser is set to Do Not Track or sends a Global Privacy Control
-signal, we do not load Tag Manager at all. You can also block or delete cookies in
+signal, we do not load Tag Manager or the Google Ads tag at all. You can also block or delete cookies in
 your browser settings at any time — the site works exactly the same without
 them. Confirm which measurement tools are switched on inside Tag
 Manager, and list them here .

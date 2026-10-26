@@ -75,6 +75,8 @@ SITE = {
     # Google Tag Manager container (the one the old WordPress site used). Loaded only
     # on every page view — see assets/js/analytics.js, and the privacy policy.
     'gtm_id': 'GTM-PBQT2N67',
+    # Google Ads tag (gtag.js), loaded by the same script and under the same do-not-track rule.
+    'google_ads_id': 'AW-18512511988',
     # Search Console: prefer verifying the domain by DNS (it survives any site change).
     # If you verify with an HTML tag instead, paste its content value here.
     'google_site_verification': '',
@@ -537,8 +539,8 @@ def seo_head(p, extra_css=''):
     # Measurement is opt-in for a noindex page: an ad landing page is kept out of
     # search but still has to report its conversions, so it sets gtm=True.
     if SITE.get('gtm_id') and (p['kind'] != 'noindex' or p.get('gtm')):
-        out.append('<script src="%sassets/js/analytics.js?v=%s" data-gtm="%s" data-root="%s" defer></script>'
-                   % (pre, ASSET_V, SITE['gtm_id'], home_href(p['path'])))
+        out.append('<script src="%sassets/js/analytics.js?v=%s" data-gtm="%s" data-gads="%s" data-root="%s" defer></script>'
+                   % (pre, ASSET_V, SITE['gtm_id'], SITE.get('google_ads_id', ''), home_href(p['path'])))
     if p['kind'] != 'noindex':
         out += ['<link rel="stylesheet" href="%sassets/css/assistant.css?v=%s">' % (pre, ASSET_V),
                 '<script src="%sassets/js/assistant.js?v=%s" data-root="%s" data-v="%s" defer></script>'
