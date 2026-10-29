@@ -182,9 +182,9 @@ HOME_FAQ = [  # the assistant's approved answers, shown on the page so they can 
     ('Will I need surgery?',
      'Halcyon is a non-surgical centre — every procedure here is image-guided and done as day care. The one case where a replacement is still the right answer is advanced grade 4 knee arthritis with joint deformity, and you will be told that plainly rather than treated anyway.'),
     ('What will treatment cost?',
-     'It depends on the procedure and how many sittings are needed, so the team gives you a clear figure at the consultation — before anything is booked. Call +91 77880 91092 and they can give you a range once they know what you are being treated for.'),
+     'It depends on the procedure and how many sittings are needed, so the team gives you a clear figure at the consultation — before anything is booked. Call +91 77880 91092 and they can give you a range once they know what you are being treated for. Some treatments may be eligible for cashless insurance subject to insurance rules and regulations, and our team can assist with the process.'),
     ('Do you accept health insurance?',
-     'That depends on your policy and the procedure. The team can tell you what applies to your case and what paperwork you would need — ask them when you call.'),
+     "Some treatments at Halcyon may be eligible for cashless insurance, subject to your insurer's rules and regulations and the terms of your policy. Our team can assist you with the insurance process, from checking eligibility to preparing the pre-authorisation paperwork. Call +91 77880 91092 with your policy details and we will tell you what applies to your case."),
     ('What should I bring to my first appointment?',
      'Bring any recent X-ray, MRI, CT or ultrasound reports, a list of the medicines you take, and notes from any earlier treatment for the same pain. Tell the team when you book if you take blood thinners — they need planning before an injection.'),
     ('Who are the doctors at Halcyon?',
@@ -661,6 +661,9 @@ PG_CSS = r'''
 .pg__aside > .card--book{position:sticky; top:104px}
 .pg__fig{margin:0; border-radius:24px; overflow:hidden; background:var(--sand); aspect-ratio:4/5}
 .pg__fig img{width:100%; height:100%; object-fit:cover}
+.ins{margin:24px 0 0; padding:14px 18px; border:1px solid var(--rose-200); border-left:4px solid var(--rose-300);
+  border-radius:12px; background:var(--rose-50); color:var(--charcoal); font-size:15px; line-height:1.6}
+.ins b{color:var(--rose-800)}
 .pg__wide{margin:28px 0 0; border-radius:20px; overflow:hidden; border:1px solid var(--stone)}
 .pg__wide img{display:block; width:100%; height:auto}
 /* white behind the portrait: both consultants wear dark colours and were
@@ -867,6 +870,9 @@ def shell(p, section, body):
 </html>
 '''
 
+INSURANCE_NOTE = ('<p class="ins"><b>Insurance:</b> Some treatments may be eligible for cashless insurance, subject to '
+                  'insurance rules and regulations. We can assist with the insurance process — ask our team when you call.</p>')
+
 def render_condition(p):
     d = p['data']; pre = prefix(p['path']); s = d['slug']
     tcards = ''.join(
@@ -874,6 +880,7 @@ def render_condition(p):
         for t in d.get('treatments', []) if t in TREATMENTS)
     main = f'''<article class="pg__main">
   <p class="pg__lead">{esc(d['summary'])}</p>
+  {INSURANCE_NOTE}
   {sections_html(d['sections'])}
   <section class="pg__block" id="treatments"><h2>Treatments used for {esc(d['name'].lower())}</h2>
     <p>Which one is right is decided by what the scan shows, not chosen in advance.</p>
@@ -900,6 +907,7 @@ def render_treatment(p):
     chips = ''.join(f'<li><a href="{pre}{c}/">{esc(CONDITIONS[c]["name"])}</a></li>' for c in d.get('conditions', []) if c in CONDITIONS)
     main = f'''<article class="pg__main">
   <p class="pg__lead">{esc(d['summary'])}</p>{wide_figure(pre, s)}
+  {INSURANCE_NOTE}
   {sections_html(d['sections'])}
   <section class="pg__block" id="conditions"><h2>Conditions it is used for</h2>
     <p>Each links to how that condition is assessed and treated at Halcyon.</p>
@@ -951,6 +959,7 @@ def render_contact(p):
     pre = prefix(p['path'])
     main = f'''<article class="pg__main">
   <p class="pg__lead">Halcyon Pain Management Centre is on the 3rd floor of the KKR Commercial Complex at Kukatpally Y Junction, Moosapet Road, Hyderabad 500072 — above the Max showroom, a few minutes from the KPHB and Moosapet metro stations. Call {SITE['tel_display']} to book.</p>
+  {INSURANCE_NOTE}
   <div class="visit">
     <section class="card" id="address"><h2>Address</h2>
       <address>{SITE['name']}<br>{SITE['street']}<br>{SITE['area']}, {SITE['city']}, {SITE['region']} {SITE['postal']}<br>India</address>
