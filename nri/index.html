@@ -394,6 +394,7 @@ fbq('track','PageView');
       ev('Lead',{content_name:'whatsapp_click',content_category:a.getAttribute('data-wa'),page:page});
     }else if(a.hasAttribute('data-call')){
       ev('Contact',{content_name:'call',page:page});
+      ev('Lead',{content_name:'call_click',content_category:'call',page:page});
     }else if(a.id==='vid'){
       evc('VideoPlay',{content_name:'Dr Pallavi knee treatment',page:page});
     }
