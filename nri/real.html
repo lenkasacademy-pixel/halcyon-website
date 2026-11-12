@@ -374,6 +374,37 @@ html[lang=en] .hero__sub,html[lang=en] .lede,html[lang=en] .step p,html[lang=en]
   html{scroll-behavior:auto}
   .thread .msg{opacity:1;transform:none;transition:none}
 }
+
+/* ---- lead form + thank-you ---- */
+.lead{background:var(--cream)}
+.lead__card{max-width:580px;margin:0 auto;background:#fff;border:1px solid var(--stone);border-radius:22px;padding:clamp(22px,4vw,38px);box-shadow:0 18px 50px rgba(22,21,61,.10)}
+.lead__card .h2{margin:0 0 8px;text-align:center}
+.lead__card .lede{text-align:center;margin:0 0 22px}
+.field{display:block;margin:0 0 14px}
+.field>span{display:block;font-weight:600;font-size:14px;margin-bottom:6px;color:var(--charcoal)}
+.field input,.field select{width:100%;min-height:52px;padding:10px 14px;border:1.5px solid var(--stone);border-radius:12px;font:inherit;font-size:16px;background:#fff;color:var(--ink)}
+.field input:focus,.field select:focus{outline:2px solid var(--aqua-600);outline-offset:1px;border-color:var(--aqua-600)}
+.phone{display:grid;grid-template-columns:minmax(128px,40%) 1fr;gap:10px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.6;color:var(--muted);margin:6px 0 18px}
+.consent input{margin-top:3px;width:18px;height:18px;flex:none}
+.consent a{color:var(--rose-600);text-decoration:underline;text-underline-offset:3px}
+.lead__card .btn{width:100%}
+.lead__err{display:none;color:#B3261E;font-size:14px;margin:0 0 12px}
+.lead__err.on{display:block}
+.lead__note{font-size:13px;color:var(--muted);text-align:center;margin:14px 0 0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.ty{min-height:calc(100vh - 80px);display:grid;place-items:center;padding:clamp(40px,8vw,90px) 0;background:var(--sand)}
+.ty__card{max-width:620px;margin:0 auto;text-align:center;background:#fff;border:1px solid var(--stone);border-radius:24px;padding:clamp(28px,5vw,48px);box-shadow:0 18px 50px rgba(22,21,61,.10)}
+.ty__tick{width:68px;height:68px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;margin:0 auto 18px}
+.ty__tick svg{width:34px;height:34px}
+.ty__card h1{font-family:var(--te-serif,var(--te));font-size:clamp(26px,4.6vw,36px);line-height:1.35;margin:0 0 12px;color:var(--night)}
+.ty__card p{font-family:var(--te);color:var(--charcoal);line-height:1.8;margin:0 0 18px}
+.ty__warn{display:none;margin-bottom:14px;background:#FFF4E5;border:1px solid #F5C26B;color:#7A4B00;border-radius:12px;padding:12px 14px;font-size:15px;text-align:left}
+.ty__warn.on{display:block}
+.ty__cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:22px 0 8px}
+.ty__cta .btn{flex:1 1 220px}
+.ty__num{font-family:var(--sans);font-weight:700;font-size:20px;color:var(--night);margin:6px 0 0}
+.ty__small{font-size:13px;color:var(--muted);margin-top:18px}
 </style>
 <!-- Meta Pixel: dataset "Dubai" 1517402476875662 -->
 <script>
@@ -385,18 +416,18 @@ fbq('track','PageView');
   function ev(name,params,id){try{fbq('track',name,params||{},id?{eventID:id}:undefined)}catch(e){}}
   function evc(name,params){try{fbq('trackCustom',name,params||{})}catch(e){}}
   document.addEventListener('click',function(e){
-    var a=e.target.closest&&e.target.closest('[data-wa],[data-call],#vid');
+    var a=e.target.closest&&e.target.closest('[data-lead],#vid');
     if(!a)return;
-    if(a.hasAttribute('data-wa')){
-      ev('Contact',{content_name:'whatsapp',content_category:a.getAttribute('data-wa'),page:page});
-      ev('Lead',{content_name:'whatsapp_click',content_category:a.getAttribute('data-wa'),page:page});
-    }else if(a.hasAttribute('data-call')){
-      ev('Contact',{content_name:'call',page:page});
-      ev('Lead',{content_name:'call_click',content_category:'call',page:page});
+    if(a.hasAttribute('data-lead')){
+      evc('LeadCTAClick',{page:page});
     }else if(a.id==='vid'){
       evc('VideoPlay',{content_name:'Dr Pallavi knee treatment',page:page});
     }
   },true);
+  var started=false;
+  document.addEventListener('focusin',function(e){
+    if(!started&&e.target.closest&&e.target.closest('#leadForm')){started=true;evc('LeadFormStart',{page:page});}
+  });
   var fired={};
   addEventListener('scroll',function(){
     var h=document.documentElement,p=Math.round((scrollY+innerHeight)/h.scrollHeight*100);
@@ -455,7 +486,7 @@ fbq('track','PageView');
     <div class="top__right">
       <div class="lang" role="group" aria-label="Language"><button type="button" data-l="te" lang="te">తెలుగు</button><button type="button" data-l="en" lang="en">English</button></div>
       <span class="top__tag">NRI Parent Knee Care</span>
-      <a class="btn btn--wa" data-wa="hero" href="#"><svg><use href="#wa"/></svg>WhatsApp</a>
+      <a class="btn btn--wa" data-lead href="#lead"><svg><use href="#ph"/></svg><span data-en="Request a call-back">Call-back కోసం Details ఇవ్వండి</span></a>
     </div>
   </div>
 </header>
@@ -474,14 +505,49 @@ fbq('track','PageView');
       <h1 data-en="Even from far away, you can be part of your parents’ knee care.">మీరు దూరంగా ఉన్నా, మీ <span class="en">Parents</span> <span class="en">Knee Care</span> లో మీరూ భాగస్వాములే.</h1>
       <p class="hero__sub" data-en="We coordinate your parents’ clinic visit, doctor consultation and treatment updates in Hyderabad, wherever you are: Dubai, UAE, Kuwait or the USA.">Hyderabad లో ఉన్న మీ Parents కి Clinic visit, Doctor తో consultation, Treatment updates &mdash; ఇవన్నీ మేము Coordinate చేస్తాం. Dubai, UAE, Kuwait, USA ఎక్కడ ఉన్నా.</p>
       <div class="hero__cta">
-        <a class="btn btn--wa" data-wa="hero" href="#"><svg><use href="#wa"/></svg><span data-en="Chat on WhatsApp">WhatsApp లో మాట్లాడండి</span></a>
-        <a class="btn btn--ghost" data-call href="#"><svg><use href="#ph"/></svg><span data-callnum>+91 93470 18729</span></a>
+        <a class="btn btn--wa" data-lead href="#lead"><svg><use href="#ph"/></svg><span data-en="Request a call-back">Call-back కోసం Details ఇవ్వండి</span></a>
       </div>
       <div class="hero__proof">
         <span><i></i>4.9 &#9733; from 876 Google reviews</span>
         <span><i></i>Day-care, local anaesthetic</span>
         <span><i></i>Kukatpally, Hyderabad</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAD FORM ============ -->
+<section class="sec lead" id="lead">
+  <div class="wrap">
+    <div class="lead__card">
+      <h2 class="h2" data-en="Tell us about your parents’ knee care">మీ Parents Knee Care గురించి Details ఇవ్వండి</h2>
+      <p class="lede" data-en="Share your name and number. Our NRI Parent Care team will contact you.">మీ పేరు మరియు నంబర్ ఇవ్వండి. మా NRI Parent Care team మిమ్మల్ని సంప్రదిస్తుంది.</p>
+      <form id="leadForm" novalidate>
+        <label class="field"><span data-en="Your name">మీ పేరు</span><input name="name" type="text" autocomplete="name" required maxlength="80"></label>
+        <div class="field"><span data-en="Mobile / WhatsApp number">Mobile / WhatsApp నంబర్</span>
+          <div class="phone">
+            <select name="cc" aria-label="Country code">
+              <option value="971|UAE" selected>UAE +971</option>
+              <option value="965|Kuwait">Kuwait +965</option>
+              <option value="974|Qatar">Qatar +974</option>
+              <option value="966|Saudi Arabia">Saudi +966</option>
+              <option value="968|Oman">Oman +968</option>
+              <option value="973|Bahrain">Bahrain +973</option>
+              <option value="1|USA / Canada">USA / Canada +1</option>
+              <option value="44|UK">UK +44</option>
+              <option value="61|Australia">Australia +61</option>
+              <option value="65|Singapore">Singapore +65</option>
+              <option value="91|India">India +91</option>
+            </select>
+            <input name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="50 123 4567" required maxlength="14" aria-label="Mobile number">
+          </div>
+        </div>
+        <input class="hp" name="hp" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="consent"><input name="consent" type="checkbox" required><span data-en="I agree that Halcyon Pain Management Centre may call or message me on this number about my parents’ knee care. See the &lt;a href=&quot;https://halcyonpainfree.com/privacy-policy/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;privacy policy&lt;/a&gt;.">Halcyon Pain Management Centre నా Parents Knee Care గురించి ఈ నంబర్‌కు call లేదా message చేయడానికి నేను అంగీకరిస్తున్నాను. <a href="https://halcyonpainfree.com/privacy-policy/" target="_blank" rel="noopener">Privacy policy</a> చూడండి.</span></label>
+        <p class="lead__err" id="leadErr" role="alert"></p>
+        <button class="btn btn--rose" type="submit" id="leadBtn"><svg><use href="#ph"/></svg><span data-en="Request a call-back">Call-back కోసం Details పంపండి</span></button>
+        <p class="lead__note" data-en="You will see our call and WhatsApp numbers on the next page.">తర్వాతి పేజీలో మా Call మరియు WhatsApp నంబర్లు కనిపిస్తాయి.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -626,7 +692,7 @@ fbq('track','PageView');
       <h2 class="h2" data-en="Visiting Hyderabad? Your knees too.">Hyderabad కి వస్తున్నారా? మీ Knee కోసం కూడా.</h2>
       <p data-en="NRIs who live abroad and visit Hyderabad can also arrange an appointment in advance for their own knee pain evaluation and any treatment needed.">విదేశాల్లో నివసిస్తూ Hyderabad కి వచ్చే వ్యక్తులు కూడా తమ Knee Pain Evaluation మరియు అవసరమైన Treatment కోసం ముందుగానే Appointment Arrange చేసుకోవచ్చు.</p>
     </div>
-    <a class="btn btn--wa" data-wa="visit" href="#"><svg><use href="#wa"/></svg><span data-en="Ask for an appointment">ముందే Appointment అడగండి</span></a>
+    <a class="btn btn--wa" data-lead href="#lead"><svg><use href="#ph"/></svg><span data-en="Ask for an appointment">ముందే Appointment అడగండి</span></a>
   </div>
 </section>
 
@@ -644,7 +710,7 @@ fbq('track','PageView');
       <div class="day" id="day" aria-hidden="true"><i></i><i></i><u></u></div>
       <div class="dayticks" aria-hidden="true"><span>12 am</span><span>6 am</span><span>12 pm</span><span>6 pm</span><span>12 am</span></div>
       <div class="status" id="status"><i></i><span>--</span></div>
-      <p class="hnote" data-en="The clinic is open Monday to Friday. You can message us on WhatsApp at any time.">Clinic సోమవారం నుంచి శుక్రవారం వరకు. WhatsApp లో ఎప్పుడైనా message పంపవచ్చు.</p>
+      <p class="hnote" data-en="The clinic is open Monday to Friday. Leave your details and our team will contact you.">Clinic సోమవారం నుంచి శుక్రవారం వరకు. మీ Details ఇవ్వండి, మా team మిమ్మల్ని సంప్రదిస్తుంది.</p>
     </div>
   </div>
 </section>
@@ -670,11 +736,8 @@ fbq('track','PageView');
 <section class="final" id="contact">
   <div class="wrap">
     <h2 class="h2" data-en="Even when you are far away, we are by your side.">మీరు దూరంగా ఉన్నా, మేము తోడుగా ఉంటాం.</h2>
-    <a class="final__num" data-call href="#"><span data-callnum>+91 93470 18729</span></a>
-    <p class="final__lab">Dedicated NRI Parent Care Contact &middot; Call / WhatsApp</p>
     <div class="final__cta">
-      <a class="btn btn--wa" data-wa="final" href="#"><svg><use href="#wa"/></svg><span data-en="Chat on WhatsApp">WhatsApp లో మాట్లాడండి</span></a>
-      <a class="btn btn--ghost" data-call href="#"><svg><use href="#ph"/></svg><span data-en="Call now">Call చేయండి</span></a>
+      <a class="btn btn--wa" data-lead href="#lead"><svg><use href="#ph"/></svg><span data-en="Request a call-back">Call-back కోసం Details ఇవ్వండి</span></a>
     </div>
 
     <div class="foot">
@@ -694,8 +757,7 @@ fbq('track','PageView');
 </main>
 
 <div class="bar">
-  <a class="btn btn--wa" data-wa="bar" href="#"><svg><use href="#wa"/></svg>WhatsApp</a>
-  <a class="btn btn--rose" data-call href="#"><svg><use href="#ph"/></svg>Call</a>
+  <a class="btn btn--wa" data-lead href="#lead"><svg><use href="#ph"/></svg><span data-en="Request a call-back">Call-back కోసం Details ఇవ్వండి</span></a>
 </div>
 
 <script>
@@ -806,9 +868,53 @@ fbq('track','PageView');
     var wd=ist.weekday, mins=(+ist.hour)*60+(+ist.minute);
     var isOpen=["Mon","Tue","Wed","Thu","Fri"].indexOf(wd)>-1 && mins>=540 && mins<1020;
     var st=$("#status"); st.className="status"+(isOpen?" is-open":"");
-    st.lastChild.textContent=lang==="en"?(isOpen?"The clinic is open now. You can call.":"The clinic is closed now. Send a WhatsApp message."):(isOpen?"ఇప్పుడు Clinic తెరిచి ఉంది. Call చేయవచ్చు.":"ఇప్పుడు Clinic మూసి ఉంది. WhatsApp లో message పంపండి.");
+    st.lastChild.textContent=lang==="en"?(isOpen?"The clinic is open now. Leave your details for a call-back.":"The clinic is closed now. Leave your details and we will contact you."):(isOpen?"ఇప్పుడు Clinic తెరిచి ఉంది. Call-back కోసం Details ఇవ్వండి.":"ఇప్పుడు Clinic మూసి ఉంది. మీ Details ఇవ్వండి, మేము సంప్రదిస్తాం.");
   }
   applyLang(); render(); setInterval(render,60000);
+
+
+  /* ---- lead form: save the lead, then go to the thank-you page ---- */
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbyuIHzjGlpWLjqJMrJ8XFlPxqM_4_95Rn7GslCJQG2F6cZ9GBxZpmchhkBzhQ7XiPEywQ/exec";
+  var leadForm = $("#leadForm");
+  if (leadForm) {
+    var errBox = $("#leadErr"), leadBtn = $("#leadBtn");
+    function showErr(te, en){ errBox.textContent = lang === "en" ? en : te; errBox.classList.add("on"); }
+    leadForm.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      errBox.classList.remove("on");
+      if (leadForm.hp.value) return;
+      var name = leadForm.name.value.trim();
+      var cc = leadForm.cc.value.split("|");
+      var num = leadForm.phone.value.replace(/\D/g, "").replace(/^0+/, "");
+      if (!name) return showErr("దయచేసి మీ పేరు రాయండి.", "Please enter your name.");
+      if (num.length < 6 || num.length > 12) return showErr("దయచేసి సరైన mobile నంబర్ రాయండి.", "Please enter a valid mobile number.");
+      if (!leadForm.consent.checked) return showErr("కొనసాగడానికి దయచేసి అంగీకరించండి.", "Please tick the box to continue.");
+      var id = "nri-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+      var q = {}; location.search.replace(/^\?/, "").split("&").forEach(function(kv){ var p = kv.split("="); if (p[0]) q[decodeURIComponent(p[0])] = decodeURIComponent((p[1] || "").replace(/\+/g, " ")); });
+      var page = location.pathname.split("/").pop() || "index.html";
+      var payload = {
+        id: id, name: name, phone: "+" + cc[0] + num, country: cc[1],
+        area: "NRI Parent Knee Care", topics: "Country: " + cc[1] + " | NRI landing page " + page,
+        consent: "yes - ticked on " + page + " at " + new Date().toISOString(),
+        page: "nri/" + page, landing: location.href.split("#")[0], referrer: document.referrer,
+        utm_source: q.utm_source || "", utm_medium: q.utm_medium || "", utm_campaign: q.utm_campaign || "",
+        utm_content: q.utm_content || "", utm_term: q.utm_term || "", fbclid: q.fbclid || "",
+        device: /Mobi|Android|iPhone/i.test(navigator.userAgent) ? "mobile" : "desktop", hp: ""
+      };
+      leadBtn.disabled = true;
+      var gone = false;
+      function go(ok){
+        if (gone) return; gone = true;
+        location.href = "thank-you.html?id=" + encodeURIComponent(id) + "&n=" + encodeURIComponent(name.split(" ")[0].slice(0, 30)) +
+          "&ok=" + (ok ? 1 : 0) + "&lang=" + lang + "&src=" + encodeURIComponent(page);
+      }
+      var timer = setTimeout(function(){ go(false); }, 9000);
+      fetch(ENDPOINT, { method: "POST", body: JSON.stringify(payload), headers: { "Content-Type": "text/plain;charset=utf-8" } })
+        .then(function(r){ return r.json(); })
+        .then(function(j){ clearTimeout(timer); go(!!(j && j.ok)); })
+        .catch(function(){ clearTimeout(timer); go(false); });
+    });
+  }
 
   /* ---- Q&A thread plays once when it scrolls into view ---- */
   var th=$("#thread");

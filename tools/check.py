@@ -22,7 +22,7 @@ def is_stub(s):
 # keep working, but they are not part of this site and are not held to its
 # rules — no canonical, no schema, no Open Graph. Do not "fix" them here.
 CARRIED = {'7272.html', '7788.html', '8585.html', 'home.html', '404.shtml',
-           'nri/index.html', 'nri/real.html'}  # NRI (Dubai/UAE) ad landing pages, own design + Meta pixel
+           'nri/index.html', 'nri/real.html', 'nri/thank-you.html'}  # NRI (Dubai/UAE) ad landing pages, own design + Meta pixel
 
 pages = {}
 for f in sorted(glob.glob('**/*.html', recursive=True)):

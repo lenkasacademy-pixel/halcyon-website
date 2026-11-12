@@ -62,8 +62,13 @@ function doPost(e) {
     lock.waitLock(10000);
     var p = JSON.parse((e && e.postData && e.postData.contents) || '{}');
     if (p.hp) return reply({ ok: true });                       // honeypot: pretend, store nothing
-    var mobile = String(p.phone || '').replace(/\D/g, '').slice(-10);
-    if (!/^[6-9]\d{9}$/.test(mobile)) return reply({ ok: false, error: 'invalid mobile' });
+    // Indian numbers: the last 10 digits must be a valid mobile.
+    // NRI landing page (/nri/): numbers arrive as +<country code><number> with p.country set,
+    // so a non-Indian +CC number of 8-15 digits is accepted as it is.
+    var digits = String(p.phone || '').replace(/\D/g, '');
+    var intl = !!p.country && String(p.country) !== 'India' && /^\+(?!91)\d/.test(String(p.phone || '').trim());
+    var mobile = intl ? digits : digits.slice(-10);
+    if (intl ? !/^\d{8,15}$/.test(digits) : !/^[6-9]\d{9}$/.test(mobile)) return reply({ ok: false, error: 'invalid mobile' });
     if (String(p.consent || '').indexOf('yes') !== 0) return reply({ ok: false, error: 'no consent' });
 
     var cache = CacheService.getScriptCache();
