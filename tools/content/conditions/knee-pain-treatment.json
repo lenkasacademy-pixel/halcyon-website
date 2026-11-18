@@ -122,10 +122,6 @@
  ],
  "faqs": [
   {
-   "q": "Who is the knee pain specialist at Halcyon?",
-   "a": "Knee pain at Halcyon is assessed and treated by Dr. Dasyam Pallavi, consultant in pain management (MBBS, DA, FIAPM, CIPS), with Dr. PSS Kiran, consultant musculoskeletal radiologist, for imaging. The centre is at Kukatpally Y Junction, Hyderabad. Call +91 77880 91092 to book."
-  },
-  {
    "q": "Can knee pain be treated without surgery?",
    "a": "In many cases, yes. Depending on what the ultrasound shows, knee pain at Halcyon is treated with cooled radiofrequency of the genicular nerves, a regenerative injection or prolotherapy, all done as day care under local anaesthetic. The exception is advanced grade 4 arthritis with joint deformity, where a replacement may still be the right answer, and you will be told that plainly."
   },
@@ -148,6 +144,10 @@
   {
    "q": "What should I bring to my knee pain appointment?",
    "a": "Bring any recent X-ray, MRI, CT or ultrasound reports, a list of the medicines you take and notes from earlier treatment for the same knee. If you take blood thinners, tell the team when you book, because they need planning before an injection. Do not stop any medicine on your own."
+  },
+  {
+   "q": "Who is the knee pain specialist at Halcyon?",
+   "a": "Knee pain at Halcyon is assessed and treated by Dr. Dasyam Pallavi, consultant in pain management (MBBS, DA, FIAPM, CIPS), with Dr. PSS Kiran, consultant musculoskeletal radiologist, for imaging. The centre is at Kukatpally Y Junction, Hyderabad. Call +91 77880 91092 to book."
   }
  ],
  "schema": {
