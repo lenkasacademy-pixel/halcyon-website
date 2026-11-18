@@ -120,7 +120,7 @@ TREATMENTS = load('treatments')
 DOCTORS = load('doctors')
 
 # display order on hubs and in llms.txt — the order the site already uses
-COND_ORDER = ['knee-pain-treatment', 'low-back-pain-treatment', 'neck-pain-treatment', 'shoulder-pain',
+COND_ORDER = ['knee-pain-treatment', 'low-back-pain-treatment', 'neck-pain-treatment', 'shoulder-pain', 'frozen-shoulder-treatment',
               'sciatica', 'slipped-disc-treatment', 'the-best-hip-pain-treatment-in-hyderabad',
               'sports-injuries-treatment', 'trigeminal-neuralgia-treatment',
               'advanced-elbow-hand-and-wrist-pain-treatment', 'foot-ankle-pain-treatment',
@@ -144,6 +144,7 @@ IMG = {  # topic -> photograph already on the site
     'low-back-pain-treatment': 'low-back-pain-treatment-hyderabad.webp',
     'neck-pain-treatment': 'neck-pain-treatment-hyderabad.webp',
     'shoulder-pain': 'shoulder-pain-treatment-hyderabad.webp',
+    'frozen-shoulder-treatment': 'shoulder-pain-treatment-hyderabad.webp',
     'sciatica': 'sciatica-treatment-hyderabad.webp',
     'slipped-disc-treatment': 'slipped-disc-treatment-hyderabad.webp',
     'the-best-hip-pain-treatment-in-hyderabad': 'hip-pain-treatment-hyderabad.webp',
@@ -259,8 +260,8 @@ def reg():
         k.setdefault('priority', '0.7')
         P.append(k)
     add(path='', file='index.html', kind='home', priority='1.0',
-        title='Pain Management Centre in Hyderabad | Halcyon, Kukatpally',
-        desc='Non-surgical, ultrasound-guided treatment for knee, back, neck, shoulder and nerve pain in Kukatpally, Hyderabad. Day care, local anaesthetic. Call 77880 91092.')
+        title='Pain Management Centre in Kukatpally, Hyderabad | Halcyon',
+        desc='Pain specialists in Kukatpally, Hyderabad treating knee, back, neck, shoulder and nerve pain without surgery. Same-day ultrasound, day care. Call 77880 91092.')
     add(path='services/', file='services/index.html', kind='hub-services', priority='0.9',
         title='Non-Surgical Pain Treatments in Hyderabad | Halcyon',
         desc='Regenerative medicine, cooled radiofrequency ablation, prolotherapy and nerve hydrodissection — image-guided, day-care pain treatments in Kukatpally, Hyderabad.',
