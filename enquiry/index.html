@@ -37,6 +37,19 @@
 <meta name="facebook-domain-verification" content="82am420ix4ibbdk5zdokcw46zatrm4">
 <script src="../assets/js/analytics.js?v=515ac8b6" data-gtm="GTM-PBQT2N67" data-gads="AW-18512511988" data-root="../" defer></script>
 <!-- seo:end -->
+<!-- Meta Pixel for this landing page only: dataset "Dubai" 1517402476875662.
+     The site-wide GTM container still fires its own pixel; this page's events go
+     only to this dataset (trackSingle), so the two are not double-counted. -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1517402476875662');
+fbq('trackSingle','1517402476875662','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1517402476875662&ev=PageView&noscript=1"></noscript>
 <!-- Stop Chrome offering to translate copy that is deliberately bilingual -->
 <meta name="google" content="notranslate">
 <style>
@@ -436,7 +449,7 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     props = props || {};
     props.page_type = 'landing_page';
     props.creative = SRC;
-    if (window.fbq) { try { fbq('trackCustom', name, props); } catch (e) {} }
+    if (window.fbq) { try { fbq('trackSingleCustom', '1517402476875662', name, props, props.eventID ? { eventID: props.eventID } : undefined); } catch (e) {} }
     if (window.dataLayer) {
       try { window.dataLayer.push({ event: name, page_type: 'landing_page', creative: SRC }); } catch (e) {}
     }
