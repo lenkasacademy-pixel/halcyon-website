@@ -79,7 +79,7 @@ SITE = {
     'google_ads_id': 'AW-18512511988',
     # Search Console: prefer verifying the domain by DNS (it survives any site change).
     # If you verify with an HTML tag instead, paste its content value here.
-    'google_site_verification': '',
+    'google_site_verification': 'SQPp7EWCzUJUgcGS8apsE0Z6qU_nxJos_sHyNOumtLE',
     # Meta Business Manager domain verification. It has to be in the static <head> —
     # Meta refuses a tag added by JavaScript — so it is emitted with the rest of the
     # head block below, on every page rather than only the home page, which costs
