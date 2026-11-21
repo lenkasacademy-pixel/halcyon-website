@@ -234,6 +234,27 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
 .sticky a:active{opacity:.9}
 .unlocked .sticky a{background:var(--wa)}
 
+/* ------------------------------------------------- cashless strip (Nov 2026) */
+.cash{display:flex;align-items:stretch;height:44px;overflow:hidden;color:#fff;
+  background:linear-gradient(90deg,var(--rose-700),var(--rose-600) 55%,var(--rose-700))}
+.cash__badge{flex:none;display:flex;align-items:center;gap:6px;padding:0 24px 0 14px;
+  background:var(--aqua);color:var(--rose-900);font-size:10.5px;font-weight:800;
+  letter-spacing:.06em;text-transform:uppercase;line-height:1.15;
+  clip-path:polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%)}
+.cash__badge svg{width:17px;height:17px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;
+  stroke-linecap:round;stroke-linejoin:round}
+.cash__vp{flex:1 1 auto;min-width:0;overflow:hidden;display:flex;align-items:center;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 4%,#000 94%,transparent);
+          mask-image:linear-gradient(to right,transparent 0,#000 4%,#000 94%,transparent)}
+.cash__track{display:flex;width:max-content;animation:cashRun 30s linear infinite}
+.cash__set{display:flex;align-items:center}
+.cash__item{white-space:nowrap;font-size:13.5px;font-weight:500;padding-right:20px;display:inline-flex;align-items:center}
+.cash__item::before{content:"\2713";flex:none;width:17px;height:17px;margin-right:9px;border-radius:50%;
+  background:var(--aqua);color:var(--rose-900);font-size:10px;font-weight:800;display:grid;place-items:center}
+.cash__item.is-note{font-size:11.5px;opacity:.75;font-weight:400}
+.cash__item.is-note::before{display:none}
+@keyframes cashRun{to{transform:translate3d(-50%,0,0)}}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
   <script src="../assets/js/nav.js?v=f7187185" defer></script>
@@ -250,6 +271,10 @@ footer{padding:26px 0 8px;font-size:12.5px;color:var(--muted);text-align:center;
     </div>
   </div>
 </header>
+<div class="cash" role="region" aria-label="Cashless insurance facility">
+  <div class="cash__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6z"/><path d="M8.6 12.2l2.4 2.4 4.4-4.6"/></svg><span data-te="క్యాష్‌లెస్<br>ఇన్సూరెన్స్" data-en="Cashless<br>insurance">క్యాష్‌లెస్<br>ఇన్సూరెన్స్</span></div>
+  <div class="cash__vp"><div class="cash__track"><span class="cash__set"><span class="cash__item" data-te="క్యాష్‌లెస్ ఇన్సూరెన్స్ సదుపాయం అందుబాటులో ఉంది*" data-en="Cashless insurance facility available*">క్యాష్‌లెస్ ఇన్సూరెన్స్ సదుపాయం అందుబాటులో ఉంది*</span><span class="cash__item" data-te="అర్హత ఉన్న చికిత్సలకు క్యాష్‌లెస్" data-en="Cashless on eligible treatments">అర్హత ఉన్న చికిత్సలకు క్యాష్‌లెస్</span><span class="cash__item" data-te="ఇన్సూరెన్స్ ప్రక్రియలో మా టీమ్ సహాయం చేస్తుంది" data-en="Our team assists with the insurance process">ఇన్సూరెన్స్ ప్రక్రియలో మా టీమ్ సహాయం చేస్తుంది</span><span class="cash__item" data-te="అర్హత చెక్ &amp; ప్రీ-ఆథరైజేషన్ పేపర్‌వర్క్" data-en="Eligibility check &amp; pre-authorisation paperwork">అర్హత చెక్ &amp; ప్రీ-ఆథరైజేషన్ పేపర్‌వర్క్</span><span class="cash__item" data-te="మీ పాలసీ వివరాలతో కాల్ చేయండి" data-en="Call with your policy details">మీ పాలసీ వివరాలతో కాల్ చేయండి</span><span class="cash__item is-note" data-te="*మీ ఇన్సూరెన్స్ నియమాలు, పాలసీ షరతులకు లోబడి" data-en="*Subject to your insurer’s rules and policy terms">*మీ ఇన్సూరెన్స్ నియమాలు, పాలసీ షరతులకు లోబడి</span></span><span class="cash__set" aria-hidden="true"><span class="cash__item" data-te="క్యాష్‌లెస్ ఇన్సూరెన్స్ సదుపాయం అందుబాటులో ఉంది*" data-en="Cashless insurance facility available*">క్యాష్‌లెస్ ఇన్సూరెన్స్ సదుపాయం అందుబాటులో ఉంది*</span><span class="cash__item" data-te="అర్హత ఉన్న చికిత్సలకు క్యాష్‌లెస్" data-en="Cashless on eligible treatments">అర్హత ఉన్న చికిత్సలకు క్యాష్‌లెస్</span><span class="cash__item" data-te="ఇన్సూరెన్స్ ప్రక్రియలో మా టీమ్ సహాయం చేస్తుంది" data-en="Our team assists with the insurance process">ఇన్సూరెన్స్ ప్రక్రియలో మా టీమ్ సహాయం చేస్తుంది</span><span class="cash__item" data-te="అర్హత చెక్ &amp; ప్రీ-ఆథరైజేషన్ పేపర్‌వర్క్" data-en="Eligibility check &amp; pre-authorisation paperwork">అర్హత చెక్ &amp; ప్రీ-ఆథరైజేషన్ పేపర్‌వర్క్</span><span class="cash__item" data-te="మీ పాలసీ వివరాలతో కాల్ చేయండి" data-en="Call with your policy details">మీ పాలసీ వివరాలతో కాల్ చేయండి</span><span class="cash__item is-note" data-te="*మీ ఇన్సూరెన్స్ నియమాలు, పాలసీ షరతులకు లోబడి" data-en="*Subject to your insurer’s rules and policy terms">*మీ ఇన్సూరెన్స్ నియమాలు, పాలసీ షరతులకు లోబడి</span></span></div></div>
+</div>
 
 <main class="wrap">
   <div class="hero">
